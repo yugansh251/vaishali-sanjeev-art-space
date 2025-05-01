@@ -1,0 +1,48 @@
+
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const Hero = () => {
+  return (
+    <section className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden bg-white">
+      <div className="portfolio-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="order-2 lg:order-1">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight animate-slide-in">
+            Vaishali Sanjeev
+          </h1>
+          <h2 className="text-xl md:text-2xl text-portfolio-gray mb-6 animate-slide-in" style={{ animationDelay: '0.2s' }}>
+            Writer & Visual Artist
+          </h2>
+          <p className="text-lg text-gray-700 mb-8 max-w-lg animate-slide-in" style={{ animationDelay: '0.4s' }}>
+            Exploring the intricacies of human experience through Marathi literature and contemporary visual art. Based in Mumbai, creating works that bridge traditional and modern expressions.
+          </p>
+          <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: '0.6s' }}>
+            <Button asChild className="bg-portfolio-blue hover:bg-portfolio-darkBlue text-white">
+              <Link to="/portfolio">
+                View Portfolio <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="border-portfolio-blue text-portfolio-blue hover:bg-portfolio-lightBlue/10">
+              <Link to="/about">
+                About Me
+              </Link>
+            </Button>
+          </div>
+        </div>
+        <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in">
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-full bg-portfolio-blue/10 animate-pulse"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+              alt="Vaishali Sanjeev"
+              className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
