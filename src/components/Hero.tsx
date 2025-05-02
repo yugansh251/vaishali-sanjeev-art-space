@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute -inset-4 rounded-full bg-[#1EAEDB]/10 animate-pulse"></div>
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+              src="/lovable-uploads/2077b157-543b-4081-b8db-c6d971b5871f.png"
               alt="Vaishali Sanjeev"
               className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl"
             />
