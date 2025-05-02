@@ -8,9 +8,13 @@ const Hero = () => {
     <section className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden bg-white">
       <div className="portfolio-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="order-2 lg:order-1">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight animate-slide-in">
-            Vaishali Sanjeev
-          </h1>
+          <div className="mb-8 md:mb-10 hidden md:block">
+            <img 
+              src="/lovable-uploads/9a664e3e-e2c6-435d-92a6-2864531ce8ca.png" 
+              alt="Vaishali Sanjeev"
+              className="h-20"
+            />
+          </div>
           <h2 className="text-xl md:text-2xl text-portfolio-gray mb-6 animate-slide-in" style={{ animationDelay: '0.2s' }}>
             Writer & Visual Artist
           </h2>
@@ -18,12 +22,12 @@ const Hero = () => {
             Exploring the intricacies of human experience through Marathi literature and contemporary visual art. Based in Mumbai, creating works that bridge traditional and modern expressions.
           </p>
           <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: '0.6s' }}>
-            <Button asChild className="bg-portfolio-blue hover:bg-portfolio-darkBlue text-white">
+            <Button asChild className="bg-[#1EAEDB] hover:bg-[#0FA0CE] text-white">
               <Link to="/portfolio">
                 View Portfolio <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" className="border-portfolio-blue text-portfolio-blue hover:bg-portfolio-lightBlue/10">
+            <Button asChild variant="outline" className="border-[#1EAEDB] text-[#1EAEDB] hover:bg-[#33C3F0]/10">
               <Link to="/about">
                 About Me
               </Link>
@@ -32,7 +36,7 @@ const Hero = () => {
         </div>
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in">
           <div className="relative">
-            <div className="absolute -inset-4 rounded-full bg-portfolio-blue/10 animate-pulse"></div>
+            <div className="absolute -inset-4 rounded-full bg-[#1EAEDB]/10 animate-pulse"></div>
             <img 
               src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
               alt="Vaishali Sanjeev"

@@ -32,8 +32,12 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-4 px-6`}>
       <div className="portfolio-container flex items-center justify-between">
-        <Link to="/" className="text-2xl font-serif font-bold text-portfolio-blue">
-          Vaishali Sanjeev
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/lovable-uploads/9a664e3e-e2c6-435d-92a6-2864531ce8ca.png" 
+            alt="Vaishali Sanjeev" 
+            className="h-12 md:h-14"
+          />
         </Link>
 
         {/* Mobile Menu Button */}
