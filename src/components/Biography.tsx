@@ -39,8 +39,8 @@ const Biography = () => {
           
           <div className="order-1 lg:order-2">
             <img 
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
-              alt="Vaishali Sanjeev" 
+              src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" 
+              alt="Vaishali Sanjeev in studio" 
               className="rounded-lg shadow-xl w-full h-auto"
             />
           </div>
