@@ -15,19 +15,19 @@ const Biography = () => {
             />
             
             <p className="text-gray-700 mb-4">
-              Vaishali Sanjeev (Sanjeev Khandekar) is a reputed Marathi writer and visual artist based in Mumbai. 
-              With a career spanning several decades, his work traverses the boundaries of literature and visual expression.
+              Vaishali Sanjeev (Sanjeev Khandekar) and Vaishali Narkar have forged a dynamic artistic partnership spanning two decades, 
+              creating a diverse and compelling body of work that dissects the complexities of the 21st century.
             </p>
             
             <p className="text-gray-700 mb-4">
-              Known for his significant contributions to Marathi literature, his poetry collections include 
-              "Kavita," "Search Engine," "All That I Wanna Do," and "Mutatis Mutandis." His edited work, "Sankalp," 
-              was awarded by the prestigious Marathi Sahitya Parishad.
+              Their collaborative work is notable for its exploration of diverse mediums and thematic breadth. 
+              From environmental degradation and genetic manipulation to the ascendancy of finance and the virtualisation of reality, 
+              their output reflects a sustained engagement with contemporary anxieties.
             </p>
             
             <p className="text-gray-700 mb-6">
-              Beyond literature, his visual art installations have been exhibited across notable galleries, 
-              exploring themes of identity, sexuality, and human experience through various mediums.
+              Through large-scale installations, intricate marble inlays, expansive embroideries, and sculptural forms, 
+              Narkar and Khandekar function as visual analysts, charting the anomalies and deviations of the present.
             </p>
             
             <Button asChild variant="default" className="bg-portfolio-blue hover:bg-portfolio-darkBlue text-white">

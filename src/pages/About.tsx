@@ -19,7 +19,7 @@ const About = () => {
       <section className="pt-32 pb-16 px-6 bg-portfolio-lightGray">
         <div className="portfolio-container">
           <SectionTitle 
-            title="About Vaishali Sanjeev" 
+            title="The Uncommon Alliance: Narkar and Khandekar's Shared Canvas" 
             centered
           />
           
@@ -33,36 +33,63 @@ const About = () => {
             </div>
             
             <div className="md:w-2/3">
-              <h3 className="text-2xl font-serif font-semibold mb-6">Writer & Visual Artist</h3>
+              <h3 className="text-2xl font-serif font-semibold mb-6">Artistic Collaborators</h3>
               
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Vaishali Sanjeev (Sanjeev Khandekar) is a renowned Marathi writer and visual artist based in Mumbai, India. 
-                  With a career spanning over three decades, he has made significant contributions to Marathi literature and 
-                  the contemporary art scene in India.
+                  Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, Sanjeev Khandekar and
+                  Vaishali Narkar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work; that
+                  dissects the complexities of the 21st century.
                 </p>
                 
                 <p>
-                  His literary works include notable poetry collections such as "Kavita," "Search Engine," "All That I Wanna Do," 
-                  "Mutatis Mutandis," "Two Poems," "1,2,3... Happy Galaxy," and "Smiles." His edited work, "Sankalp," received 
-                  recognition and was awarded by the prestigious Marathi Sahitya Parishad.
+                  Sanjeev Khandekar's multifaceted persona extends beyond the visual arts, -a polymath with credentials in literature and activism,
+                  brings a critical lens to their visual output. (He is a respected poet, writer, social activist, and passionate gardener) Narkar, a formally
+                  trained artist from Sir J.J. College of Art, provides technical and aesthetic rigor.
                 </p>
                 
                 <p>
-                  Beyond his literary pursuits, Vaishali has been actively involved in environmental journalism and NGO work, 
-                  particularly with the Sujan magazine from 1990 to 1995. His professional journey also encompasses senior 
-                  management roles across various international projects, showcasing his versatility and adaptability.
+                  Their recent production design, jointly produced, for Netflix's "Cobalt Blue" demonstrated their ability to translate painterly vision into
+                  cinematic form, garnering critical acclaim.
                 </p>
                 
                 <p>
-                  As a visual artist, his installations have been exhibited in various galleries and art spaces. His art explores 
-                  themes of identity, sexuality, spirituality, and the human condition, often blurring the boundaries between 
-                  different mediums and challenging conventional artistic expressions.
+                  Known for their fearless exploration of diverse mediums, Narkar and Khandekar consistently challenge conventional artistic boundaries.
+                  Their collaborative work is notable for its exploration of diverse mediums and its thematic breadth. From environmental degradation
+                  and genetic manipulation to the ascendancy of finance and the virtualisation of reality, their output reflects a sustained engagement
+                  with contemporary anxieties.
                 </p>
                 
                 <p>
-                  Through his dual role as a writer and visual artist, Vaishali Sanjeev continues to push the boundaries of 
-                  creative expression, contributing significantly to the cultural landscape of India and beyond.
+                  Unconventional motifs – stock tickers, microscopic photographs modified into a new imagery, urban detritus – and even bodily fluids,- are deployed to expose the often-obscured realities of the biosocial sphere. These elements serve as
+                  powerful visual metaphors, highlighting the often-overlooked realities of our contemporary landscape.
+                </p>
+                
+                <p>
+                  Through large-scale installations, intricate marble inlays, expansive embroideries, and sculptural forms including ceramic objects and
+                  paintings interfaced with another screen in between, Narkar and Khandekar function as visual analysts, charting the anomalies and
+                  deviations of the present. Their work, documented in this compilation, serves as a testament to the enduring power of collaborative
+                  inquiry in an era of rapid transformation.
+                </p>
+                
+                <p>
+                  Vaishali & Sanjeev; in their output, frequently confront the viewer with uncomfortable realities, those typically obscured or sanitised.
+                  This penchant for unvarnished depiction courts peril in a market favouring the facile and ostensibly uplifting which sometimes might
+                  prove even risky.
+                </p>
+                
+                <p>
+                  The very substance of their work—its motifs and subject matter—often diverges sharply from prevailing aesthetic norms. Bodily
+                  effluvia, financial data streams, microbial cultures, or electronically magnified biological imagery of internal organs, malignancy, and
+                  fragmentation: these are the constituent elements of their oeuvre. Such materials, undeniably, can evoke visceral revulsion. Yet, this
+                  very reaction, the disquiet they inspire, is often a hallmark of significant artistic endeavour, a deliberate provocation that challenges
+                  complacent perception.
+                </p>
+                
+                <p>
+                  More importantly their works are characterised by meticulous execution, complex, multi-layered visual narratives, a considered diversity
+                  of media, and an unambiguous articulation of their underlying themes. These attributes, combined, ensure a sustained impact, leaving
+                  a lingering impression on the observer.
                 </p>
               </div>
             </div>
