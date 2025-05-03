@@ -8,13 +8,6 @@ const Hero = () => {
     <section className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden bg-white">
       <div className="portfolio-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="order-2 lg:order-1">
-          <div className="mb-8 md:mb-10 hidden md:block">
-            <img 
-              src="/lovable-uploads/9a664e3e-e2c6-435d-92a6-2864531ce8ca.png" 
-              alt="Vaishali Sanjeev"
-              className="h-20"
-            />
-          </div>
           <h2 className="text-xl md:text-2xl text-portfolio-gray mb-6 animate-slide-in" style={{ animationDelay: '0.2s' }}>
             Writer & Visual Artist
           </h2>
