@@ -8,8 +8,8 @@ const Hero = () => {
     <section className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden bg-white">
       <div className="portfolio-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="order-2 lg:order-1">
-          <h2 className="text-xl md:text-2xl text-portfolio-gray mb-6 animate-slide-in" style={{ animationDelay: '0.2s' }}>
-            Writer & Visual Artist
+          <h2 className="text-xl md:text-2xl text-portfolio-blue mb-6 animate-slide-in" style={{ animationDelay: '0.2s' }}>
+            The Uncommon Alliance
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-lg animate-slide-in" style={{ animationDelay: '0.4s' }}>
             Exploring the intricacies of human experience through Marathi literature and contemporary visual art. Based in Mumbai, creating works that bridge traditional and modern expressions.
@@ -36,7 +36,6 @@ const Hero = () => {
               className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl"
             />
           </div>
-          <h3 className="text-3xl font-serif font-bold text-portfolio-blue mt-6 text-center">The Uncommon Alliance</h3>
         </div>
       </div>
     </section>
