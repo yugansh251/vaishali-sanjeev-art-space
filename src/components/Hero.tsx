@@ -43,7 +43,7 @@ const Hero = () => {
               className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl"
             />
           </div>
-          <h3 className="text-3xl font-serif font-bold text-gray-900 mt-6 text-center">The Uncommon Alliance</h3>
+          <h3 className="text-3xl font-serif font-bold text-portfolio-blue mt-6 text-center">The Uncommon Alliance</h3>
         </div>
       </div>
     </section>
