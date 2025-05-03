@@ -34,7 +34,7 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in">
+        <div className="order-1 lg:order-2 flex flex-col items-center lg:items-end animate-fade-in">
           <div className="relative">
             <div className="absolute -inset-4 rounded-full bg-[#1EAEDB]/10 animate-pulse"></div>
             <img 
@@ -43,6 +43,7 @@ const Hero = () => {
               className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl"
             />
           </div>
+          <h3 className="text-3xl font-serif font-bold text-gray-900 mt-6 text-center">The Uncommon Alliance</h3>
         </div>
       </div>
     </section>
