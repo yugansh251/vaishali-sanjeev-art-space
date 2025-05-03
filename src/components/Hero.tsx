@@ -12,7 +12,10 @@ const Hero = () => {
             The Uncommon Alliance
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-lg animate-slide-in" style={{ animationDelay: '0.4s' }}>
-            Exploring the intricacies of human experience through Marathi literature and contemporary visual art. Based in Mumbai, creating works that bridge traditional and modern expressions.
+            Narkar and Khandekar's Shared Canvas
+            Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, Sanjeev Khandekar and
+            Vaishali Narkar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work; that
+            dissects the complexities of the 21st century.
           </p>
           <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: '0.6s' }}>
             <Button asChild className="bg-[#1EAEDB] hover:bg-[#0FA0CE] text-white">
