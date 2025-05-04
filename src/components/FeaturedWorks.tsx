@@ -8,31 +8,45 @@ const FeaturedWorks = () => {
   const featuredWorks = [
     {
       id: 1,
-      title: "Rumour of the Truth",
-      year: "2003",
+      title: "Honey i Shank",
+      year: "2008",
       image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
       category: "Installation"
     },
     {
       id: 2,
-      title: "FLEX - The Fluid Less Sex",
-      year: "2004",
+      title: "Kegel exercise",
+      year: "2010",
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
       category: "Installation"
     },
     {
       id: 3,
-      title: "All That I Wanna Do",
-      year: "2005",
+      title: "Ragamala song of Anthropocene",
+      year: "2015",
       image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      category: "Installation"
+      category: "Mixed Media"
     },
     {
       id: 4,
-      title: "Kavita",
-      year: "2001",
+      title: "imp in the garden",
+      year: "2012",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      category: "Publication"
+      category: "Installation"
+    },
+    {
+      id: 5,
+      title: "Third life",
+      year: "2018",
+      image: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+      category: "Digital Art"
+    },
+    {
+      id: 6,
+      title: "Toy bank",
+      year: "2020",
+      image: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634",
+      category: "Installation"
     }
   ];
 
@@ -41,11 +55,11 @@ const FeaturedWorks = () => {
       <div className="portfolio-container">
         <SectionTitle
           title="Featured Works"
-          subtitle="A selection of notable installations and publications that represent key moments in my creative journey."
+          subtitle="A selection of notable installations and publications that represent key moments in our creative journey."
           centered
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredWorks.map((work) => (
             <div key={work.id} className="gallery-item bg-white rounded-lg overflow-hidden">
               <div className="h-64 overflow-hidden">
