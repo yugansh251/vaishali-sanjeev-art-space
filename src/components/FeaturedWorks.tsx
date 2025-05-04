@@ -10,21 +10,21 @@ const FeaturedWorks = () => {
       id: 1,
       title: "Honey i Shank",
       year: "2008",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+      image: "/lovable-uploads/b15963b3-00d3-4fc5-abec-7a98a48a8650.png",
       category: "Installation"
     },
     {
       id: 2,
       title: "Kegel exercise",
       year: "2010",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+      image: "/lovable-uploads/e87df256-96e2-4d35-8a5f-3d07be9c2ceb.png",
       category: "Installation"
     },
     {
       id: 3,
       title: "Ragamala song of Anthropocene",
       year: "2015",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
+      image: "/lovable-uploads/5f23c33d-cc44-4b38-acb1-3e8b8a4ac597.png",
       category: "Mixed Media"
     },
     {
