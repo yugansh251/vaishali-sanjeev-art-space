@@ -2,8 +2,70 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from '@/components/ui/carousel';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Hero = () => {
+  // Gallery images with captions for the carousel
+  const artworkImages = [
+    {
+      id: 1,
+      image: "/lovable-uploads/e1d1f217-f7db-4297-9207-382c8f9cf6a3.png",
+      caption: "Installation view of 'Honey i Shank' (2008)"
+    },
+    {
+      id: 2,
+      image: "/lovable-uploads/f27b430a-cc25-475a-8e80-2a8f2fbcf17e.png",
+      caption: "A View: All that i wanna do with mirror image"
+    },
+    {
+      id: 3,
+      image: "/lovable-uploads/615c0d19-bded-478d-b322-998f93ad689d.png",
+      caption: "Installation view of 'Kegel exercise' (2010)"
+    },
+    {
+      id: 4,
+      image: "/lovable-uploads/a40d1089-dada-4a57-9b7a-5317b4d1a1d5.png",
+      caption: "I'm so angry, I made this sign"
+    },
+    {
+      id: 5,
+      image: "/lovable-uploads/3e11c915-5c02-4510-b3d3-6ee8ce0ec715.png",
+      caption: "Sculptural installation"
+    },
+    {
+      id: 6,
+      image: "/lovable-uploads/a202d7d5-3993-4b56-a730-71ecc6bcce28.png",
+      caption: "A Hymen intact: details"
+    },
+    {
+      id: 7,
+      image: "/lovable-uploads/c5dcf8d9-2317-41fb-8b87-dc21a7f07f75.png",
+      caption: "A Section of ceiling view"
+    },
+    {
+      id: 8,
+      image: "/lovable-uploads/c55e8c35-44dc-4bab-b3a8-d0dce4d957c4.png",
+      caption: "Abstract mosaic artwork"
+    },
+    {
+      id: 9,
+      image: "/lovable-uploads/9f34f9b5-7b3e-46e4-b885-40d23d96993a.png",
+      caption: "Collection of preserved specimens"
+    },
+    {
+      id: 10,
+      image: "/lovable-uploads/b0b5d297-9ba6-4d7d-9516-fd713c00facc.png",
+      caption: "Undead - Raga Basant From the series 'Ragamala - Songs Of The Anthropocene'"
+    }
+  ];
+
   return (
     <section className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden bg-white">
       <div className="portfolio-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -30,15 +92,39 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="order-1 lg:order-2 flex flex-col items-center lg:items-end animate-fade-in">
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-full bg-[#1EAEDB]/10 animate-pulse"></div>
-            <img 
-              src="/lovable-uploads/2077b157-543b-4081-b8db-c6d971b5871f.png"
-              alt="Vaishali Sanjeev"
-              className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl"
-            />
-          </div>
+        <div className="order-1 lg:order-2 animate-fade-in">
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {artworkImages.map((artwork) => (
+                <CarouselItem key={artwork.id} className="md:basis-3/4">
+                  <Card className="border-none">
+                    <CardContent className="p-1">
+                      <div className="overflow-hidden rounded-xl">
+                        <div className="aspect-[4/3] relative">
+                          <img 
+                            src={artwork.image} 
+                            alt={artwork.caption}
+                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          />
+                        </div>
+                        <div className="bg-black bg-opacity-75 text-white p-3 text-sm text-center">
+                          {artwork.caption}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2 md:left-4 bg-white/80 hover:bg-white" />
+            <CarouselNext className="right-2 md:right-4 bg-white/80 hover:bg-white" />
+          </Carousel>
         </div>
       </div>
     </section>
