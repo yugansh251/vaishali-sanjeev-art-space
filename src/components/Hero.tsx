@@ -1,7 +1,4 @@
 
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { 
   Carousel, 
   CarouselContent, 
@@ -67,65 +64,40 @@ const Hero = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden bg-white">
-      <div className="portfolio-container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div className="order-2 lg:order-1">
-          <h2 className="text-xl md:text-2xl text-portfolio-blue mb-6 animate-slide-in" style={{ animationDelay: '0.2s' }}>
-            The Uncommon Alliance
-          </h2>
-          <p className="text-lg text-gray-700 mb-8 max-w-lg animate-slide-in" style={{ animationDelay: '0.4s' }}>
-            Narkar and Khandekar's Shared Canvas
-            Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, Sanjeev Khandekar and
-            Vaishali Narkar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work; that
-            dissects the complexities of the 21st century.
-          </p>
-          <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: '0.6s' }}>
-            <Button asChild className="bg-[#1EAEDB] hover:bg-[#0FA0CE] text-white">
-              <Link to="/portfolio">
-                View Portfolio <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline" className="border-[#1EAEDB] text-[#1EAEDB] hover:bg-[#33C3F0]/10">
-              <Link to="/about">
-                About Me
-              </Link>
-            </Button>
-          </div>
-        </div>
-        <div className="order-1 lg:order-2 animate-fade-in">
-          <Carousel
-            opts={{
-              align: "center",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {artworkImages.map((artwork) => (
-                <CarouselItem key={artwork.id} className="md:basis-3/4">
-                  <Card className="border-none">
-                    <CardContent className="p-1">
-                      <div className="overflow-hidden rounded-xl">
-                        <div className="aspect-[4/3] relative">
-                          <img 
-                            src={artwork.image} 
-                            alt={artwork.caption}
-                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                          />
-                        </div>
-                        <div className="bg-black bg-opacity-75 text-white p-3 text-sm text-center">
-                          {artwork.caption}
-                        </div>
+    <section className="min-h-screen flex items-center justify-center pt-20 section-padding relative overflow-hidden bg-white">
+      <div className="w-full max-w-7xl">
+        <Carousel
+          opts={{
+            align: "center",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {artworkImages.map((artwork) => (
+              <CarouselItem key={artwork.id} className="md:basis-3/4">
+                <Card className="border-none">
+                  <CardContent className="p-1">
+                    <div className="overflow-hidden rounded-xl">
+                      <div className="aspect-[4/3] relative">
+                        <img 
+                          src={artwork.image} 
+                          alt={artwork.caption}
+                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        />
                       </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-2 md:left-4 bg-white/80 hover:bg-white" />
-            <CarouselNext className="right-2 md:right-4 bg-white/80 hover:bg-white" />
-          </Carousel>
-        </div>
+                      <div className="bg-black bg-opacity-75 text-white p-3 text-sm text-center">
+                        {artwork.caption}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-2 md:left-4 lg:left-8 bg-white/80 hover:bg-white" />
+          <CarouselNext className="right-2 md:right-4 lg:right-8 bg-white/80 hover:bg-white" />
+        </Carousel>
       </div>
     </section>
   );
