@@ -86,21 +86,6 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-start pt-16 relative overflow-hidden bg-white">
-      {/* Introduction Text */}
-      <div className="w-full max-w-5xl mx-auto px-6 mb-12 md:mb-16">
-        <div className="text-center">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700">
-            The Uncommon Alliance
-          </h1>
-          <p className="font-serif text-lg md:text-xl lg:text-2xl italic leading-relaxed text-gray-800 max-w-4xl mx-auto">
-            Unconventional motifs – stock tickers, microscopic photographs modified into a new imagery, 
-            urban detritus – <span className="font-medium">and even bodily fluids</span> – are deployed to expose 
-            the often-obscured realities of the biosocial sphere. These elements serve as powerful 
-            visual metaphors, highlighting the often-overlooked realities of our contemporary landscape.
-          </p>
-        </div>
-      </div>
-
       {/* Carousel */}
       <div className="w-full">
         <Carousel

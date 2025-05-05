@@ -14,6 +14,15 @@ const Biography = () => {
               className="mb-6"
             />
             
+            <div className="mb-6">
+              <h3 className="text-xl font-serif font-bold mb-4">The Uncommon Alliance</h3>
+              <p className="text-gray-700 mb-4">
+                Unconventional motifs – stock tickers, microscopic photographs modified into a new imagery, 
+                urban detritus – and even bodily fluids – are deployed to expose the often-obscured realities of the biosocial sphere. 
+                These elements serve as powerful visual metaphors, highlighting the often-overlooked realities of our contemporary landscape.
+              </p>
+            </div>
+            
             <p className="text-gray-700 mb-4">
               Vaishali Sanjeev (Sanjeev Khandekar) and Vaishali Narkar have forged a dynamic artistic partnership spanning two decades, 
               creating a diverse and compelling body of work that dissects the complexities of the 21st century.
