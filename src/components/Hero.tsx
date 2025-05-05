@@ -58,10 +58,10 @@ const Hero = () => {
   useEffect(() => {
     if (!api) return;
     
-    // Auto-scroll every 1 second
+    // Auto-scroll every 5 seconds
     const autoScrollInterval = setInterval(() => {
       api.scrollNext();
-    }, 1000);
+    }, 5000);
     
     // Clean up interval on unmount
     return () => clearInterval(autoScrollInterval);
