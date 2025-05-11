@@ -5,43 +5,49 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FeaturedWorks = () => {
-  // Selected works for the tiles
+  // Selected works for the tiles with standardized formats
   const featuredWorks = [
     {
       id: 1,
       image: "/lovable-uploads/e1d1f217-f7db-4297-9207-382c8f9cf6a3.png",
       title: "Honey i Shank",
-      description: "Installation (2008)",
+      medium: "Installation",
+      year: "2008",
     },
     {
       id: 2,
       image: "/lovable-uploads/615c0d19-bded-478d-b322-998f93ad689d.png",
       title: "Kegel Exercise",
-      description: "Installation (2010)",
+      medium: "Installation",
+      year: "2010",
     },
     {
       id: 3,
       image: "/lovable-uploads/b0b5d297-9ba6-4d7d-9516-fd713c00facc.png",
       title: "Ragamala",
-      description: "Songs of The Anthropocene",
+      medium: "Songs of The Anthropocene",
+      year: "2021",
     },
     {
       id: 4,
       image: "/lovable-uploads/a40d1089-dada-4a57-9b7a-5317b4d1a1d5.png",
       title: "Sign",
-      description: "Mixed media artwork",
+      medium: "Mixed Media",
+      year: "2015",
     },
     {
       id: 5,
       image: "/lovable-uploads/c5dcf8d9-2317-41fb-8b87-dc21a7f07f75.png",
       title: "Ceiling View",
-      description: "Installation detail",
+      medium: "Installation Detail",
+      year: "2018",
     },
     {
       id: 6,
       image: "/lovable-uploads/c55e8c35-44dc-4bab-b3a8-d0dce4d957c4.png",
       title: "Abstract Mosaic",
-      description: "Mixed media artwork",
+      medium: "Mixed Media",
+      year: "2019",
     },
   ];
 
@@ -61,13 +67,13 @@ const FeaturedWorks = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
                     src={work.image} 
-                    alt={work.title}
+                    alt={`${work.title} – ${work.medium} – ${work.year}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-serif font-medium text-gray-900">{work.title}</h3>
-                  <p className="text-gray-600 mt-1">{work.description}</p>
+                  <p className="text-gray-600 mt-1">{work.medium} – {work.year}</p>
                 </div>
               </Link>
             </div>

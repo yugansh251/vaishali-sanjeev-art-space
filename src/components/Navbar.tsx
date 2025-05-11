@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/9a664e3e-e2c6-435d-92a6-2864531ce8ca.png" 
-            alt="Vaishali Sanjeev" 
+            alt="Vaishali & Sanjeev" 
             className="h-12 md:h-14"
           />
         </Link>

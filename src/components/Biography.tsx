@@ -10,7 +10,7 @@ const Biography = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <SectionTitle 
-              title="About Vaishali Sanjeev" 
+              title="About Vaishali & Sanjeev" 
               className="mb-6"
             />
             
@@ -24,7 +24,7 @@ const Biography = () => {
             </div>
             
             <p className="text-gray-700 mb-4">
-              Vaishali Sanjeev (Sanjeev Khandekar) and Vaishali Narkar have forged a dynamic artistic partnership spanning two decades, 
+              Vaishali & Sanjeev have forged a dynamic artistic partnership spanning two decades, 
               creating a diverse and compelling body of work that dissects the complexities of the 21st century.
             </p>
             
@@ -36,7 +36,7 @@ const Biography = () => {
             
             <p className="text-gray-700 mb-6">
               Through large-scale installations, intricate marble inlays, expansive embroideries, and sculptural forms, 
-              Narkar and Khandekar function as visual analysts, charting the anomalies and deviations of the present.
+              Vaishali & Sanjeev function as visual analysts, charting the anomalies and deviations of the present.
             </p>
             
             <Button asChild variant="default" className="bg-portfolio-blue hover:bg-portfolio-darkBlue text-white">
@@ -49,7 +49,7 @@ const Biography = () => {
           <div className="order-1 lg:order-2">
             <img 
               src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" 
-              alt="Vaishali Sanjeev in studio" 
+              alt="Vaishali & Sanjeev in studio" 
               className="rounded-lg shadow-xl w-full h-auto"
             />
           </div>
