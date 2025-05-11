@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
   
-  // Gallery images for the carousel
+  // Gallery images for the carousel - removing the newly uploaded images
   const artworkImages = [
     {
       id: 1,
@@ -51,23 +51,6 @@ const Hero = () => {
     {
       id: 10,
       image: "/lovable-uploads/b0b5d297-9ba6-4d7d-9516-fd713c00facc.png"
-    },
-    // Adding the newly uploaded images
-    {
-      id: 11,
-      image: "/lovable-uploads/2077b157-543b-4081-b8db-c6d971b5871f.png"
-    },
-    {
-      id: 12,
-      image: "/lovable-uploads/9a664e3e-e2c6-435d-92a6-2864531ce8ca.png"
-    },
-    {
-      id: 13,
-      image: "/lovable-uploads/b15963b3-00d3-4fc5-abec-7a98a48a8650.png"
-    },
-    {
-      id: 14,
-      image: "/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png"
     }
   ];
 
