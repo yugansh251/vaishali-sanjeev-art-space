@@ -1,4 +1,6 @@
+
 import { createRoot } from 'react-dom/client'
+import React from 'react' // Add explicit React import
 import App from './App.tsx'
 import './index.css'
 
