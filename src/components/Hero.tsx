@@ -10,77 +10,84 @@ import { useEffect, useState } from 'react';
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
   
-  // Gallery images for the carousel with standardized format
+  // New gallery images for the carousel with the uploaded images
   const artworkImages = [
     {
       id: 1,
-      image: "/lovable-uploads/e1d1f217-f7db-4297-9207-382c8f9cf6a3.png",
-      title: "Honey i Shank",
-      medium: "Installation",
-      year: "2008"
-    },
-    {
-      id: 2,
-      image: "/lovable-uploads/f27b430a-cc25-475a-8e80-2a8f2fbcf17e.png",
-      title: "Abstract Forms",
-      medium: "Mixed Media",
-      year: "2012"
-    },
-    {
-      id: 3,
-      image: "/lovable-uploads/615c0d19-bded-478d-b322-998f93ad689d.png",
-      title: "Kegel Exercise",
+      image: "/lovable-uploads/4381022f-d369-4f4f-99b1-9038711e08e6.png",
+      title: "I'm So Angry",
       medium: "Installation",
       year: "2010"
     },
     {
-      id: 4,
-      image: "/lovable-uploads/a40d1089-dada-4a57-9b7a-5317b4d1a1d5.png",
-      title: "Sign",
-      medium: "Mixed Media",
-      year: "2015"
-    },
-    {
-      id: 5,
-      image: "/lovable-uploads/3e11c915-5c02-4510-b3d3-6ee8ce0ec715.png",
-      title: "Conceptual Piece",
-      medium: "Mixed Media",
-      year: "2014"
-    },
-    {
-      id: 6,
-      image: "/lovable-uploads/a202d7d5-3993-4b56-a730-71ecc6bcce28.png",
-      title: "Urban Fragments",
-      medium: "Installation",
+      id: 2,
+      image: "/lovable-uploads/935f9be8-635d-41fc-8aa2-ff6be27db293.png",
+      title: "All That I Wanna Do",
+      medium: "Mixed Media Installation",
       year: "2016"
     },
     {
-      id: 7,
-      image: "/lovable-uploads/c5dcf8d9-2317-41fb-8b87-dc21a7f07f75.png",
-      title: "Ceiling View",
-      medium: "Installation Detail",
-      year: "2018"
+      id: 3,
+      image: "/lovable-uploads/07759e31-278f-475e-8804-d9b157b22ca2.png",
+      title: "Passage",
+      medium: "Installation",
+      year: "2014"
     },
     {
-      id: 8,
-      image: "/lovable-uploads/c55e8c35-44dc-4bab-b3a8-d0dce4d957c4.png",
-      title: "Abstract Mosaic",
-      medium: "Mixed Media",
+      id: 4,
+      image: "/lovable-uploads/f0d0a5e3-2d59-4a2a-8a1b-d0a708f5871b.png",
+      title: "Exhibit Room",
+      medium: "Installation View",
       year: "2019"
     },
     {
+      id: 5,
+      image: "/lovable-uploads/e6fbe28e-4e85-4953-bec0-cdb64e70963b.png",
+      title: "Triumph of Market",
+      medium: "Marble and Mixed Media",
+      year: "2018"
+    },
+    {
+      id: 6,
+      image: "/lovable-uploads/180a9067-0319-4c53-ac25-6d442b498de9.png",
+      title: "Triumph of Market",
+      medium: "Acrylic on Canvas",
+      year: "2015"
+    },
+    {
+      id: 7,
+      image: "/lovable-uploads/594cb0c5-09c8-4e08-815f-9eb39b532757.png",
+      title: "Blossom",
+      medium: "Installation",
+      year: "2017"
+    },
+    {
+      id: 8,
+      image: "/lovable-uploads/56831ccd-2b26-4648-9d46-aac87185726b.png",
+      title: "Maha Basant",
+      medium: "Embroidery on Silk",
+      year: "2014"
+    },
+    {
       id: 9,
-      image: "/lovable-uploads/9f34f9b5-7b3e-46e4-b885-40d23d96993a.png",
-      title: "Untitled",
-      medium: "Mixed Media",
-      year: "2020"
+      image: "/lovable-uploads/30d5a406-7f20-4ba7-b503-dc5a918a68b1.png",
+      title: "Hung in an Abattoir",
+      medium: "Ragini Todi - Songs of Anthropocene",
+      year: "2019"
     },
     {
       id: 10,
-      image: "/lovable-uploads/b0b5d297-9ba6-4d7d-9516-fd713c00facc.png",
-      title: "Ragamala",
-      medium: "Songs of The Anthropocene",
-      year: "2021"
+      image: "/lovable-uploads/67115418-f7ae-451c-94fe-01e2fc7f0545.png",
+      title: "Marble Inlay",
+      medium: "Mixed Media",
+      year: "2016"
+    },
+    {
+      id: 11,
+      image: "/lovable-uploads/786b6fe6-fbe1-43d1-b92c-754872af3757.png",
+      title: "Idiopathic Craniofacial Erythema",
+      medium: "Mixed Media",
+      year: "2018"
     }
   ];
 
