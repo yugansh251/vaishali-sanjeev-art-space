@@ -4,7 +4,7 @@ import SectionTitle from '@/components/SectionTitle';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
-const Services = () => {
+const Shop = () => {
   const books = [
     {
       id: 1,
@@ -166,4 +166,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Shop;
