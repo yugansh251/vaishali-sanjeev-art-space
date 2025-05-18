@@ -4,9 +4,9 @@ import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { LayoutGrid, Image } from 'lucide-react';
+import { LayoutGrid, Image, Download } from 'lucide-react';
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -21,6 +21,7 @@ const Portfolio = () => {
     tab: string;
     image: string;
     description: string;
+    pdfLink: string;
   }
 
   const works: Work[] = [
@@ -30,8 +31,9 @@ const Portfolio = () => {
       year: "2003",
       category: "installation",
       tab: "honey",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-      description: "An interactive installation exploring the nature of truth and perception in contemporary society."
+      image: "/lovable-uploads/d5f03b39-25c4-4642-8476-9a6371431261.png",
+      description: "An interactive installation exploring the nature of truth and perception in contemporary society.",
+      pdfLink: "https://drive.google.com/file/d/example1"
     },
     {
       id: 2,
@@ -39,8 +41,9 @@ const Portfolio = () => {
       year: "2004",
       category: "installation",
       tab: "ragamala",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
-      description: "A provocative exploration of environmental changes and their impact on cultural narratives."
+      image: "/lovable-uploads/cdf4a79d-66a6-4411-9326-b2324d0344ad.png",
+      description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
+      pdfLink: "https://drive.google.com/file/d/example2"
     },
     {
       id: 3,
@@ -48,8 +51,9 @@ const Portfolio = () => {
       year: "2005",
       category: "installation",
       tab: "triumph",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      description: "A critical examination of late capitalism and market forces shaping contemporary society."
+      image: "/lovable-uploads/e4c1b905-86c4-47e0-b479-1034fe1b2cd8.png",
+      description: "A critical examination of late capitalism and market forces shaping contemporary society.",
+      pdfLink: "https://drive.google.com/file/d/example3"
     },
     {
       id: 4,
@@ -57,8 +61,9 @@ const Portfolio = () => {
       year: "2006",
       category: "publication",
       tab: "imp-in-the-garden",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      description: "A collection of reimagined fairy tales that question our relationship with nature and mythology."
+      image: "/lovable-uploads/a91861a5-473b-4243-b453-d366e98b241c.png",
+      description: "A collection of reimagined fairy tales that question our relationship with nature and mythology.",
+      pdfLink: "https://drive.google.com/file/d/example4"
     },
     {
       id: 5,
@@ -66,8 +71,9 @@ const Portfolio = () => {
       year: "2007",
       category: "publication",
       tab: "acquire-merge",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      description: "An exploration of corporate language and collaborative practices in the contemporary art world."
+      image: "/lovable-uploads/041c323c-d28a-4be2-a05f-2ce076a6bce0.png",
+      description: "An exploration of corporate language and collaborative practices in the contemporary art world.",
+      pdfLink: "https://drive.google.com/file/d/example5"
     },
     {
       id: 6,
@@ -75,8 +81,9 @@ const Portfolio = () => {
       year: "2008",
       category: "installation",
       tab: "what-do-i-love",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-      description: "A spiritual exploration of love, devotion, and the divine through multimedia elements."
+      image: "/lovable-uploads/c2c372a6-45a1-4e66-ade2-71fa4e2ad07b.png",
+      description: "A spiritual exploration of love, devotion, and the divine through multimedia elements.",
+      pdfLink: "https://drive.google.com/file/d/example6"
     },
     {
       id: 7,
@@ -84,8 +91,9 @@ const Portfolio = () => {
       year: "2009",
       category: "installation",
       tab: "kegel-exercise",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      description: "An installation connecting traditional practices with contemporary body awareness and control."
+      image: "/lovable-uploads/36aacf01-310c-41d2-b778-7460f45bec1a.png",
+      description: "An installation connecting traditional practices with contemporary body awareness and control.",
+      pdfLink: "https://drive.google.com/file/d/example7"
     },
     {
       id: 8,
@@ -93,8 +101,9 @@ const Portfolio = () => {
       year: "2010",
       category: "installation",
       tab: "all-that-i-wanna-do",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      description: "An immersive installation reflecting on personal desires and societal expectations."
+      image: "/lovable-uploads/650c0882-fe96-42f9-8efb-5acc29ceca1f.png",
+      description: "An immersive installation reflecting on personal desires and societal expectations.",
+      pdfLink: "https://drive.google.com/file/d/example8"
     },
     {
       id: 9,
@@ -102,8 +111,9 @@ const Portfolio = () => {
       year: "2011",
       category: "publication",
       tab: "angry",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      description: "A provocative publication exploring themes of protest, expression, and the politics of anger."
+      image: "/lovable-uploads/b11607ac-d5b2-4cfb-80fc-04bebd3f77a3.png",
+      description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
+      pdfLink: "https://drive.google.com/file/d/example9"
     }
   ];
 
@@ -173,10 +183,12 @@ const Portfolio = () => {
                 {filteredWorks.map((work) => (
                   <Card 
                     key={work.id} 
-                    className="gallery-item overflow-hidden cursor-pointer border-0 shadow-md hover:shadow-xl transition-all duration-300"
-                    onClick={() => setSelectedWork(work)}
+                    className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300"
                   >
-                    <div className="h-64 overflow-hidden">
+                    <div 
+                      className="h-64 overflow-hidden cursor-pointer"
+                      onClick={() => setSelectedWork(work)}
+                    >
                       <AspectRatio ratio={16/9}>
                         <img 
                           src={work.image} 
@@ -185,12 +197,23 @@ const Portfolio = () => {
                         />
                       </AspectRatio>
                     </div>
-                    <CardContent className="p-6">
+                    <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {work.category} • {work.year}
                       </span>
                       <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
                     </CardContent>
+                    <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
+                      <a 
+                        href={work.pdfLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue"
+                      >
+                        <Download size={14} className="mr-1" />
+                        Download PDF
+                      </a>
+                    </CardFooter>
                   </Card>
                 ))}
               </div>
@@ -199,11 +222,13 @@ const Portfolio = () => {
                 {filteredWorks.map((work) => (
                   <Card 
                     key={work.id} 
-                    className="gallery-item overflow-hidden cursor-pointer border-0 shadow-md hover:shadow-xl transition-all duration-300"
-                    onClick={() => setSelectedWork(work)}
+                    className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300"
                   >
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className="md:col-span-1 h-full">
+                      <div 
+                        className="md:col-span-1 h-full cursor-pointer"
+                        onClick={() => setSelectedWork(work)}
+                      >
                         <AspectRatio ratio={1/1} className="h-full">
                           <img 
                             src={work.image} 
@@ -213,11 +238,27 @@ const Portfolio = () => {
                         </AspectRatio>
                       </div>
                       <div className="md:col-span-2 p-6">
-                        <span className="text-sm text-portfolio-blue font-medium capitalize">
-                          {work.category} • {work.year}
-                        </span>
-                        <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
-                        <p className="mt-3 text-gray-600 line-clamp-3">{work.description}</p>
+                        <div 
+                          className="cursor-pointer"
+                          onClick={() => setSelectedWork(work)}
+                        >
+                          <span className="text-sm text-portfolio-blue font-medium capitalize">
+                            {work.category} • {work.year}
+                          </span>
+                          <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
+                          <p className="mt-3 text-gray-600 line-clamp-3">{work.description}</p>
+                        </div>
+                        <div className="mt-4 flex justify-end">
+                          <a 
+                            href={work.pdfLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue"
+                          >
+                            <Download size={14} className="mr-1" />
+                            Download PDF
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </Card>
@@ -244,9 +285,20 @@ const Portfolio = () => {
                     <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
                       {selectedWork.title}
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 mb-6">
                       {selectedWork.description}
                     </p>
+                    <a 
+                      href={selectedWork.pdfLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue"
+                    >
+                      <Button variant="outline" size="sm" className="gap-2">
+                        <Download size={16} />
+                        Download PDF
+                      </Button>
+                    </a>
                   </div>
                 </div>
               )}
