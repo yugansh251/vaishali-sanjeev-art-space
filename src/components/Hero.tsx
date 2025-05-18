@@ -6,6 +6,7 @@ import {
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
@@ -107,7 +108,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-start pt-16 relative overflow-hidden bg-white">
       {/* Carousel */}
-      <div className="w-full">
+      <div className="w-full max-w-7xl mx-auto">
         <Carousel
           opts={{
             align: "center",
@@ -120,16 +121,18 @@ const Hero = () => {
             {artworkImages.map((artwork) => (
               <CarouselItem key={artwork.id} className="basis-full">
                 <Card className="border-none">
-                  <CardContent className="p-0">
-                    <div className="aspect-[16/9] w-screen">
-                      <img 
-                        src={artwork.image} 
-                        alt={artwork.title} 
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4 text-white">
-                        <h3 className="text-lg font-serif">{artwork.title} – {artwork.medium} – {artwork.year}</h3>
+                  <CardContent className="flex flex-col items-center p-0">
+                    <div className="w-full flex justify-center">
+                      <div className="max-w-4xl">
+                        <img 
+                          src={artwork.image} 
+                          alt={artwork.title} 
+                          className="w-auto h-auto max-h-[70vh] mx-auto"
+                        />
                       </div>
+                    </div>
+                    <div className="w-full bg-black/70 p-4 text-white">
+                      <h3 className="text-lg font-serif">{artwork.title} – {artwork.medium} – {artwork.year}</h3>
                     </div>
                   </CardContent>
                 </Card>
