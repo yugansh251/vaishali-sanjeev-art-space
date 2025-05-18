@@ -4,12 +4,14 @@ import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Card, CardContent } from '@/components/ui/card';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { LayoutGrid, Image } from 'lucide-react';
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
-  const [activeTab, setActiveTab] = useState('all');
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   interface Work {
     id: number;
@@ -114,16 +116,8 @@ const Portfolio = () => {
     }
   ];
 
-  // Function to filter works by tab
-  const getWorksByTab = (tabValue: string) => {
-    if (tabValue === 'all') {
-      return works;
-    }
-    return works.filter(work => work.tab === tabValue);
-  };
-
-  // Current works to display based on active tab and selected category
-  const filteredWorks = getWorksByTab(activeTab).filter(work => 
+  // Filter works based on selected category
+  const filteredWorks = works.filter(work => 
     selectedCategory === 'all' || work.category === selectedCategory
   );
 
@@ -137,75 +131,108 @@ const Portfolio = () => {
             centered
           />
 
-          <div className="mb-8 overflow-x-auto">
-            <Tabs 
-              defaultValue="all" 
-              className="w-full"
-              onValueChange={(value) => setActiveTab(value)}
-            >
-              <TabsList className="mb-6 flex flex-nowrap overflow-x-auto p-1 w-full justify-start">
-                <TabsTrigger value="all" className="whitespace-nowrap">All Works</TabsTrigger>
-                <TabsTrigger value="honey" className="whitespace-nowrap">Honey, I Shrunk My Tongue</TabsTrigger>
-                <TabsTrigger value="ragamala" className="whitespace-nowrap">Ragamala Song of Anthropocene</TabsTrigger>
-                <TabsTrigger value="triumph" className="whitespace-nowrap">Triumph of Market</TabsTrigger>
-                <TabsTrigger value="imp-in-the-garden" className="whitespace-nowrap">Imp in the Garden</TabsTrigger>
-                <TabsTrigger value="acquire-merge" className="whitespace-nowrap">Acquire Merge Collaborate</TabsTrigger>
-                <TabsTrigger value="what-do-i-love" className="whitespace-nowrap">What Do I Love When I Love You</TabsTrigger>
-                <TabsTrigger value="kegel-exercise" className="whitespace-nowrap">Kegel Exercise</TabsTrigger>
-                <TabsTrigger value="all-that-i-wanna-do" className="whitespace-nowrap">All That I Wanna Do</TabsTrigger>
-                <TabsTrigger value="angry" className="whitespace-nowrap">I Am So Angry</TabsTrigger>
-              </TabsList>
-
-              <div className="flex justify-center mb-10">
-                <div className="inline-flex rounded-md shadow-sm" role="group">
-                  <Button
-                    variant={selectedCategory === 'all' ? 'default' : 'outline'}
-                    onClick={() => setSelectedCategory('all')}
-                    className={selectedCategory === 'all' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
-                  >
-                    All Works
-                  </Button>
-                  <Button
-                    variant={selectedCategory === 'installation' ? 'default' : 'outline'}
-                    onClick={() => setSelectedCategory('installation')}
-                    className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
-                  >
-                    Installations
-                  </Button>
-                  <Button
-                    variant={selectedCategory === 'publication' ? 'default' : 'outline'}
-                    onClick={() => setSelectedCategory('publication')}
-                    className={selectedCategory === 'publication' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
-                  >
-                    Publications
-                  </Button>
-                </div>
+          <div className="mb-10">
+            <div className="flex justify-between items-center mb-8">
+              <div className="inline-flex rounded-md shadow-sm" role="group">
+                <Button
+                  variant={selectedCategory === 'all' ? 'default' : 'outline'}
+                  onClick={() => setSelectedCategory('all')}
+                  className={selectedCategory === 'all' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
+                >
+                  All Works
+                </Button>
+                <Button
+                  variant={selectedCategory === 'installation' ? 'default' : 'outline'}
+                  onClick={() => setSelectedCategory('installation')}
+                  className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
+                >
+                  Installations
+                </Button>
+                <Button
+                  variant={selectedCategory === 'publication' ? 'default' : 'outline'}
+                  onClick={() => setSelectedCategory('publication')}
+                  className={selectedCategory === 'publication' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
+                >
+                  Publications
+                </Button>
               </div>
+              
+              <div className="flex gap-2">
+                <Button 
+                  variant={viewMode === 'grid' ? 'default' : 'outline'}
+                  size="icon"
+                  onClick={() => setViewMode('grid')}
+                  className={viewMode === 'grid' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
+                >
+                  <LayoutGrid size={18} />
+                </Button>
+                <Button 
+                  variant={viewMode === 'list' ? 'default' : 'outline'}
+                  size="icon"
+                  onClick={() => setViewMode('list')}
+                  className={viewMode === 'list' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}
+                >
+                  <Image size={18} />
+                </Button>
+              </div>
+            </div>
 
+            {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map((work) => (
-                  <div 
+                  <Card 
                     key={work.id} 
-                    className="gallery-item bg-white rounded-lg overflow-hidden cursor-pointer"
+                    className="gallery-item overflow-hidden cursor-pointer border-0 shadow-md hover:shadow-xl transition-all duration-300"
                     onClick={() => setSelectedWork(work)}
                   >
                     <div className="h-64 overflow-hidden">
-                      <img 
-                        src={work.image} 
-                        alt={work.title} 
-                        className="w-full h-full object-cover image-hover"
-                      />
+                      <AspectRatio ratio={16/9}>
+                        <img 
+                          src={work.image} 
+                          alt={work.title} 
+                          className="w-full h-full object-cover image-hover"
+                        />
+                      </AspectRatio>
                     </div>
-                    <div className="p-6">
+                    <CardContent className="p-6">
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {work.category} • {work.year}
                       </span>
                       <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
-            </Tabs>
+            ) : (
+              <div className="flex flex-col space-y-6">
+                {filteredWorks.map((work) => (
+                  <Card 
+                    key={work.id} 
+                    className="gallery-item overflow-hidden cursor-pointer border-0 shadow-md hover:shadow-xl transition-all duration-300"
+                    onClick={() => setSelectedWork(work)}
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="md:col-span-1 h-full">
+                        <AspectRatio ratio={1/1} className="h-full">
+                          <img 
+                            src={work.image} 
+                            alt={work.title} 
+                            className="w-full h-full object-cover image-hover"
+                          />
+                        </AspectRatio>
+                      </div>
+                      <div className="md:col-span-2 p-6">
+                        <span className="text-sm text-portfolio-blue font-medium capitalize">
+                          {work.category} • {work.year}
+                        </span>
+                        <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
+                        <p className="mt-3 text-gray-600 line-clamp-3">{work.description}</p>
+                      </div>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            )}
           </div>
 
           <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
