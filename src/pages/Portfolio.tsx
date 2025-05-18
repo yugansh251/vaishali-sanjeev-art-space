@@ -26,7 +26,7 @@ const Portfolio = () => {
   const works: Work[] = [
     {
       id: 1,
-      title: "Rumour of the Truth",
+      title: "Honey, I shrunk my Tongue",
       year: "2003",
       category: "installation",
       tab: "honey",
@@ -35,84 +35,75 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "FLEX - The Fluid Less Sex",
+      title: "Ragamala song of Anthropocene",
       year: "2004",
       category: "installation",
       tab: "ragamala",
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
-      description: "A provocative exploration of gender fluidity and the constraints of societal norms around sexuality."
+      description: "A provocative exploration of environmental changes and their impact on cultural narratives."
     },
     {
       id: 3,
-      title: "All That I Wanna Do",
+      title: "Triumph of market",
       year: "2005",
       category: "installation",
-      tab: "all-that-i-wanna-do",
+      tab: "triumph",
       image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      description: "An immersive installation reflecting on personal desires and societal expectations."
+      description: "A critical examination of late capitalism and market forces shaping contemporary society."
     },
     {
       id: 4,
-      title: "Tits n Clits n Elephant Dick",
+      title: "Imp in the garden and other fairy tales",
       year: "2006",
-      category: "installation",
-      tab: "triumph",
+      category: "publication",
+      tab: "imp-in-the-garden",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      description: "A bold examination of the human body, sexuality, and the taboos surrounding explicit language and imagery."
+      description: "A collection of reimagined fairy tales that question our relationship with nature and mythology."
     },
     {
       id: 5,
-      title: "What do I love when I love you, my God?",
-      year: "2006",
+      title: "Acquire merge collaborate",
+      year: "2007",
+      category: "publication",
+      tab: "acquire-merge",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      description: "An exploration of corporate language and collaborative practices in the contemporary art world."
+    },
+    {
+      id: 6,
+      title: "What do I love when I love you, my God",
+      year: "2008",
       category: "installation",
       tab: "what-do-i-love",
       image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
       description: "A spiritual exploration of love, devotion, and the divine through multimedia elements."
     },
     {
-      id: 6,
-      title: "Kegel Exercises (Aswani Mudra)",
-      year: "2007",
+      id: 7,
+      title: "Kegel exercise",
+      year: "2009",
       category: "installation",
       tab: "kegel-exercise",
       image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
       description: "An installation connecting traditional practices with contemporary body awareness and control."
     },
     {
-      id: 7,
-      title: "Kavita",
-      year: "2001",
-      category: "publication",
-      tab: "imp-in-the-garden",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      description: "A seminal collection of poetry exploring themes of identity and modernity in the Marathi context."
-    },
-    {
       id: 8,
-      title: "Search Engine",
-      year: "2004",
-      category: "publication",
-      tab: "acquire-merge",
+      title: "All that I wanna do",
+      year: "2010",
+      category: "installation",
+      tab: "all-that-i-wanna-do",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      description: "A poetic inquiry into the digital age and how technology shapes our quest for meaning and information."
+      description: "An immersive installation reflecting on personal desires and societal expectations."
     },
     {
       id: 9,
-      title: "Mutatis Mutandis",
-      year: "2010",
+      title: "I am so angry, I made this sign",
+      year: "2011",
       category: "publication",
       tab: "angry",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      description: "A collection examining change and transformation in personal and societal contexts."
-    },
-    {
-      id: 10,
-      title: "Smiles",
-      year: "2015",
-      category: "publication",
-      tab: "honey",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      description: "A reflective work on joy, resilience, and the subtle expressions of human emotion."
+      description: "A provocative publication exploring themes of protest, expression, and the politics of anger."
     }
   ];
 
