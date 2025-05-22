@@ -102,9 +102,7 @@ const Hero = () => {
                         <img src={artwork.image} alt={artwork.title} className="w-auto h-auto max-h-[70vh] mx-auto" />
                       </div>
                     </div>
-                    <div className="w-full bg-black/70 p-4 text-white">
-                      <h3 className="text-lg font-serif">{artwork.title} – {artwork.medium} – {artwork.year}</h3>
-                    </div>
+                    
                   </CardContent>
                 </Card>
               </CarouselItem>)}
