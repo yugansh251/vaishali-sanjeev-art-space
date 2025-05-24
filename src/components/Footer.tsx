@@ -3,7 +3,7 @@ const Footer = () => {
   return <footer className="bg-white border-t border-gray-200 py-12 px-6">
       <div className="portfolio-container grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h3 className="text-xl font-serif font-semibold mb-4 text-portfolio-blue">Vaishali Sanjeev</h3>
+          
           
           <div className="flex space-x-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-portfolio-blue transition-colors">
