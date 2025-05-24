@@ -86,7 +86,7 @@ const Hero = () => {
     // Clean up interval on unmount
     return () => clearInterval(autoScrollInterval);
   }, [api]);
-  return <section className="min-h-screen flex flex-col items-center justify-start pt-16 relative overflow-hidden bg-white py-[6px]">
+  return <section className="min-h-screen flex flex-col items-center justify-start pt-16 relative overflow-hidden bg-white py-[6px] px-[64px]">
       {/* Carousel */}
       <div className="w-full max-w-7xl mx-auto">
         <Carousel opts={{
