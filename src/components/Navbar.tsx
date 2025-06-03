@@ -1,10 +1,13 @@
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -16,26 +19,21 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const links = [{
-    name: 'Home',
-    href: '/'
-  }, {
-    name: 'About',
-    href: '/about'
-  }, {
-    name: 'Portfolio',
-    href: '/portfolio'
-  }, {
-    name: 'Shop',
-    href: '/shop'
-  }, {
-    name: 'Contact',
-    href: '/contact'
-  }];
-  return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-4 px-6`}>
+
+  const links = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Press', href: '/press' },
+    { name: 'Shop', href: '/shop' },
+    { name: 'Contact', href: '/contact' }
+  ];
+
+  return (
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-4 px-6`}>
       <div className="portfolio-container flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img alt="Vaishali & Sanjeev" className="h-12 md:h-14" src="/lovable-uploads/4b3c8fa8-c761-4828-85fc-07591ac1b0f8.jpg" />
+          <img alt="Vaishali + Sanjeev" className="h-12 md:h-14" src="/lovable-uploads/4b3c8fa8-c761-4828-85fc-07591ac1b0f8.jpg" />
         </Link>
 
         {/* Mobile Menu Button */}
@@ -47,20 +45,28 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          {links.map(link => <Link key={link.name} to={link.href} className="text-gray-800 hover:text-portfolio-blue transition-colors font-medium">
+          {links.map(link => (
+            <Link key={link.name} to={link.href} className="text-gray-800 hover:text-portfolio-blue transition-colors font-medium">
               {link.name}
-            </Link>)}
+            </Link>
+          ))}
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-6 animate-fade-in">
+      {isOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-6 animate-fade-in">
           <div className="flex flex-col space-y-4">
-            {links.map(link => <Link key={link.name} to={link.href} className="text-gray-800 hover:text-portfolio-blue transition-colors text-lg font-medium py-2" onClick={() => setIsOpen(false)}>
+            {links.map(link => (
+              <Link key={link.name} to={link.href} className="text-gray-800 hover:text-portfolio-blue transition-colors text-lg font-medium py-2" onClick={() => setIsOpen(false)}>
                 {link.name}
-              </Link>)}
+              </Link>
+            ))}
           </div>
-        </div>}
-    </nav>;
+        </div>
+      )}
+    </nav>
+  );
 };
+
 export default Navbar;
