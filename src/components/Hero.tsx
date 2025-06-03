@@ -1,7 +1,8 @@
+
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
+
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
 
@@ -86,29 +87,42 @@ const Hero = () => {
     // Clean up interval on unmount
     return () => clearInterval(autoScrollInterval);
   }, [api]);
-  return <section className="min-h-screen flex flex-col items-center justify-start pt-16 relative overflow-hidden bg-white py-[6px] px-[64px]">
+
+  return (
+    <section className="min-h-screen flex flex-col items-center justify-start pt-16 md:pt-20 relative overflow-hidden bg-white py-4 md:py-6 px-4 md:px-16">
       {/* Carousel */}
       <div className="w-full max-w-7xl mx-auto">
-        <Carousel opts={{
-        align: "center",
-        loop: true
-      }} setApi={setApi} className="w-full">
+        <Carousel 
+          opts={{
+            align: "center",
+            loop: true
+          }} 
+          setApi={setApi} 
+          className="w-full"
+        >
           <CarouselContent>
-            {artworkImages.map(artwork => <CarouselItem key={artwork.id} className="basis-full">
+            {artworkImages.map(artwork => (
+              <CarouselItem key={artwork.id} className="basis-full">
                 <Card className="border-none">
                   <CardContent className="flex flex-col items-center p-0">
                     <div className="w-full flex justify-center">
-                      <div className="max-w-4xl">
-                        <img src={artwork.image} alt={artwork.title} className="w-auto h-auto max-h-[70vh] mx-auto" />
+                      <div className="max-w-4xl w-full">
+                        <img 
+                          src={artwork.image} 
+                          alt={artwork.title} 
+                          className="w-full h-[50vh] md:h-[70vh] object-contain mx-auto" 
+                        />
                       </div>
                     </div>
-                    
                   </CardContent>
                 </Card>
-              </CarouselItem>)}
+              </CarouselItem>
+            ))}
           </CarouselContent>
         </Carousel>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

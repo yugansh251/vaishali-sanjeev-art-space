@@ -40,23 +40,23 @@ const About = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 px-6 bg-white">
+      <section className="pt-32 pb-16 px-4 md:px-6 bg-white">
         <div className="portfolio-container max-w-5xl">
           <SectionTitle title="About Vaishali & Sanjeev" centered />
           
-          <div className="flex flex-col md:flex-row gap-12 mb-16">
-            <div className="md:w-1/3">
+          <div className="flex flex-col lg:flex-row gap-8 md:gap-12 mb-16">
+            <div className="lg:w-1/3">
               <img src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" alt="Vaishali & Sanjeev in studio" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
             
-            <div className="md:w-2/3">
-              <p className="text-lg leading-relaxed text-gray-800 mb-6">
+            <div className="lg:w-2/3">
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
                 Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, 
                 Vaishali & Sanjeev have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling 
                 body of work that dissects the complexities of the 21st century.
               </p>
               
-              <p className="text-lg leading-relaxed text-gray-800">
+              <p className="text-base md:text-lg leading-relaxed text-gray-800">
                 Through large-scale installations, intricate marble inlays, expansive embroideries, and sculptural forms, 
                 Vaishali & Sanjeev function as visual analysts, charting the anomalies and deviations of the present.
               </p>
@@ -64,25 +64,28 @@ const About = () => {
           </div>
 
           {/* CV Section */}
-          <SectionTitle title="Curriculum Vitae" centered className="mb-12" />
+          <SectionTitle title="CV" centered className="mb-12" />
           
           {/* Selected Exhibitions */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-sans font-semibold mb-6">Selected Exhibitions</h3>
+          <div className="mb-12 overflow-x-auto">
+            <h3 className="text-xl md:text-2xl font-sans font-semibold mb-6">Selected Exhibitions</h3>
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-20">Year</TableHead>
+                  <TableHead className="w-16 md:w-20">Year</TableHead>
                   <TableHead>Exhibition</TableHead>
-                  <TableHead>Location</TableHead>
+                  <TableHead className="hidden md:table-cell">Location</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {exhibitions.map((exhibition, index) => (
                   <TableRow key={index}>
-                    <TableCell className="font-medium">{exhibition.year}</TableCell>
-                    <TableCell>{exhibition.title}</TableCell>
-                    <TableCell>{exhibition.location}</TableCell>
+                    <TableCell className="font-medium text-sm md:text-base">{exhibition.year}</TableCell>
+                    <TableCell className="text-sm md:text-base">
+                      <div>{exhibition.title}</div>
+                      <div className="md:hidden text-xs text-gray-600 mt-1">{exhibition.location}</div>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">{exhibition.location}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -91,10 +94,10 @@ const About = () => {
 
           {/* Collections */}
           <div className="mb-12">
-            <h3 className="text-2xl font-sans font-semibold mb-6">Collections</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <h3 className="text-xl md:text-2xl font-sans font-semibold mb-6">Collections</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
               {collections.map((collection, index) => (
-                <div key={index} className="text-gray-800">
+                <div key={index} className="text-gray-800 text-sm md:text-base">
                   {collection}
                 </div>
               ))}
@@ -102,22 +105,25 @@ const About = () => {
           </div>
 
           {/* Awards */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-sans font-semibold mb-6">Awards & Recognition</h3>
+          <div className="mb-16 overflow-x-auto">
+            <h3 className="text-xl md:text-2xl font-sans font-semibold mb-6">Awards & Recognition</h3>
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-20">Year</TableHead>
+                  <TableHead className="w-16 md:w-20">Year</TableHead>
                   <TableHead>Award</TableHead>
-                  <TableHead>Organization</TableHead>
+                  <TableHead className="hidden md:table-cell">Organization</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {awards.map((award, index) => (
                   <TableRow key={index}>
-                    <TableCell className="font-medium">{award.year}</TableCell>
-                    <TableCell>{award.award}</TableCell>
-                    <TableCell>{award.organization}</TableCell>
+                    <TableCell className="font-medium text-sm md:text-base">{award.year}</TableCell>
+                    <TableCell className="text-sm md:text-base">
+                      <div>{award.award}</div>
+                      <div className="md:hidden text-xs text-gray-600 mt-1">{award.organization}</div>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">{award.organization}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -127,15 +133,15 @@ const About = () => {
           {/* Video Interviews Section */}
           <SectionTitle title="Artist Interviews" subtitle="Insight into process, philosophy and artistic journey" centered className="mb-8" />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-16">
             {videos.map(video => (
               <div key={video.id} className="bg-white shadow-md rounded-lg overflow-hidden">
                 <div className="aspect-video w-full">
                   <iframe className="w-full h-full" src={video.embedUrl} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold font-sans">{video.title}</h3>
-                  <p className="text-gray-600 text-sm mt-1">{video.description}</p>
+                  <h3 className="text-base md:text-lg font-semibold font-sans">{video.title}</h3>
+                  <p className="text-gray-600 text-xs md:text-sm mt-1">{video.description}</p>
                 </div>
               </div>
             ))}
