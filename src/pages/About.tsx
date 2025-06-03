@@ -50,15 +50,38 @@ const About = () => {
             </div>
             
             <div className="lg:w-2/3">
+              <h3 className="text-xl md:text-2xl font-bold mb-6">The Uncommon Alliance: Narkar and Khandekar's Shared Canvas</h3>
+              
               <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
-                Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, 
-                Vaishali & Sanjeev have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling 
-                body of work that dissects the complexities of the 21st century.
+                Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, Sanjeev Khandekar and Vaishali Narkar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work; that dissects the complexities of the 21st century.
+              </p>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+                Sanjeev Khandekar's multifaceted persona extends beyond the visual arts, -a polymath with credentials in literature and activism, brings a critical lens to their visual output. (He is a respected poet, writer, social activist, and passionate gardener) Narkar, a formally trained artist from Sir J.J. College of Art, provides technical and aesthetic rigor.
+              </p>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+                Their recent production design, jointly produced, for Netflix's "Cobalt Blue" demonstrated their ability to translate painterly vision into cinematic form, garnering critical acclaim.
+              </p>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+                Known for their fearless exploration of diverse mediums, Narkar and Khandekar consistently challenge conventional artistic boundaries. Their collaborative work is notable for its exploration of diverse mediums and its thematic breadth. From environmental degradation and genetic manipulation to the ascendancy of finance and the virtualization of reality, their output reflects a sustained engagement with contemporary anxieties. Unconventional motifs – stock tickers, microscopic photographs modified into a new imagery, urban detritus – and even bodily fluids,- are deployed to expose the often-obscured realities of the biosocial sphere. These elements serve as powerful visual metaphors, highlighting the often-overlooked realities of our contemporary landscape.
+              </p>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+                Through large-scale installations, intricate marble inlays, expensive embroideries, and sculptural forms including ceramic objects and paintings interfaced with another screen in between, Narkar and Khandekar function as visual analysts, charting the anomalies and deviations of the present. Their work, documented in this compilation, serves as a testament to the enduring power of collaborative inquiry in an era of rapid transformation. And this PDF offers a glimpse into the breadth and depth of their collaborative work, spanning two decades of artistic exploration.
+              </p>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+                Vaishali & Sanjeev ; in their output, frequently confront the viewer with uncomfortable realities, those typically obscured or sanitized. This penchant for unvarnished depiction courts peril in a market favoring the facile and ostensibly uplifting which sometimes might prove even risky.
+              </p>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+                The very substance of their work—its motifs and subject matter—often diverges sharply from prevailing aesthetic norms. Bodily effluvia, financial data streams, microbial cultures, or electronically magnified biological imagery of internal organs, malignancy, and fragmentation: these are the constituent elements of their oeuvre. Such materials, undeniably, can evoke visceral revulsion. Yet, this very reaction, the disquiet they inspire, is often a hallmark of significant artistic endeavor, a deliberate provocation that challenges complacent perception.
               </p>
               
               <p className="text-base md:text-lg leading-relaxed text-gray-800">
-                Through large-scale installations, intricate marble inlays, expansive embroideries, and sculptural forms, 
-                Vaishali & Sanjeev function as visual analysts, charting the anomalies and deviations of the present.
+                More importantly their works are characterized by meticulous execution, complex, multi-layered visual narratives, a considered diversity of media, and an unambiguous articulation of their underlying themes. These attributes, combined, ensure a sustained impact, leaving a lingering impression on the observer.
               </p>
             </div>
           </div>
