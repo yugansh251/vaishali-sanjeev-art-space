@@ -15,7 +15,7 @@ const Biography = () => {
             />
             
             <div className="mb-6">
-              <h3 className="text-xl font-serif font-bold mb-4">The Uncommon Alliance</h3>
+              <h3 className="text-xl font-sans font-bold mb-4">The Uncommon Alliance</h3>
               <p className="text-gray-700 mb-4">
                 Unconventional motifs – stock tickers, microscopic photographs modified into a new imagery, 
                 urban detritus – and even bodily fluids – are deployed to expose the often-obscured realities of the biosocial sphere. 

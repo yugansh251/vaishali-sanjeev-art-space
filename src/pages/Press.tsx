@@ -12,7 +12,7 @@ const Press = () => {
       publication: "Artforum International",
       author: "Sarah Mitchell",
       date: "March 15, 2024",
-      description: "An in-depth look at how Vaishali + Sanjeev are pushing the boundaries of artistic collaboration.",
+      description: "An in-depth look at how Vaishali & Sanjeev are pushing the boundaries of artistic collaboration.",
       link: "#"
     },
     {
@@ -69,7 +69,7 @@ const Press = () => {
           
           <div className="mb-8">
             <p className="text-lg leading-relaxed text-gray-800 text-center max-w-3xl mx-auto">
-              Recent coverage and critical writing about the work of Vaishali + Sanjeev from leading art publications and media outlets.
+              Recent coverage and critical writing about the work of Vaishali & Sanjeev from leading art publications and media outlets.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ const Press = () => {
               .sort(([a], [b]) => parseInt(b) - parseInt(a))
               .map(([year, articles]) => (
                 <div key={year}>
-                  <h2 className="text-3xl font-serif font-bold mb-6 text-gray-900">{year}</h2>
+                  <h2 className="text-3xl font-sans font-bold mb-6 text-gray-900">{year}</h2>
                   <Separator className="mb-6" />
                   
                   <div className="space-y-6">
@@ -86,7 +86,7 @@ const Press = () => {
                       <Card key={index} className="border-l-4 border-l-portfolio-blue">
                         <CardHeader>
                           <div className="flex justify-between items-start mb-2">
-                            <CardTitle className="text-xl font-serif text-gray-900 hover:text-portfolio-blue transition-colors">
+                            <CardTitle className="text-xl font-sans text-gray-900 hover:text-portfolio-blue transition-colors">
                               <a href={article.link} className="cursor-pointer">
                                 {article.title}
                               </a>

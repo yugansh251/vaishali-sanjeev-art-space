@@ -42,23 +42,23 @@ const About = () => {
     <Layout>
       <section className="pt-32 pb-16 px-6 bg-white">
         <div className="portfolio-container max-w-5xl">
-          <SectionTitle title="About Vaishali + Sanjeev" centered />
+          <SectionTitle title="About Vaishali & Sanjeev" centered />
           
           <div className="flex flex-col md:flex-row gap-12 mb-16">
             <div className="md:w-1/3">
-              <img src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" alt="Vaishali + Sanjeev in studio" className="w-full h-auto rounded-lg shadow-lg" />
+              <img src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" alt="Vaishali & Sanjeev in studio" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
             
             <div className="md:w-2/3">
               <p className="text-lg leading-relaxed text-gray-800 mb-6">
                 Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, 
-                Vaishali + Sanjeev have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling 
+                Vaishali & Sanjeev have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling 
                 body of work that dissects the complexities of the 21st century.
               </p>
               
               <p className="text-lg leading-relaxed text-gray-800">
                 Through large-scale installations, intricate marble inlays, expansive embroideries, and sculptural forms, 
-                Vaishali + Sanjeev function as visual analysts, charting the anomalies and deviations of the present.
+                Vaishali & Sanjeev function as visual analysts, charting the anomalies and deviations of the present.
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const About = () => {
           
           {/* Selected Exhibitions */}
           <div className="mb-12">
-            <h3 className="text-2xl font-serif font-semibold mb-6">Selected Exhibitions</h3>
+            <h3 className="text-2xl font-sans font-semibold mb-6">Selected Exhibitions</h3>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -91,7 +91,7 @@ const About = () => {
 
           {/* Collections */}
           <div className="mb-12">
-            <h3 className="text-2xl font-serif font-semibold mb-6">Collections</h3>
+            <h3 className="text-2xl font-sans font-semibold mb-6">Collections</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {collections.map((collection, index) => (
                 <div key={index} className="text-gray-800">
@@ -103,7 +103,7 @@ const About = () => {
 
           {/* Awards */}
           <div className="mb-16">
-            <h3 className="text-2xl font-serif font-semibold mb-6">Awards + Recognition</h3>
+            <h3 className="text-2xl font-sans font-semibold mb-6">Awards & Recognition</h3>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -134,7 +134,7 @@ const About = () => {
                   <iframe className="w-full h-full" src={video.embedUrl} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold font-serif">{video.title}</h3>
+                  <h3 className="text-lg font-semibold font-sans">{video.title}</h3>
                   <p className="text-gray-600 text-sm mt-1">{video.description}</p>
                 </div>
               </div>
