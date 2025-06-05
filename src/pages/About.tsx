@@ -1,57 +1,24 @@
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+
 const About = () => {
   const videos = [{
     id: 1,
     title: "Artist Statement: Origins and Inspirations",
     description: "Vaishali & Sanjeev discuss their collaborative journey and sources of inspiration.",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with actual video embed URL
+    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   }, {
     id: 2,
     title: "Process and Philosophy",
     description: "An inside look at the studio practices and philosophical underpinnings of their work.",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with actual video embed URL
+    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   }];
-  const exhibitions = [{
-    year: "2024",
-    title: "Contemporary Visions",
-    location: "Museum of Modern Art, New York"
-  }, {
-    year: "2023",
-    title: "Collaborative Futures",
-    location: "Tate Modern, London"
-  }, {
-    year: "2022",
-    title: "Cultural Intersections",
-    location: "Centre Pompidou, Paris"
-  }, {
-    year: "2021",
-    title: "Artistic Dialogues",
-    location: "National Gallery, Delhi"
-  }, {
-    year: "2020",
-    title: "Beyond Boundaries",
-    location: "Guggenheim Museum, New York"
-  }];
-  const collections = ["Museum of Modern Art, New York", "Tate Modern, London", "Centre Pompidou, Paris", "National Gallery of Modern Art, Delhi", "Guggenheim Museum, New York"];
-  const awards = [{
-    year: "2023",
-    award: "International Art Prize",
-    organization: "Global Arts Foundation"
-  }, {
-    year: "2022",
-    award: "Excellence in Collaboration",
-    organization: "Contemporary Art Institute"
-  }, {
-    year: "2021",
-    award: "Cultural Heritage Award",
-    organization: "UNESCO"
-  }];
-  return <Layout>
+
+  return (
+    <Layout>
       <section className="pt-32 pb-16 px-4 md:px-6 bg-white">
         <div className="portfolio-container max-w-5xl">
-          <SectionTitle title="About Vaishali & Sanjeev" centered />
+          <SectionTitle title="Vaishali & Sanjeev" centered />
           
           <div className="flex flex-col lg:flex-row gap-8 md:gap-12 mb-16">
             <div className="lg:w-1/3">
@@ -92,69 +59,192 @@ const About = () => {
           {/* CV Section */}
           <SectionTitle title="CV" centered className="mb-12" />
           
-          {/* Selected Exhibitions */}
-          <div className="mb-12 overflow-x-auto">
-            <h3 className="text-xl md:text-2xl font-sans font-semibold mb-6">Selected Exhibitions</h3>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="w-16 md:w-20">Year</TableHead>
-                  <TableHead>Exhibition</TableHead>
-                  <TableHead className="hidden md:table-cell">Location</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {exhibitions.map((exhibition, index) => <TableRow key={index}>
-                    <TableCell className="font-medium text-sm md:text-base">{exhibition.year}</TableCell>
-                    <TableCell className="text-sm md:text-base">
-                      <div>{exhibition.title}</div>
-                      <div className="md:hidden text-xs text-gray-600 mt-1">{exhibition.location}</div>
-                    </TableCell>
-                    <TableCell className="hidden md:table-cell">{exhibition.location}</TableCell>
-                  </TableRow>)}
-              </TableBody>
-            </Table>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16">
+            {/* Sanjeev CV */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Sanjeev</h3>
+              
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Exhibitions:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2013: Triumph Of Market, Selma Feriani Gallery, London.</p>
+                  <p>2008: "Everything You Wanted To Know About Bad Breath, However Afraid To Ask Alfred Hitchcock." Bombay Art Gallery, Mumbai.</p>
+                  <p>2008: 'Rx', Sudarshan Art Gallery, Pune</p>
+                  <p>2007: 'Acquire, Merge or Collaborate', ABN Gallery, Mumbai.</p>
+                  <p>2007: 'Kegel Exercises', Pundole Art Gallery, Mumbai.</p>
+                  <p>2006: 'What do I love when I love you, My God?' Kitab Mahal, Mumbai.</p>
+                  <p>2006: 'What do I love, when I love you my God?' (Forbidden Entices): at Kitab Mahal, Mumbai.</p>
+                  <p>2005: La Peau de Chagrin, Pundole Art Gallery, Mumbai.</p>
+                  <p>2005: 'All That I Wanna Do', Museum Art Gallery, Mumbai.</p>
+                  <p>2003: 'Rumors of the truth', Jahangir Art Gallery, Mumbai.</p>
+                  <p>2003: Apparao Art Gallery, Chennai Triveni, Delhi.</p>
+                </div>
+              </div>
 
-          {/* Collections */}
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-sans font-semibold mb-6">Collections</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-              {collections.map((collection, index) => <div key={index} className="text-gray-800 text-sm md:text-base">
-                  {collection}
-                </div>)}
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Collaborations with Vaishali Narkar:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2006: 'Tits, Clits, n Elephant Dick', Jahangir Art Gallery, Mumbai.</p>
+                  <p>2007: A group show 'Post Visual' curated by Gitanjali Dang. Priyashri Art Gallery, Mumbai.</p>
+                  <p>2008: A group show 'Third Life' curated by Gitanjali Dang</p>
+                  <p>2010: A group show 'By George..' curated by Gitanjali Dang Alliance Francaise de Delhi.</p>
+                  <p>2010: 'Bad Breath', Matthieu Foss Gallery, Mumbai.</p>
+                  <p>2010: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Pundole Art Gallery, Mumbai,</p>
+                  <p>2011: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Su-Darshan Art Gallery, Pune.</p>
+                  <p>2012: "I'm so angery….", A public space installation, on Marina beach, Chennai.</p>
+                  <p>2012: "De-Stressed Sale" An installation at UAF, Delhi</p>
+                  <p>2015: Triumph Of Market: Moneyscapes: Installation at Museum Of Goa. Goa.</p>
+                  <p>2018: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, Mumbai.</p>
+                  <p>2018: "Under The Stars" series of paintings, embroidery and sculptures at Slanic Moldova, Romania for 'In Context' residency.</p>
+                  <p>2019: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, at India Art Fair, Delhi.</p>
+                  <p>2020: "Everything You Ever Wanted To Know About Your Bad Breath, But Afraid To Ask Alfred Hitchcock" Part of a large installation was shown by Sakshi Gallery, at India Art Fair, Delhi.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Projects:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
+                  <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
+                  <p>2012: "'I AM SO ANGRY, THAT I MADE THIS SIGN'. A 1.5 km long and 150 ft tall large installation, as a public art at Marina Beach, for Art Chennai. Curated by Kaumudi Patil.</p>
+                  <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
+                  <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
+                  <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Group Shows:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2024: At Saran Apparao Gallery, Chennai & Delhi</p>
+                  <p>2023: RHIZOME: Tracing Ecocultural Identities, CSMVS Museum, Mumbai.</p>
+                  <p>2020: 'Speaking Gandhiana: visual journeys of Gandhi@150 & beyond' at Birla Academy Of Art & Culture, Kolkata.</p>
+                  <p>2020: A group show titled as 'Entwined' at Shrishti Art Gallery, Hyderabad.</p>
+                  <p>2018: A group art show at National Museum, Bucharest, Romania.</p>
+                  <p>2015: morphology of archive connected histories of goa, curated by Sabitha T P & Lina Vincent.</p>
+                  <p>2011: "caution: children at work", curated by gitanjali dang.</p>
+                  <p>2011: (M)other India, Galerie dujour, Agnex b, Paris, France</p>
+                  <p>2011: Annual Show, Birla Institute of Art & Culture, Kolkata.</p>
+                  <p>2010: Summer Group show, Matthieu Foss Gallery, Mumbai</p>
+                  <p>2010: Print Making, Priyashree art gallery, Jahangir Art Gallery, Mumbai.</p>
+                  <p>2009: 'Spectrum' curated by Saryu Doshi, Abu Dhabi Art Fair, Abu Dhabi, UAE.</p>
+                  <p>2009: 'Tihar Jail Project' curated by Anubhav Nath, New Delhi.</p>
+                  <p>2008: 'Keep Drawing' curated by Chintan Upadhyaya. Gallery Espass, New Delhi.</p>
+                  <p>2008: Miniature Format show, SansTache Gallery, Mumbai</p>
+                  <p>2007: Miniature Format show, SansTache Gallery, Mumbai.</p>
+                  <p>2007: Contemporary Indian Art, Zurab Tsereteli Art Gallery, Moscow</p>
+                  <p>2007: 'Rebel Graffiti', Open Eyed Dreams Gallery, Kochin,</p>
+                  <p>2007: 'Keep Drawing' curated by Chintan Upadhyaya. Pundole Art Gallery, Mumbai.</p>
+                  <p>2007: "Mumbai', Gallery Art & Soul, Mumbai.</p>
+                  <p>2004: 'Flex' the fluid less sex, Apparao Gallery, New Delhi.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Books:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>1. Sankalp: a history of social movements of change in Maharashtra, 1982. Marathi. Published by Granthali.</p>
+                  <p>2. Ashant Parv: A novel on industrial landscape of Mumbai. 1992, Marathi. Published by Granthali</p>
+                  <p>3. Kavita: A collection of poetry, 1993, Marathi, Published by Granthali.</p>
+                  <p>4. Fucking Mad: 2003, Published by Abhidanantar</p>
+                  <p>5. Search Engine: A collection of poetry, 2004, Marathi, Published by Granthali.</p>
+                  <p>6. Smiles: A collection of poetry, 2007, Marathi, Published by Abhidanantar.</p>
+                  <p>7. Smiles: A collection of poetry, 2007, English, Published by Abhidanantar.</p>
+                  <p>8. Mutatis Mutandis: A collection of poetry, 2007, Marathi, Published by Abhidanantar.</p>
+                  <p>9. Mutatis Mutandis: A collection of poetry, 2007, English, Published by Abhidanantar.</p>
+                  <p>10. '1, 2, 3,...Happy Galaxy': Graphic Book in collaboration with Vaishali Narkar, 2007, English, Limited Edition, Published by Abhidanantar. 2008.</p>
+                  <p>11. Bimb, a poetry collection by paperwall. 2018</p>
+                  <p>12. Smiles: Marathi & English a larger edition of collection of poetry, 2018 by paperwall.</p>
+                  <p>13. Rutusanhar, a collection of essays, by Lokvangmay Griha, 2019.</p>
+                  <p>14. Sanshayaspad Tippane, collection of poetry, 2009, By Granthali.</p>
+                  <p>15. Popatpanchi Chaturki Jaan, Suno Parvati Shiri Bhagwan, poetry, 2025, by Varnmudra</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Catalogs:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>1. Rumour Of The Truth 2003</p>
+                  <p>2. All That I Wanna Do 2005</p>
+                  <p>3. Who is afraid of a shrinking skin 2005, Pundole Art Gallery, Mumbai.</p>
+                  <p>4. Tits, Clits, & Elephant Dick 2006, ABN Gallery, Mumbai.</p>
+                  <p>5. Kegel Exercises: 2007, Pundole Art Gallery, Mumbai.</p>
+                  <p>6. Acquire, Merge, or Collaborate 2007, ABN Gallery, Mumbai.</p>
+                  <p>7. 'Rx', 2008, Sudarshan Art Gallery, Pune.</p>
+                  <p>8. "Everything You Wanted To Know About Bad Breath, However Afraid To Ask Alfred Hitchcock" 2008, Bombay Art Gallery, Mumbai.</p>
+                  <p>9. 'Bad Breath', 2010, Matthieu Foss Gallery, Mumbai.</p>
+                  <p>10. 'Imp In The Garden & Other Fairy Tales' embroidery on silk, 2011, Pundole Art Gallery, Mumbai.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Columns, Articles:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>Sunday Observer & Inside Outside Magazine: Tropical Gardens, Environment, Landscapes.</p>
+                  <p>Economic Times: Art & Politics & Environment</p>
+                  <p>Loksatta Daily: Art & Politics & Environment</p>
+                  <p>Several Marathi journals: Arts & Politics & Environment & poetry.</p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Awards */}
-          <div className="mb-16 overflow-x-auto">
-            <h3 className="text-xl md:text-2xl font-sans font-semibold mb-6">Awards & Recognition</h3>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="w-16 md:w-20">Year</TableHead>
-                  <TableHead>Award</TableHead>
-                  <TableHead className="hidden md:table-cell">Organization</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {awards.map((award, index) => <TableRow key={index}>
-                    <TableCell className="font-medium text-sm md:text-base">{award.year}</TableCell>
-                    <TableCell className="text-sm md:text-base">
-                      <div>{award.award}</div>
-                      <div className="md:hidden text-xs text-gray-600 mt-1">{award.organization}</div>
-                    </TableCell>
-                    <TableCell className="hidden md:table-cell">{award.organization}</TableCell>
-                  </TableRow>)}
-              </TableBody>
-            </Table>
+            {/* Vaishali CV */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Vaishali</h3>
+              
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Shows:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2002: '…Towards Window Of freedom. Jahangir Art Gallery, Mumbai.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Collaborations with Sanjeev Khandekar:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2006: 'Tits, Clits, n Elephant Dick' Jahangir Art Gallery, Mumbai.</p>
+                  <p>2007: A group show 'Post Visual' curated by Gitanjali Dang. Priyashri Art Gallery, Mumbai.</p>
+                  <p>2008: A group show 'Third Life' curated by Gitanjali Dang</p>
+                  <p>2010: A group show 'By George..' curated by Gitanjali Dang Alliance Francaise de Delhi.</p>
+                  <p>2010: 'Bad Breath', Matthieu Foss Gallery, Mumbai.</p>
+                  <p>2010: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Pundole Art Gallery, Mumbai,</p>
+                  <p>2011: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Su-Darshan Art Gallery, Pune.</p>
+                  <p>2012: "I'm so angery….", A public space installation, on Marina beach, Chennai.</p>
+                  <p>2012: "De-Stressed Sale" An installation at UAF, Delhi</p>
+                  <p>2015: Triumph Of Market: Moneyscapes: Installation at Museum Of Goa. Goa.</p>
+                  <p>2018: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, Mumbai.</p>
+                  <p>2018: "Under The Stars" series of paintings, embroidery and sculptures at Slanic Moldova, Romania for 'In Context' residency.</p>
+                  <p>2019: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, at India Art Fair, Delhi.</p>
+                  <p>2020: "Everything You Ever Wanted To Know About Your Bad Breath, But Afraid To Ask Alfred Hitchcock" Part of a large installation was shown by Sakshi Gallery, at India Art Fair, Delhi.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Projects:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
+                  <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
+                  <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
+                  <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
+                  <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Group Shows:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2024: 'Entwined' At Saran Apparao Gallery, Chennai & Delhi</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Video Interviews Section */}
           <SectionTitle title="Artist Interviews" subtitle="Insight into process, philosophy and artistic journey" centered className="mb-8" />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-16">
-            {videos.map(video => <div key={video.id} className="bg-white shadow-md rounded-lg overflow-hidden">
+            {videos.map(video => (
+              <div key={video.id} className="bg-white shadow-md rounded-lg overflow-hidden">
                 <div className="aspect-video w-full">
                   <iframe className="w-full h-full" src={video.embedUrl} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
@@ -162,10 +252,13 @@ const About = () => {
                   <h3 className="text-base md:text-lg font-semibold font-sans">{video.title}</h3>
                   <p className="text-gray-600 text-xs md:text-sm mt-1">{video.description}</p>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default About;
