@@ -57,7 +57,57 @@ const About = () => {
           <SectionTitle title="CV" centered className="mb-12" />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16">
-            {/* Sanjeev CV */}
+            {/* Vaishali CV - now on left */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Vaishali</h3>
+              
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Shows:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2002: '…Towards Window Of freedom. Jahangir Art Gallery, Mumbai.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Collaborations with Sanjeev Khandekar:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2006: 'Tits, Clits, n Elephant Dick' Jahangir Art Gallery, Mumbai.</p>
+                  <p>2007: A group show 'Post Visual' curated by Gitanjali Dang. Priyashri Art Gallery, Mumbai.</p>
+                  <p>2008: A group show 'Third Life' curated by Gitanjali Dang</p>
+                  <p>2010: A group show 'By George..' curated by Gitanjali Dang Alliance Francaise de Delhi.</p>
+                  <p>2010: 'Bad Breath', Matthieu Foss Gallery, Mumbai.</p>
+                  <p>2010: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Pundole Art Gallery, Mumbai,</p>
+                  <p>2011: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Su-Darshan Art Gallery, Pune.</p>
+                  <p>2012: "I'm so angery….", A public space installation, on Marina beach, Chennai.</p>
+                  <p>2012: "De-Stressed Sale" An installation at UAF, Delhi</p>
+                  <p>2015: Triumph Of Market: Moneyscapes: Installation at Museum Of Goa. Goa.</p>
+                  <p>2018: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, Mumbai.</p>
+                  <p>2018: "Under The Stars" series of paintings, embroidery and sculptures at Slanic Moldova, Romania for 'In Context' residency.</p>
+                  <p>2019: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, at India Art Fair, Delhi.</p>
+                  <p>2020: "Everything You Ever Wanted To Know About Your Bad Breath, But Afraid To Ask Alfred Hitchcock" Part of a large installation was shown by Sakshi Gallery, at India Art Fair, Delhi.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Projects:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
+                  <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
+                  <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
+                  <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
+                  <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Group Shows:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>2024: 'Entwined' At Saran Apparao Gallery, Chennai & Delhi</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Sanjeev CV - now on right */}
             <div>
               <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Sanjeev</h3>
               
@@ -103,7 +153,6 @@ const About = () => {
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
                   <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
                   <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
-                  <p>2012: "'I AM SO ANGRY, THAT I MADE THIS SIGN'. A 1.5 km long and 150 ft tall large installation, as a public art at Marina Beach, for Art Chennai. Curated by Kaumudi Patil.</p>
                   <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
                   <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
                   <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
@@ -181,56 +230,6 @@ const About = () => {
                   <p>Economic Times: Art & Politics & Environment</p>
                   <p>Loksatta Daily: Art & Politics & Environment</p>
                   <p>Several Marathi journals: Arts & Politics & Environment & poetry.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Vaishali CV */}
-            <div>
-              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Vaishali</h3>
-              
-              <div className="mb-8">
-                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Shows:</h4>
-                <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2002: '…Towards Window Of freedom. Jahangir Art Gallery, Mumbai.</p>
-                </div>
-              </div>
-
-              <div className="mb-8">
-                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Collaborations with Sanjeev Khandekar:</h4>
-                <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2006: 'Tits, Clits, n Elephant Dick' Jahangir Art Gallery, Mumbai.</p>
-                  <p>2007: A group show 'Post Visual' curated by Gitanjali Dang. Priyashri Art Gallery, Mumbai.</p>
-                  <p>2008: A group show 'Third Life' curated by Gitanjali Dang</p>
-                  <p>2010: A group show 'By George..' curated by Gitanjali Dang Alliance Francaise de Delhi.</p>
-                  <p>2010: 'Bad Breath', Matthieu Foss Gallery, Mumbai.</p>
-                  <p>2010: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Pundole Art Gallery, Mumbai,</p>
-                  <p>2011: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Su-Darshan Art Gallery, Pune.</p>
-                  <p>2012: "I'm so angery….", A public space installation, on Marina beach, Chennai.</p>
-                  <p>2012: "De-Stressed Sale" An installation at UAF, Delhi</p>
-                  <p>2015: Triumph Of Market: Moneyscapes: Installation at Museum Of Goa. Goa.</p>
-                  <p>2018: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, Mumbai.</p>
-                  <p>2018: "Under The Stars" series of paintings, embroidery and sculptures at Slanic Moldova, Romania for 'In Context' residency.</p>
-                  <p>2019: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, at India Art Fair, Delhi.</p>
-                  <p>2020: "Everything You Ever Wanted To Know About Your Bad Breath, But Afraid To Ask Alfred Hitchcock" Part of a large installation was shown by Sakshi Gallery, at India Art Fair, Delhi.</p>
-                </div>
-              </div>
-
-              <div className="mb-8">
-                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Projects:</h4>
-                <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
-                  <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
-                  <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
-                  <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
-                  <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
-                </div>
-              </div>
-
-              <div className="mb-8">
-                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Group Shows:</h4>
-                <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2024: 'Entwined' At Saran Apparao Gallery, Chennai & Delhi</p>
                 </div>
               </div>
             </div>

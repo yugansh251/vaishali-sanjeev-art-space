@@ -65,7 +65,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <h3 className="text-2xl font-sans font-semibold mt-12 mb-6">Follow Me</h3>
+            <h3 className="text-2xl font-sans font-semibold mt-12 mb-6">Follow Vaishali & Sanjeev</h3>
             
             <div className="flex space-x-6">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
