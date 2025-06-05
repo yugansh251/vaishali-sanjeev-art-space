@@ -108,16 +108,16 @@ const Portfolio = () => {
   return <Layout>
       <section className="pt-32 pb-16 px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
-          <SectionTitle title="Portfolio" subtitle="Explore my work across installations and publications." centered />
+          <SectionTitle title="Portfolio" centered />
 
           <div className="mb-10">
             <div className="flex justify-between items-center mb-8">
               <div className="inline-flex rounded-md shadow-sm" role="group">
                 <Button variant={selectedCategory === 'all' ? 'default' : 'outline'} onClick={() => setSelectedCategory('all')} className={selectedCategory === 'all' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
-                  All Works
+                  Art Work
                 </Button>
                 <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
-                  Installations
+                  Publications
                 </Button>
                 
               </div>
