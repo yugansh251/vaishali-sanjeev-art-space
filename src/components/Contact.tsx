@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import SectionTitle from './SectionTitle';
 import { Button } from '@/components/ui/button';
 import { Instagram, Twitter, Linkedin, Mail, Phone } from 'lucide-react';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -40,13 +40,12 @@ const Contact = () => {
       }, 5000);
     }, 1500);
   };
-  return <section className="section-padding bg-white" id="contact">
+  return (
+    <section className="section-padding bg-white" id="contact">
       <div className="portfolio-container">
-        <SectionTitle title="Get in Touch" subtitle="Feel free to reach out for collaborations, inquiries, or just to say hello." centered />
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-serif font-semibold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-sans font-semibold mb-6">Contact Information</h3>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
@@ -66,7 +65,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <h3 className="text-2xl font-serif font-semibold mt-12 mb-6">Follow Me</h3>
+            <h3 className="text-2xl font-sans font-semibold mt-12 mb-6">Follow Me</h3>
             
             <div className="flex space-x-6">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
@@ -117,6 +116,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;
