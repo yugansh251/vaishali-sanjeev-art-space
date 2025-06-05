@@ -1,6 +1,5 @@
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
-
 const About = () => {
   const videos = [{
     id: 1,
@@ -13,9 +12,7 @@ const About = () => {
     description: "An inside look at the studio practices and philosophical underpinnings of their work.",
     embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   }];
-
-  return (
-    <Layout>
+  return <Layout>
       <section className="pt-32 pb-16 px-4 md:px-6 bg-white">
         <div className="portfolio-container max-w-5xl">
           <SectionTitle title="Vaishali & Sanjeev" centered />
@@ -242,23 +239,9 @@ const About = () => {
           {/* Video Interviews Section */}
           <SectionTitle title="Artist Interviews" subtitle="Insight into process, philosophy and artistic journey" centered className="mb-8" />
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-16">
-            {videos.map(video => (
-              <div key={video.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-                <div className="aspect-video w-full">
-                  <iframe className="w-full h-full" src={video.embedUrl} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
-                <div className="p-4">
-                  <h3 className="text-base md:text-lg font-semibold font-sans">{video.title}</h3>
-                  <p className="text-gray-600 text-xs md:text-sm mt-1">{video.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
