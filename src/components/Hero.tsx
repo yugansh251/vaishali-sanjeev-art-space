@@ -1,3 +1,4 @@
+
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
@@ -99,11 +100,11 @@ const Hero = () => {
                 <Card className="border-none">
                   <CardContent className="flex flex-col items-center p-0">
                     <div className="w-full flex justify-center">
-                      <div className="max-w-4xl w-full overflow-hidden">
+                      <div className="max-w-4xl w-full overflow-hidden bg-gray-50">
                         <img 
                           src={artwork.image} 
                           alt={artwork.title} 
-                          className="w-full h-[50vh] md:h-[70vh] object-cover object-center mx-auto" 
+                          className="w-full h-[50vh] md:h-[70vh] object-contain object-center mx-auto" 
                         />
                       </div>
                     </div>
