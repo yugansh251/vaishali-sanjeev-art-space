@@ -5,7 +5,7 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { LayoutGrid, Image, Download } from 'lucide-react';
+import { LayoutGrid, Image, Download, X } from 'lucide-react';
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -22,6 +22,7 @@ const Portfolio = () => {
     image: string;
     description: string;
     pdfLink: string;
+    galleryImages?: string[];
   }
 
   const works: Work[] = [
@@ -33,7 +34,18 @@ const Portfolio = () => {
       tab: "honey",
       image: "/lovable-uploads/d5f03b39-25c4-4642-8476-9a6371431261.png",
       description: "An interactive installation exploring the nature of truth and perception in contemporary society.",
-      pdfLink: "https://drive.google.com/file/d/example1"
+      pdfLink: "https://drive.google.com/file/d/example1",
+      galleryImages: [
+        "/lovable-uploads/68697f75-08be-4508-bb08-8c293644c582.png",
+        "/lovable-uploads/dbfae489-0738-4dc8-87b4-1c0666bedd23.png",
+        "/lovable-uploads/7851707d-7430-4786-b440-682533e18446.png",
+        "/lovable-uploads/1abce420-e34e-4ba1-ac05-714f5f5c8656.png",
+        "/lovable-uploads/14006748-ead5-4e14-9c8f-6b283eeca1c2.png",
+        "/lovable-uploads/c1a93e0c-2551-485b-b5f9-a8d30835b23e.png",
+        "/lovable-uploads/b8843983-09b9-47be-9985-c0ec3adf24c0.png",
+        "/lovable-uploads/235926d9-632a-4b48-b293-512d9a4270c0.png",
+        "/lovable-uploads/629bc411-445a-451b-9e76-46da081736d4.png"
+      ]
     }, {
       id: 2,
       title: "Ragamala song of Anthropocene",
@@ -292,38 +304,62 @@ const Portfolio = () => {
 
           {/* Work Details Dialog */}
           <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
-            <DialogContent className="max-w-3xl p-0 overflow-hidden">
+            <DialogContent className="max-w-6xl p-0 overflow-hidden">
               {selectedWork && (
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                  <div className="h-full">
-                    <img 
-                      src={selectedWork.image} 
-                      alt={selectedWork.title} 
-                      className="w-full h-full object-cover" 
-                    />
+                <div className="max-h-[90vh] overflow-auto">
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="h-full">
+                      <img 
+                        src={selectedWork.image} 
+                        alt={selectedWork.title} 
+                        className="w-full h-full object-cover" 
+                      />
+                    </div>
+                    <div className="p-6 md:p-8">
+                      <span className="text-sm text-portfolio-blue font-medium capitalize">
+                        {selectedWork.category} • {selectedWork.year}
+                      </span>
+                      <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
+                        {selectedWork.title}
+                      </h3>
+                      <p className="text-gray-700 mb-6">
+                        {selectedWork.description}
+                      </p>
+                      <a 
+                        href={selectedWork.pdfLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mb-6"
+                      >
+                        <Button variant="outline" size="sm" className="gap-2">
+                          <Download size={16} />
+                          Download PDF
+                        </Button>
+                      </a>
+                    </div>
                   </div>
-                  <div className="p-6 md:p-8">
-                    <span className="text-sm text-portfolio-blue font-medium capitalize">
-                      {selectedWork.category} • {selectedWork.year}
-                    </span>
-                    <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
-                      {selectedWork.title}
-                    </h3>
-                    <p className="text-gray-700 mb-6">
-                      {selectedWork.description}
-                    </p>
-                    <a 
-                      href={selectedWork.pdfLink} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue"
-                    >
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <Download size={16} />
-                        Download PDF
-                      </Button>
-                    </a>
-                  </div>
+                  
+                  {/* Gallery Images Section */}
+                  {selectedWork.galleryImages && selectedWork.galleryImages.length > 0 && (
+                    <div className="border-t border-gray-200 p-6">
+                      <h4 className="text-lg font-semibold mb-4">Gallery</h4>
+                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {selectedWork.galleryImages.map((image, index) => (
+                          <div 
+                            key={index}
+                            className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity"
+                            onClick={() => setSelectedGalleryImage(image)}
+                          >
+                            <img 
+                              src={image} 
+                              alt={`${selectedWork.title} gallery ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </DialogContent>
