@@ -114,7 +114,7 @@ const Portfolio = () => {
             <div className="flex justify-between items-center mb-8">
               <div className="inline-flex rounded-md shadow-sm" role="group">
                 <Button variant={selectedCategory === 'all' ? 'default' : 'outline'} onClick={() => setSelectedCategory('all')} className={selectedCategory === 'all' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
-                  Art Work
+                  Art Works
                 </Button>
                 <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
                   Publications

@@ -57,9 +57,9 @@ const About = () => {
           <SectionTitle title="CV" centered className="mb-12" />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16">
-            {/* Vaishali CV - now on left */}
+            {/* Vaishali CV - on left */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Vaishali</h3>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Vaishali Narkar</h3>
               
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Shows:</h4>
@@ -107,9 +107,9 @@ const About = () => {
               </div>
             </div>
 
-            {/* Sanjeev CV - now on right */}
+            {/* Sanjeev CV - on right */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Sanjeev</h3>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Sanjeev Khandekar</h3>
               
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Exhibitions:</h4>
