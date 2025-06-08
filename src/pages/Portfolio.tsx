@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -118,7 +117,14 @@ const Portfolio = () => {
       tab: "what-do-i-love",
       image: "/lovable-uploads/c2c372a6-45a1-4e66-ade2-71fa4e2ad07b.png",
       description: "A spiritual exploration of love, devotion, and the divine through multimedia elements.",
-      pdfLink: "https://drive.google.com/file/d/example6"
+      pdfLink: "https://drive.google.com/file/d/example6",
+      galleryImages: [
+        "/lovable-uploads/18cb5d75-2ed1-4d5e-a560-511501cc5119.png",
+        "/lovable-uploads/61cf713e-51d6-4078-88dd-b96f4eaf3e9a.png",
+        "/lovable-uploads/cac87070-3bbc-418d-8232-b0d2fbffb969.png",
+        "/lovable-uploads/ab0a41d1-db1c-4290-a24d-c1bd078cf3d7.png",
+        "/lovable-uploads/1c7cb1e8-84c9-4838-88ce-0d9f17e7fe9e.png"
+      ]
     }, {
       id: 7,
       title: "Kegel exercise",
@@ -127,7 +133,14 @@ const Portfolio = () => {
       tab: "kegel-exercise",
       image: "/lovable-uploads/36aacf01-310c-41d2-b778-7460f45bec1a.png",
       description: "An installation connecting traditional practices with contemporary body awareness and control.",
-      pdfLink: "https://drive.google.com/file/d/example7"
+      pdfLink: "https://drive.google.com/file/d/example7",
+      galleryImages: [
+        "/lovable-uploads/41bcbf6f-1666-4f38-a039-3b34561005d1.png",
+        "/lovable-uploads/04e66781-7727-423f-b19b-9a1d9800cfa8.png",
+        "/lovable-uploads/2b83f081-a1cc-4462-9b36-1c2c8095affc.png",
+        "/lovable-uploads/01f9c78b-3075-495e-9329-d25855a10286.png",
+        "/lovable-uploads/41bc3d09-1e12-4a1a-b5bf-b33473cda432.png"
+      ]
     }, {
       id: 8,
       title: "All that I wanna do",
