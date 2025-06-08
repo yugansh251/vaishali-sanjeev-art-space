@@ -121,18 +121,6 @@ const Portfolio = () => {
     }
   ];
 
-  const galleryImages = [
-    "/lovable-uploads/68697f75-08be-4508-bb08-8c293644c582.png",
-    "/lovable-uploads/dbfae489-0738-4dc8-87b4-1c0666bedd23.png",
-    "/lovable-uploads/7851707d-7430-4786-b440-682533e18446.png",
-    "/lovable-uploads/1abce420-e34e-4ba1-ac05-714f5f5c8656.png",
-    "/lovable-uploads/14006748-ead5-4e14-9c8f-6b283eeca1c2.png",
-    "/lovable-uploads/c1a93e0c-2551-485b-b5f9-a8d30835b23e.png",
-    "/lovable-uploads/b8843983-09b9-47be-9985-c0ec3adf24c0.png",
-    "/lovable-uploads/235926d9-632a-4b48-b293-512d9a4270c0.png",
-    "/lovable-uploads/629bc411-445a-451b-9e76-46da081736d4.png"
-  ];
-
   // Filter works based on selected category
   const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
 
@@ -141,38 +129,6 @@ const Portfolio = () => {
       <section className="pt-32 pb-16 px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
           <SectionTitle title="Portfolio" centered />
-
-          {/* Gallery Section */}
-          <div className="mb-16">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-4">
-                Art Gallery
-              </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Explore our collection of contemporary art installations and mixed media works that challenge conventional boundaries and invite contemplation.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {galleryImages.map((image, index) => (
-                <Card 
-                  key={index} 
-                  className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                  onClick={() => setSelectedGalleryImage(image)}
-                >
-                  <div className="h-64 overflow-hidden">
-                    <AspectRatio ratio={16 / 9}>
-                      <img 
-                        src={image} 
-                        alt={`Gallery image ${index + 1}`}
-                        className="w-full h-full object-cover image-hover" 
-                      />
-                    </AspectRatio>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
 
           <div className="mb-10">
             <div className="flex justify-between items-center mb-8">
