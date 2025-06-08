@@ -87,7 +87,14 @@ const Portfolio = () => {
       tab: "imp-in-the-garden",
       image: "/lovable-uploads/a91861a5-473b-4243-b453-d366e98b241c.png",
       description: "A collection of reimagined fairy tales that question our relationship with nature and mythology.",
-      pdfLink: "https://drive.google.com/file/d/example4"
+      pdfLink: "https://drive.google.com/file/d/example4",
+      galleryImages: [
+        "/lovable-uploads/c743c7e9-92b7-46b8-961b-b7d5beddb3f2.png",
+        "/lovable-uploads/7f7bf8a6-51fd-4fa9-a4f8-f9e810b95fe7.png",
+        "/lovable-uploads/7f58e499-2f93-49c6-93a6-ffff13c6a43c.png",
+        "/lovable-uploads/ba7c889f-0191-4209-b637-8b09968a8966.png",
+        "/lovable-uploads/b9f0a7da-62ac-4c83-bcd8-59b9432545dd.png"
+      ]
     }, {
       id: 5,
       title: "Acquire merge collaborate",
@@ -96,7 +103,13 @@ const Portfolio = () => {
       tab: "acquire-merge",
       image: "/lovable-uploads/041c323c-d28a-4be2-a05f-2ce076a6bce0.png",
       description: "An exploration of corporate language and collaborative practices in the contemporary art world.",
-      pdfLink: "https://drive.google.com/file/d/example5"
+      pdfLink: "https://drive.google.com/file/d/example5",
+      galleryImages: [
+        "/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png",
+        "/lovable-uploads/473155fa-9c37-4d9e-bd23-ab649eefcbcc.png",
+        "/lovable-uploads/e7cd1d05-243f-4bd8-88d2-34e55dbc0735.png",
+        "/lovable-uploads/3610b2b6-791e-45f3-ab1d-9bb8b6a95716.png"
+      ]
     }, {
       id: 6,
       title: "What do I love when I love you, my God",
