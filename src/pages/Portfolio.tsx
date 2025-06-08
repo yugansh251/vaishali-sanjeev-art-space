@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -54,7 +55,14 @@ const Portfolio = () => {
       tab: "ragamala",
       image: "/lovable-uploads/cdf4a79d-66a6-4411-9326-b2324d0344ad.png",
       description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
-      pdfLink: "https://drive.google.com/file/d/example2"
+      pdfLink: "https://drive.google.com/file/d/example2",
+      galleryImages: [
+        "/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png",
+        "/lovable-uploads/3c4f7141-7717-414f-9892-c960251b3722.png",
+        "/lovable-uploads/9a609410-c58e-424a-93e6-b2c8a1667e38.png",
+        "/lovable-uploads/eb387776-b266-43f3-801c-1f7cc1a23200.png",
+        "/lovable-uploads/7afd9ae9-65dc-4cd9-9fec-b7069472094e.png"
+      ]
     }, {
       id: 3,
       title: "Triumph of market",
@@ -63,7 +71,14 @@ const Portfolio = () => {
       tab: "triumph",
       image: "/lovable-uploads/e4c1b905-86c4-47e0-b479-1034fe1b2cd8.png",
       description: "A critical examination of late capitalism and market forces shaping contemporary society.",
-      pdfLink: "https://drive.google.com/file/d/example3"
+      pdfLink: "https://drive.google.com/file/d/example3",
+      galleryImages: [
+        "/lovable-uploads/ce1991de-0df3-41ff-931a-0c5e3eed156a.png",
+        "/lovable-uploads/653a6cec-4522-4d68-9037-7fa3119b3dd9.png",
+        "/lovable-uploads/9b6652e8-e19f-4a9c-9983-8b63262c49ea.png",
+        "/lovable-uploads/ac380cf5-fa37-4084-aef1-eb0843b3fa0c.png",
+        "/lovable-uploads/1a710ed2-7997-474f-8ee5-a25034f48558.png"
+      ]
     }, {
       id: 4,
       title: "Imp in the garden and other fairy tales",
