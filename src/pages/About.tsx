@@ -25,9 +25,7 @@ const About = () => {
             <div className="lg:w-2/3">
               
               
-              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
-                Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, Sanjeev Khandekar and Vaishali Narkar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work; that dissects the complexities of the 21st century.
-              </p>
+              <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades,Vaishali Narkar and Sanjeev Khandekar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work; that dissects the complexities of the 21st century.</p>
               
               <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-6">Sanjeev's multifaceted persona extends beyond the visual arts, -a polymath with credentials in literature and activism, brings a critical lens to their visual output. (He is a respected poet, writer, social activist, and passionate gardener) Vaishali, a formally trained artist from Sir J.J. College of Art, provides technical and aesthetic rigor</p>
               
