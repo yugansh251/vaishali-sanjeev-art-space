@@ -57,7 +57,16 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16">
             {/* Vaishali CV - on left */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Vaishali Narkar</h3>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-4 text-center">Vaishali Narkar</h3>
+              
+              {/* Vaishali Profile Image */}
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/lovable-uploads/2036d42a-1aa5-454d-a7fd-d85d8a61cc56.png" 
+                  alt="Vaishali Narkar" 
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg"
+                />
+              </div>
               
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Shows:</h4>
@@ -107,7 +116,16 @@ const About = () => {
 
             {/* Sanjeev CV - on right */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-8 text-center">Sanjeev Khandekar</h3>
+              <h3 className="text-2xl md:text-3xl font-sans font-bold mb-4 text-center">Sanjeev Khandekar</h3>
+              
+              {/* Sanjeev Profile Image */}
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/lovable-uploads/97cfcbc4-e9a8-441c-bade-487681f8066e.png" 
+                  alt="Sanjeev Khandekar" 
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg"
+                />
+              </div>
               
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Exhibitions:</h4>
