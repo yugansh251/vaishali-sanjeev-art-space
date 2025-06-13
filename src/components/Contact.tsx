@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -54,14 +54,6 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <p className="text-gray-600">vaishaliandsanjeev@gmail.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <Phone className="w-5 h-5 text-portfolio-blue mt-1" />
-                <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <p className="text-gray-600">+91 123 456 7890</p>
                 </div>
               </div>
               

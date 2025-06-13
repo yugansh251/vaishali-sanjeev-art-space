@@ -69,7 +69,7 @@ const Portfolio = () => {
       year: "2005",
       category: "installation",
       tab: "triumph",
-      image: "/lovable-uploads/e4c1b905-86c4-47e0-b479-1034fe1b2cd8.png",
+      image: "/lovable-uploads/337f1345-3709-4f18-bf6d-f2fda48b4368.png",
       description: "A critical examination of late capitalism and market forces shaping contemporary society.",
       pdfLink: "https://drive.google.com/file/d/example3",
       galleryImages: [
@@ -101,7 +101,7 @@ const Portfolio = () => {
       year: "2007",
       category: "publication",
       tab: "acquire-merge",
-      image: "/lovable-uploads/041c323c-d28a-4be2-a05f-2ce076a6bce0.png",
+      image: "/lovable-uploads/25c3eedf-5270-4e68-b77c-565421716d09.png",
       description: "An exploration of corporate language and collaborative practices in the contemporary art world.",
       pdfLink: "https://drive.google.com/file/d/example5",
       galleryImages: [
