@@ -179,10 +179,7 @@ const Portfolio = () => {
                       <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
                     </CardContent>
                     <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
-                      <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
-                        <Download size={14} className="mr-1" />
-                        Download PDF
-                      </a>
+                      
                     </CardFooter>
                   </Card>)}
               </div> : <div className="flex flex-col space-y-6">
