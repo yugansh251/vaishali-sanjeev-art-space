@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -159,6 +160,33 @@ const Portfolio = () => {
       image: "/lovable-uploads/b11607ac-d5b2-4cfb-80fc-04bebd3f77a3.png",
       description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
       pdfLink: "https://drive.google.com/file/d/example9"
+    }, {
+      id: 10,
+      title: "Not still life",
+      year: "2012",
+      category: "installation",
+      tab: "not-still-life",
+      image: "/lovable-uploads/d840ae56-4f78-4389-813f-c3d7433318ea.png",
+      description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
+      pdfLink: "https://drive.google.com/file/d/example10"
+    }, {
+      id: 11,
+      title: "Everything you wanted to know about bad breath but afraid to ask alfred hitchcock",
+      year: "2013",
+      category: "installation",
+      tab: "bad-breath",
+      image: "/lovable-uploads/79ce5de6-7394-4c01-9f45-995a6c9d75cf.png",
+      description: "A surreal investigation into social anxieties and cinematic suspense through multimedia installation.",
+      pdfLink: "https://drive.google.com/file/d/example11"
+    }, {
+      id: 12,
+      title: "la peau de chagrin (who is afraid of shrinking skin)",
+      year: "2014",
+      category: "installation",
+      tab: "peau-de-chagrin",
+      image: "/lovable-uploads/2c628a6f-49d2-4fd2-a7c9-2794d5c6dc6c.png",
+      description: "A meditation on aging, vanity, and the passage of time inspired by Balzac's literary work.",
+      pdfLink: "https://drive.google.com/file/d/example12"
     }
   ];
 

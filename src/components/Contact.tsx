@@ -1,6 +1,7 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Instagram, Twitter, Linkedin, Mail, Phone } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -63,12 +64,20 @@ const Contact = () => {
                   <p className="text-gray-600">+91 123 456 7890</p>
                 </div>
               </div>
+              
+              <div className="flex items-start space-x-4">
+                <MapPin className="w-5 h-5 text-portfolio-blue mt-1" />
+                <div>
+                  <h4 className="font-medium">Address</h4>
+                  <p className="text-gray-600">16/a, mihishad chs gulab view lane . Dr. C.g. Road , near cubic mall , Chembur 400074</p>
+                </div>
+              </div>
             </div>
             
             <h3 className="text-2xl font-sans font-semibold mt-12 mb-6">Follow Vaishali & Sanjeev</h3>
             
             <div className="flex space-x-6">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
+              <a href="https://www.instagram.com/p/DKgqXkDthf6lfcM2oRhiDzazVhol3P3r4fFcPI0/?igsh=MWwzZXVyZDg1YnltZw==" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
                 <Instagram className="w-5 h-5 text-portfolio-blue" />
               </a>
               
