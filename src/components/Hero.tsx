@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
 
-  // Updated gallery images for the carousel with the new uploaded images
+  // Updated gallery images for the carousel with the specified image removed
   const artworkImages = [{
     id: 1,
     image: "/lovable-uploads/32f61955-ff24-4219-af5e-78228b6dfbac.png",
@@ -54,12 +54,6 @@ const Hero = () => {
     image: "/lovable-uploads/c37a9098-60d0-4649-aec7-dbef12cd9c05.png",
     title: "Protest Signs",
     medium: "Public Installation",
-    year: "2024"
-  }, {
-    id: 9,
-    image: "/lovable-uploads/5e85e357-74a8-432b-a335-10d4e79cecfe.png",
-    title: "Embroidered Skeleton",
-    medium: "Embroidery on Silk",
     year: "2024"
   }, {
     id: 10,
