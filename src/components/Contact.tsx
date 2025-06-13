@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Instagram, Twitter, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,12 +72,8 @@ const Contact = () => {
                 <Instagram className="w-5 h-5 text-portfolio-blue" />
               </a>
               
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
-                <Twitter className="w-5 h-5 text-portfolio-blue" />
-              </a>
-              
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
-                <Linkedin className="w-5 h-5 text-portfolio-blue" />
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 hover:border-portfolio-blue/20">
+                <Facebook className="w-5 h-5 text-portfolio-blue" />
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 
-import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,11 +13,11 @@ const Footer = () => {
           />
           
           <div className="flex space-x-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-portfolio-blue transition-colors">
+            <a href="https://www.instagram.com/p/DKgqXkDthf6lfcM2oRhiDzazVhol3P3r4fFcPI0/?igsh=MWwzZXVyZDg1YnltZw==" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-portfolio-blue transition-colors">
               <Instagram size={20} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-portfolio-blue transition-colors">
-              <Twitter size={20} />
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-portfolio-blue transition-colors">
+              <Facebook size={20} />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-portfolio-blue transition-colors">
               <Linkedin size={20} />
