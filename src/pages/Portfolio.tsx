@@ -219,7 +219,18 @@ const Portfolio = () => {
       tab: "peau-de-chagrin",
       image: "/lovable-uploads/2c628a6f-49d2-4fd2-a7c9-2794d5c6dc6c.png",
       description: "A meditation on aging, vanity, and the passage of time inspired by Balzac's literary work.",
-      pdfLink: "https://drive.google.com/file/d/example12"
+      pdfLink: "https://drive.google.com/file/d/example12",
+      galleryImages: [
+        "/lovable-uploads/9c9b9bfd-dbb3-484a-baa5-3d2ed18b5dda.png",
+        "/lovable-uploads/38c6fa43-c446-48b1-9e3a-986fe9d70eed.png",
+        "/lovable-uploads/9f42976c-de88-4a88-b11a-151fc34fa2c4.png",
+        "/lovable-uploads/d331a953-4a1e-4fd4-aaf5-6d0265740ee2.png",
+        "/lovable-uploads/4ae1d5fc-524f-4d96-8d35-8c8104cda10d.png",
+        "/lovable-uploads/0e6b1aa7-e585-4ee5-bf7e-4f76ac15732c.png",
+        "/lovable-uploads/6ed957a0-eef9-4ea0-8ead-354080331d15.png",
+        "/lovable-uploads/b3159f35-952c-41a1-a65f-ee76a735682f.png",
+        "/lovable-uploads/96e9892a-c368-4cff-a731-bb1cddd7459d.png"
+      ]
     }, {
       id: 11,
       title: "Kegel exercise",
