@@ -116,7 +116,7 @@ const Portfolio = () => {
       description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
       pdfLink: "https://drive.google.com/file/d/example9",
       galleryImages: [
-        "/lovable-uploads/646e6ee9-dd73-4fb4-86a9-eff66e2775f4.png",
+        "/lovable-uploads/bf837c31-1c23-4239-b9f4-e6ec1b8d7a9d.png",
         "/lovable-uploads/1c9ac1ff-bc1f-4de7-8417-21362a48c6d3.png",
         "/lovable-uploads/e5bee9ae-b94f-46b2-9e7c-61a9a4fb3aea.png",
         "/lovable-uploads/e45c502d-d713-4db7-8db7-e758427ed598.png",
@@ -159,7 +159,19 @@ const Portfolio = () => {
       tab: "bad-breath",
       image: "/lovable-uploads/79ce5de6-7394-4c01-9f45-995a6c9d75cf.png",
       description: "A surreal investigation into social anxieties and cinematic suspense through multimedia installation.",
-      pdfLink: "https://drive.google.com/file/d/example11"
+      pdfLink: "https://drive.google.com/file/d/example11",
+      galleryImages: [
+        "/lovable-uploads/bf837c31-1c23-4239-b9f4-e6ec1b8d7a9d.png",
+        "/lovable-uploads/9f4f5996-5c5a-4bad-9571-310154ff2e84.png",
+        "/lovable-uploads/34dac06c-3aa7-4022-9644-16f2300e41c5.png",
+        "/lovable-uploads/aef5fd46-fe79-4f6e-b81f-60b82ebd5efe.png",
+        "/lovable-uploads/d51cb74e-b474-4c9f-8349-18b69e43be20.png",
+        "/lovable-uploads/0c6c23dc-e0aa-4cc4-9ef1-4239eb57179a.png",
+        "/lovable-uploads/ad947c60-a8e8-4b49-bec5-f0a7c93fb68d.png",
+        "/lovable-uploads/3f993d5f-3211-46fc-93f5-46e42eaffd2c.png",
+        "/lovable-uploads/13ec5872-0b58-4847-9555-d2586a1ac1f7.png",
+        "/lovable-uploads/97b62678-1a24-4125-9a8a-786acaf6011b.png"
+      ]
     }, {
       id: 8,
       title: "Acquire merge collaborate",
