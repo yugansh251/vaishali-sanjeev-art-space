@@ -1,4 +1,5 @@
 
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -250,7 +251,18 @@ const Portfolio = () => {
       image: "/lovable-uploads/36aacf01-310c-41d2-b778-7460f45bec1a.png",
       description: "An installation connecting traditional practices with contemporary body awareness and control.",
       pdfLink: "https://drive.google.com/file/d/example7",
-      galleryImages: ["/lovable-uploads/41bcbf6f-1666-4f38-a039-3b34561005d1.png", "/lovable-uploads/04e66781-7727-423f-b19b-9a1d9800cfa8.png", "/lovable-uploads/2b83f081-a1cc-4462-9b36-1c2c8095affc.png", "/lovable-uploads/01f9c78b-3075-495e-9329-d25855a10286.png", "/lovable-uploads/41bc3d09-1e12-4a1a-b5bf-b33473cda432.png"]
+      galleryImages: [
+        "/lovable-uploads/3efc3c4b-25e0-440f-a6ca-fa7eeca4e1cf.png",
+        "/lovable-uploads/aa70c8e7-f5c9-4679-9106-66b19d520666.png",
+        "/lovable-uploads/c083ad26-b3f4-4f9c-82f6-a70c40ecf9e1.png",
+        "/lovable-uploads/a27a7482-d9bf-44af-a451-0a4c96c1c1a7.png",
+        "/lovable-uploads/f9277a79-2790-490d-8ad3-a2669171be9a.png",
+        "/lovable-uploads/c8547811-e08c-49f9-8075-774b011d7cc0.png",
+        "/lovable-uploads/856a72e7-7684-4fe3-ba79-1e0262729219.png",
+        "/lovable-uploads/29dc11f4-2ea3-4364-9698-63d819f72d74.png",
+        "/lovable-uploads/b74a9022-ad8a-406f-8ccb-f3804d75a0ab.png",
+        "/lovable-uploads/13663bf7-3117-4631-b565-6eca71516167.png"
+      ]
     }, {
       id: 12,
       title: "All that I wanna do",
@@ -407,3 +419,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
