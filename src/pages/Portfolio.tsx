@@ -74,10 +74,16 @@ const Portfolio = () => {
     description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
     pdfLink: "https://drive.google.com/file/d/example2",
     galleryImages: [
-      "/lovable-uploads/4ede3dbb-e9b8-45c1-914b-3d6431d79308.png",
-      "/lovable-uploads/07d44aa0-8a65-48f1-8489-03e9f014cf1d.png",
-      "/lovable-uploads/13fbd3c7-a41e-419c-bdc7-11a9dc8b70c8.png",
-      "/lovable-uploads/44ddd555-e8d6-4c8d-a6fb-61df86fb8ca0.png"
+      "/lovable-uploads/88db819d-f4f8-4473-af2c-eb344ee66c11.png",
+      "/lovable-uploads/998deae4-b3af-423a-a4de-843f3782ca74.png",
+      "/lovable-uploads/97b2deb1-f75c-4ce0-a06e-bd1af8a72c1d.png",
+      "/lovable-uploads/aed3d2ee-4bbc-4686-b055-2640984a52eb.png",
+      "/lovable-uploads/aba91c3a-268b-4b71-a250-bc31e6bf3c86.png",
+      "/lovable-uploads/3793a105-ebfc-447e-bff2-3dfdaaa6a552.png",
+      "/lovable-uploads/a7f3ad5c-4281-41ca-b491-d48b5b1260e7.png",
+      "/lovable-uploads/4e8fb196-d68c-46ec-a65c-087e374a07d3.png",
+      "/lovable-uploads/1b2a828d-d604-443d-973a-2e1a27d7d9f3.png",
+      "/lovable-uploads/2fbb9d4d-e115-4ab3-859b-eadd5fd9ed0a.png"
     ]
   }, {
     id: 4,
@@ -250,7 +256,7 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
-            <DialogContent className="max-w-none max-h-none w-auto h-auto p-0 border-0 bg-transparent shadow-none">
+            <DialogContent className="max-w-none max-h-none w-auto h-auto p-0 border-0 bg-black/90 shadow-none">
               {selectedGalleryImage && (
                 <div className="w-auto h-auto">
                   <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-[90vw] max-h-[90vh] object-contain" />
