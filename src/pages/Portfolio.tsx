@@ -412,7 +412,7 @@ Tongue has infinite possibilities.`,
                       <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
                         {selectedWork.title}
                       </h3>
-                      <ScrollArea className="flex-1 mb-6">
+                      <ScrollArea className="flex-1 mb-6 h-[300px]">
                         <div className="text-gray-700 whitespace-pre-line pr-4">
                           {selectedWork.description}
                         </div>
