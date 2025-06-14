@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -229,7 +230,16 @@ const Portfolio = () => {
         "/lovable-uploads/0e6b1aa7-e585-4ee5-bf7e-4f76ac15732c.png",
         "/lovable-uploads/6ed957a0-eef9-4ea0-8ead-354080331d15.png",
         "/lovable-uploads/b3159f35-952c-41a1-a65f-ee76a735682f.png",
-        "/lovable-uploads/96e9892a-c368-4cff-a731-bb1cddd7459d.png"
+        "/lovable-uploads/96e9892a-c368-4cff-a731-bb1cddd7459d.png",
+        "/lovable-uploads/f89125dd-f991-4ddd-9d2c-356a687d15cf.png",
+        "/lovable-uploads/f352d503-46f3-4f26-9a1d-f8c8e539fbf1.png",
+        "/lovable-uploads/9c39a54d-8d5c-4e1e-988b-1b3bd3d1b739.png",
+        "/lovable-uploads/bdf24ba5-5056-4fb7-bc40-81b785213b13.png",
+        "/lovable-uploads/07215d40-3644-4fc8-ad49-65885054a025.png",
+        "/lovable-uploads/b346acf0-9313-41fc-b40a-2aed13db28d2.png",
+        "/lovable-uploads/89a92525-033b-44e4-b5d1-fb66311eea92.png",
+        "/lovable-uploads/097e2871-764c-4f58-a09e-49582300e79c.png",
+        "/lovable-uploads/f8dd84cc-637c-47b1-81e4-0d7183db1d92.png"
       ]
     }, {
       id: 11,
