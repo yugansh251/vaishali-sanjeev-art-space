@@ -181,7 +181,13 @@ const Portfolio = () => {
       image: "/lovable-uploads/25c3eedf-5270-4e68-b77c-565421716d09.png",
       description: "An exploration of corporate language and collaborative practices in the contemporary art world.",
       pdfLink: "https://drive.google.com/file/d/example5",
-      galleryImages: ["/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png", "/lovable-uploads/473155fa-9c37-4d9e-bd23-ab649eefcbcc.png", "/lovable-uploads/e7cd1d05-243f-4bd8-88d2-34e55dbc0735.png", "/lovable-uploads/3610b2b6-791e-45f3-ab1d-9bb8b6a95716.png"]
+      galleryImages: [
+        "/lovable-uploads/1bbf09c9-ecef-4bc8-8a86-9ece6f65398a.png",
+        "/lovable-uploads/18158514-d4ff-45c2-825a-e3d561ef1722.png", 
+        "/lovable-uploads/e3dc8223-1ae9-43cb-811c-e11d855dae11.png",
+        "/lovable-uploads/3a3fcdaa-f4d9-4cf5-adf5-3a7ff20f0346.png",
+        "/lovable-uploads/12e19b04-0ae1-496e-b72d-e86f0e25ff65.png"
+      ]
     }, {
       id: 9,
       title: "What do I love when I love you, my God",
