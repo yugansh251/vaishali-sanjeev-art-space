@@ -7,11 +7,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { LayoutGrid, Image, Download, X } from 'lucide-react';
+
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+
   interface Work {
     id: number;
     title: string;
@@ -24,7 +26,7 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
   
-  // Reordered works array according to the specified order
+  // Updated works array with new gallery images
   const works: Work[] = [{
     id: 10,
     title: "Not still life",
@@ -33,7 +35,14 @@ const Portfolio = () => {
     tab: "not-still-life",
     image: "/lovable-uploads/d840ae56-4f78-4389-813f-c3d7433318ea.png",
     description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
-    pdfLink: "https://drive.google.com/file/d/example10"
+    pdfLink: "https://drive.google.com/file/d/example10",
+    galleryImages: [
+      "/lovable-uploads/78ba5192-482e-4259-b084-e95185bdbb80.png",
+      "/lovable-uploads/af5dcae7-993a-4c09-b292-617220b44e2a.png",
+      "/lovable-uploads/d7b66ced-7927-4a37-b942-9f1146f42441.png",
+      "/lovable-uploads/929eafe6-697e-4b78-9b6f-e2db1e30154c.png",
+      "/lovable-uploads/7ed7c71e-0fc4-4ec9-8445-1a9d64e17f26.png"
+    ]
   }, {
     id: 1,
     title: "Honey, I shrunk my Tongue",
@@ -43,7 +52,18 @@ const Portfolio = () => {
     image: "/lovable-uploads/d5f03b39-25c4-4642-8476-9a6371431261.png",
     description: "An interactive installation exploring the nature of truth and perception in contemporary society.",
     pdfLink: "https://drive.google.com/file/d/example1",
-    galleryImages: ["/lovable-uploads/68697f75-08be-4508-bb08-8c293644c582.png", "/lovable-uploads/dbfae489-0738-4dc8-87b4-1c0666bedd23.png", "/lovable-uploads/7851707d-7430-4786-b440-682533e18446.png", "/lovable-uploads/1abce420-e34e-4ba1-ac05-714f5f5c8656.png", "/lovable-uploads/14006748-ead5-4e14-9c8f-6b283eeca1c2.png", "/lovable-uploads/c1a93e0c-2551-485b-b5f9-a8d30835b23e.png", "/lovable-uploads/b8843983-09b9-47be-9985-c0ec3adf24c0.png", "/lovable-uploads/235926d9-632a-4b48-b293-512d9a4270c0.png", "/lovable-uploads/629bc411-445a-451b-9e76-46da081736d4.png"]
+    galleryImages: [
+      "/lovable-uploads/fb3d2ed9-5405-40dc-a36c-db400bba2816.png",
+      "/lovable-uploads/68697f75-08be-4508-bb08-8c293644c582.png",
+      "/lovable-uploads/dbfae489-0738-4dc8-87b4-1c0666bedd23.png",
+      "/lovable-uploads/7851707d-7430-4786-b440-682533e18446.png",
+      "/lovable-uploads/1abce420-e34e-4ba1-ac05-714f5f5c8656.png",
+      "/lovable-uploads/14006748-ead5-4e14-9c8f-6b283eeca1c2.png",
+      "/lovable-uploads/c1a93e0c-2551-485b-b5f9-a8d30835b23e.png",
+      "/lovable-uploads/b8843983-09b9-47be-9985-c0ec3adf24c0.png",
+      "/lovable-uploads/235926d9-632a-4b48-b293-512d9a4270c0.png",
+      "/lovable-uploads/629bc411-445a-451b-9e76-46da081736d4.png"
+    ]
   }, {
     id: 2,
     title: "Ragamala song of Anthropocene",
@@ -53,7 +73,12 @@ const Portfolio = () => {
     image: "/lovable-uploads/cdf4a79d-66a6-4411-9326-b2324d0344ad.png",
     description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
     pdfLink: "https://drive.google.com/file/d/example2",
-    galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png", "/lovable-uploads/3c4f7141-7717-414f-9892-c960251b3722.png", "/lovable-uploads/9a609410-c58e-424a-93e6-b2c8a1667e38.png", "/lovable-uploads/eb387776-b266-43f3-801c-1f7cc1a23200.png", "/lovable-uploads/7afd9ae9-65dc-4cd9-9fec-b7069472094e.png"]
+    galleryImages: [
+      "/lovable-uploads/4ede3dbb-e9b8-45c1-914b-3d6431d79308.png",
+      "/lovable-uploads/07d44aa0-8a65-48f1-8489-03e9f014cf1d.png",
+      "/lovable-uploads/13fbd3c7-a41e-419c-bdc7-11a9dc8b70c8.png",
+      "/lovable-uploads/44ddd555-e8d6-4c8d-a6fb-61df86fb8ca0.png"
+    ]
   }, {
     id: 3,
     title: "Triumph of market",
@@ -144,7 +169,9 @@ const Portfolio = () => {
 
   // Filter works based on selected category
   const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
-  return <Layout>
+
+  return (
+    <Layout>
       <section className="pt-32 pb-16 px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
           <SectionTitle title="Portfolio" centered />
@@ -170,8 +197,10 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {viewMode === 'grid' ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
+            {viewMode === 'grid' ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredWorks.map(work => (
+                  <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>
                         <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
@@ -184,9 +213,13 @@ const Portfolio = () => {
                     <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
                       
                     </CardFooter>
-                  </Card>)}
-              </div> : <div className="flex flex-col space-y-6">
-                {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
+                  </Card>
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-col space-y-6">
+                {filteredWorks.map(work => (
+                  <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="md:col-span-1 h-full cursor-pointer" onClick={() => setSelectedWork(work)}>
                         <AspectRatio ratio={1 / 1} className="h-full">
@@ -209,23 +242,28 @@ const Portfolio = () => {
                         </div>
                       </div>
                     </div>
-                  </Card>)}
-              </div>}
+                  </Card>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Gallery Image Dialog */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
             <DialogContent className="max-w-5xl p-0 overflow-hidden">
-              {selectedGalleryImage && <div className="w-full">
+              {selectedGalleryImage && (
+                <div className="w-full">
                   <img src={selectedGalleryImage} alt="Gallery artwork" className="w-full h-auto object-contain max-h-[90vh]" />
-                </div>}
+                </div>
+              )}
             </DialogContent>
           </Dialog>
 
           {/* Work Details Dialog */}
           <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
-              {selectedWork && <div className="max-h-[90vh] overflow-auto">
+              {selectedWork && (
+                <div className="max-h-[90vh] overflow-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="h-full">
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain" />
@@ -250,19 +288,26 @@ const Portfolio = () => {
                   </div>
                   
                   {/* Gallery Images Section */}
-                  {selectedWork.galleryImages && selectedWork.galleryImages.length > 0 && <div className="border-t border-gray-200 p-6">
+                  {selectedWork.galleryImages && selectedWork.galleryImages.length > 0 && (
+                    <div className="border-t border-gray-200 p-6">
                       <h4 className="text-lg font-semibold mb-4">Gallery</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => setSelectedGalleryImage(image)}>
-                            <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-cover" />
-                          </div>)}
+                        {selectedWork.galleryImages.map((image, index) => (
+                          <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => setSelectedGalleryImage(image)}>
+                            <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-contain" />
+                          </div>
+                        ))}
                       </div>
-                    </div>}
-                </div>}
+                    </div>
+                  )}
+                </div>
+              )}
             </DialogContent>
           </Dialog>
         </div>
       </section>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default Portfolio;
