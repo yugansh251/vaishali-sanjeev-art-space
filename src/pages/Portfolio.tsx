@@ -271,7 +271,19 @@ const Portfolio = () => {
       tab: "all-that-i-wanna-do",
       image: "/lovable-uploads/650c0882-fe96-42f9-8efb-5acc29ceca1f.png",
       description: "An immersive installation reflecting on personal desires and societal expectations.",
-      pdfLink: "https://drive.google.com/file/d/example8"
+      pdfLink: "https://drive.google.com/file/d/example8",
+      galleryImages: [
+        "/lovable-uploads/df0856ca-0e2c-4d02-a420-125d3b2be5e8.png",
+        "/lovable-uploads/7b556376-4ae7-4f73-ad41-e5bc4b14cdcb.png",
+        "/lovable-uploads/ac61c46a-3a39-460f-83c8-743bd00aa375.png",
+        "/lovable-uploads/8b6d5cff-57bc-43c8-ae08-12f1d2b9986b.png",
+        "/lovable-uploads/5661b49f-63f6-41ff-a66a-e08fe09259cc.png",
+        "/lovable-uploads/06eb1035-e5f5-4545-a4a7-7b208ebd9ffc.png",
+        "/lovable-uploads/1b70bf12-0f01-4ceb-8f85-43028b1b9640.png",
+        "/lovable-uploads/c3f039b0-9efa-45e7-a9b9-e219d11b0dfd.png",
+        "/lovable-uploads/88badd08-5682-4ac1-a56a-833d05f0757f.png",
+        "/lovable-uploads/0e5b3236-2f23-40f6-9a42-ea217808cb82.png"
+      ]
     }
   ];
 
