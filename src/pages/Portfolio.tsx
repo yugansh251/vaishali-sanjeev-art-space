@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -208,7 +207,9 @@ const Portfolio = () => {
         "/lovable-uploads/3a3c485e-8d49-41ad-ad03-78f428071ba6.png",
         "/lovable-uploads/5252a848-fa9c-4e1d-93af-e482bda6be65.png",
         "/lovable-uploads/2cdcfd33-699e-4dc8-ad3b-fee502d64469.png",
-        "/lovable-uploads/5f4e7d8c-daae-4936-a127-576ab3bb3b1b.png"
+        "/lovable-uploads/5f4e7d8c-daae-4936-a127-576ab3bb3b1b.png",
+        "/lovable-uploads/31928965-9efa-44bb-b005-76006cc0afef.png",
+        "/lovable-uploads/99ad75dc-7b9c-48c9-baba-81bfd3c960e2.png"
       ]
     }, {
       id: 10,
