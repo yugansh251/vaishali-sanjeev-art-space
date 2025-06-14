@@ -28,7 +28,7 @@ const Portfolio = () => {
   
   // Updated works array with new gallery images
   const works: Work[] = [{
-    id: 10,
+    id: 1,
     title: "Not still life",
     year: "2005",
     category: "installation",
@@ -44,7 +44,7 @@ const Portfolio = () => {
       "/lovable-uploads/7ed7c71e-0fc4-4ec9-8445-1a9d64e17f26.png"
     ]
   }, {
-    id: 1,
+    id: 2,
     title: "Honey, I shrunk my Tongue",
     year: "2017",
     category: "installation",
@@ -65,7 +65,7 @@ const Portfolio = () => {
       "/lovable-uploads/629bc411-445a-451b-9e76-46da081736d4.png"
     ]
   }, {
-    id: 2,
+    id: 3,
     title: "Ragamala song of Anthropocene",
     year: "2019",
     category: "installation",
@@ -80,7 +80,7 @@ const Portfolio = () => {
       "/lovable-uploads/44ddd555-e8d6-4c8d-a6fb-61df86fb8ca0.png"
     ]
   }, {
-    id: 3,
+    id: 4,
     title: "Triumph of market",
     year: "2003",
     category: "installation",
@@ -90,7 +90,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example3",
     galleryImages: ["/lovable-uploads/ce1991de-0df3-41ff-931a-0c5e3eed156a.png", "/lovable-uploads/653a6cec-4522-4d68-9037-7fa3119b3dd9.png", "/lovable-uploads/9b6652e8-e19f-4a9c-9983-8b63262c49ea.png", "/lovable-uploads/ac380cf5-fa37-4084-aef1-eb0843b3fa0c.png", "/lovable-uploads/1a710ed2-7997-474f-8ee5-a25034f48558.png"]
   }, {
-    id: 9,
+    id: 5,
     title: "I am so angry, I made this sign",
     year: "2012",
     category: "publication",
@@ -99,7 +99,7 @@ const Portfolio = () => {
     description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
     pdfLink: "https://drive.google.com/file/d/example9"
   }, {
-    id: 4,
+    id: 6,
     title: "Imp in the garden and other fairy tales",
     year: "2010",
     category: "publication",
@@ -109,7 +109,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example4",
     galleryImages: ["/lovable-uploads/c743c7e9-92b7-46b8-961b-b7d5beddb3f2.png", "/lovable-uploads/7f7bf8a6-51fd-4fa9-a4f8-f9e810b95fe7.png", "/lovable-uploads/7f58e499-2f93-49c6-93a6-ffff13c6a43c.png", "/lovable-uploads/ba7c889f-0191-4209-b637-8b09968a8966.png", "/lovable-uploads/b9f0a7da-62ac-4c83-bcd8-59b9432545dd.png"]
   }, {
-    id: 11,
+    id: 7,
     title: "Everything you wanted to know about bad breath but afraid to ask alfred hitchcock",
     year: "2008",
     category: "installation",
@@ -118,7 +118,7 @@ const Portfolio = () => {
     description: "A surreal investigation into social anxieties and cinematic suspense through multimedia installation.",
     pdfLink: "https://drive.google.com/file/d/example11"
   }, {
-    id: 5,
+    id: 8,
     title: "Acquire merge collaborate",
     year: "2011",
     category: "publication",
@@ -128,7 +128,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example5",
     galleryImages: ["/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png", "/lovable-uploads/473155fa-9c37-4d9e-bd23-ab649eefcbcc.png", "/lovable-uploads/e7cd1d05-243f-4bd8-88d2-34e55dbc0735.png", "/lovable-uploads/3610b2b6-791e-45f3-ab1d-9bb8b6a95716.png"]
   }, {
-    id: 6,
+    id: 9,
     title: "What do I love when I love you, my God",
     year: "2006",
     category: "installation",
@@ -138,7 +138,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example6",
     galleryImages: ["/lovable-uploads/18cb5d75-2ed1-4d5e-a560-511501cc5119.png", "/lovable-uploads/61cf713e-51d6-4078-88dd-b96f4eaf3e9a.png", "/lovable-uploads/cac87070-3bbc-418d-8232-b0d2fbffb969.png", "/lovable-uploads/ab0a41d1-db1c-4290-a24d-c1bd078cf3d7.png", "/lovable-uploads/1c7cb1e8-84c9-4838-88ce-0d9f17e7fe9e.png"]
   }, {
-    id: 12,
+    id: 10,
     title: "la peau de chagrin (who is afraid of shrinking skin)",
     year: "2005",
     category: "installation",
@@ -147,7 +147,7 @@ const Portfolio = () => {
     description: "A meditation on aging, vanity, and the passage of time inspired by Balzac's literary work.",
     pdfLink: "https://drive.google.com/file/d/example12"
   }, {
-    id: 7,
+    id: 11,
     title: "Kegel exercise",
     year: "2007",
     category: "installation",
@@ -157,7 +157,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example7",
     galleryImages: ["/lovable-uploads/41bcbf6f-1666-4f38-a039-3b34561005d1.png", "/lovable-uploads/04e66781-7727-423f-b19b-9a1d9800cfa8.png", "/lovable-uploads/2b83f081-a1cc-4462-9b36-1c2c8095affc.png", "/lovable-uploads/01f9c78b-3075-495e-9329-d25855a10286.png", "/lovable-uploads/41bc3d09-1e12-4a1a-b5bf-b33473cda432.png"]
   }, {
-    id: 8,
+    id: 12,
     title: "All that I wanna do",
     year: "2005",
     category: "installation",
@@ -250,10 +250,10 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
-            <DialogContent className="max-w-5xl p-0 overflow-hidden">
+            <DialogContent className="max-w-none max-h-none w-auto h-auto p-0 border-0 bg-transparent shadow-none">
               {selectedGalleryImage && (
-                <div className="w-full">
-                  <img src={selectedGalleryImage} alt="Gallery artwork" className="w-full h-auto object-contain max-h-[90vh]" />
+                <div className="w-auto h-auto">
+                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-[90vw] max-h-[90vh] object-contain" />
                 </div>
               )}
             </DialogContent>
