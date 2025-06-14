@@ -5,6 +5,7 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X } from 'lucide-react';
 
 const Portfolio = () => {
@@ -400,21 +401,23 @@ Tongue has infinite possibilities.`,
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
               {selectedWork && (
                 <div className="max-h-[90vh] overflow-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
                     <div className="h-full">
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain" />
                     </div>
-                    <div className="p-6 md:p-8">
+                    <div className="p-6 md:p-8 flex flex-col">
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category} • {selectedWork.year}
                       </span>
                       <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
                         {selectedWork.title}
                       </h3>
-                      <div className="text-gray-700 mb-6 whitespace-pre-line">
-                        {selectedWork.description}
-                      </div>
-                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mb-6">
+                      <ScrollArea className="flex-1 mb-6">
+                        <div className="text-gray-700 whitespace-pre-line pr-4">
+                          {selectedWork.description}
+                        </div>
+                      </ScrollArea>
+                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue">
                         <Button variant="outline" size="sm" className="gap-2">
                           <Download size={16} />
                           Download PDF
