@@ -115,6 +115,7 @@ const Portfolio = () => {
     description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
     pdfLink: "https://drive.google.com/file/d/example9",
     galleryImages: [
+      "/lovable-uploads/646e6ee9-dd73-4fb4-86a9-eff66e2775f4.png",
       "/lovable-uploads/1c9ac1ff-bc1f-4de7-8417-21362a48c6d3.png",
       "/lovable-uploads/e5bee9ae-b94f-46b2-9e7c-61a9a4fb3aea.png",
       "/lovable-uploads/e45c502d-d713-4db7-8db7-e758427ed598.png",
