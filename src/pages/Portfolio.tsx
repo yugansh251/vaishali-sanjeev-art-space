@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -72,7 +70,7 @@ const Portfolio = () => {
       year: "2019",
       category: "installation",
       tab: "ragamala",
-      image: "/lovable-uploads/cdf4a79d-66a6-4411-9326-b2324d0344ad.png",
+      image: "/lovable-uploads/4e0ca9d1-da46-454d-86d8-8a328a3b3f11.png",
       description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
       pdfLink: "https://drive.google.com/file/d/example2",
       galleryImages: [
@@ -431,4 +429,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-

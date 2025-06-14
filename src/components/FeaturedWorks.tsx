@@ -23,7 +23,7 @@ const FeaturedWorks = () => {
     },
     {
       id: 3,
-      image: "/lovable-uploads/b0b5d297-9ba6-4d7d-9516-fd713c00facc.png",
+      image: "/lovable-uploads/4e0ca9d1-da46-454d-86d8-8a328a3b3f11.png",
       title: "Ragamala",
       medium: "Songs of The Anthropocene",
       year: "2021",
