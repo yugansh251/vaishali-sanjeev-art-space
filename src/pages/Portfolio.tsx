@@ -146,7 +146,10 @@ const Portfolio = () => {
         "/lovable-uploads/da39a3dc-4d24-418c-817b-47b1b51b64d1.png",
         "/lovable-uploads/1cd02643-590d-4308-979b-398567fd2ac9.png",
         "/lovable-uploads/ad5ed47c-151f-491d-884d-c8515b97737e.png",
-        "/lovable-uploads/a3f3c915-2e01-41cd-a526-1293d0f58427.png"
+        "/lovable-uploads/a3f3c915-2e01-41cd-a526-1293d0f58427.png",
+        "/lovable-uploads/c9a5f239-44b3-431b-b796-d8b647865bc0.png",
+        "/lovable-uploads/0e1ca16a-0c79-43af-9bef-840c0c9d8add.png",
+        "/lovable-uploads/30e3eccd-bb6e-4e7b-bf44-7b6113de4d37.png"
       ]
     }, {
       id: 7,
