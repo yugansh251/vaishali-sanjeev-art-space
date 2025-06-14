@@ -91,7 +91,7 @@ const Hero = () => {
           <CarouselContent>
             {artworkImages.map(artwork => (
               <CarouselItem key={artwork.id} className="basis-full">
-                <Card className="border-none">
+                <Card className="border-none shadow-none">
                   <CardContent className="flex flex-col items-center p-0">
                     <div className="w-full flex justify-center">
                       <div className="max-w-4xl w-full overflow-hidden bg-gray-50">
