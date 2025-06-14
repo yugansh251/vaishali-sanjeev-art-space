@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -197,7 +198,18 @@ const Portfolio = () => {
       image: "/lovable-uploads/c2c372a6-45a1-4e66-ade2-71fa4e2ad07b.png",
       description: "A spiritual exploration of love, devotion, and the divine through multimedia elements.",
       pdfLink: "https://drive.google.com/file/d/example6",
-      galleryImages: ["/lovable-uploads/18cb5d75-2ed1-4d5e-a560-511501cc5119.png", "/lovable-uploads/61cf713e-51d6-4078-88dd-b96f4eaf3e9a.png", "/lovable-uploads/cac87070-3bbc-418d-8232-b0d2fbffb969.png", "/lovable-uploads/ab0a41d1-db1c-4290-a24d-c1bd078cf3d7.png", "/lovable-uploads/1c7cb1e8-84c9-4838-88ce-0d9f17e7fe9e.png"]
+      galleryImages: [
+        "/lovable-uploads/2f7d6175-ee60-4d18-be20-a27258f97671.png",
+        "/lovable-uploads/8350fb86-e421-4443-9eca-f640c9c33a13.png",
+        "/lovable-uploads/9f8d9411-985c-443e-b608-68d9d6efe9c2.png",
+        "/lovable-uploads/6c6585ff-1693-41ef-97fb-15f25476b883.png",
+        "/lovable-uploads/7488508b-8ed8-475f-8168-9639939d413d.png",
+        "/lovable-uploads/81d0dad3-8a0e-4691-b3e7-e0b4c054b708.png",
+        "/lovable-uploads/3a3c485e-8d49-41ad-ad03-78f428071ba6.png",
+        "/lovable-uploads/5252a848-fa9c-4e1d-93af-e482bda6be65.png",
+        "/lovable-uploads/2cdcfd33-699e-4dc8-ad3b-fee502d64469.png",
+        "/lovable-uploads/5f4e7d8c-daae-4936-a127-576ab3bb3b1b.png"
+      ]
     }, {
       id: 10,
       title: "la peau de chagrin (who is afraid of shrinking skin)",
