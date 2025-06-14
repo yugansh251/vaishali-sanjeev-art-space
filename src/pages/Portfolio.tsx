@@ -161,16 +161,16 @@ const Portfolio = () => {
       description: "A surreal investigation into social anxieties and cinematic suspense through multimedia installation.",
       pdfLink: "https://drive.google.com/file/d/example11",
       galleryImages: [
-        "/lovable-uploads/bf837c31-1c23-4239-b9f4-e6ec1b8d7a9d.png",
-        "/lovable-uploads/9f4f5996-5c5a-4bad-9571-310154ff2e84.png",
-        "/lovable-uploads/34dac06c-3aa7-4022-9644-16f2300e41c5.png",
-        "/lovable-uploads/aef5fd46-fe79-4f6e-b81f-60b82ebd5efe.png",
-        "/lovable-uploads/d51cb74e-b474-4c9f-8349-18b69e43be20.png",
-        "/lovable-uploads/0c6c23dc-e0aa-4cc4-9ef1-4239eb57179a.png",
-        "/lovable-uploads/ad947c60-a8e8-4b49-bec5-f0a7c93fb68d.png",
-        "/lovable-uploads/3f993d5f-3211-46fc-93f5-46e42eaffd2c.png",
-        "/lovable-uploads/13ec5872-0b58-4847-9555-d2586a1ac1f7.png",
-        "/lovable-uploads/97b62678-1a24-4125-9a8a-786acaf6011b.png"
+        "/lovable-uploads/65d53b44-9072-4180-9127-3914fc010097.png",
+        "/lovable-uploads/bc7a0d11-895f-497a-9aac-adc1e5c9a818.png",
+        "/lovable-uploads/75a43fb3-d44a-49ea-a4b5-156e1d63f9b8.png",
+        "/lovable-uploads/bebb639b-ed4f-4733-bace-014d0772084d.png",
+        "/lovable-uploads/bedb5860-1c39-409b-998e-f052a93df528.png",
+        "/lovable-uploads/73582b7e-295b-4682-a5ec-28740ab2daa5.png",
+        "/lovable-uploads/5af0482a-23b8-452e-9588-a7dc60f22fb1.png",
+        "/lovable-uploads/e8ea11fa-c807-45e6-8b5b-dbd95efa139f.png",
+        "/lovable-uploads/9e5c1c9a-aba0-407e-9a27-a3331a155dda.png",
+        "/lovable-uploads/7a53be69-cace-49a6-9409-35b5bd282496.png"
       ]
     }, {
       id: 8,
