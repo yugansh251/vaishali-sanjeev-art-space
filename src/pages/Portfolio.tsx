@@ -1,3 +1,5 @@
+
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -5,7 +7,6 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X } from 'lucide-react';
 
 const Portfolio = () => {
@@ -51,7 +52,7 @@ const Portfolio = () => {
       category: "installation",
       tab: "honey",
       image: "/lovable-uploads/d5f03b39-25c4-4642-8476-9a6371431261.png",
-      description: "This is a site specific installation of ceramic objects. One or many. All depends on the dimensions of the site. The object is a tongue. Tongues of various sizes, single and many, individual and a multitude of them. Sometimes just one small piece, sometimes several small pieces together forming another object. Layers of symbols woven together. A kind of visual poem installed in space. A kind of language in making or an abstract process of deciphering a riddle of language. Tongue is a mysterious organ every one of us have. Birds and animals, reptiles and insects, all have it. It is placed in mouth entrusted with various tasks and functions. From taste to sound and from lust to greed, from ascetic denial to divine acceptance and representation of life to death , tongue remains one of the most versatile organs, a voice, a medium, and an agency itself, it's wiggle and squirm, turn, twist and thresh each actin says more than what is seen or heard. \"Tongue, therefore represents good & bad, ugly and beautiful, god and devil all together' tells the opening tale of famous Aesop's Fables' Artists brush, writer's pen, musician's tunes or the sensitive strings of his/her instrument. These are nothing but tongues. Tongue is a word. Tongue is a language. Tongue needs freedom. Tongue is the free voice of a democratic society. In one of his beautiful poems titled 'tongue', John Berger says, the tongue is the spine's first leaf forests of language surround it like a mole the tongue Burrows through the earth of speech like a bird the tongue Flies in arcs of the written word the tongue is tethered and alone in its mouth. Our installation(s), called ' Honey, I shrunk my tongue' is a work that provokes a journey to understand our own tongue, singularly and collectively. Tongue has infinite possibilities.",
+      description: "An interactive installation exploring the nature of truth and perception in contemporary society.",
       pdfLink: "https://drive.google.com/file/d/example1",
       galleryImages: [
         "/lovable-uploads/fb3d2ed9-5405-40dc-a36c-db400bba2816.png",
@@ -383,23 +384,21 @@ const Portfolio = () => {
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
               {selectedWork && (
                 <div className="max-h-[90vh] overflow-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="h-full">
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain" />
                     </div>
-                    <div className="p-6 md:p-8 flex flex-col">
+                    <div className="p-6 md:p-8">
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category} • {selectedWork.year}
                       </span>
                       <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
                         {selectedWork.title}
                       </h3>
-                      <ScrollArea className="flex-1 mb-6 h-[300px]">
-                        <div className="text-gray-700 whitespace-pre-line pr-4">
-                          {selectedWork.description}
-                        </div>
-                      </ScrollArea>
-                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue">
+                      <p className="text-gray-700 mb-6">
+                        {selectedWork.description}
+                      </p>
+                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mb-6">
                         <Button variant="outline" size="sm" className="gap-2">
                           <Download size={16} />
                           Download PDF
@@ -432,3 +431,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
