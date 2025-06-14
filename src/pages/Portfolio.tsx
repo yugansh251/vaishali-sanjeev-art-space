@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -114,7 +113,18 @@ const Portfolio = () => {
     tab: "angry",
     image: "/lovable-uploads/b11607ac-d5b2-4cfb-80fc-04bebd3f77a3.png",
     description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
-    pdfLink: "https://drive.google.com/file/d/example9"
+    pdfLink: "https://drive.google.com/file/d/example9",
+    galleryImages: [
+      "/lovable-uploads/1c9ac1ff-bc1f-4de7-8417-21362a48c6d3.png",
+      "/lovable-uploads/e5bee9ae-b94f-46b2-9e7c-61a9a4fb3aea.png",
+      "/lovable-uploads/e45c502d-d713-4db7-8db7-e758427ed598.png",
+      "/lovable-uploads/b036f9e8-7fb9-43c3-9538-8c1bf7cb65be.png",
+      "/lovable-uploads/3b0cc10d-d36d-45d2-8ede-d949ec678eed.png",
+      "/lovable-uploads/c8f9bae4-0288-437e-ae26-e53ee5c57418.png",
+      "/lovable-uploads/c4c9e781-7a6b-44d4-b46d-2f14254fe294.png",
+      "/lovable-uploads/0cdd834f-4996-4754-857d-be00a430a307.png",
+      "/lovable-uploads/d133528e-90e3-4b59-8a28-34791fe70e8c.png"
+    ]
   }, {
     id: 6,
     title: "Imp in the garden and other fairy tales",
