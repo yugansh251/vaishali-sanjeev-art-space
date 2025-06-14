@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -401,18 +402,18 @@ Tongue has infinite possibilities.`,
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
               {selectedWork && (
                 <div className="max-h-[90vh] overflow-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 h-[500px]">
                     <div className="h-full">
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain" />
                     </div>
-                    <div className="p-6 md:p-8 flex flex-col">
+                    <div className="h-full p-6 md:p-8 flex flex-col">
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category} • {selectedWork.year}
                       </span>
                       <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
                         {selectedWork.title}
                       </h3>
-                      <ScrollArea className="flex-1 mb-6">
+                      <ScrollArea className="flex-1 mb-6 h-0">
                         <div className="text-gray-700 whitespace-pre-line pr-4">
                           {selectedWork.description}
                         </div>
