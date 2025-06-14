@@ -37,11 +37,11 @@ const Portfolio = () => {
     description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
     pdfLink: "https://drive.google.com/file/d/example10",
     galleryImages: [
-      "/lovable-uploads/78ba5192-482e-4259-b084-e95185bdbb80.png",
       "/lovable-uploads/af5dcae7-993a-4c09-b292-617220b44e2a.png",
       "/lovable-uploads/d7b66ced-7927-4a37-b942-9f1146f42441.png",
       "/lovable-uploads/929eafe6-697e-4b78-9b6f-e2db1e30154c.png",
-      "/lovable-uploads/7ed7c71e-0fc4-4ec9-8445-1a9d64e17f26.png"
+      "/lovable-uploads/7ed7c71e-0fc4-4ec9-8445-1a9d64e17f26.png",
+      "/lovable-uploads/78ba5192-482e-4259-b084-e95185bdbb80.png"
     ]
   }, {
     id: 2,
@@ -94,7 +94,18 @@ const Portfolio = () => {
     image: "/lovable-uploads/337f1345-3709-4f18-bf6d-f2fda48b4368.png",
     description: "A critical examination of late capitalism and market forces shaping contemporary society.",
     pdfLink: "https://drive.google.com/file/d/example3",
-    galleryImages: ["/lovable-uploads/ce1991de-0df3-41ff-931a-0c5e3eed156a.png", "/lovable-uploads/653a6cec-4522-4d68-9037-7fa3119b3dd9.png", "/lovable-uploads/9b6652e8-e19f-4a9c-9983-8b63262c49ea.png", "/lovable-uploads/ac380cf5-fa37-4084-aef1-eb0843b3fa0c.png", "/lovable-uploads/1a710ed2-7997-474f-8ee5-a25034f48558.png"]
+    galleryImages: [
+      "/lovable-uploads/35204abb-322d-4efe-8e1b-f484af6ddbc1.png",
+      "/lovable-uploads/72225803-63bf-433c-a2ed-ab81c1ca1a30.png",
+      "/lovable-uploads/c4d0e4a3-2c7e-4ea1-9a22-35a854ac588c.png",
+      "/lovable-uploads/7d316407-acf2-4b78-a11e-a63fe874a323.png",
+      "/lovable-uploads/7912a760-0f0c-491c-9bb4-e5b76e60093d.png",
+      "/lovable-uploads/66495f3a-b212-47d2-8375-3075c08bc863.png",
+      "/lovable-uploads/3bed6638-6fb4-48e4-b1d4-573e7f4e7512.png",
+      "/lovable-uploads/88edba5a-f260-404d-a7e2-62f1069debbb.png",
+      "/lovable-uploads/1c1b5939-bbfd-4336-bd2a-bb90851fd3ad.png",
+      "/lovable-uploads/30beef8c-33c0-4979-842d-6c3985cfd755.png"
+    ]
   }, {
     id: 5,
     title: "I am so angry, I made this sign",
