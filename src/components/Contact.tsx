@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Instagram, Facebook, Mail, MapPin } from 'lucide-react';
@@ -27,10 +26,9 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace these with your actual EmailJS credentials
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      const serviceId = 'service_2yobiqo';
+      const templateId = 'template_m5itn1t';
+      const publicKey = 'Nw2zTEMeSmK2VBWNL';
 
       const templateParams = {
         from_name: formData.name,
