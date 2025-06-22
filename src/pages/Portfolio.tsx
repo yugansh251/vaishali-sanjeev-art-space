@@ -246,9 +246,9 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog with Navigation */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
-            <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-black/95 shadow-none">
-              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-4 right-4 z-50 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50">
-                <X className="h-6 w-6" />
+            <DialogContent className="max-w-none max-h-none w-screen h-screen p-2 sm:p-4 md:p-6 border-0 bg-black/95 shadow-none">
+              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-black/70 p-2 sm:p-3 text-white hover:bg-black/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50">
+                <X className="h-4 w-4 sm:h-6 sm:w-6" />
                 <span className="sr-only">Close</span>
               </button>
               
@@ -257,23 +257,31 @@ const Portfolio = () => {
                 <>
                   <button 
                     onClick={() => navigateGallery('prev')}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/50 p-3 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/70 p-2 sm:p-3 text-white hover:bg-black/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
                   >
-                    <ChevronLeft className="h-6 w-6" />
+                    <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Previous image</span>
                   </button>
                   <button 
                     onClick={() => navigateGallery('next')}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/50 p-3 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/70 p-2 sm:p-3 text-white hover:bg-black/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
                   >
-                    <ChevronRight className="h-6 w-6" />
+                    <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Next image</span>
                   </button>
                 </>
               )}
 
-              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4">
-                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full object-scale-down" />
+              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-8 sm:p-12">
+                  <img 
+                    src={selectedGalleryImage} 
+                    alt="Gallery artwork" 
+                    className="max-w-full max-h-full w-auto h-auto object-contain"
+                    style={{
+                      maxWidth: 'calc(100vw - 4rem)',
+                      maxHeight: 'calc(100vh - 4rem)'
+                    }}
+                  />
                 </div>}
             </DialogContent>
           </Dialog>
