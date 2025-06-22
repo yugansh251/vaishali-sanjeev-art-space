@@ -220,22 +220,13 @@ const Portfolio = () => {
           {/* Gallery Image Dialog */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
             <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-black/95 shadow-none">
-              <button
-                onClick={() => setSelectedGalleryImage(null)}
-                className="absolute top-4 right-4 z-50 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
-              >
+              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-4 right-4 z-50 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50">
                 <X className="h-6 w-6" />
                 <span className="sr-only">Close</span>
               </button>
-              {selectedGalleryImage && (
-                <div className="w-full h-full flex items-center justify-center p-4">
-                  <img 
-                    src={selectedGalleryImage} 
-                    alt="Gallery artwork" 
-                    className="max-w-full max-h-full object-scale-down" 
-                  />
-                </div>
-              )}
+              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4">
+                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full object-scale-down" />
+                </div>}
             </DialogContent>
           </Dialog>
 
