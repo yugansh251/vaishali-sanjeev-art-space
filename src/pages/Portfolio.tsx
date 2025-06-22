@@ -26,17 +26,17 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
 
-  // Updated works array with corrected year for "Not still life"
+  // Updated works array with corrected title and gallery image
   const works: Work[] = [{
     id: 1,
-    title: "Not still life",
+    title: "not still life",
     year: "2025",
     category: "installation",
     tab: "not-still-life",
     image: "/lovable-uploads/d840ae56-4f78-4389-813f-c3d7433318ea.png",
     description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
     pdfLink: "https://drive.google.com/file/d/example10",
-    galleryImages: ["/lovable-uploads/0285f1df-f0cd-425b-977f-77785734b7eb.png", "/lovable-uploads/689fdfc3-04d0-4b81-8d3b-c72ca92423b3.png", "/lovable-uploads/cb7854e9-5297-4154-b0c6-8d9347b8bea3.png", "/lovable-uploads/2b8a82a6-8b2f-45d0-99fc-6bf151d63abc.png"]
+    galleryImages: ["/lovable-uploads/53aa1696-e63c-4ed2-add5-40d8a8ba7bd8.png", "/lovable-uploads/689fdfc3-04d0-4b81-8d3b-c72ca92423b3.png", "/lovable-uploads/cb7854e9-5297-4154-b0c6-8d9347b8bea3.png", "/lovable-uploads/2b8a82a6-8b2f-45d0-99fc-6bf151d63abc.png"]
   }, {
     id: 2,
     title: "Honey, I shrunk my Tongue",
