@@ -37,6 +37,7 @@ const Portfolio = () => {
       description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
       pdfLink: "https://drive.google.com/file/d/example10",
       galleryImages: [
+        "/lovable-uploads/0285f1df-f0cd-425b-977f-77785734b7eb.png",
         "/lovable-uploads/689fdfc3-04d0-4b81-8d3b-c72ca92423b3.png",
         "/lovable-uploads/cb7854e9-5297-4154-b0c6-8d9347b8bea3.png",
         "/lovable-uploads/2b8a82a6-8b2f-45d0-99fc-6bf151d63abc.png"
@@ -366,10 +367,10 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
-            <DialogContent className="max-w-none max-h-none w-auto h-auto p-0 border-0 bg-black/90 shadow-none">
+            <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-black/95 shadow-none">
               {selectedGalleryImage && (
-                <div className="w-auto h-auto">
-                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-[90vw] max-h-[90vh] object-contain" />
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full object-contain" />
                 </div>
               )}
             </DialogContent>
