@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -27,10 +26,10 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
 
-  // Updated works array with new title, cover image for "not Still Life"
+  // Updated works array with new title, cover image for "'not Still Life'"
   const works: Work[] = [{
     id: 1,
-    title: "not Still Life",
+    title: "'not Still Life'",
     year: "2025",
     category: "installation",
     tab: "not-still-life",
