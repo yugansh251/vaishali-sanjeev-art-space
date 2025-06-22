@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -246,8 +247,8 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog with Navigation */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
-            <DialogContent className="max-w-none max-h-none w-screen h-screen p-2 sm:p-4 md:p-6 border-0 bg-black/95 shadow-none">
-              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-black/70 p-2 sm:p-3 text-white hover:bg-black/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50">
+            <DialogContent className="max-w-none max-h-none w-screen h-screen p-2 sm:p-4 md:p-6 border-0 bg-white shadow-none">
+              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                 <X className="h-4 w-4 sm:h-6 sm:w-6" />
                 <span className="sr-only">Close</span>
               </button>
@@ -257,14 +258,14 @@ const Portfolio = () => {
                 <>
                   <button 
                     onClick={() => navigateGallery('prev')}
-                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/70 p-2 sm:p-3 text-white hover:bg-black/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50"
                   >
                     <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Previous image</span>
                   </button>
                   <button 
                     onClick={() => navigateGallery('next')}
-                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/70 p-2 sm:p-3 text-white hover:bg-black/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50"
                   >
                     <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Next image</span>
