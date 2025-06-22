@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -273,17 +272,19 @@ const Portfolio = () => {
                 </>
               )}
 
-              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-8 sm:p-12">
+              {selectedGalleryImage && (
+                <div className="w-full h-full flex items-center justify-center overflow-auto touch-pinch-zoom">
                   <img 
                     src={selectedGalleryImage} 
                     alt="Gallery artwork" 
-                    className="max-w-full max-h-full w-auto h-auto object-contain"
+                    className="block max-w-none max-h-none w-auto h-auto object-contain"
                     style={{
-                      maxWidth: 'calc(100vw - 4rem)',
-                      maxHeight: 'calc(100vh - 4rem)'
+                      minWidth: '100px',
+                      minHeight: '100px'
                     }}
                   />
-                </div>}
+                </div>
+              )}
             </DialogContent>
           </Dialog>
 
