@@ -5,12 +5,15 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { LayoutGrid, Image, Download, X } from 'lucide-react';
+import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
+
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+
   interface Work {
     id: number;
     title: string;
@@ -23,11 +26,11 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
 
-  // Updated works array with new gallery images for "Not still life"
+  // Updated works array with corrected year for "Not still life"
   const works: Work[] = [{
     id: 1,
     title: "Not still life",
-    year: "2005",
+    year: "2025",
     category: "installation",
     tab: "not-still-life",
     image: "/lovable-uploads/d840ae56-4f78-4389-813f-c3d7433318ea.png",
@@ -148,6 +151,30 @@ const Portfolio = () => {
 
   // Filter works based on selected category
   const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
+
+  // Functions to handle gallery navigation
+  const openGalleryImage = (imageUrl: string, galleryImages: string[]) => {
+    const index = galleryImages.indexOf(imageUrl);
+    setCurrentGalleryIndex(index);
+    setSelectedGalleryImage(imageUrl);
+  };
+
+  const navigateGallery = (direction: 'prev' | 'next') => {
+    if (!selectedWork?.galleryImages) return;
+    
+    const galleryImages = selectedWork.galleryImages;
+    let newIndex;
+    
+    if (direction === 'prev') {
+      newIndex = currentGalleryIndex > 0 ? currentGalleryIndex - 1 : galleryImages.length - 1;
+    } else {
+      newIndex = currentGalleryIndex < galleryImages.length - 1 ? currentGalleryIndex + 1 : 0;
+    }
+    
+    setCurrentGalleryIndex(newIndex);
+    setSelectedGalleryImage(galleryImages[newIndex]);
+  };
+
   return <Layout>
       <section className="pt-32 pb-16 px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
@@ -217,13 +244,34 @@ const Portfolio = () => {
               </div>}
           </div>
 
-          {/* Gallery Image Dialog */}
+          {/* Gallery Image Dialog with Navigation */}
           <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
             <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-black/95 shadow-none">
               <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-4 right-4 z-50 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50">
                 <X className="h-6 w-6" />
                 <span className="sr-only">Close</span>
               </button>
+              
+              {/* Navigation Arrows */}
+              {selectedWork?.galleryImages && selectedWork.galleryImages.length > 1 && (
+                <>
+                  <button 
+                    onClick={() => navigateGallery('prev')}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/50 p-3 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                    <span className="sr-only">Previous image</span>
+                  </button>
+                  <button 
+                    onClick={() => navigateGallery('next')}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-black/50 p-3 text-white hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                    <span className="sr-only">Next image</span>
+                  </button>
+                </>
+              )}
+
               {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4">
                   <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full object-scale-down" />
                 </div>}
@@ -261,7 +309,7 @@ const Portfolio = () => {
                   {selectedWork.galleryImages && selectedWork.galleryImages.length > 0 && <div className="border-t border-gray-200 p-6">
                       <h4 className="text-lg font-semibold mb-4">Gallery</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => setSelectedGalleryImage(image)}>
+                        {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => openGalleryImage(image, selectedWork.galleryImages!)}>
                             <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-contain" />
                           </div>)}
                       </div>
@@ -273,4 +321,5 @@ const Portfolio = () => {
       </section>
     </Layout>;
 };
+
 export default Portfolio;
