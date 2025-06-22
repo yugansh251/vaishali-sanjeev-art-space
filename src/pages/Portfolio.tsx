@@ -25,7 +25,7 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
   
-  // Updated works array with new gallery images
+  // Updated works array with new gallery images for "Not still life"
   const works: Work[] = [
     {
       id: 1,
@@ -37,11 +37,9 @@ const Portfolio = () => {
       description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
       pdfLink: "https://drive.google.com/file/d/example10",
       galleryImages: [
-        "/lovable-uploads/af5dcae7-993a-4c09-b292-617220b44e2a.png",
-        "/lovable-uploads/d7b66ced-7927-4a37-b942-9f1146f42441.png",
-        "/lovable-uploads/929eafe6-697e-4b78-9b6f-e2db1e30154c.png",
-        "/lovable-uploads/7ed7c71e-0fc4-4ec9-8445-1a9d64e17f26.png",
-        "/lovable-uploads/78ba5192-482e-4259-b084-e95185bdbb80.png"
+        "/lovable-uploads/689fdfc3-04d0-4b81-8d3b-c72ca92423b3.png",
+        "/lovable-uploads/cb7854e9-5297-4154-b0c6-8d9347b8bea3.png",
+        "/lovable-uploads/2b8a82a6-8b2f-45d0-99fc-6bf151d63abc.png"
       ]
     }, {
       id: 2,
