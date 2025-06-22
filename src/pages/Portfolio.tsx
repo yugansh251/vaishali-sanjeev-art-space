@@ -26,14 +26,14 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
 
-  // Updated works array with corrected title and gallery image
+  // Updated works array with new title, cover image for "not Still Life"
   const works: Work[] = [{
     id: 1,
-    title: "not still life",
+    title: "not Still Life",
     year: "2025",
     category: "installation",
     tab: "not-still-life",
-    image: "/lovable-uploads/d840ae56-4f78-4389-813f-c3d7433318ea.png",
+    image: "/lovable-uploads/c84db2c7-daea-4da0-9d0d-4b0264511fdd.png",
     description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
     pdfLink: "https://drive.google.com/file/d/example10",
     galleryImages: ["/lovable-uploads/53aa1696-e63c-4ed2-add5-40d8a8ba7bd8.png", "/lovable-uploads/689fdfc3-04d0-4b81-8d3b-c72ca92423b3.png", "/lovable-uploads/cb7854e9-5297-4154-b0c6-8d9347b8bea3.png", "/lovable-uploads/2b8a82a6-8b2f-45d0-99fc-6bf151d63abc.png"]
@@ -227,7 +227,7 @@ const Portfolio = () => {
                       <div className="md:col-span-2 p-6">
                         <div className="cursor-pointer" onClick={() => setSelectedWork(work)}>
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
-                            {work.category} • {work.year}
+                            {work.category === 'installation' ? 'Art Works' : work.category} • {work.year}
                           </span>
                           <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
                           <p className="mt-3 text-gray-600 line-clamp-3">{work.description}</p>
@@ -296,7 +296,7 @@ const Portfolio = () => {
                     </div>
                     <div className="p-6 md:p-8">
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
-                        {selectedWork.category} • {selectedWork.year}
+                        {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
                       <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
                         {selectedWork.title}
