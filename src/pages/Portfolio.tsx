@@ -7,6 +7,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
+
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -218,15 +219,21 @@ const Portfolio = () => {
                           <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
                         </AspectRatio>
                       </div>
-                      <div className="md:col-span-2 p-6">
-                        <div className="cursor-pointer" onClick={() => setSelectedWork(work)}>
+                      <div className="md:col-span-2 p-6 flex flex-col">
+                        <div className="cursor-pointer flex-shrink-0" onClick={() => setSelectedWork(work)}>
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
                             {work.category === 'installation' ? 'Art Works' : work.category} • {work.year}
                           </span>
                           <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
-                          <p className="mt-3 text-gray-600 line-clamp-3">{work.description}</p>
                         </div>
-                        <div className="mt-4 flex justify-end">
+                        <div className="flex-1 mt-3">
+                          <ScrollArea className="h-64 pr-4">
+                            <div className="cursor-pointer" onClick={() => setSelectedWork(work)}>
+                              <p className="text-gray-600 whitespace-pre-line">{work.description}</p>
+                            </div>
+                          </ScrollArea>
+                        </div>
+                        <div className="mt-4 flex justify-end flex-shrink-0">
                           <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
                             <Download size={14} className="mr-1" />
                             Download PDF
