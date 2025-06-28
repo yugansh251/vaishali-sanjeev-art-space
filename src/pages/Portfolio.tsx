@@ -6,14 +6,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
-
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
-
   interface Work {
     id: number;
     title: string;
@@ -158,23 +156,18 @@ const Portfolio = () => {
     setCurrentGalleryIndex(index);
     setSelectedGalleryImage(imageUrl);
   };
-
   const navigateGallery = (direction: 'prev' | 'next') => {
     if (!selectedWork?.galleryImages) return;
-    
     const galleryImages = selectedWork.galleryImages;
     let newIndex;
-    
     if (direction === 'prev') {
       newIndex = currentGalleryIndex > 0 ? currentGalleryIndex - 1 : galleryImages.length - 1;
     } else {
       newIndex = currentGalleryIndex < galleryImages.length - 1 ? currentGalleryIndex + 1 : 0;
     }
-    
     setCurrentGalleryIndex(newIndex);
     setSelectedGalleryImage(galleryImages[newIndex]);
   };
-
   return <Layout>
       <section className="pt-32 pb-16 px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
@@ -253,38 +246,23 @@ const Portfolio = () => {
               </button>
               
               {/* Navigation Arrows */}
-              {selectedWork?.galleryImages && selectedWork.galleryImages.length > 1 && (
-                <>
-                  <button 
-                    onClick={() => navigateGallery('prev')}
-                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50"
-                  >
+              {selectedWork?.galleryImages && selectedWork.galleryImages.length > 1 && <>
+                  <button onClick={() => navigateGallery('prev')} className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                     <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Previous image</span>
                   </button>
-                  <button 
-                    onClick={() => navigateGallery('next')}
-                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50"
-                  >
+                  <button onClick={() => navigateGallery('next')} className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                     <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Next image</span>
                   </button>
-                </>
-              )}
+                </>}
 
-              {selectedGalleryImage && (
-                <div className="w-full h-full flex items-center justify-center p-4">
-                  <img 
-                    src={selectedGalleryImage} 
-                    alt="Gallery artwork" 
-                    className="max-w-full max-h-full w-auto h-auto object-contain"
-                    style={{
-                      maxWidth: 'calc(100vw - 2rem)',
-                      maxHeight: 'calc(100vh - 2rem)'
-                    }}
-                  />
-                </div>
-              )}
+              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4">
+                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full w-auto h-auto object-contain" style={{
+                maxWidth: 'calc(100vw - 2rem)',
+                maxHeight: 'calc(100vh - 2rem)'
+              }} />
+                </div>}
             </DialogContent>
           </Dialog>
 
@@ -300,9 +278,7 @@ const Portfolio = () => {
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
-                      <h3 className="text-2xl font-serif font-semibold mt-2 mb-4">
-                        {selectedWork.title}
-                      </h3>
+                      
                       <p className="text-gray-700 mb-6">
                         {selectedWork.description}
                       </p>
@@ -331,5 +307,4 @@ const Portfolio = () => {
       </section>
     </Layout>;
 };
-
 export default Portfolio;
