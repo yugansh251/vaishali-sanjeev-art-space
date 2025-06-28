@@ -279,9 +279,7 @@ const Portfolio = () => {
                         {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
                       
-                      <p className="text-gray-700 mb-6">
-                        {selectedWork.description}
-                      </p>
+                      
                       <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mb-6">
                         <Button variant="outline" size="sm" className="gap-2">
                           <Download size={16} />
