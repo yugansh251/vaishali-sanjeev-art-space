@@ -5,6 +5,7 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -32,7 +33,7 @@ const Portfolio = () => {
     category: "installation",
     tab: "not-still-life",
     image: "/lovable-uploads/c84db2c7-daea-4da0-9d0d-4b0264511fdd.png",
-    description: "An exploration of the dynamic nature of life through unconventional still life compositions.",
+    description: "Vaishali Narkar and Sanjeev Khandekar, have presented a new series of works \"not Still Life\", that continues their two-decade-long exploration of ecological anxieties.\nComprising six multimedia works on canvas, this collection, primarily executed in acrylic, watercolour, and occasional oil, transcends traditional painting by incorporating and interfacing a fragmented, etched, and sandblasted glass. This innovative approach creates a visual experience of blurring, distortion, magnification, and convergence, effectively mirroring the disorienting nature of our contemporary environmental crisis.\nFor Narkar and Khandekar, the Anthropocene is more accurately understood as the Capitalocene, a term that underscores their belief that insatiable capitalist greed lies at the root of our planet's degradation.\nTheir works, therefore, delve into the complex politics embedded within the daily unfolding of environmental catastrophes, tackling issues ranging from global warming and extinction to fossil fuel dependence and genetically modified foods.\nTheir artistic practice is characterized by its versatility. Over the years, they have seamlessly transitioned between various mediums, from marble inlay and embroidery to large-scale installations and videography, always driven by their commitment to expressing their environmental concerns. This new series, however, marks a distinct departure with its integration of glass, creating a layered visual narrative that reflects the fragmented and fractured reality of our relationship with nature. The title itself, \"not Still Life\", is a deliberate play on words, a subversive twist on the traditional genre of still life painting. While still life typically depicts inanimate objects arranged for aesthetic pleasure, Narkar and Khandekar's \"not Still Life\" vehemently asserts that their focus is on the dynamic, precarious state of life itself. The word \"still,\" connoting inactivity and silence, is juxtaposed with the urgent reality of a planet in flux, creating a dark humour that underscores the gravity of the situation. Their statement, \"Not Still (life),\" emphasizes that their art is a direct reflection of the living world and our place within it. Sanjeev Khandekar's multifaceted background as a poet, writer, and avid gardener profoundly influences their collaborative work. His writings, often centred on environmental themes, and his long-standing engagement with tropical gardening, provide a rich source of inspiration. Gardening, for him, is an act of hope, a testament to the resilience of life. This personal connection to nature is evident in their another watercolour series, \"Household Roses, Lemongrass and Jasmines in the Cement Jungle of Mumbai,\" which captures the delicate beauty of nature kept alive amidst urban sprawl by the common people. In \"not Still Life\", Narkar and Khandekar have crafted a powerful visual commentary on the Capitalocene, using distorted lenses to reflect the distorted reality of our environmental crisis. Their work serves as a poignant reminder that the \"stillness\" we perceive is a dangerous illusion, and that urgent action is required to address the profound changes reshaping our world.",
     pdfLink: "https://drive.google.com/file/d/example10",
     galleryImages: ["/lovable-uploads/53aa1696-e63c-4ed2-add5-40d8a8ba7bd8.png", "/lovable-uploads/689fdfc3-04d0-4b81-8d3b-c72ca92423b3.png", "/lovable-uploads/cb7854e9-5297-4154-b0c6-8d9347b8bea3.png", "/lovable-uploads/2b8a82a6-8b2f-45d0-99fc-6bf151d63abc.png"]
   }, {
@@ -257,10 +258,12 @@ const Portfolio = () => {
                   </button>
                 </>}
 
-              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4">
-                  <img src={selectedGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full w-auto h-auto object-contain" style={{
+              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4 sm:p-8">
+                  <img src={selectedGalleryImage} alt="Gallery artwork" className="object-contain" style={{
                 maxWidth: 'calc(100vw - 2rem)',
-                maxHeight: 'calc(100vh - 2rem)'
+                maxHeight: 'calc(100vh - 2rem)',
+                width: 'auto',
+                height: 'auto'
               }} />
                 </div>}
             </DialogContent>
@@ -270,17 +273,21 @@ const Portfolio = () => {
           <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
               {selectedWork && <div className="max-h-[90vh] overflow-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="h-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
+                    <div className="h-full min-h-[400px] md:min-h-[500px]">
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain" />
                     </div>
-                    <div className="p-6 md:p-8">
+                    <div className="p-6 md:p-8 h-full min-h-[400px] md:min-h-[500px] flex flex-col">
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
+                      <h2 className="text-2xl font-serif font-bold mt-2 mb-4">{selectedWork.title}</h2>
                       
+                      <ScrollArea className="flex-1 pr-4">
+                        <p className="text-gray-700 leading-relaxed whitespace-pre-line">{selectedWork.description}</p>
+                      </ScrollArea>
                       
-                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mb-6">
+                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
                         <Button variant="outline" size="sm" className="gap-2">
                           <Download size={16} />
                           Download PDF
