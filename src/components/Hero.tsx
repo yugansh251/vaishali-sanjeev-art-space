@@ -67,16 +67,34 @@ const Hero = () => {
     title: "Suspended Installation",
     medium: "Mixed Media Installation",
     year: "2024"
+  }, {
+    id: 11,
+    image: "/lovable-uploads/839007b4-0811-4fd4-b5b8-0210d4cffecd.png",
+    title: "Corn Dreams",
+    medium: "Mixed Media Collage",
+    year: "2024"
+  }, {
+    id: 12,
+    image: "/lovable-uploads/6d386457-14ed-4b2b-a627-e94ef4b2f179.png",
+    title: "Perfect Kludge",
+    medium: "Mixed Media Installation",
+    year: "2024"
+  }, {
+    id: 13,
+    image: "/lovable-uploads/e01e3819-1b87-4716-acaf-3be209da4d75.png",
+    title: "Red Installation",
+    medium: "Installation View",
+    year: "2024"
   }];
 
   // Set up auto-scroll for the carousel
   useEffect(() => {
     if (!api) return;
 
-    // Auto-scroll every 5 seconds
+    // Auto-scroll every 3 seconds
     const autoScrollInterval = setInterval(() => {
       api.scrollNext();
-    }, 5000);
+    }, 3000);
 
     // Clean up interval on unmount
     return () => clearInterval(autoScrollInterval);
