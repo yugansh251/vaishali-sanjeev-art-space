@@ -130,16 +130,6 @@ const Portfolio = () => {
   }, {
     id: 10,
     title: "What do I love when I love you, my God",
-    year: "2023",
-    category: "installation",
-    tab: "bad-breath-iii",
-    image: "/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png",
-    description: "A continuation of the surreal investigation into social anxieties and cinematic suspense.",
-    pdfLink: "https://drive.google.com/file/d/example14",
-    galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png"]
-  }, {
-    id: 10,
-    title: "What do I love when I love you, my God",
     year: "2006",
     category: "installation",
     tab: "what-do-i-love",
