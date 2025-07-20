@@ -18,7 +18,7 @@ const Portfolio = () => {
     id: number;
     title: string;
     year: string;
-    category: 'installation' | 'publication';
+    category: 'installation' | 'publication' | 'previous';
     tab: string;
     image: string;
     description: string;
@@ -171,7 +171,7 @@ const Portfolio = () => {
     id: 15,
     title: "All that I wanna do",
     year: "2005",
-    category: "installation",
+    category: "previous",
     tab: "all-that-i-wanna-do",
     image: "/lovable-uploads/650c0882-fe96-42f9-8efb-5acc29ceca1f.png",
     description: "An immersive installation reflecting on personal desires and societal expectations.",
@@ -214,6 +214,9 @@ const Portfolio = () => {
                 <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
                   Publications
                 </Button>
+                <Button variant={selectedCategory === 'previous' ? 'default' : 'outline'} onClick={() => setSelectedCategory('previous')} className={selectedCategory === 'previous' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+                  Previous Art Works
+                </Button>
               </div>
               
               <div className="flex gap-2">
@@ -252,7 +255,7 @@ const Portfolio = () => {
                       <div className="md:col-span-2 p-6 flex flex-col">
                         <div className="cursor-pointer flex-shrink-0" onClick={() => setSelectedWork(work)}>
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
-                            {work.category === 'installation' ? 'Art Works' : work.category} • {work.year}
+                            {work.category === 'installation' ? 'Art Works' : work.category === 'previous' ? 'Previous Art Works' : work.category} • {work.year}
                           </span>
                           <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
                         </div>
