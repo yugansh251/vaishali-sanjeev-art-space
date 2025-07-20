@@ -43,7 +43,7 @@ const Portfolio = () => {
     year: "2017",
     category: "installation",
     tab: "honey",
-    image: "/lovable-uploads/d5f03b39-25c4-4642-8476-9a6371431261.png",
+    image: "/lovable-uploads/1f76b3c3-15e5-4bdb-8b89-0790ec4baa27.png",
     description: "An interactive installation exploring the nature of truth and perception in contemporary society.",
     pdfLink: "https://drive.google.com/file/d/example1",
     galleryImages: ["/lovable-uploads/fb3d2ed9-5405-40dc-a36c-db400bba2816.png", "/lovable-uploads/68697f75-08be-4508-bb08-8c293644c582.png", "/lovable-uploads/dbfae489-0738-4dc8-87b4-1c0666bedd23.png", "/lovable-uploads/7851707d-7430-4786-b440-682533e18446.png", "/lovable-uploads/1abce420-e34e-4ba1-ac05-714f5f5c8656.png", "/lovable-uploads/14006748-ead5-4e14-9c8f-6b283eeca1c2.png", "/lovable-uploads/c1a93e0c-2551-485b-b5f9-a8d30835b23e.png", "/lovable-uploads/b8843983-09b9-47be-9985-c0ec3adf24c0.png", "/lovable-uploads/235926d9-632a-4b48-b293-512d9a4270c0.png", "/lovable-uploads/629bc411-445a-451b-9e76-46da081736d4.png"]
@@ -53,7 +53,7 @@ const Portfolio = () => {
     year: "2019",
     category: "installation",
     tab: "ragamala",
-    image: "/lovable-uploads/4e0ca9d1-da46-454d-86d8-8a328a3b3f11.png",
+    image: "/lovable-uploads/4e1daee6-d911-4bd7-9f32-f3cfb6cf7fcc.png",
     description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
     pdfLink: "https://drive.google.com/file/d/example2",
     galleryImages: ["/lovable-uploads/88db819d-f4f8-4473-af2c-eb344ee66c11.png", "/lovable-uploads/998deae4-b3af-423a-a4de-843f3782ca74.png", "/lovable-uploads/97b2deb1-f75c-4ce0-a06e-bd1af8a72c1d.png", "/lovable-uploads/aed3d2ee-4bbc-4686-b055-2640984a52eb.png", "/lovable-uploads/aba91c3a-268b-4b71-a250-bc31e6bf3c86.png", "/lovable-uploads/3793a105-ebfc-447e-bff2-3dfdaaa6a552.png", "/lovable-uploads/a7f3ad5c-4281-41ca-b491-d48b5b1260e7.png", "/lovable-uploads/4e8fb196-d68c-46ec-a65c-087e374a07d3.png", "/lovable-uploads/1b2a828d-d604-443d-973a-2e1a27d7d9f3.png", "/lovable-uploads/2fbb9d4d-e115-4ab3-859b-eadd5fd9ed0a.png"]
@@ -63,7 +63,7 @@ const Portfolio = () => {
     year: "2003",
     category: "installation",
     tab: "triumph",
-    image: "/lovable-uploads/337f1345-3709-4f18-bf6d-f2fda48b4368.png",
+    image: "/lovable-uploads/4e7bef34-8e17-4669-98b1-6f322daf9352.png",
     description: "A critical examination of late capitalism and market forces shaping contemporary society.",
     pdfLink: "https://drive.google.com/file/d/example3",
     galleryImages: ["/lovable-uploads/35204abb-322d-4efe-8e1b-f484af6ddbc1.png", "/lovable-uploads/72225803-63bf-433c-a2ed-ab81c1ca1a30.png", "/lovable-uploads/c4d0e4a3-2c7e-4ea1-9a22-35a854ac588c.png", "/lovable-uploads/7d316407-acf2-4b78-a11e-a63fe874a323.png", "/lovable-uploads/7912a760-0f0c-491c-9bb4-e5b76e60093d.png", "/lovable-uploads/66495f3a-b212-47d2-8375-3075c08bc863.png", "/lovable-uploads/3bed6638-6fb4-48e4-b1d4-573e7f4e7512.png", "/lovable-uploads/88edba5a-f260-404d-a7e2-62f1069debbb.png", "/lovable-uploads/1c1b5939-bbfd-4336-bd2a-bb90851fd3ad.png", "/lovable-uploads/30beef8c-33c0-4979-842d-6c3985cfd755.png"]
@@ -73,7 +73,7 @@ const Portfolio = () => {
     year: "2012",
     category: "publication",
     tab: "angry",
-    image: "/lovable-uploads/b11607ac-d5b2-4cfb-80fc-04bebd3f77a3.png",
+    image: "/lovable-uploads/8b08c4ea-c9a1-4a8a-83b6-1ce3fbf9dd46.png",
     description: "A provocative publication exploring themes of protest, expression, and the politics of anger.",
     pdfLink: "https://drive.google.com/file/d/example9",
     galleryImages: ["/lovable-uploads/bf837c31-1c23-4239-b9f4-e6ec1b8d7a9d.png", "/lovable-uploads/1c9ac1ff-bc1f-4de7-8417-21362a48c6d3.png", "/lovable-uploads/e5bee9ae-b94f-46b2-9e7c-61a9a4fb3aea.png", "/lovable-uploads/e45c502d-d713-4db7-8db7-e758427ed598.png", "/lovable-uploads/b036f9e8-7fb9-43c3-9538-8c1bf7cb65be.png", "/lovable-uploads/3b0cc10d-d36d-45d2-8ede-d949ec678eed.png", "/lovable-uploads/c8f9bae4-0288-437e-ae26-e53ee5c57418.png", "/lovable-uploads/c4c9e781-7a6b-44d4-b46d-2f14254fe294.png", "/lovable-uploads/0cdd834f-4996-4754-857d-be00a430a307.png", "/lovable-uploads/d133528e-90e3-4b59-8a28-34791fe70e8c.png"]
@@ -83,7 +83,7 @@ const Portfolio = () => {
     year: "2024",
     category: "installation",
     tab: "by-gorge",
-    image: "/lovable-uploads/473155fa-9c37-4d9e-bd23-ab649eefcbcc.png",
+    image: "/lovable-uploads/4bb13448-46c8-4540-b4a9-6cc301abb3fa.png",
     description: "An exploration of natural formations and their impact on human perception.",
     pdfLink: "https://drive.google.com/file/d/example13",
     galleryImages: ["/lovable-uploads/473155fa-9c37-4d9e-bd23-ab649eefcbcc.png"]
@@ -93,7 +93,7 @@ const Portfolio = () => {
     year: "2010",
     category: "publication",
     tab: "imp-in-the-garden",
-    image: "/lovable-uploads/a91861a5-473b-4243-b453-d366e98b241c.png",
+    image: "/lovable-uploads/d62b2b77-ccc9-41ac-af51-d432713d2bad.png",
     description: "A collection of reimagined fairy tales that question our relationship with nature and mythology.",
     pdfLink: "https://drive.google.com/file/d/example4",
     galleryImages: ["/lovable-uploads/9f5b2043-524b-428b-bfa1-31a5f4ba713a.png", "/lovable-uploads/79e8a1a1-3e2d-404e-89a1-967a257a3788.png", "/lovable-uploads/a1cc57b8-1413-44d1-afc8-f42e5bfb39d3.png", "/lovable-uploads/d93f6096-ef32-4549-a101-fce72a9750a5.png", "/lovable-uploads/655db54e-497a-4240-a044-655fa8f34f5c.png", "/lovable-uploads/657aeb3b-06e9-4f88-bb8a-ce4cc6045d43.png", "/lovable-uploads/da39a3dc-4d24-418c-817b-47b1b51b64d1.png", "/lovable-uploads/1cd02643-590d-4308-979b-398567fd2ac9.png", "/lovable-uploads/ad5ed47c-151f-491d-884d-c8515b97737e.png", "/lovable-uploads/a3f3c915-2e01-41cd-a526-1293d0f58427.png", "/lovable-uploads/c9a5f239-44b3-431b-b796-d8b647865bc0.png", "/lovable-uploads/0e1ca16a-0c79-43af-9bef-840c0c9d8add.png", "/lovable-uploads/30e3eccd-bb6e-4e7b-bf44-7b6113de4d37.png"]
@@ -103,7 +103,7 @@ const Portfolio = () => {
     year: "2008",
     category: "installation",
     tab: "bad-breath",
-    image: "/lovable-uploads/79ce5de6-7394-4c01-9f45-995a6c9d75cf.png",
+    image: "/lovable-uploads/96cd1cd0-9b23-4ccd-90e2-d498e501aa93.png",
     description: "A surreal investigation into social anxieties and cinematic suspense through multimedia installation.",
     pdfLink: "https://drive.google.com/file/d/example11",
     galleryImages: ["/lovable-uploads/65d53b44-9072-4180-9127-3914fc010097.png", "/lovable-uploads/bc7a0d11-895f-497a-9aac-adc1e5c9a818.png", "/lovable-uploads/75a43fb3-d44a-49ea-a4b5-156e1d63f9b8.png", "/lovable-uploads/bebb639b-ed4f-4733-bace-014d0772084d.png", "/lovable-uploads/bedb5860-1c39-409b-998e-f052a93df528.png", "/lovable-uploads/73582b7e-295b-4682-a5ec-28740ab2daa5.png", "/lovable-uploads/5af0482a-23b8-452e-9588-a7dc60f22fb1.png", "/lovable-uploads/e8ea11fa-c807-45e6-8b5b-dbd95efa139f.png", "/lovable-uploads/9e5c1c9a-aba0-407e-9a27-a3331a155dda.png", "/lovable-uploads/7a53be69-cace-49a6-9409-35b5bd282496.png"]
@@ -113,7 +113,7 @@ const Portfolio = () => {
     year: "2023",
     category: "installation",
     tab: "bad-breath-iii",
-    image: "/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png",
+    image: "/lovable-uploads/4466d7b1-71d8-448b-aa97-7725eb087a74.png",
     description: "A continuation of the surreal investigation into social anxieties and cinematic suspense.",
     pdfLink: "https://drive.google.com/file/d/example14",
     galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png"]
@@ -123,7 +123,7 @@ const Portfolio = () => {
     year: "2011",
     category: "publication",
     tab: "acquire-merge",
-    image: "/lovable-uploads/25c3eedf-5270-4e68-b77c-565421716d09.png",
+    image: "/lovable-uploads/358afbc9-c4e1-427f-a622-e73021db9465.png",
     description: "An exploration of corporate language and collaborative practices in the contemporary art world.",
     pdfLink: "https://drive.google.com/file/d/example5",
     galleryImages: ["/lovable-uploads/1bbf09c9-ecef-4bc8-8a86-9ece6f65398a.png", "/lovable-uploads/18158514-d4ff-45c2-825a-e3d561ef1722.png", "/lovable-uploads/e3dc8223-1ae9-43cb-811c-e11d855dae11.png", "/lovable-uploads/3a3fcdaa-f4d9-4cf5-adf5-3a7ff20f0346.png", "/lovable-uploads/12e19b04-0ae1-496e-b72d-e86f0e25ff65.png"]
