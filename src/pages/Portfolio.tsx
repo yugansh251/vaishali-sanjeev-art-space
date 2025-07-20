@@ -7,7 +7,6 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
-
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -324,7 +323,7 @@ const Portfolio = () => {
                       <h2 className="text-2xl font-serif font-bold mt-2 mb-4">{selectedWork.title}</h2>
                       
                       <ScrollArea className="flex-1 pr-4">
-                        <p className="text-gray-700 leading-relaxed whitespace-pre-line">{selectedWork.description}</p>
+                        
                       </ScrollArea>
                       
                       <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
