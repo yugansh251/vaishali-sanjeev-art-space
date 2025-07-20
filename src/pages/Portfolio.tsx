@@ -109,10 +109,10 @@ const Portfolio = () => {
   }, {
     id: 9,
     title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock III",
-    year: "2023",
+    year: "2010",
     category: "installation",
     tab: "bad-breath-iii",
-    image: "/lovable-uploads/4466d7b1-71d8-448b-aa97-7725eb087a74.png",
+    image: "/lovable-uploads/079476cf-8bc6-43b6-bd37-4b829527ba34.png",
     description: "A continuation of the surreal investigation into social anxieties and cinematic suspense.",
     pdfLink: "https://drive.google.com/file/d/example14",
     galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png"]
