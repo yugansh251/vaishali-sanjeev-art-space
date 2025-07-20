@@ -133,7 +133,7 @@ const Portfolio = () => {
     year: "2006",
     category: "installation",
     tab: "what-do-i-love",
-    image: "/lovable-uploads/c2c372a6-45a1-4e66-ade2-71fa4e2ad07b.png",
+    image: "/lovable-uploads/4cb1d480-a7f6-4631-aa6b-efc3bfbdc547.png",
     description: "A spiritual exploration of love, devotion, and the divine through multimedia elements.",
     pdfLink: "https://drive.google.com/file/d/example6",
     galleryImages: ["/lovable-uploads/2f7d6175-ee60-4d18-be20-a27258f97671.png", "/lovable-uploads/8350fb86-e421-4443-9eca-f640c9c33a13.png", "/lovable-uploads/9f8d9411-985c-443e-b608-68d9d6efe9c2.png", "/lovable-uploads/6c6585ff-1693-41ef-97fb-15f25476b883.png", "/lovable-uploads/7488508b-8ed8-475f-8168-9639939d413d.png", "/lovable-uploads/81d0dad3-8a0e-4691-b3e7-e0b4c054b708.png", "/lovable-uploads/3a3c485e-8d49-41ad-ad03-78f428071ba6.png", "/lovable-uploads/5252a848-fa9c-4e1d-93af-e482bda6be65.png", "/lovable-uploads/2cdcfd33-699e-4dc8-ad3b-fee502d64469.png", "/lovable-uploads/5f4e7d8c-daae-4936-a127-576ab3bb3b1b.png", "/lovable-uploads/31928965-9efa-44bb-b005-76006cc0afef.png", "/lovable-uploads/99ad75dc-7b9c-48c9-baba-81bfd3c960e2.png"]
@@ -143,7 +143,7 @@ const Portfolio = () => {
     year: "2005",
     category: "installation",
     tab: "peau-de-chagrin",
-    image: "/lovable-uploads/2c628a6f-49d2-4fd2-a7c9-2794d5c6dc6c.png",
+    image: "/lovable-uploads/40425b36-d58c-4f4b-a590-2c6af0027e70.png",
     description: "A meditation on aging, vanity, and the passage of time inspired by Balzac's literary work.",
     pdfLink: "https://drive.google.com/file/d/example12",
     galleryImages: ["/lovable-uploads/9c9b9bfd-dbb3-484a-baa5-3d2ed18b5dda.png", "/lovable-uploads/38c6fa43-c446-48b1-9e3a-986fe9d70eed.png", "/lovable-uploads/9f42976c-de88-4a88-b11a-151fc34fa2c4.png", "/lovable-uploads/d331a953-4a1e-4fd4-aaf5-6d0265740ee2.png", "/lovable-uploads/4ae1d5fc-524f-4d96-8d35-8c8104cda10d.png", "/lovable-uploads/0e6b1aa7-e585-4ee5-bf7e-4f76ac15732c.png", "/lovable-uploads/6ed957a0-eef9-4ea0-8ead-354080331d15.png", "/lovable-uploads/b3159f35-952c-41a1-a65f-ee76a735682f.png", "/lovable-uploads/96e9892a-c368-4cff-a731-bb1cddd7459d.png", "/lovable-uploads/f89125dd-f991-4ddd-9d2c-356a687d15cf.png", "/lovable-uploads/f352d503-46f3-4f26-9a1d-f8c8e539fbf1.png", "/lovable-uploads/9c39a54d-8d5c-4e1e-988b-1b3bd3d1b739.png", "/lovable-uploads/bdf24ba5-5056-4fb7-bc40-81b785213b13.png", "/lovable-uploads/07215d40-3644-4fc8-ad49-65885054a025.png", "/lovable-uploads/b346acf0-9313-41fc-b40a-2aed13db28d2.png", "/lovable-uploads/89a92525-033b-44e4-b5d1-fb66311eea92.png", "/lovable-uploads/097e2871-764c-4f58-a09e-49582300e79c.png", "/lovable-uploads/f8dd84cc-637c-47b1-81e4-0d7183db1d92.png"]
@@ -153,7 +153,7 @@ const Portfolio = () => {
     year: "2022",
     category: "installation",
     tab: "tits-clits-elephant-dick",
-    image: "/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png",
+    image: "/lovable-uploads/8df44c5d-384c-4688-910b-1ac57b0e8e93.png",
     description: "A provocative exploration of sexuality, identity, and societal taboos through multimedia art.",
     pdfLink: "https://drive.google.com/file/d/example15",
     galleryImages: ["/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png"]
@@ -163,7 +163,7 @@ const Portfolio = () => {
     year: "2007",
     category: "installation",
     tab: "kegel-exercise",
-    image: "/lovable-uploads/36aacf01-310c-41d2-b778-7460f45bec1a.png",
+    image: "/lovable-uploads/1deba9e5-600c-43bc-9f37-88056fb2a2ff.png",
     description: "An installation connecting traditional practices with contemporary body awareness and control.",
     pdfLink: "https://drive.google.com/file/d/example7",
     galleryImages: ["/lovable-uploads/3efc3c4b-25e0-440f-a6ca-fa7eeca4e1cf.png", "/lovable-uploads/aa70c8e7-f5c9-4679-9106-66b19d520666.png", "/lovable-uploads/c083ad26-b3f4-4f9c-82f6-a70c40ecf9e1.png", "/lovable-uploads/a27a7482-d9bf-44af-a451-0a4c96c1c1a7.png", "/lovable-uploads/f9277a79-2790-490d-8ad3-a2669171be9a.png", "/lovable-uploads/c8547811-e08c-49f9-8075-774b011d7cc0.png", "/lovable-uploads/856a72e7-7684-4fe3-ba79-1e0262729219.png", "/lovable-uploads/29dc11f4-2ea3-4364-9698-63d819f72d74.png", "/lovable-uploads/b74a9022-ad8a-406f-8ccb-f3804d75a0ab.png", "/lovable-uploads/13663bf7-3117-4631-b565-6eca71516167.png"]
@@ -173,7 +173,7 @@ const Portfolio = () => {
     year: "2005",
     category: "previous",
     tab: "all-that-i-wanna-do",
-    image: "/lovable-uploads/650c0882-fe96-42f9-8efb-5acc29ceca1f.png",
+    image: "/lovable-uploads/f7f18ae0-9713-40a3-b7e0-1db832fa7509.png",
     description: "An immersive installation reflecting on personal desires and societal expectations.",
     pdfLink: "https://drive.google.com/file/d/example8",
     galleryImages: ["/lovable-uploads/df0856ca-0e2c-4d02-a420-125d3b2be5e8.png", "/lovable-uploads/7b556376-4ae7-4f73-ad41-e5bc4b14cdcb.png", "/lovable-uploads/ac61c46a-3a39-460f-83c8-743bd00aa375.png", "/lovable-uploads/8b6d5cff-57bc-43c8-ae08-12f1d2b9986b.png", "/lovable-uploads/5661b49f-63f6-41ff-a66a-e08fe09259cc.png", "/lovable-uploads/06eb1035-e5f5-4545-a4a7-7b208ebd9ffc.png", "/lovable-uploads/1b70bf12-0f01-4ceb-8f85-43028b1b9640.png", "/lovable-uploads/c3f039b0-9efa-45e7-a9b9-e219d11b0dfd.png", "/lovable-uploads/88badd08-5682-4ac1-a56a-833d05f0757f.png", "/lovable-uploads/0e5b3236-2f23-40f6-9a42-ea217808cb82.png"]
