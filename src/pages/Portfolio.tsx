@@ -99,7 +99,7 @@ const Portfolio = () => {
     galleryImages: ["/lovable-uploads/9f5b2043-524b-428b-bfa1-31a5f4ba713a.png", "/lovable-uploads/79e8a1a1-3e2d-404e-89a1-967a257a3788.png", "/lovable-uploads/a1cc57b8-1413-44d1-afc8-f42e5bfb39d3.png", "/lovable-uploads/d93f6096-ef32-4549-a101-fce72a9750a5.png", "/lovable-uploads/655db54e-497a-4240-a044-655fa8f34f5c.png", "/lovable-uploads/657aeb3b-06e9-4f88-bb8a-ce4cc6045d43.png", "/lovable-uploads/da39a3dc-4d24-418c-817b-47b1b51b64d1.png", "/lovable-uploads/1cd02643-590d-4308-979b-398567fd2ac9.png", "/lovable-uploads/ad5ed47c-151f-491d-884d-c8515b97737e.png", "/lovable-uploads/a3f3c915-2e01-41cd-a526-1293d0f58427.png", "/lovable-uploads/c9a5f239-44b3-431b-b796-d8b647865bc0.png", "/lovable-uploads/0e1ca16a-0c79-43af-9bef-840c0c9d8add.png", "/lovable-uploads/30e3eccd-bb6e-4e7b-bf44-7b6113de4d37.png"]
   }, {
     id: 8,
-    title: "Everything you wanted to know about bad breath but afraid to ask alfred hitchcock",
+    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock I",
     year: "2008",
     category: "installation",
     tab: "bad-breath",
@@ -108,8 +108,18 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example11",
     galleryImages: ["/lovable-uploads/65d53b44-9072-4180-9127-3914fc010097.png", "/lovable-uploads/bc7a0d11-895f-497a-9aac-adc1e5c9a818.png", "/lovable-uploads/75a43fb3-d44a-49ea-a4b5-156e1d63f9b8.png", "/lovable-uploads/bebb639b-ed4f-4733-bace-014d0772084d.png", "/lovable-uploads/bedb5860-1c39-409b-998e-f052a93df528.png", "/lovable-uploads/73582b7e-295b-4682-a5ec-28740ab2daa5.png", "/lovable-uploads/5af0482a-23b8-452e-9588-a7dc60f22fb1.png", "/lovable-uploads/e8ea11fa-c807-45e6-8b5b-dbd95efa139f.png", "/lovable-uploads/9e5c1c9a-aba0-407e-9a27-a3331a155dda.png", "/lovable-uploads/7a53be69-cace-49a6-9409-35b5bd282496.png"]
   }, {
+    id: 9,
+    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock III",
+    year: "2023",
+    category: "installation",
+    tab: "bad-breath-iii",
+    image: "/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png",
+    description: "A continuation of the surreal investigation into social anxieties and cinematic suspense.",
+    pdfLink: "https://drive.google.com/file/d/example14",
+    galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png"]
+  }, {
     id: 15,
-    title: "Acquire merge collaborate",
+    title: "Acquire, Merge or Collaborate...!",
     year: "2011",
     category: "publication",
     tab: "acquire-merge",
@@ -118,8 +128,8 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example5",
     galleryImages: ["/lovable-uploads/1bbf09c9-ecef-4bc8-8a86-9ece6f65398a.png", "/lovable-uploads/18158514-d4ff-45c2-825a-e3d561ef1722.png", "/lovable-uploads/e3dc8223-1ae9-43cb-811c-e11d855dae11.png", "/lovable-uploads/3a3fcdaa-f4d9-4cf5-adf5-3a7ff20f0346.png", "/lovable-uploads/12e19b04-0ae1-496e-b72d-e86f0e25ff65.png"]
   }, {
-    id: 9,
-    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock III",
+    id: 10,
+    title: "What do I love when I love you, my God",
     year: "2023",
     category: "installation",
     tab: "bad-breath-iii",
