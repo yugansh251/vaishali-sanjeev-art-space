@@ -118,7 +118,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example14",
     galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png"]
   }, {
-    id: 15,
+    id: 10,
     title: "Acquire, Merge or Collaborate...!",
     year: "2011",
     category: "publication",
@@ -128,7 +128,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example5",
     galleryImages: ["/lovable-uploads/1bbf09c9-ecef-4bc8-8a86-9ece6f65398a.png", "/lovable-uploads/18158514-d4ff-45c2-825a-e3d561ef1722.png", "/lovable-uploads/e3dc8223-1ae9-43cb-811c-e11d855dae11.png", "/lovable-uploads/3a3fcdaa-f4d9-4cf5-adf5-3a7ff20f0346.png", "/lovable-uploads/12e19b04-0ae1-496e-b72d-e86f0e25ff65.png"]
   }, {
-    id: 10,
+    id: 11,
     title: "What do I love when I love you, my God",
     year: "2006",
     category: "installation",
@@ -138,7 +138,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example6",
     galleryImages: ["/lovable-uploads/2f7d6175-ee60-4d18-be20-a27258f97671.png", "/lovable-uploads/8350fb86-e421-4443-9eca-f640c9c33a13.png", "/lovable-uploads/9f8d9411-985c-443e-b608-68d9d6efe9c2.png", "/lovable-uploads/6c6585ff-1693-41ef-97fb-15f25476b883.png", "/lovable-uploads/7488508b-8ed8-475f-8168-9639939d413d.png", "/lovable-uploads/81d0dad3-8a0e-4691-b3e7-e0b4c054b708.png", "/lovable-uploads/3a3c485e-8d49-41ad-ad03-78f428071ba6.png", "/lovable-uploads/5252a848-fa9c-4e1d-93af-e482bda6be65.png", "/lovable-uploads/2cdcfd33-699e-4dc8-ad3b-fee502d64469.png", "/lovable-uploads/5f4e7d8c-daae-4936-a127-576ab3bb3b1b.png", "/lovable-uploads/31928965-9efa-44bb-b005-76006cc0afef.png", "/lovable-uploads/99ad75dc-7b9c-48c9-baba-81bfd3c960e2.png"]
   }, {
-    id: 11,
+    id: 12,
     title: "la peau de chagrin (who is afraid of shrinking skin)",
     year: "2005",
     category: "installation",
@@ -148,7 +148,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example12",
     galleryImages: ["/lovable-uploads/9c9b9bfd-dbb3-484a-baa5-3d2ed18b5dda.png", "/lovable-uploads/38c6fa43-c446-48b1-9e3a-986fe9d70eed.png", "/lovable-uploads/9f42976c-de88-4a88-b11a-151fc34fa2c4.png", "/lovable-uploads/d331a953-4a1e-4fd4-aaf5-6d0265740ee2.png", "/lovable-uploads/4ae1d5fc-524f-4d96-8d35-8c8104cda10d.png", "/lovable-uploads/0e6b1aa7-e585-4ee5-bf7e-4f76ac15732c.png", "/lovable-uploads/6ed957a0-eef9-4ea0-8ead-354080331d15.png", "/lovable-uploads/b3159f35-952c-41a1-a65f-ee76a735682f.png", "/lovable-uploads/96e9892a-c368-4cff-a731-bb1cddd7459d.png", "/lovable-uploads/f89125dd-f991-4ddd-9d2c-356a687d15cf.png", "/lovable-uploads/f352d503-46f3-4f26-9a1d-f8c8e539fbf1.png", "/lovable-uploads/9c39a54d-8d5c-4e1e-988b-1b3bd3d1b739.png", "/lovable-uploads/bdf24ba5-5056-4fb7-bc40-81b785213b13.png", "/lovable-uploads/07215d40-3644-4fc8-ad49-65885054a025.png", "/lovable-uploads/b346acf0-9313-41fc-b40a-2aed13db28d2.png", "/lovable-uploads/89a92525-033b-44e4-b5d1-fb66311eea92.png", "/lovable-uploads/097e2871-764c-4f58-a09e-49582300e79c.png", "/lovable-uploads/f8dd84cc-637c-47b1-81e4-0d7183db1d92.png"]
   }, {
-    id: 12,
+    id: 13,
     title: "Tits Clits n Elephant Dick",
     year: "2022",
     category: "installation",
@@ -158,7 +158,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example15",
     galleryImages: ["/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png"]
   }, {
-    id: 13,
+    id: 14,
     title: "Kegel exercise",
     year: "2007",
     category: "installation",
@@ -168,7 +168,7 @@ const Portfolio = () => {
     pdfLink: "https://drive.google.com/file/d/example7",
     galleryImages: ["/lovable-uploads/3efc3c4b-25e0-440f-a6ca-fa7eeca4e1cf.png", "/lovable-uploads/aa70c8e7-f5c9-4679-9106-66b19d520666.png", "/lovable-uploads/c083ad26-b3f4-4f9c-82f6-a70c40ecf9e1.png", "/lovable-uploads/a27a7482-d9bf-44af-a451-0a4c96c1c1a7.png", "/lovable-uploads/f9277a79-2790-490d-8ad3-a2669171be9a.png", "/lovable-uploads/c8547811-e08c-49f9-8075-774b011d7cc0.png", "/lovable-uploads/856a72e7-7684-4fe3-ba79-1e0262729219.png", "/lovable-uploads/29dc11f4-2ea3-4364-9698-63d819f72d74.png", "/lovable-uploads/b74a9022-ad8a-406f-8ccb-f3804d75a0ab.png", "/lovable-uploads/13663bf7-3117-4631-b565-6eca71516167.png"]
   }, {
-    id: 14,
+    id: 15,
     title: "All that I wanna do",
     year: "2005",
     category: "installation",
