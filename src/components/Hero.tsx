@@ -6,58 +6,64 @@ import { useEffect, useState } from 'react';
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
 
-  // Updated gallery images for the carousel with the specified image removed
+  // Updated gallery images for the carousel
   const artworkImages = [{
     id: 1,
-    image: "/lovable-uploads/32f61955-ff24-4219-af5e-78228b6dfbac.png",
+    image: "/lovable-uploads/3d10e7f2-0137-44cd-b138-9c02fb9bb9c4.png",
+    title: "Mixed Media Collage",
+    medium: "Mixed Media",
+    year: "2024"
+  }, {
+    id: 2,
+    image: "/lovable-uploads/3ae3933c-441c-4416-ae84-38fca458ee06.png",
+    title: "Hanuman Plaka",
+    medium: "Traditional Art",
+    year: "2024"
+  }, {
+    id: 3,
+    image: "/lovable-uploads/9b993336-697f-4c47-b351-8834d1d1f4ba.png",
     title: "Gallery Exhibition",
     medium: "Installation View",
     year: "2024"
   }, {
-    id: 2,
-    image: "/lovable-uploads/776b00b5-0aed-4545-ab6e-6c9b39216d13.png",
+    id: 4,
+    image: "/lovable-uploads/5f040730-08ee-4299-b7db-13d54ca351e3.png",
     title: "Abstract Flow",
     medium: "Mixed Media",
     year: "2024"
   }, {
-    id: 3,
-    image: "/lovable-uploads/d405758f-a4d8-4ab4-bc9a-c94422d37b7d.png",
-    title: "Corn Dreams",
-    medium: "Mixed Media Installation",
-    year: "2024"
-  }, {
-    id: 4,
-    image: "/lovable-uploads/3145eaff-0d94-4420-98df-e43d82b672dc.png",
-    title: "Market Flows",
-    medium: "Mixed Media",
-    year: "2024"
-  }, {
     id: 5,
-    image: "/lovable-uploads/8cae8a10-b702-4229-9d8e-b9cc90f6a7fb.png",
-    title: "Hanuman Palaka",
-    medium: "Traditional Art",
+    image: "/lovable-uploads/92a74895-2643-46d4-8f67-70e0ae10f9f6.png",
+    title: "Angry Installation",
+    medium: "Wire Installation",
     year: "2024"
   }, {
     id: 6,
-    image: "/lovable-uploads/9c056c71-d125-441b-b4e4-e7ef259d16fe.png",
+    image: "/lovable-uploads/4bb2c394-8f2e-4c36-a655-7f0396733506.png",
     title: "Dark Installation",
     medium: "Installation View",
     year: "2024"
   }, {
     id: 7,
-    image: "/lovable-uploads/4b411ef6-b061-40c1-8e0a-814e1a45b341.png",
+    image: "/lovable-uploads/93625121-b432-4c0f-b39f-aacb6097d78b.png",
     title: "Blue Passage",
     medium: "Installation",
     year: "2024"
   }, {
     id: 8,
-    image: "/lovable-uploads/c37a9098-60d0-4649-aec7-dbef12cd9c05.png",
-    title: "Protest Signs",
-    medium: "Public Installation",
+    image: "/lovable-uploads/70dbf97f-90e4-4fb6-83ce-b7ac7caadc22.png",
+    title: "Meditation Space",
+    medium: "Installation",
+    year: "2024"
+  }, {
+    id: 9,
+    image: "/lovable-uploads/e8011005-0bc6-4252-a4e1-2bcb6038d597.png",
+    title: "Traditional Art Exhibition",
+    medium: "Installation View",
     year: "2024"
   }, {
     id: 10,
-    image: "/lovable-uploads/2c766e8b-4692-4fd8-a5d1-8e619919f4bc.png",
+    image: "/lovable-uploads/d09945f2-a0e4-4a8f-9a8b-74f5482b079d.png",
     title: "Suspended Installation",
     medium: "Mixed Media Installation",
     year: "2024"
