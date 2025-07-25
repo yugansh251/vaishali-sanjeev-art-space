@@ -55,7 +55,7 @@ const Portfolio = () => {
     image: "/lovable-uploads/4e1daee6-d911-4bd7-9f32-f3cfb6cf7fcc.png",
     description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
     pdfLink: "https://drive.google.com/file/d/example2",
-    galleryImages: ["/lovable-uploads/88db819d-f4f8-4473-af2c-eb344ee66c11.png", "/lovable-uploads/998deae4-b3af-423a-a4de-843f3782ca74.png", "/lovable-uploads/97b2deb1-f75c-4ce0-a06e-bd1af8a72c1d.png", "/lovable-uploads/aed3d2ee-4bbc-4686-b055-2640984a52eb.png", "/lovable-uploads/aba91c3a-268b-4b71-a250-bc31e6bf3c86.png", "/lovable-uploads/3793a105-ebfc-447e-bff2-3dfdaaa6a552.png", "/lovable-uploads/a7f3ad5c-4281-41ca-b491-d48b5b1260e7.png", "/lovable-uploads/4e8fb196-d68c-46ec-a65c-087e374a07d3.png", "/lovable-uploads/1b2a828d-d604-443d-973a-2e1a27d7d9f3.png", "/lovable-uploads/2fbb9d4d-e115-4ab3-859b-eadd5fd9ed0a.png"]
+    galleryImages: ["/lovable-uploads/64f8a533-ee8b-4073-9d72-2142f2234a4d.png", "/lovable-uploads/864784db-1b0e-46fc-bff8-7243bd6cc358.png", "/lovable-uploads/1908a2b3-0c8c-4d95-97c9-715e51f5cec4.png", "/lovable-uploads/886c1773-365c-45fb-b455-d5ef379298c0.png", "/lovable-uploads/2519c2d8-c673-44fd-a702-8e5e09a7d5c2.png", "/lovable-uploads/98a28317-35cc-48b1-9071-d986698a4797.png", "/lovable-uploads/c270f8b5-0e68-4027-8336-65e02b6c5dfb.png", "/lovable-uploads/dfcb89ed-58fb-4695-9934-f1cb16eb8bb8.png", "/lovable-uploads/922ca9e4-64f7-49d1-8ded-2ac2df56ed8e.png", "/lovable-uploads/15af7be3-407c-405e-b1da-6bd15a115395.png"]
   }, {
     id: 4,
     title: "Triumph of market",
