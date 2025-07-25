@@ -118,7 +118,7 @@ const Hero = () => {
                 <Card className="border-none shadow-none">
                   <CardContent className="flex flex-col items-center p-0">
                     <div className="w-full flex justify-center">
-                      <div className="max-w-4xl w-full overflow-hidden bg-gray-50">
+                      <div className="max-w-4xl w-full overflow-hidden">
                         <img 
                           src={artwork.image} 
                           alt={artwork.title} 
