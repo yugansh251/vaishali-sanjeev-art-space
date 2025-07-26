@@ -53,7 +53,7 @@ const Portfolio = () => {
     category: "installation",
     tab: "ragamala",
     image: "/lovable-uploads/4e1daee6-d911-4bd7-9f32-f3cfb6cf7fcc.png",
-    description: "A provocative exploration of environmental changes and their impact on cultural narratives.",
+    description: "\"Ragmala - The Songs Of Anthropocene\" is a series of embroideries that delve into the profound impact of the Anthropocene era. These works explore themes of environmental degradation, free economy, and the changing Earth. They serve as a visual response to the \"new music\" of our planet, born from geological shifts and the alarming loss of species. By connecting with the historical practice of Ragmala paintings, these embroideries decode the hidden messages within Earth's evolving sounds, transforming traditional iconography to reflect our altered world.",
     pdfLink: "https://drive.google.com/file/d/example2",
     galleryImages: ["/lovable-uploads/64f8a533-ee8b-4073-9d72-2142f2234a4d.png", "/lovable-uploads/864784db-1b0e-46fc-bff8-7243bd6cc358.png", "/lovable-uploads/1908a2b3-0c8c-4d95-97c9-715e51f5cec4.png", "/lovable-uploads/886c1773-365c-45fb-b455-d5ef379298c0.png", "/lovable-uploads/2519c2d8-c673-44fd-a702-8e5e09a7d5c2.png", "/lovable-uploads/98a28317-35cc-48b1-9071-d986698a4797.png", "/lovable-uploads/c270f8b5-0e68-4027-8336-65e02b6c5dfb.png", "/lovable-uploads/dfcb89ed-58fb-4695-9934-f1cb16eb8bb8.png", "/lovable-uploads/922ca9e4-64f7-49d1-8ded-2ac2df56ed8e.png", "/lovable-uploads/15af7be3-407c-405e-b1da-6bd15a115395.png"]
   }, {
