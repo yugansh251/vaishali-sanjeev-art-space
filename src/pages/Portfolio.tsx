@@ -230,20 +230,15 @@ const Portfolio = () => {
 
             {viewMode === 'grid' ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="grid grid-cols-2 gap-4 p-4">
-                      <div className="h-48 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
-                        <AspectRatio ratio={1 / 1}>
-                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
-                        </AspectRatio>
-                      </div>
-                      <div className="flex flex-col cursor-pointer" onClick={() => setSelectedWork(work)}>
-                        <h3 className="text-lg font-serif font-semibold mb-2">{work.title}</h3>
-                        <p className="text-xs text-gray-600 mb-2">{work.year}</p>
-                        <ScrollArea className="flex-1">
-                          <p className="text-xs text-gray-600 whitespace-pre-line leading-relaxed">{work.description}</p>
-                        </ScrollArea>
-                      </div>
+                    <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
+                      <AspectRatio ratio={16 / 9}>
+                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
+                      </AspectRatio>
                     </div>
+                    <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
+                      <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
+                      <p className="text-sm text-gray-600 mt-1">{work.year}</p>
+                    </CardContent>
                     <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
                       
                     </CardFooter>
@@ -328,7 +323,7 @@ const Portfolio = () => {
                       <h2 className="text-2xl font-serif font-bold mt-2 mb-4">{selectedWork.title}</h2>
                       
                       <ScrollArea className="flex-1 pr-4">
-                        <p className="text-gray-600 whitespace-pre-line leading-relaxed">{selectedWork.description}</p>
+                        
                       </ScrollArea>
                       
                       <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
