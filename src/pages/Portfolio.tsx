@@ -153,7 +153,7 @@ const Portfolio = () => {
     category: "installation",
     tab: "tits-clits-elephant-dick",
     image: "/lovable-uploads/8df44c5d-384c-4688-910b-1ac57b0e8e93.png",
-    description: "A provocative exploration of sexuality, identity, and societal taboos through multimedia art.",
+    description: "Ideology of the Market\nIn today's market-driven world, sex has outpaced traditional ideologies, seeking new meanings amidst gadgets, pleasure, and utility.\nHappiness has become pleasure; relationships reduced to networking.\nThis shift leaves us in a strange existential limbo, where neither science nor art can fully grasp the change.\nVaishali Narkar and Sanjeev Khandekar explore this crisis through daring, thought-provoking installations.\nTheir work challenges us to question, rather than accept.\nIn doing so, they probe a mystery deeper than body—rooted in the mind.",
     pdfLink: "https://drive.google.com/file/d/example15",
     galleryImages: ["/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png"]
   }, {
