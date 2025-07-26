@@ -112,7 +112,7 @@ const Portfolio = () => {
     year: "2020",
     category: "installation",
     tab: "bad-breath-iii",
-    image: "/lovable-uploads/079476cf-8bc6-43b6-bd37-4b829527ba34.png",
+    image: "/lovable-uploads/bfcd89cd-cabe-4d09-89a3-bfb04dccecf8.png",
     description: "Everything You Wanted to Know About (Your) Bad Breath, but Were Afraid to Ask Alfred Hitchcock  III\nIn this ongoing series, Vaishali and Sanjeev confront the ecological violence of capitalism.\nA recurring motif—the refrigerator—embodies frozen nature and unchecked consumerist greed.\nTheir sculptural refrigerator doors bear images of drought, mangroves, coral, and protest, tracing systemic ruin.\nThe works reflect a world cooling its interiors while burning its commons.\nThis is the Necrocene: capital as extinction event.",
     pdfLink: "https://drive.google.com/file/d/example14",
     galleryImages: ["/lovable-uploads/456b0f58-3fce-4a4c-8150-d120ea05d919.png"]
