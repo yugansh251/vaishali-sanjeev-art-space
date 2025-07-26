@@ -83,7 +83,7 @@ const Portfolio = () => {
     category: "installation",
     tab: "by-gorge",
     image: "/lovable-uploads/4bb13448-46c8-4540-b4a9-6cc301abb3fa.png",
-    description: "An exploration of natural formations and their impact on human perception.",
+    description: "' By George '  (2008)\nCurated by Gitanjali Dang and featuring works by Vaishali Narkar & Sanjeev Khandekar, By George explores the creeping omnipresence of surveillance in contemporary life. Drawing from Orwellian allegories and real-world digital paranoia, the show interrogates how the gaze—technological, institutional, and social—shapes our subjectivities. With references ranging from Jeremy Bentham to Mark Zuckerberg, the works deploy mixed media and sandblasted glass to stage questions of privacy, perception, and power. Originally exhibited in 2008, the show remains uncannily prescient.\nHere, transparency is seductive, and observation is never neutral.\nWe are seen. We see.\nAnd nothing remains quite the same.",
     pdfLink: "https://drive.google.com/file/d/example13",
     galleryImages: ["/lovable-uploads/473155fa-9c37-4d9e-bd23-ab649eefcbcc.png"]
   }, {
