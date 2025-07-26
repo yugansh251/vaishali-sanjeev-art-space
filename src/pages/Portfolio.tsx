@@ -85,7 +85,7 @@ const Portfolio = () => {
     image: "/lovable-uploads/4bb13448-46c8-4540-b4a9-6cc301abb3fa.png",
     description: "' By George '  (2008)\nCurated by Gitanjali Dang and featuring works by Vaishali Narkar & Sanjeev Khandekar, By George explores the creeping omnipresence of surveillance in contemporary life. Drawing from Orwellian allegories and real-world digital paranoia, the show interrogates how the gaze—technological, institutional, and social—shapes our subjectivities. With references ranging from Jeremy Bentham to Mark Zuckerberg, the works deploy mixed media and sandblasted glass to stage questions of privacy, perception, and power. Originally exhibited in 2008, the show remains uncannily prescient.\nHere, transparency is seductive, and observation is never neutral.\nWe are seen. We see.\nAnd nothing remains quite the same.",
     pdfLink: "https://drive.google.com/file/d/example13",
-    galleryImages: ["/lovable-uploads/42675907-aed4-43f9-b926-790084649471.png", "/lovable-uploads/e2e258f1-c2ff-4d51-a3fe-1280150045cc.png", "/lovable-uploads/8ded6159-8812-4091-9e99-9a79560e2577.png", "/lovable-uploads/16302d0f-2a8b-45fb-a506-a1943620d006.png", "/lovable-uploads/10c0ecfc-2013-43cf-9167-0bbd1768310a.png"]
+    galleryImages: ["/lovable-uploads/63b597b2-ca37-4329-9dca-51f1d4d18c54.png", "/lovable-uploads/c151d70d-e511-4fc4-98e1-685a19692f57.png", "/lovable-uploads/e0fb3a47-8cc4-470c-8174-0b87623c0987.png"]
   }, {
     id: 7,
     title: "Imp in the garden and other fairy tales",
