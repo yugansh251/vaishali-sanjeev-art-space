@@ -155,7 +155,7 @@ const Portfolio = () => {
     image: "/lovable-uploads/8df44c5d-384c-4688-910b-1ac57b0e8e93.png",
     description: "Ideology of the Market\nIn today's market-driven world, sex has outpaced traditional ideologies, seeking new meanings amidst gadgets, pleasure, and utility.\nHappiness has become pleasure; relationships reduced to networking.\nThis shift leaves us in a strange existential limbo, where neither science nor art can fully grasp the change.\nVaishali Narkar and Sanjeev Khandekar explore this crisis through daring, thought-provoking installations.\nTheir work challenges us to question, rather than accept.\nIn doing so, they probe a mystery deeper than body—rooted in the mind.",
     pdfLink: "https://drive.google.com/file/d/example15",
-    galleryImages: ["/lovable-uploads/4a7337fb-450a-4399-aff8-48ad13210fac.png"]
+    galleryImages: ["/lovable-uploads/103a15e5-907d-451d-8bb3-292e60874acc.png", "/lovable-uploads/42a70101-86d3-4056-8dc4-a6d4242cf3c8.png", "/lovable-uploads/febe5c60-1901-4071-b1d7-5ddf2fd74113.png", "/lovable-uploads/52e30f1c-726d-4360-a363-8dd8dcab9410.png", "/lovable-uploads/c8ea21cb-7679-4303-8d16-8127fe4c85c0.png", "/lovable-uploads/d6743159-f7da-4cd8-a743-0ef1e7ebec70.png", "/lovable-uploads/3d92acb9-ab8c-4a40-a1f5-b6f24b5cf36b.png", "/lovable-uploads/161d1c3d-1363-4d04-bbd4-59e8b9ceb537.png", "/lovable-uploads/43f2752c-82c9-4385-8f12-ee11dcb8d7ea.png", "/lovable-uploads/65337fcd-9cdf-4eda-acd6-2670bc685715.png"]
   }, {
     id: 14,
     title: "Kegel exercise",
