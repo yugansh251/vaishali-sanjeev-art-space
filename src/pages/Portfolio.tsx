@@ -43,7 +43,7 @@ const Portfolio = () => {
     category: "installation",
     tab: "honey",
     image: "/lovable-uploads/1f76b3c3-15e5-4bdb-8b89-0790ec4baa27.png",
-    description: "An interactive installation exploring the nature of truth and perception in contemporary society.",
+    description: "\"Honey, I Shrunk My Tongue\" is a site-specific ceramic installation exploring the profound versatility of the tongue. From solitary forms to a multitude, these objects weave a visual poem, deciphering the enigma of language itself. The artwork invites a journey into this mysterious organ, a voice that embodies good and bad, freedom and constraint. It's a meditation on the tongue as a word, a language, and the very essence of free expression.",
     pdfLink: "https://drive.google.com/file/d/example1",
     galleryImages: ["/lovable-uploads/89c24c64-f73f-4c57-8683-b0563afa008d.png", "/lovable-uploads/808c2591-a15a-4d88-891f-d87fadd02a06.png", "/lovable-uploads/b429ad94-288f-4d60-9e72-a3720220fbfe.png", "/lovable-uploads/fae9fa8d-7dbe-41ec-aee8-760fff7b1cc1.png", "/lovable-uploads/4ed46357-a461-4b4b-b8d2-b65a4e71db98.png", "/lovable-uploads/92909206-10d1-43e4-b2b2-cfda696dad24.png", "/lovable-uploads/6056b8bf-a252-4a94-bdaf-ba223e27a824.png", "/lovable-uploads/194653c1-6bab-4915-96c9-bddd2459333a.png", "/lovable-uploads/fd29bbd8-23d6-4bb1-bcb5-60186273dd41.png", "/lovable-uploads/843ba233-4f04-4c47-a5bf-834ef49a4f17.png", "/lovable-uploads/1a69328e-baaf-4d6b-929a-ec2b822df547.png"]
   }, {
