@@ -135,7 +135,7 @@ const Portfolio = () => {
     image: "/lovable-uploads/4cb1d480-a7f6-4631-aa6b-efc3bfbdc547.png",
     description: "A spiritual exploration of love, devotion, and the divine through multimedia elements.",
     pdfLink: "https://drive.google.com/file/d/example6",
-    galleryImages: ["/lovable-uploads/2f7d6175-ee60-4d18-be20-a27258f97671.png", "/lovable-uploads/8350fb86-e421-4443-9eca-f640c9c33a13.png", "/lovable-uploads/9f8d9411-985c-443e-b608-68d9d6efe9c2.png", "/lovable-uploads/6c6585ff-1693-41ef-97fb-15f25476b883.png", "/lovable-uploads/7488508b-8ed8-475f-8168-9639939d413d.png", "/lovable-uploads/81d0dad3-8a0e-4691-b3e7-e0b4c054b708.png", "/lovable-uploads/3a3c485e-8d49-41ad-ad03-78f428071ba6.png", "/lovable-uploads/5252a848-fa9c-4e1d-93af-e482bda6be65.png", "/lovable-uploads/2cdcfd33-699e-4dc8-ad3b-fee502d64469.png", "/lovable-uploads/5f4e7d8c-daae-4936-a127-576ab3bb3b1b.png", "/lovable-uploads/31928965-9efa-44bb-b005-76006cc0afef.png", "/lovable-uploads/99ad75dc-7b9c-48c9-baba-81bfd3c960e2.png"]
+    galleryImages: ["/lovable-uploads/c9dd2a7f-50cb-4c88-9fe0-19735376b68d.png", "/lovable-uploads/2d8bb41b-b5c7-42fd-ae56-36f743f9a2d5.png", "/lovable-uploads/34847f14-c54f-4447-8671-1942452a7245.png", "/lovable-uploads/612902a4-b83c-443b-8d42-fce20be09b8b.png", "/lovable-uploads/fe9837ef-c72f-4d72-b0a2-7208b7903336.png", "/lovable-uploads/88122d96-3644-4342-8f14-f8bcc93846bb.png", "/lovable-uploads/90f0e3b8-7d31-47aa-8167-d10763eb8814.png", "/lovable-uploads/d0e27230-0a5b-4ee4-9364-bde308aa0d53.png", "/lovable-uploads/33d1048c-d4ff-4e6b-a3db-eaee0a8feb06.png", "/lovable-uploads/2a02065a-9581-4344-a754-25cdbc102cba.png"]
   }, {
     id: 12,
     title: "la peau de chagrin (who is afraid of shrinking skin)",
