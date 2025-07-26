@@ -162,7 +162,7 @@ const Portfolio = () => {
     year: "2007",
     category: "installation",
     tab: "kegel-exercise",
-    image: "/lovable-uploads/1deba9e5-600c-43bc-9f37-88056fb2a2ff.png",
+    image: "/lovable-uploads/2e898325-4e7e-4a20-a896-100a15bef676.png",
     description: "The exhibition, \"The Kegel Exercises: Aswani Mudra,\" (2007)  delves into the unsettling realities of late multicultural capitalism, where the idealism gives way to the follies of recklessness and petulance. Through a powerful confluence of art and societal critique, it explores how the relentless pursuit of financialization morphs into a destructive force. The show is an example of the use of the ubiquitous stock market ticker and the unique and intricate medium of marble inlay as potent symbols, demonstrating how the artists harnesse them to expose the interwoven dramas of trading, sexuality, and the unsettling normalization of insatiable  desires in our contemporary world.\n\n( Download pdf to read an essay by Gitanjali Dang)",
     pdfLink: "https://drive.google.com/file/d/example7",
     galleryImages: ["/lovable-uploads/9b6f8c8d-d23d-429f-bfd1-05141f8ae788.png", "/lovable-uploads/e3c3dc28-3fc8-4b80-8c19-b1d1ff06cc9b.png", "/lovable-uploads/0e5f73a4-832b-416e-b415-dde46aa7c0c0.png", "/lovable-uploads/0204c141-90f2-4e17-b1e3-1bd36c86e811.png", "/lovable-uploads/1f5a0acc-453c-4d8a-963b-fa594a983826.png", "/lovable-uploads/8ba1d8f0-fefb-4891-8ae0-d6471d55d519.png"]
