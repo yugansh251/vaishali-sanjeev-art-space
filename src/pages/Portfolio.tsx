@@ -230,15 +230,20 @@ const Portfolio = () => {
 
             {viewMode === 'grid' ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
-                      <AspectRatio ratio={16 / 9}>
-                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
-                      </AspectRatio>
+                    <div className="grid grid-cols-2 gap-4 p-4">
+                      <div className="h-48 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
+                        <AspectRatio ratio={1 / 1}>
+                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
+                        </AspectRatio>
+                      </div>
+                      <div className="flex flex-col cursor-pointer" onClick={() => setSelectedWork(work)}>
+                        <h3 className="text-lg font-serif font-semibold mb-2">{work.title}</h3>
+                        <p className="text-xs text-gray-600 mb-2">{work.year}</p>
+                        <ScrollArea className="flex-1">
+                          <p className="text-xs text-gray-600 whitespace-pre-line leading-relaxed">{work.description}</p>
+                        </ScrollArea>
+                      </div>
                     </div>
-                    <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
-                      <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
-                      <p className="text-sm text-gray-600 mt-1">{work.year}</p>
-                    </CardContent>
                     <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
                       
                     </CardFooter>
