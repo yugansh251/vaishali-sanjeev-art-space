@@ -328,7 +328,7 @@ const Portfolio = () => {
                       <h2 className="text-2xl font-serif font-bold mt-2 mb-4">{selectedWork.title}</h2>
                       
                       <ScrollArea className="flex-1 pr-4">
-                        
+                        <p className="text-gray-600 whitespace-pre-line leading-relaxed">{selectedWork.description}</p>
                       </ScrollArea>
                       
                       <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
