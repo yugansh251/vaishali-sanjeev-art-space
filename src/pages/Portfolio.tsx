@@ -48,7 +48,7 @@ const Portfolio = () => {
     galleryImages: ["/lovable-uploads/a9323ad9-d4a1-4ba9-b0c9-c40b84b992bc.png", "/lovable-uploads/c830c14f-0d1f-4b96-95c6-f08a295b15c2.png", "/lovable-uploads/883bd5af-30be-4b05-a1c9-fac9e9175687.png", "/lovable-uploads/e3a33e56-232e-413f-ba9d-ee1fa28cb9b7.png", "/lovable-uploads/c49dca00-cac2-4717-a92c-2eae0c0b2416.png", "/lovable-uploads/91f65cd2-5cab-4865-acc5-cb2d90e99255.png", "/lovable-uploads/5b41c3ba-2292-4346-bfe1-ac395acc81b3.png", "/lovable-uploads/4b701644-3308-463d-8498-c9e80ddcd2d0.png", "/lovable-uploads/460cbdc6-22a7-4797-aa64-65154f278cc6.png", "/lovable-uploads/6dad66be-8cd2-476c-851b-83a1ccca0f93.png", "/lovable-uploads/026660fd-72da-4fd4-9842-053113326a24.png"]
   }, {
     id: 3,
-    title: "Ragamala song of Anthropocene",
+    title: "Ragmala song of Anthropocene",
     year: "2018",
     category: "installation",
     tab: "ragamala",
@@ -78,7 +78,7 @@ const Portfolio = () => {
     galleryImages: ["/lovable-uploads/bf837c31-1c23-4239-b9f4-e6ec1b8d7a9d.png", "/lovable-uploads/1c9ac1ff-bc1f-4de7-8417-21362a48c6d3.png", "/lovable-uploads/e5bee9ae-b94f-46b2-9e7c-61a9a4fb3aea.png", "/lovable-uploads/e45c502d-d713-4db7-8db7-e758427ed598.png", "/lovable-uploads/b036f9e8-7fb9-43c3-9538-8c1bf7cb65be.png", "/lovable-uploads/3b0cc10d-d36d-45d2-8ede-d949ec678eed.png", "/lovable-uploads/c8f9bae4-0288-437e-ae26-e53ee5c57418.png", "/lovable-uploads/c4c9e781-7a6b-44d4-b46d-2f14254fe294.png", "/lovable-uploads/0cdd834f-4996-4754-857d-be00a430a307.png", "/lovable-uploads/d133528e-90e3-4b59-8a28-34791fe70e8c.png"]
   }, {
     id: 6,
-    title: "by gorge",
+    title: "By George",
     year: "2010",
     category: "installation",
     tab: "by-gorge",
