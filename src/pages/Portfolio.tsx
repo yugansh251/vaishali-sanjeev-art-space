@@ -123,7 +123,7 @@ const Portfolio = () => {
     category: "publication",
     tab: "acquire-merge",
     image: "/lovable-uploads/358afbc9-c4e1-427f-a622-e73021db9465.png",
-    description: "An exploration of corporate language and collaborative practices in the contemporary art world.",
+    description: "Long before Yale University published its findings on hormonal changes in men and women actively involved in stock market investments, Sanjeev Khandekar was already exploring this intersection through his art. In his poems and watercolours, he had pioneered a unique imagery of financial capital, using it as a motif to depict the evolving landscape of contemporary global societies.\nVaishali & Sanjeev 's  acrylic-on-canvas paintings, including the series \"acquire, merge or collaborate\"(2007)  and subsequent \"triumph of market\" series of works, visually integrate stock market motifs onto further abstracted electronic microscopic images of internal body organs. The exhibition also featured a significant installation titled \"time pass,\" which offered a satirical commentary on how market forces influence various aspects of life, from relationships and spirituality to consumerism.",
     pdfLink: "https://drive.google.com/file/d/example5",
     galleryImages: ["/lovable-uploads/1bbf09c9-ecef-4bc8-8a86-9ece6f65398a.png", "/lovable-uploads/18158514-d4ff-45c2-825a-e3d561ef1722.png", "/lovable-uploads/e3dc8223-1ae9-43cb-811c-e11d855dae11.png", "/lovable-uploads/3a3fcdaa-f4d9-4cf5-adf5-3a7ff20f0346.png", "/lovable-uploads/12e19b04-0ae1-496e-b72d-e86f0e25ff65.png"]
   }, {
