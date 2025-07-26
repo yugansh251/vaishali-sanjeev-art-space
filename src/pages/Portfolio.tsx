@@ -39,7 +39,7 @@ const Portfolio = () => {
   }, {
     id: 2,
     title: "Honey, I shrunk my Tongue",
-    year: "2017",
+    year: "2024",
     category: "installation",
     tab: "honey",
     image: "/lovable-uploads/1f76b3c3-15e5-4bdb-8b89-0790ec4baa27.png",
@@ -49,7 +49,7 @@ const Portfolio = () => {
   }, {
     id: 3,
     title: "Ragamala song of Anthropocene",
-    year: "2019",
+    year: "2018",
     category: "installation",
     tab: "ragamala",
     image: "/lovable-uploads/4e1daee6-d911-4bd7-9f32-f3cfb6cf7fcc.png",
@@ -59,7 +59,7 @@ const Portfolio = () => {
   }, {
     id: 4,
     title: "Triumph of market",
-    year: "2003",
+    year: "2008",
     category: "installation",
     tab: "triumph",
     image: "/lovable-uploads/4e7bef34-8e17-4669-98b1-6f322daf9352.png",
@@ -79,7 +79,7 @@ const Portfolio = () => {
   }, {
     id: 6,
     title: "by gorge",
-    year: "2024",
+    year: "2010",
     category: "installation",
     tab: "by-gorge",
     image: "/lovable-uploads/4bb13448-46c8-4540-b4a9-6cc301abb3fa.png",
@@ -109,7 +109,7 @@ const Portfolio = () => {
   }, {
     id: 9,
     title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock III",
-    year: "2010",
+    year: "2020",
     category: "installation",
     tab: "bad-breath-iii",
     image: "/lovable-uploads/079476cf-8bc6-43b6-bd37-4b829527ba34.png",
@@ -119,7 +119,7 @@ const Portfolio = () => {
   }, {
     id: 10,
     title: "Acquire, Merge or Collaborate...!",
-    year: "2011",
+    year: "2007",
     category: "publication",
     tab: "acquire-merge",
     image: "/lovable-uploads/358afbc9-c4e1-427f-a622-e73021db9465.png",
@@ -129,7 +129,7 @@ const Portfolio = () => {
   }, {
     id: 11,
     title: "What do I love when I love you, my God",
-    year: "2006",
+    year: "2007",
     category: "installation",
     tab: "what-do-i-love",
     image: "/lovable-uploads/4cb1d480-a7f6-4631-aa6b-efc3bfbdc547.png",
@@ -149,7 +149,7 @@ const Portfolio = () => {
   }, {
     id: 13,
     title: "Tits Clits n Elephant Dick",
-    year: "2022",
+    year: "2006",
     category: "installation",
     tab: "tits-clits-elephant-dick",
     image: "/lovable-uploads/8df44c5d-384c-4688-910b-1ac57b0e8e93.png",
