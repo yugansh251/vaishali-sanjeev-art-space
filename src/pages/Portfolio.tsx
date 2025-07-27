@@ -107,7 +107,7 @@ const Portfolio = () => {
     galleryImages: ["/lovable-uploads/e76eba54-48ae-4e95-899f-fe998b40ec66.png", "/lovable-uploads/0825279d-9f55-4e9b-b7d8-817bf11c883f.png", "/lovable-uploads/12586681-b881-4bf4-a51d-acfe9edb1972.png", "/lovable-uploads/525afd2a-1299-4fd6-bc33-c1746c17f157.png", "/lovable-uploads/4a37921f-173f-473c-96d6-dc1700e26abd.png", "/lovable-uploads/0866b3f9-6897-441c-a4e6-9a05169acd21.png", "/lovable-uploads/b10cee3c-f3e0-43d4-9bad-802121318a20.png", "/lovable-uploads/5ffc91b4-f2c7-4c48-a8c9-4d6c67e6a615.png", "/lovable-uploads/9536a6b3-23d9-42c4-a3b8-587cf54c833a.png", "/lovable-uploads/a98a9e83-46c8-4d7e-ab95-a708b42ef2ad.png", "/lovable-uploads/1f06a0dc-3a66-4e99-809e-3da2eb7560a5.png", "/lovable-uploads/ead60ce9-a7cf-4ccc-9260-6359d537d53e.png", "/lovable-uploads/597c2d16-fc40-4d24-9312-212691fb7412.png"]
   }, {
     id: 9,
-    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock III",
+    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock part III",
     year: "2020",
     category: "installation",
     tab: "bad-breath-iii",
