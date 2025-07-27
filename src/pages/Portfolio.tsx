@@ -323,14 +323,14 @@ const Portfolio = () => {
                       
                       <ScrollArea className="flex-1 pr-4">
                         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-                          {selectedWork.description.split('la peau de chagrin').map((part, index, array) => (
-                            index === array.length - 1 ? part : (
-                              <>
-                                {part}
-                                <em>la peau de chagrin</em>
-                              </>
-                            )
-                          ))}
+                          {selectedWork.description
+                            .split(/(\bLa Peau de Chagrin\b|\bla peau de chagrin\b)/g)
+                            .map((part, index) => {
+                              if (part === 'La Peau de Chagrin' || part === 'la peau de chagrin') {
+                                return <em key={index}>{part}</em>;
+                              }
+                              return part;
+                            })}
                         </div>
                       </ScrollArea>
                       
