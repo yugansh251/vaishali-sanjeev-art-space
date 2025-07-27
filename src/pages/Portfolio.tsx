@@ -25,130 +25,7 @@ const Portfolio = () => {
     galleryImages?: string[];
   }
 
-  const works: Work[] = [
-    // Publications
-    {
-      id: 101,
-      title: "Tits Clits & Elephant Dick",
-      year: "2007",
-      category: "publication",
-      tab: "tits-clits-catalogue",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Kumar Ketkar and Gitanjali Dang. Published by Ashish Balram Nagpal Galleries, 2007. Hard Cover. Accompanied by a CD of the two watercolours books exhibited at the show.",
-      pdfLink: "/pdfs/tits-clits-catalogue.pdf"
-    },
-    {
-      id: 102,
-      title: "Kegel Exercise ( Ashwani Mudra )",
-      year: "2007",
-      category: "publication",
-      tab: "kegel-exercise-catalogue",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Gitanjali Dang. Published by Pundole Art Gallery, 2007.",
-      pdfLink: "/pdfs/kegel-exercise-catalogue.pdf"
-    },
-    {
-      id: 103,
-      title: "La Peau De Changrin : Who Is Afraid Of The Shrinking Skin",
-      year: "2005",
-      category: "publication",
-      tab: "la-peau-catalogue",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Kumar Ketkar And Abhay Sardesai. Published by Pundole Art Gallery. 2005.",
-      pdfLink: "/pdfs/la-peau-catalogue.pdf"
-    },
-    {
-      id: 104,
-      title: "Everything You Ever Wanted To Know About Bad Breath But Were Afraid To Ask Alfred Hitchcock ( part I )",
-      year: "2008",
-      category: "publication",
-      tab: "bad-breath-catalogue",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Gitanjali Dang. Published by Bombay Art Gallery, 2008",
-      pdfLink: "/pdfs/bad-breath-catalogue.pdf"
-    },
-    {
-      id: 105,
-      title: "Bad Breath And Fresh Plastic Flowers",
-      year: "2010",
-      category: "publication",
-      tab: "bad-breath-flowers",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works, essay by Gitanjali Dang, Published by Mathew Gallery , 2010.",
-      pdfLink: "/pdfs/bad-breath-flowers.pdf"
-    },
-    {
-      id: 106,
-      title: "One Two Three … To Happy Galaxy",
-      year: "2008",
-      category: "publication",
-      tab: "happy-galaxy",
-      image: "/placeholder.svg",
-      description: "A limited edition book, with colour plates of original watercolours . Essay by Gitanjali Dang, Published by Ashish Balram Nagpal Galleries, and Poetrywala , 2008.",
-      pdfLink: "/pdfs/happy-galaxy.pdf"
-    },
-    {
-      id: 107,
-      title: "Rumour Of The Truth",
-      year: "2003",
-      category: "publication",
-      tab: "rumour-truth",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Arun Sadhu and Ranjit Hoskote , In-house Publication, 2003.",
-      pdfLink: "/pdfs/rumour-truth.pdf"
-    },
-    {
-      id: 108,
-      title: "All That I Wanna Do",
-      year: "2005",
-      category: "publication",
-      tab: "all-that-i-wanna-do",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Kumar Ketkar And Abhay Sardesai. Published In-house , 2005.",
-      pdfLink: "/pdfs/all-that-i-wanna-do.pdf"
-    },
-    {
-      id: 109,
-      title: "Acquire, Merge Or Collaborate",
-      year: "2007",
-      category: "publication",
-      tab: "acquire-merge-collaborate",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Dilip Chitre and Gitanjali Dang. Accompanied by a reprint of the article by Robin Blackburn. Published by Ashish Balram Nagpal Galleries, 2007.",
-      pdfLink: "/pdfs/acquire-merge-collaborate.pdf"
-    },
-    {
-      id: 110,
-      title: "Imp In The Garden And Other Fairy Tales",
-      year: "2010",
-      category: "publication",
-      tab: "imp-garden",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works and essay by Ranjit Hoskote. Published by Pundole Art Gallery, 2010.",
-      pdfLink: "/pdfs/imp-garden.pdf"
-    },
-    {
-      id: 111,
-      title: "Rx",
-      year: "2008",
-      category: "publication",
-      tab: "rx",
-      image: "/placeholder.svg",
-      description: "Catalogue with colour plates of the works, essay by Gitanjali Dang, In-house publication, 2008.",
-      pdfLink: "/pdfs/rx.pdf"
-    },
-    {
-      id: 112,
-      title: "Sick Paintings",
-      year: "2011",
-      category: "publication",
-      tab: "sick-paintings",
-      image: "/placeholder.svg",
-      description: "A special publication of colour plates of the works and poetry by Franck Andrè Jamme . Published by Poetrywala , 2011.",
-      pdfLink: "/pdfs/sick-paintings.pdf"
-    },
-    // Installations
-    {
+  const works: Work[] = [{
     id: 1,
     title: "'not Still Life'",
     year: "2025",
@@ -214,7 +91,7 @@ const Portfolio = () => {
     year: "2020",
     category: "installation",
     tab: "bad-breath-iii",
-    image: "/lovable-uploads/70f986ef-eefe-4600-8efd-0cec8858d104.png",
+    image: "/lovable-uploads/ffa15fc4-84cd-4238-b7a9-ec02a3b8c959.png",
     description: "Everything You Wanted to Know About (Your) Bad Breath, but Were Afraid to Ask Alfred Hitchcock  III\nIn this ongoing series, Vaishali and Sanjeev confront the ecological violence of capitalism.\nA recurring motif—the refrigerator—embodies frozen nature and unchecked consumerist greed.\nTheir sculptural refrigerator doors bear images of drought, mangroves, coral, and protest, tracing systemic ruin.\nThe works reflect a world cooling its interiors while burning its commons.\nThis is the Necrocene: capital as extinction event.",
     pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-iii.pdf",
     galleryImages: ["/lovable-uploads/e83a0e09-48c6-40b7-ae3d-aba4fe3b21d3.png", "/lovable-uploads/3a831afe-d6be-4735-9583-7b7078bb834d.png", "/lovable-uploads/797a04c1-6150-49cf-ba6a-72f31464f03c.png"]
@@ -228,33 +105,6 @@ const Portfolio = () => {
     description: "To christen, What do I love when I love you, my god?\",( 2006)  delves into the unsettling power dynamics of contemporary multinational capitalism. Drawing inspiration from St. Augustine, this exhibition exposes an unsettling truth: in a world driven by a \"shining beast of capitalism,\" little is truly cherished and everything feels encroachable. It critiques how world leaders, through rampant propaganda, co-opt religious faith to serve political and economic agendas, highlighting a pervasive \"androgynous, amorphous and amphibious faith.\" Through a compelling suite of paintings, sculptures, and installations,the exhibition  distinctive use of coagulated, blistering watercolors and meticulously designed cabinets enshrining Hindu deities, challenges viewers to confront the rapid dissipation of values in our modern milieu. This exhibition, with its layered symbolism and enigmatic text, invites a multifaceted engagement, probing the insidious influence of market forces and the blurring lines between spirituality and material desire.                             ( download pdf to read essay by Gitanjali Dang )",
     pdfLink: "/pdfs/what-do-i-love-when-i-love-you-my-god.pdf",
     galleryImages: ["/lovable-uploads/70d90f65-aca3-4f2e-8462-deb036cdf30e.png", "/lovable-uploads/ae62bf06-b327-43a6-a9d8-c42007f28d36.png", "/lovable-uploads/63f8b6cf-9112-4dcf-ab8d-6be4207a8b7f.png", "/lovable-uploads/1a7ef6e9-90c4-4497-a28e-6d1b3050f473.png", "/lovable-uploads/ce506b96-838f-4a06-af03-fe7e5dc54656.png", "/lovable-uploads/66814bcf-4af1-4abc-a1cf-2e9557c858f2.png", "/lovable-uploads/74390791-cafd-4875-9f16-f31d40cebba0.png", "/lovable-uploads/1bde07be-f597-42ca-bbdd-adcf495499c5.png", "/lovable-uploads/7a92dc25-7cd5-46df-ac90-ef6558b321cd.png", "/lovable-uploads/42cc2075-d4b1-4e3f-bf4e-6dd1af908272.png", "/lovable-uploads/9ae30672-e3c6-486d-b059-ced7d2ff71cd.png", "/lovable-uploads/b99fbbbd-9574-48b8-a901-59657bd95863.png", "/lovable-uploads/0b97843d-73fe-4dd6-b350-2a3c7746d319.png"]
-  }, {
-    id: 13,
-    title: "Acquire, Merge or Collaborate...!",
-    year: "2007",
-    category: "installation",
-    tab: "acquire-merge-collaborate-art",
-    image: "/placeholder.svg",
-    description: "A multimedia installation exploring corporate culture and collaboration in contemporary art practice.",
-    pdfLink: "/pdfs/acquire-merge-collaborate-art.pdf"
-  }, {
-    id: 14,
-    title: "I am so angry, I made this sign",
-    year: "2021",
-    category: "installation",
-    tab: "angry-sign",
-    image: "/placeholder.svg",
-    description: "An expressive installation channeling frustration and activism through visual protest and contemporary signage.",
-    pdfLink: "/pdfs/angry-sign.pdf"
-  }, {
-    id: 15,
-    title: "Imp in the garden and other Fairy tales",
-    year: "2010",
-    category: "installation",
-    tab: "imp-garden-fairy-tales",
-    image: "/placeholder.svg",
-    description: "A whimsical yet profound installation exploring fairy tale narratives in contemporary contexts.",
-    pdfLink: "/pdfs/imp-garden-fairy-tales.pdf"
   }, {
     id: 16,
     title: "la peau de chagrin (who is afraid of shrinking skin)",
@@ -298,12 +148,7 @@ const Portfolio = () => {
   }];
 
   // Filter works based on selected category
-  const filteredWorks = works.filter(work => {
-    if (selectedCategory === 'all') {
-      return work.category === 'installation' || work.category === 'previous'; // Art Works tab shows only installations and previous works (15 total)
-    }
-    return work.category === selectedCategory;
-  });
+  const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
 
   // Functions to handle gallery navigation
   const openGalleryImage = (imageUrl: string, galleryImages: string[]) => {
