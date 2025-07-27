@@ -319,7 +319,7 @@ const Portfolio = () => {
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
-                      <h2 className="text-2xl font-serif font-bold mt-2 mb-4">{selectedWork.title}</h2>
+                      <h2 className={`text-2xl font-serif font-bold mt-2 mb-4 ${selectedWork.title === "la peau de chagrin (who is afraid of shrinking skin)" ? "italic" : ""}`}>{selectedWork.title}</h2>
                       
                       <ScrollArea className="flex-1 pr-4">
                         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
