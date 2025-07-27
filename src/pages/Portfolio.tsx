@@ -97,7 +97,7 @@ const Portfolio = () => {
     galleryImages: ["/lovable-uploads/a8481db4-b3fd-419b-8c9f-2571621c8fd8.png", "/lovable-uploads/8becb175-9f80-4277-bfc8-7476f8ef862e.png", "/lovable-uploads/05d6b360-2a34-4847-ba30-42975917511a.png", "/lovable-uploads/fac0c969-4060-4866-b5b5-77cb6e653a24.png", "/lovable-uploads/48853142-555c-48d7-8de3-293c35cafc5a.png", "/lovable-uploads/84b645d3-533b-4539-9734-6181e4ec6502.png", "/lovable-uploads/cd762c82-8484-4f74-9e4a-0fe87285c6ee.png", "/lovable-uploads/331d7574-1b73-49ac-970a-a90ceba4b5b6.png", "/lovable-uploads/e313efab-5e2c-4f37-bd66-e89dabfac518.png", "/lovable-uploads/06529053-3205-4119-a866-380b629cf5c7.png", "/lovable-uploads/6656f110-8d44-4dca-8596-31cb68f923f8.png", "/lovable-uploads/cee8a708-ab31-49b5-b5db-97cbab9e94a8.png", "/lovable-uploads/409157c6-20f6-40bd-a38f-cd2d43182df3.png"]
   }, {
     id: 8,
-    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock I",
+    title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock part I",
     year: "2008",
     category: "installation",
     tab: "bad-breath",
