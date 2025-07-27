@@ -136,46 +136,6 @@ const Portfolio = () => {
     pdfLink: "/pdfs/what-do-i-love-when-i-love-you-my-god.pdf",
     galleryImages: ["/lovable-uploads/4744559d-f03e-4947-bae8-3936d3a892ce.png"]
   }, {
-    id: 12,
-    title: "Kegel exercise",
-    year: "2024",
-    category: "publication",
-    tab: "kegel-exercise",
-    image: "/placeholder.svg",
-    description: "Kegel exercise explores themes of body, control, and the intimate landscape of physical expression. Through mixed media and conceptual frameworks, this work examines the intersection of the personal and political in contemporary art practice.",
-    pdfLink: "/pdfs/kegel-exercise.pdf",
-    galleryImages: []
-  }, {
-    id: 13,
-    title: "All that I wanna do",
-    year: "2024",
-    category: "publication",
-    tab: "all-that-i-wanna-do",
-    image: "/placeholder.svg",
-    description: "All that I wanna do explores desires, aspirations, and the complexities of modern existence through a contemporary lens.",
-    pdfLink: "/pdfs/all-that-i-wanna-do.pdf",
-    galleryImages: []
-  }, {
-    id: 14,
-    title: "La peau de chagrin (who is afraid of shrinking skin)",
-    year: "2024",
-    category: "publication",
-    tab: "la-peau-de-chagrin",
-    image: "/placeholder.svg",
-    description: "La peau de chagrin investigates themes of transformation, vulnerability, and the physical manifestations of emotional states.",
-    pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
-    galleryImages: []
-  }, {
-    id: 15,
-    title: "Tits Clits n Elephant Dick",
-    year: "2024",
-    category: "publication",
-    tab: "tits-clits-elephant-dick-new",
-    image: "/placeholder.svg",
-    description: "A provocative exploration of sexuality, identity, and taboo through bold artistic expression and unconventional narrative structures.",
-    pdfLink: "/pdfs/tits-clits-elephant-dick.pdf",
-    galleryImages: []
-  }, {
     id: 16,
     title: "la peau de chagrin (who is afraid of shrinking skin)",
     year: "2005",
