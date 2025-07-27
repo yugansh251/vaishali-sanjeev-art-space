@@ -324,9 +324,9 @@ const Portfolio = () => {
                       <ScrollArea className="flex-1 pr-4">
                         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
                           {selectedWork.description
-                            .split(/(\bLa Peau de Chagrin\b|\bla peau de chagrin\b)/g)
+                            .split(/(\bLa Peau de Chagrin\b|\bla peau de chagrin\b|\bAswani Mudra\b)/g)
                             .map((part, index) => {
-                              if (part === 'La Peau de Chagrin' || part === 'la peau de chagrin') {
+                              if (part === 'La Peau de Chagrin' || part === 'la peau de chagrin' || part === 'Aswani Mudra') {
                                 return <em key={index}>{part}</em>;
                               }
                               return part;
