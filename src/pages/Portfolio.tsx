@@ -229,6 +229,33 @@ const Portfolio = () => {
     pdfLink: "/pdfs/what-do-i-love-when-i-love-you-my-god.pdf",
     galleryImages: ["/lovable-uploads/70d90f65-aca3-4f2e-8462-deb036cdf30e.png", "/lovable-uploads/ae62bf06-b327-43a6-a9d8-c42007f28d36.png", "/lovable-uploads/63f8b6cf-9112-4dcf-ab8d-6be4207a8b7f.png", "/lovable-uploads/1a7ef6e9-90c4-4497-a28e-6d1b3050f473.png", "/lovable-uploads/ce506b96-838f-4a06-af03-fe7e5dc54656.png", "/lovable-uploads/66814bcf-4af1-4abc-a1cf-2e9557c858f2.png", "/lovable-uploads/74390791-cafd-4875-9f16-f31d40cebba0.png", "/lovable-uploads/1bde07be-f597-42ca-bbdd-adcf495499c5.png", "/lovable-uploads/7a92dc25-7cd5-46df-ac90-ef6558b321cd.png", "/lovable-uploads/42cc2075-d4b1-4e3f-bf4e-6dd1af908272.png", "/lovable-uploads/9ae30672-e3c6-486d-b059-ced7d2ff71cd.png", "/lovable-uploads/b99fbbbd-9574-48b8-a901-59657bd95863.png", "/lovable-uploads/0b97843d-73fe-4dd6-b350-2a3c7746d319.png"]
   }, {
+    id: 13,
+    title: "Acquire, Merge or Collaborate...!",
+    year: "2007",
+    category: "installation",
+    tab: "acquire-merge-collaborate-art",
+    image: "/placeholder.svg",
+    description: "A multimedia installation exploring corporate culture and collaboration in contemporary art practice.",
+    pdfLink: "/pdfs/acquire-merge-collaborate-art.pdf"
+  }, {
+    id: 14,
+    title: "I am so angry, I made this sign",
+    year: "2021",
+    category: "installation",
+    tab: "angry-sign",
+    image: "/placeholder.svg",
+    description: "An expressive installation channeling frustration and activism through visual protest and contemporary signage.",
+    pdfLink: "/pdfs/angry-sign.pdf"
+  }, {
+    id: 15,
+    title: "Imp in the garden and other Fairy tales",
+    year: "2010",
+    category: "installation",
+    tab: "imp-garden-fairy-tales",
+    image: "/placeholder.svg",
+    description: "A whimsical yet profound installation exploring fairy tale narratives in contemporary contexts.",
+    pdfLink: "/pdfs/imp-garden-fairy-tales.pdf"
+  }, {
     id: 16,
     title: "la peau de chagrin (who is afraid of shrinking skin)",
     year: "2005",
