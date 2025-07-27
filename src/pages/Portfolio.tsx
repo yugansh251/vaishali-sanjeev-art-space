@@ -66,6 +66,16 @@ const Portfolio = () => {
     pdfLink: "/pdfs/triumph-of-market.pdf",
     galleryImages: ["/lovable-uploads/33ff03c3-ccae-4291-8334-69142df938b8.png", "/lovable-uploads/d8e91d54-1e37-4ce5-866e-3f4a05181bda.png", "/lovable-uploads/35fe502a-670c-47bf-b361-911356c1b1b6.png", "/lovable-uploads/86ea1bbe-89cd-4a23-8665-f499b7eea521.png", "/lovable-uploads/a1987850-5d5a-4ab6-9882-89d0e3d69505.png", "/lovable-uploads/9c9ba9b0-4826-4586-b180-ccb32e8f86a9.png", "/lovable-uploads/8b6dc1c0-5afb-4a8b-bcb1-275ed7fcf638.png", "/lovable-uploads/d1006d1c-40fa-403c-895a-2b94fee2e0de.png", "/lovable-uploads/1c09e774-aa00-4096-b31c-dba74a35f642.png", "/lovable-uploads/cc24a0ed-205e-415b-a4f0-161793ad823e.png", "/lovable-uploads/a998fa3a-218d-4192-9517-1844088f2761.png", "/lovable-uploads/80f0776a-0e43-447a-8339-fec0ed0fd068.png"]
   }, {
+    id: 5,
+    title: "I am so angry, I made this sign",
+    year: "2012",
+    category: "publication",
+    tab: "angry",
+    image: "/lovable-uploads/d3d6d114-c4d4-49c8-b3af-2ca1b78fc56a.png",
+    description: "Set against Chennai‚ Marina Beach, ‚\"I'm So Angry, I Made This Sign\"‚ by Vaishali & Sanjeev transforms a protest phrase into a vast, immersive installation.\nStretching across 1.5 km, the work uses flags, bamboo, terracotta, and glowing ceramics to evoke both rage and reflection.\nBorrowed from a 2011 Occupy Wall Street placard, the phrase becomes a mass chorus of dissent and irony.\nBy repeating this line across thousands of fluttering signs, the artists stage a meditation on protest, emotion, and spectacle.\nThe installation blurs sincerity and satire, inviting public engagement while critiquing the aesthetics of outrage. Its glowing elements at night turn protest into a dreamlike vigil, a field of quiet resistance. Referencing thinkers like Žižek , the work questions whether expressive anger can truly disrupt power.\nMore than a political act, it is a haunting, poetic gesture ‚ fragile, fleeting, yet impossible to ignore.",
+    pdfLink: "/pdfs/i-am-so-angry-i-made-this-sign.pdf",
+    galleryImages: ["/lovable-uploads/a61f672b-5f6a-4797-9cce-2b1b550ea8bb.png", "/lovable-uploads/f61bdf02-8796-46c1-89fb-799f781ded7b.png", "/lovable-uploads/1aaa701e-e08a-42cb-a2be-76def0111fd4.png", "/lovable-uploads/e01e7d30-4c4c-423d-bd76-085c215b4174.png", "/lovable-uploads/9fa1a743-2852-4b84-bfed-ca65c42639fb.png", "/lovable-uploads/1fc730d8-5a33-4b1f-a54b-b5ac4db73a31.png", "/lovable-uploads/1a5a7ab0-b4e6-450d-89f3-8322caadede2.png", "/lovable-uploads/36c7e15a-a628-434a-89a8-5145ebec6cab.png", "/lovable-uploads/9012650f-528f-4335-a39b-b21401d97ed6.png", "/lovable-uploads/7e92fa4f-f5b0-4c0a-895d-900479cd9a5c.png"]
+  }, {
     id: 6,
     title: "By George",
     year: "2010",
@@ -75,6 +85,16 @@ const Portfolio = () => {
     description: "' By George '  (2008)\nCurated by Gitanjali Dang and featuring works by Vaishali Narkar & Sanjeev Khandekar, By George explores the creeping omnipresence of surveillance in contemporary life. Drawing from Orwellian allegories and real-world digital paranoia, the show interrogates how the gaze—technological, institutional, and social—shapes our subjectivities. With references ranging from Jeremy Bentham to Mark Zuckerberg, the works deploy mixed media and sandblasted glass to stage questions of privacy, perception, and power. Originally exhibited in 2008, the show remains uncannily prescient.\nHere, transparency is seductive, and observation is never neutral.\nWe are seen. We see.\nAnd nothing remains quite the same.",
     pdfLink: "/pdfs/by-george.pdf",
     galleryImages: ["/lovable-uploads/63b597b2-ca37-4329-9dca-51f1d4d18c54.png", "/lovable-uploads/c151d70d-e511-4fc4-98e1-685a19692f57.png", "/lovable-uploads/e0fb3a47-8cc4-470c-8174-0b87623c0987.png"]
+  }, {
+    id: 7,
+    title: "Imp in the garden and other fairy tales",
+    year: "2010",
+    category: "publication",
+    tab: "imp-in-the-garden",
+    image: "/lovable-uploads/87ca6839-77e3-463a-a35d-bbb022447dfa.png",
+    description: "Histograms of an Anxious Present: 'Imp in the Garden and Other Fairy Tales'\nAll of us inherently seek a sense of everyday normality to navigate life's demands. Yet, perfection, beauty, and even horror represent hazardous departures from this norm, capable of plunging us into fantasia or nightmare. Vaishali & Sanjeev confront these extremes head-on in their mixed-media works, 'Imp in the Garden and Other Fairy Tales', creating captivating entanglements of beauty and mutancy. Through the traditional art of embroidery, they weave intricate narratives that allude to the human costs of ecological catastrophe, genetic manipulation, and biological warfare. Their work serves as a Zen koan, shocking us into a deep awareness of the complexities underlying our current historical moment.",
+    pdfLink: "/pdfs/imp-in-the-garden-and-other-fairy-tales.pdf",
+    galleryImages: ["/lovable-uploads/a8481db4-b3fd-419b-8c9f-2571621c8fd8.png", "/lovable-uploads/8becb175-9f80-4277-bfc8-7476f8ef862e.png", "/lovable-uploads/05d6b360-2a34-4847-ba30-42975917511a.png", "/lovable-uploads/fac0c969-4060-4866-b5b5-77cb6e653a24.png", "/lovable-uploads/48853142-555c-48d7-8de3-293c35cafc5a.png", "/lovable-uploads/84b645d3-533b-4539-9734-6181e4ec6502.png", "/lovable-uploads/cd762c82-8484-4f74-9e4a-0fe87285c6ee.png", "/lovable-uploads/331d7574-1b73-49ac-970a-a90ceba4b5b6.png", "/lovable-uploads/e313efab-5e2c-4f37-bd66-e89dabfac518.png", "/lovable-uploads/06529053-3205-4119-a866-380b629cf5c7.png", "/lovable-uploads/6656f110-8d44-4dca-8596-31cb68f923f8.png", "/lovable-uploads/cee8a708-ab31-49b5-b5db-97cbab9e94a8.png", "/lovable-uploads/409157c6-20f6-40bd-a38f-cd2d43182df3.png"]
   }, {
     id: 8,
     title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock I",
@@ -95,6 +115,16 @@ const Portfolio = () => {
     description: "Everything You Wanted to Know About (Your) Bad Breath, but Were Afraid to Ask Alfred Hitchcock  III\nIn this ongoing series, Vaishali and Sanjeev confront the ecological violence of capitalism.\nA recurring motif—the refrigerator—embodies frozen nature and unchecked consumerist greed.\nTheir sculptural refrigerator doors bear images of drought, mangroves, coral, and protest, tracing systemic ruin.\nThe works reflect a world cooling its interiors while burning its commons.\nThis is the Necrocene: capital as extinction event.",
     pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-iii.pdf",
     galleryImages: ["/lovable-uploads/e83a0e09-48c6-40b7-ae3d-aba4fe3b21d3.png", "/lovable-uploads/3a831afe-d6be-4735-9583-7b7078bb834d.png", "/lovable-uploads/797a04c1-6150-49cf-ba6a-72f31464f03c.png"]
+  }, {
+    id: 10,
+    title: "Acquire, Merge or Collaborate...!",
+    year: "2007",
+    category: "publication",
+    tab: "acquire-merge",
+    image: "/lovable-uploads/c97400af-b7b0-4338-84ce-d73b829b9ca3.png",
+    description: "Long before Yale University published its findings on hormonal changes in men and women actively involved in stock market investments, Sanjeev Khandekar was already exploring this intersection through his art. In his poems and watercolours, he had pioneered a unique imagery of financial capital, using it as a motif to depict the evolving landscape of contemporary global societies.\nVaishali & Sanjeev 's  acrylic-on-canvas paintings, including the series \"acquire, merge or collaborate\"(2007)  and subsequent \"triumph of market\" series of works, visually integrate stock market motifs onto further abstracted electronic microscopic images of internal body organs. The exhibition also featured a significant installation titled \"time pass,\" which offered a satirical commentary on how market forces influence various aspects of life, from relationships and spirituality to consumerism.",
+    pdfLink: "/pdfs/acquire-merge-or-collaborate.pdf",
+    galleryImages: ["/lovable-uploads/c70b5427-f5ee-4faf-8c41-da2f168febe7.png", "/lovable-uploads/47abba0c-d814-4804-9c3f-652549f959f3.png", "/lovable-uploads/a6e6d89a-6b54-4543-b99e-4f6649229bc8.png", "/lovable-uploads/a258eb38-a8f2-43cf-948d-3b8788f253bf.png", "/lovable-uploads/089282ce-c070-48e1-b7a7-b512f10091d8.png", "/lovable-uploads/c1c66bef-688c-4826-a7fb-56c51609aaab.png", "/lovable-uploads/c7438809-5818-4887-99f0-ebc5088d8423.png", "/lovable-uploads/9738f1a0-2cea-4218-8c94-a21779dcb520.png"]
   }, {
     id: 11,
     title: "What do I love when I love you, my God",
