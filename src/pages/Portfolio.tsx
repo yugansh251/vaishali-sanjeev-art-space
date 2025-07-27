@@ -271,7 +271,12 @@ const Portfolio = () => {
   }];
 
   // Filter works based on selected category
-  const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
+  const filteredWorks = works.filter(work => {
+    if (selectedCategory === 'all') {
+      return work.category === 'installation'; // Art Works tab shows only installations
+    }
+    return work.category === selectedCategory;
+  });
 
   // Functions to handle gallery navigation
   const openGalleryImage = (imageUrl: string, galleryImages: string[]) => {
