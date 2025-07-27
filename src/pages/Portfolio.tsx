@@ -323,7 +323,14 @@ const Portfolio = () => {
                       
                       <ScrollArea className="flex-1 pr-4">
                         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-                          {selectedWork.description}
+                          {selectedWork.description.split('la peau de chagrin').map((part, index, array) => (
+                            index === array.length - 1 ? part : (
+                              <>
+                                {part}
+                                <em>la peau de chagrin</em>
+                              </>
+                            )
+                          ))}
                         </div>
                       </ScrollArea>
                       
