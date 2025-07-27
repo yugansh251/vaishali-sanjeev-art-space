@@ -9,81 +9,57 @@ const Hero = () => {
   // Updated gallery images for the carousel
   const artworkImages = [{
     id: 1,
-    image: "/lovable-uploads/3d10e7f2-0137-44cd-b138-9c02fb9bb9c4.png",
-    title: "Mixed Media Collage",
-    medium: "Mixed Media",
+    image: "/lovable-uploads/18518eb0-251c-406d-934c-ed0f7f8ea060.png",
+    title: "Embroidered Corn",
+    medium: "Embroidery on Fabric",
     year: "2024"
   }, {
     id: 2,
-    image: "/lovable-uploads/3ae3933c-441c-4416-ae84-38fca458ee06.png",
-    title: "Hanuman Plaka",
-    medium: "Traditional Art",
+    image: "/lovable-uploads/0f228dd1-cfd1-4816-aa26-e93302415215.png",
+    title: "Gallery Installation View",
+    medium: "Installation View",
     year: "2024"
   }, {
     id: 3,
-    image: "/lovable-uploads/9b993336-697f-4c47-b351-8834d1d1f4ba.png",
-    title: "Gallery Exhibition",
-    medium: "Installation View",
+    image: "/lovable-uploads/f9eedba1-56e0-4c9f-aaf5-ee331eae7682.png",
+    title: "Sacred Installation",
+    medium: "Mixed Media Installation",
     year: "2024"
   }, {
     id: 4,
-    image: "/lovable-uploads/5f040730-08ee-4299-b7db-13d54ca351e3.png",
-    title: "Abstract Flow",
-    medium: "Mixed Media",
+    image: "/lovable-uploads/ad30908b-39f3-4226-b8df-538c4c500091.png",
+    title: "I'm So Angry I Made This Sign",
+    medium: "Wire and Light Installation",
     year: "2024"
   }, {
     id: 5,
-    image: "/lovable-uploads/92a74895-2643-46d4-8f67-70e0ae10f9f6.png",
-    title: "Angry Installation",
-    medium: "Wire Installation",
+    image: "/lovable-uploads/f3f37476-c2d3-4c8e-9e07-1f9406e55037.png",
+    title: "Suspended Forms",
+    medium: "Hanging Installation",
     year: "2024"
   }, {
     id: 6,
-    image: "/lovable-uploads/4bb2c394-8f2e-4c36-a655-7f0396733506.png",
-    title: "Dark Installation",
-    medium: "Installation View",
+    image: "/lovable-uploads/110b639f-2453-4c76-aa4f-811fa1f1878a.png",
+    title: "Market Flow",
+    medium: "Acrylic on Canvas",
     year: "2024"
   }, {
     id: 7,
-    image: "/lovable-uploads/93625121-b432-4c0f-b39f-aacb6097d78b.png",
-    title: "Blue Passage",
-    medium: "Installation",
+    image: "/lovable-uploads/d1af2c71-eb00-4f5d-98a8-be62fb21a8a2.png",
+    title: "Gallery Wall",
+    medium: "Exhibition View",
     year: "2024"
   }, {
     id: 8,
-    image: "/lovable-uploads/70dbf97f-90e4-4fb6-83ce-b7ac7caadc22.png",
-    title: "Meditation Space",
-    medium: "Installation",
+    image: "/lovable-uploads/e349fc1b-7f0d-4a7b-9996-61a39646120e.png",
+    title: "Hanuman Vijay Palka",
+    medium: "Mixed Media on Canvas",
     year: "2024"
   }, {
     id: 9,
-    image: "/lovable-uploads/e8011005-0bc6-4252-a4e1-2bcb6038d597.png",
-    title: "Traditional Art Exhibition",
-    medium: "Installation View",
-    year: "2024"
-  }, {
-    id: 10,
-    image: "/lovable-uploads/d09945f2-a0e4-4a8f-9a8b-74f5482b079d.png",
-    title: "Suspended Installation",
-    medium: "Mixed Media Installation",
-    year: "2024"
-  }, {
-    id: 11,
-    image: "/lovable-uploads/839007b4-0811-4fd4-b5b8-0210d4cffecd.png",
-    title: "Corn Dreams",
+    image: "/lovable-uploads/4662465a-3afe-4dbf-872f-41ea48d7ec88.png",
+    title: "Abstract Collage",
     medium: "Mixed Media Collage",
-    year: "2024"
-  }, {
-    id: 12,
-    image: "/lovable-uploads/6d386457-14ed-4b2b-a627-e94ef4b2f179.png",
-    title: "Perfect Kludge",
-    medium: "Mixed Media Installation",
-    year: "2024"
-  }, {
-    id: 13,
-    image: "/lovable-uploads/e01e3819-1b87-4716-acaf-3be209da4d75.png",
-    title: "Red Installation",
-    medium: "Installation View",
     year: "2024"
   }];
 
