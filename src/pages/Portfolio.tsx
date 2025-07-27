@@ -327,26 +327,12 @@ const Portfolio = () => {
                         </div>
                       </ScrollArea>
                       
-                      <div className="mt-6 space-y-4">
-                        <div className="flex gap-2">
-                          <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue">
-                            <Button variant="outline" size="sm" className="gap-2">
-                              <Download size={16} />
-                              Download PDF
-                            </Button>
-                          </a>
-                        </div>
-                        
-                        {/* Embedded PDF Viewer */}
-                        <div className="w-full h-96 border border-gray-200 rounded-lg overflow-hidden">
-                          <iframe 
-                            src={`${selectedWork.pdfLink}#view=FitH`}
-                            className="w-full h-full"
-                            title={`${selectedWork.title} PDF`}
-                            frameBorder="0"
-                          />
-                        </div>
-                      </div>
+                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
+                        <Button variant="outline" size="sm" className="gap-2">
+                          <Download size={16} />
+                          Download PDF
+                        </Button>
+                      </a>
                     </div>
                   </div>
                   
