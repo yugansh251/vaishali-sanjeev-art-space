@@ -61,6 +61,18 @@ const Hero = () => {
     title: "Abstract Collage",
     medium: "Mixed Media Collage",
     year: "2024"
+  }, {
+    id: 10,
+    image: "/lovable-uploads/7996dcae-22d3-43f8-85ce-c4cedba15740.png",
+    title: "Perfect Kludge",
+    medium: "Mixed Media Installation",
+    year: "2024"
+  }, {
+    id: 11,
+    image: "/lovable-uploads/8b6068de-fa71-4bd8-bc85-9b6c329c0606.png",
+    title: "Gallery Installation",
+    medium: "Installation View",
+    year: "2024"
   }];
 
   // Set up auto-scroll for the carousel
