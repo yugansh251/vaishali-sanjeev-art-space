@@ -273,7 +273,7 @@ const Portfolio = () => {
   // Filter works based on selected category
   const filteredWorks = works.filter(work => {
     if (selectedCategory === 'all') {
-      return work.category === 'installation'; // Art Works tab shows only installations
+      return work.category !== 'publication'; // Art Works tab shows all except publications
     }
     return work.category === selectedCategory;
   });
