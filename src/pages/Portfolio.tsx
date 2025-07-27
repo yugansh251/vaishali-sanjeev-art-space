@@ -134,6 +134,46 @@ const Portfolio = () => {
     image: "/lovable-uploads/4744559d-f03e-4947-bae8-3936d3a892ce.png",
     description: "To christen, What do I love when I love you, my god?\",( 2006)  delves into the unsettling power dynamics of contemporary multinational capitalism. Drawing inspiration from St. Augustine, this exhibition exposes an unsettling truth: in a world driven by a \"shining beast of capitalism,\" little is truly cherished and everything feels encroachable. It critiques how world leaders, through rampant propaganda, co-opt religious faith to serve political and economic agendas, highlighting a pervasive \"androgynous, amorphous and amphibious faith.\" Through a compelling suite of paintings, sculptures, and installations,the exhibition  distinctive use of coagulated, blistering watercolors and meticulously designed cabinets enshrining Hindu deities, challenges viewers to confront the rapid dissipation of values in our modern milieu. This exhibition, with its layered symbolism and enigmatic text, invites a multifaceted engagement, probing the insidious influence of market forces and the blurring lines between spirituality and material desire.                             ( download pdf to read essay by Gitanjali Dang )",
     pdfLink: "/pdfs/what-do-i-love-when-i-love-you-my-god.pdf",
+    galleryImages: ["/lovable-uploads/4744559d-f03e-4947-bae8-3936d3a892ce.png"]
+  }, {
+    id: 12,
+    title: "Kegel exercise",
+    year: "2024",
+    category: "publication",
+    tab: "kegel-exercise",
+    image: "/placeholder.svg",
+    description: "Kegel exercise explores themes of body, control, and the intimate landscape of physical expression. Through mixed media and conceptual frameworks, this work examines the intersection of the personal and political in contemporary art practice.",
+    pdfLink: "/pdfs/kegel-exercise.pdf",
+    galleryImages: ["/placeholder.svg"]
+  }, {
+    id: 13,
+    title: "All that I wanna do",
+    year: "2024",
+    category: "publication",
+    tab: "all-that-i-wanna-do",
+    image: "/placeholder.svg",
+    description: "All that I wanna do presents a meditation on desire, aspiration, and the complexity of human wants in contemporary society. The work challenges conventional narratives around fulfillment and satisfaction.",
+    pdfLink: "/pdfs/all-that-i-wanna-do.pdf",
+    galleryImages: ["/placeholder.svg"]
+  }, {
+    id: 14,
+    title: "la peau de chagrin (who is afraid of shrinking skin)",
+    year: "2024",
+    category: "installation",
+    tab: "la-peau-de-chagrin",
+    image: "/placeholder.svg",
+    description: "la peau de chagrin (who is afraid of shrinking skin) draws from Balzac's literary classic to explore themes of mortality, desire, and the gradual erosion of possibility. This installation confronts the viewer with questions about time, consumption, and the body's relationship to space.",
+    pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
+    galleryImages: ["/placeholder.svg"]
+  }, {
+    id: 15,
+    title: "Tits Clits n Elephant Dick",
+    year: "2024",
+    category: "installation",
+    tab: "tits-clits-elephant-dick",
+    image: "/placeholder.svg",
+    description: "Tits Clits n Elephant Dick boldly confronts sexuality, body politics, and the raw honesty of human desire. This provocative work challenges taboos and social conventions while exploring the intersection of the erotic and the political.",
+    pdfLink: "/pdfs/tits-clits-elephant-dick.pdf",
     galleryImages: ["/lovable-uploads/c9dd2a7f-50cb-4c88-9fe0-19735376b68d.png", "/lovable-uploads/2d8bb41b-b5c7-42fd-ae56-36f743f9a2d5.png", "/lovable-uploads/34847f14-c54f-4447-8671-1942452a7245.png", "/lovable-uploads/612902a4-b83c-443b-8d42-fce20be09b8b.png", "/lovable-uploads/fe9837ef-c72f-4d72-b0a2-7208b7903336.png", "/lovable-uploads/88122d96-3644-4342-8f14-f8bcc93846bb.png", "/lovable-uploads/90f0e3b8-7d31-47aa-8167-d10763eb8814.png", "/lovable-uploads/d0e27230-0a5b-4ee4-9364-bde308aa0d53.png", "/lovable-uploads/33d1048c-d4ff-4e6b-a3db-eaee0a8feb06.png", "/lovable-uploads/2a02065a-9581-4344-a754-25cdbc102cba.png", "/lovable-uploads/c1bb72bf-d140-4e5c-9889-db8bc00aff6e.png", "/lovable-uploads/5fe3db7b-02f8-4ecf-bdaa-4a65bbf21f07.png", "/lovable-uploads/b322471d-916a-48fe-9a36-a40879fa4ec6.png"]
   }, {
     id: 12,
