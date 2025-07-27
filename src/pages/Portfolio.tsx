@@ -135,46 +135,6 @@ const Portfolio = () => {
     description: "To christen, What do I love when I love you, my god?\",( 2006)  delves into the unsettling power dynamics of contemporary multinational capitalism. Drawing inspiration from St. Augustine, this exhibition exposes an unsettling truth: in a world driven by a \"shining beast of capitalism,\" little is truly cherished and everything feels encroachable. It critiques how world leaders, through rampant propaganda, co-opt religious faith to serve political and economic agendas, highlighting a pervasive \"androgynous, amorphous and amphibious faith.\" Through a compelling suite of paintings, sculptures, and installations,the exhibition  distinctive use of coagulated, blistering watercolors and meticulously designed cabinets enshrining Hindu deities, challenges viewers to confront the rapid dissipation of values in our modern milieu. This exhibition, with its layered symbolism and enigmatic text, invites a multifaceted engagement, probing the insidious influence of market forces and the blurring lines between spirituality and material desire.                             ( download pdf to read essay by Gitanjali Dang )",
     pdfLink: "/pdfs/what-do-i-love-when-i-love-you-my-god.pdf",
     galleryImages: ["/lovable-uploads/c9dd2a7f-50cb-4c88-9fe0-19735376b68d.png", "/lovable-uploads/2d8bb41b-b5c7-42fd-ae56-36f743f9a2d5.png", "/lovable-uploads/34847f14-c54f-4447-8671-1942452a7245.png", "/lovable-uploads/612902a4-b83c-443b-8d42-fce20be09b8b.png", "/lovable-uploads/fe9837ef-c72f-4d72-b0a2-7208b7903336.png", "/lovable-uploads/88122d96-3644-4342-8f14-f8bcc93846bb.png", "/lovable-uploads/90f0e3b8-7d31-47aa-8167-d10763eb8814.png", "/lovable-uploads/d0e27230-0a5b-4ee4-9364-bde308aa0d53.png", "/lovable-uploads/33d1048c-d4ff-4e6b-a3db-eaee0a8feb06.png", "/lovable-uploads/2a02065a-9581-4344-a754-25cdbc102cba.png", "/lovable-uploads/c1bb72bf-d140-4e5c-9889-db8bc00aff6e.png", "/lovable-uploads/5fe3db7b-02f8-4ecf-bdaa-4a65bbf21f07.png", "/lovable-uploads/b322471d-916a-48fe-9a36-a40879fa4ec6.png"]
-  }, {
-    id: 12,
-    title: "la peau de chagrin (who is afraid of shrinking skin)",
-    year: "2005",
-    category: "installation",
-    tab: "peau-de-chagrin",
-    image: "/lovable-uploads/ed416c2b-f69c-4e0f-846a-2e513859a0b5.png",
-    description: "\"La Peau de Chagrin\": An Exploration of Reality. ( 2005 ) \nThis installation, \"La Peau de Chagrin\" (Who is afraid of shrinking skin) Is an  extraordinary work that challenged notions of virtual reality by employing hundreds of mirrors as a ceiling, creating an infinite vertical space filled with numerous sculptures.\nThe installation served as a portrait of contemporary life, depicting an artist perpetually in motion, driving a \"turbo engine\" to traverse the globe. Its evocative title was drawn from Honoré de Balzac's renowned novel, a work that famously captivated Sigmund Freud in his final months.\nA striking and unique feature of \"La Peau de Chagrin\" was the presence of approximately 20,000 tiny insect sculptures seemingly crawling across the walls. These walls were intricately designed with hundreds of holes, as if meticulously crafted by the very insects themselves.\n( to read essays by Abhay Sardesai and Kumar Ketkar please download the pdf )",
-    pdfLink: "https://drive.google.com/file/d/example12",
-    galleryImages: ["/lovable-uploads/e189487f-b583-4d8a-a631-34472c9369a1.png", "/lovable-uploads/50da74a2-75da-44b0-9f11-be0554e54e39.png", "/lovable-uploads/e74cd2d0-c499-4c49-8708-5f722dbfd0a4.png", "/lovable-uploads/f5f83fbb-7da7-472e-9c54-ca941f24ef35.png", "/lovable-uploads/01a1bf17-ff8b-4439-95d3-4302920fb17b.png", "/lovable-uploads/44a6f5e2-c8e8-4d99-a031-b536fa93a034.png", "/lovable-uploads/c0820862-3cfd-4088-a2b5-b171ac4cb95a.png", "/lovable-uploads/b78fcf08-2758-4d7a-96aa-51651fd4bf73.png", "/lovable-uploads/31c828ca-5a2b-4fdc-a3e0-57a2468a2004.png", "/lovable-uploads/f060e91b-cf10-4efb-80b4-3021052b31fc.png", "/lovable-uploads/55c104df-1533-4ff7-a299-cdbd540267d3.png", "/lovable-uploads/5c17b99a-6c80-493a-9c8f-231fee74da73.png"]
-  }, {
-    id: 13,
-    title: "Tits Clits n Elephant Dick",
-    year: "2006",
-    category: "installation",
-    tab: "tits-clits-elephant-dick",
-    image: "/lovable-uploads/cd623adc-fd53-477c-b5fe-74dac1341434.png",
-    description: "Ideology of the Market\nIn today's market-driven world, sex has outpaced traditional ideologies, seeking new meanings amidst gadgets, pleasure, and utility.\nHappiness has become pleasure; relationships reduced to networking.\nThis shift leaves us in a strange existential limbo, where neither science nor art can fully grasp the change.\nVaishali Narkar and Sanjeev Khandekar explore this crisis through daring, thought-provoking installations.\nTheir work challenges us to question, rather than accept.\nIn doing so, they probe a mystery deeper than body—rooted in the mind.",
-    pdfLink: "https://drive.google.com/file/d/example15",
-    galleryImages: ["/lovable-uploads/103a15e5-907d-451d-8bb3-292e60874acc.png", "/lovable-uploads/42a70101-86d3-4056-8dc4-a6d4242cf3c8.png", "/lovable-uploads/febe5c60-1901-4071-b1d7-5ddf2fd74113.png", "/lovable-uploads/52e30f1c-726d-4360-a363-8dd8dcab9410.png", "/lovable-uploads/c8ea21cb-7679-4303-8d16-8127fe4c85c0.png", "/lovable-uploads/d6743159-f7da-4cd8-a743-0ef1e7ebec70.png", "/lovable-uploads/3d92acb9-ab8c-4a40-a1f5-b6f24b5cf36b.png", "/lovable-uploads/161d1c3d-1363-4d04-bbd4-59e8b9ceb537.png", "/lovable-uploads/43f2752c-82c9-4385-8f12-ee11dcb8d7ea.png", "/lovable-uploads/65337fcd-9cdf-4eda-acd6-2670bc685715.png", "/lovable-uploads/a5ce2828-9881-42cf-a2f8-9222d5ff061b.png", "/lovable-uploads/36eabf1f-00c8-4eb7-a51c-3da23abf9466.png", "/lovable-uploads/078ec730-fa98-4435-8b79-222f21d78231.png", "/lovable-uploads/09b55fa7-d2c9-42b0-833b-c1383b6c984d.png", "/lovable-uploads/37b34952-0959-49fe-9291-0c588030056e.png", "/lovable-uploads/f9317439-7f4f-4582-b8f3-076af30e33d0.png"]
-  }, {
-    id: 14,
-    title: "Kegel exercise",
-    year: "2007",
-    category: "installation",
-    tab: "kegel-exercise",
-    image: "/lovable-uploads/2e898325-4e7e-4a20-a896-100a15bef676.png",
-    description: "The exhibition, \"The Kegel Exercises: Aswani Mudra,\" (2007)  delves into the unsettling realities of late multicultural capitalism, where the idealism gives way to the follies of recklessness and petulance. Through a powerful confluence of art and societal critique, it explores how the relentless pursuit of financialization morphs into a destructive force. The show is an example of the use of the ubiquitous stock market ticker and the unique and intricate medium of marble inlay as potent symbols, demonstrating how the artists harnesse them to expose the interwoven dramas of trading, sexuality, and the unsettling normalization of insatiable  desires in our contemporary world.\n\n( Download pdf to read an essay by Gitanjali Dang)",
-    pdfLink: "https://drive.google.com/file/d/example7",
-    galleryImages: ["/lovable-uploads/9b6f8c8d-d23d-429f-bfd1-05141f8ae788.png", "/lovable-uploads/e3c3dc28-3fc8-4b80-8c19-b1d1ff06cc9b.png", "/lovable-uploads/0e5f73a4-832b-416e-b415-dde46aa7c0c0.png", "/lovable-uploads/0204c141-90f2-4e17-b1e3-1bd36c86e811.png", "/lovable-uploads/1f5a0acc-453c-4d8a-963b-fa594a983826.png", "/lovable-uploads/8ba1d8f0-fefb-4891-8ae0-d6471d55d519.png"]
-  }, {
-    id: 15,
-    title: "All that I wanna do",
-    year: "2005",
-    category: "previous",
-    tab: "all-that-i-wanna-do",
-    image: "/lovable-uploads/67df2a58-b3de-4df9-b9aa-c05532478d41.png",
-    description: "\"All That I Wanna Do,\" a massive and exceptionally large installation from 2005, featured hundreds of sculptures and large mirrors to craft an infinite horizontal space. This visually striking display offered a kaleidoscopic perspective of objects, creating a mysterious and captivating experience.\nArtists Vaishali and Sanjeev created a poignant portrait of contemporary man alienated from himself, entangled in an unquenchable web of surplus desires. The installation's title, borrowed from a long poem written by Sanjeev in the same year, is considered a milestone in Marathi poetry. A particularly striking element of the installation was its novel use of stock market ticker tape imagery.\n\n( to read essays by Abhay Sardesai and Kumar Ketkar please download the pdf )",
-    pdfLink: "https://drive.google.com/file/d/example8",
-    galleryImages: ["/lovable-uploads/9d363ef4-ae7f-409c-bab8-1d15a1b7cc59.png", "/lovable-uploads/179dc95f-93b6-4b03-8e95-6ceb022d900f.png", "/lovable-uploads/c47deaef-15d4-492f-877c-c4e45676d56a.png", "/lovable-uploads/12131ea7-e672-4bed-8725-f4876c205095.png", "/lovable-uploads/db39f60c-0ddf-415a-aacf-4567bd13eff3.png", "/lovable-uploads/8936f780-f10c-4703-8489-f51297b9313e.png", "/lovable-uploads/11d68ef1-ddf7-4c01-8bc5-3418c1857dcc.png", "/lovable-uploads/c7ccfc85-c495-472b-a5bc-b1f67bcfa68c.png", "/lovable-uploads/0128647a-98ba-46ee-b25e-9173742ab626.png", "/lovable-uploads/a651269d-946e-4aea-92dc-c8f01cdf8c07.png", "/lovable-uploads/0e347106-d2bd-41f3-b56f-11cf29261adb.png", "/lovable-uploads/e0757729-0594-445a-be51-7f2224aaf593.png"]
   }];
 
   // Filter works based on selected category
