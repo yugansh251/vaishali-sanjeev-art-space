@@ -37,7 +37,7 @@ const Portfolio = () => {
     galleryImages: ["/lovable-uploads/ad84b9d8-e465-420c-a01f-53b2b7f96f48.png", "/lovable-uploads/f86bf603-4eb8-49c5-96ec-4d7294bcc2f3.png", "/lovable-uploads/589924fb-06ce-4371-9ca2-7c1b8205f1e0.png"]
   }, {
     id: 2,
-    title: "Honey, I shrunk my Tongue",
+    title: "\"Honey, I shrunk my Tongue\"",
     year: "2024",
     category: "installation",
     tab: "honey",
