@@ -22,6 +22,11 @@ import ragmala7 from '@/assets/ragmala-7.jpg';
 import ragmala8 from '@/assets/ragmala-8.jpg';
 import ragmala9 from '@/assets/ragmala-9.jpg';
 import ragmala10 from '@/assets/ragmala-10.jpg';
+import ragmala11 from '@/assets/ragmala-11.jpg';
+import ragmala12 from '@/assets/ragmala-12.jpg';
+import ragmala13 from '@/assets/ragmala-13.jpg';
+import ragmala14 from '@/assets/ragmala-14.jpg';
+import ragmala15 from '@/assets/ragmala-15.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -81,7 +86,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/6ed4ab63-954b-4aea-87c7-b4e863a4aca7.png",
       description: "\"Ragmala - The Songs Of Anthropocene\" is a series of embroideries that delve into the profound impact of the Anthropocene era. These works explore themes of environmental degradation, free economy, and the changing Earth. They serve as a visual response to the \"new music\" of our planet, born from geological shifts and the alarming loss of species. By connecting with the historical practice of Ragmala paintings, these embroideries decode the hidden messages within Earth's evolving sounds, transforming traditional iconography to reflect our altered world.",
       pdfLink: "/pdfs/ragmala-song-of-anthropocene.pdf",
-      galleryImages: [ragmala1, ragmala2, ragmala3, ragmala4, ragmala5, ragmala6, ragmala7, ragmala8, ragmala9, ragmala10]
+      galleryImages: [ragmala1, ragmala2, ragmala3, ragmala4, ragmala5, ragmala6, ragmala7, ragmala8, ragmala9, ragmala10, ragmala11, ragmala12, ragmala13, ragmala14, ragmala15]
     },
     {
       id: 4,
