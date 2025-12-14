@@ -2,6 +2,16 @@ import { useState } from 'react';
 import notStillLife1 from '@/assets/not-still-life-1.jpg';
 import notStillLife2 from '@/assets/not-still-life-2.jpg';
 import notStillLife3 from '@/assets/not-still-life-3.jpg';
+import honeyTongue1 from '@/assets/honey-tongue-1.jpg';
+import honeyTongue2 from '@/assets/honey-tongue-2.jpg';
+import honeyTongue3 from '@/assets/honey-tongue-3.jpg';
+import honeyTongue4 from '@/assets/honey-tongue-4.jpg';
+import honeyTongue5 from '@/assets/honey-tongue-5.jpg';
+import honeyTongue6 from '@/assets/honey-tongue-6.jpg';
+import honeyTongue7 from '@/assets/honey-tongue-7.jpg';
+import honeyTongue8 from '@/assets/honey-tongue-8.jpg';
+import honeyTongue9 from '@/assets/honey-tongue-9.jpg';
+import honeyTongue10 from '@/assets/honey-tongue-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -50,7 +60,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/f50d6400-2aa7-4746-91b2-c20ea760f4c5.png",
       description: "\"Honey, I Shrunk My Tongue\" is a site-specific ceramic installation exploring the profound versatility of the tongue. From solitary forms to a multitude, these objects weave a visual poem, deciphering the enigma of language itself. The artwork invites a journey into this mysterious organ, a voice that embodies good and bad, freedom and constraint. It's a meditation on the tongue as a word, a language, and the very essence of free expression.",
       pdfLink: "/pdfs/honey-i-shrunk-my-tongue.pdf",
-      galleryImages: ["/lovable-uploads/a9323ad9-d4a1-4ba9-b0c9-c40b84b992bc.png", "/lovable-uploads/c830c14f-0d1f-4b96-95c6-f08a295b15c2.png", "/lovable-uploads/883bd5af-30be-4b05-a1c9-fac9e9175687.png", "/lovable-uploads/e3a33e56-232e-413f-ba9d-ee1fa28cb9b7.png", "/lovable-uploads/c49dca00-cac2-4717-a92c-2eae0c0b2416.png", "/lovable-uploads/91f65cd2-5cab-4865-acc5-cb2d90e99255.png", "/lovable-uploads/5b41c3ba-2292-4346-bfe1-ac395acc81b3.png", "/lovable-uploads/4b701644-3308-463d-8498-c9e80ddcd2d0.png", "/lovable-uploads/460cbdc6-22a7-4797-aa64-65154f278cc6.png", "/lovable-uploads/6dad66be-8cd2-476c-851b-83a1ccca0f93.png", "/lovable-uploads/026660fd-72da-4fd4-9842-053113326a24.png"]
+      galleryImages: [honeyTongue1, honeyTongue2, honeyTongue3, honeyTongue4, honeyTongue5, honeyTongue6, honeyTongue7, honeyTongue8, honeyTongue9, honeyTongue10]
     },
     {
       id: 3,
