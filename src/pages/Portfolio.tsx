@@ -27,6 +27,16 @@ import ragmala12 from '@/assets/ragmala-12.jpg';
 import ragmala13 from '@/assets/ragmala-13.jpg';
 import ragmala14 from '@/assets/ragmala-14.jpg';
 import ragmala15 from '@/assets/ragmala-15.jpg';
+import triumph1 from '@/assets/triumph-1.jpg';
+import triumph2 from '@/assets/triumph-2.jpg';
+import triumph3 from '@/assets/triumph-3.jpg';
+import triumph4 from '@/assets/triumph-4.jpg';
+import triumph5 from '@/assets/triumph-5.jpg';
+import triumph6 from '@/assets/triumph-6.jpg';
+import triumph7 from '@/assets/triumph-7.jpg';
+import triumph8 from '@/assets/triumph-8.jpg';
+import triumph9 from '@/assets/triumph-9.jpg';
+import triumph10 from '@/assets/triumph-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -97,7 +107,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/0961b586-5aca-42d8-89eb-63fa92309a7f.png",
       description: "Long before Yale University's research on hormonal fluctuations in men and women engaged in stock market trading, Sanjeev Khandekar was already probing this terrain through his art. In his poetry and water colors, Khandekar pioneered a distinctive visual and conceptual vocabulary ‚using financial capital as both symbol and structure to map the shifting contours of contemporary global society.\nIn their collaborative works, Vaishali and Sanjeev Khandekar extend this exploration further. Their acrylic-on-canvas paintings and intricate marble inlay pieces transform stock market imagery into abstracted 'Moneyscapes'.These works fuse aesthetic innovation with social critique, confronting the ways in which financialization ‚once a tool- has become a dominating, often destructive, force.\nThe artists employ the stock market ticker- ubiquitous, frenetic, and laden with meaning-alongside the traditionally opulent medium of marble inlay, re-contextualizing both to unveil the intimate entanglements of trading, desire, and the normalization of excess in late-capitalist culture.",
       pdfLink: "/pdfs/triumph-of-market.pdf",
-      galleryImages: ["/lovable-uploads/33ff03c3-ccae-4291-8334-69142df938b8.png", "/lovable-uploads/d8e91d54-1e37-4ce5-866e-3f4a05181bda.png", "/lovable-uploads/35fe502a-670c-47bf-b361-911356c1b1b6.png", "/lovable-uploads/86ea1bbe-89cd-4a23-8665-f499b7eea521.png", "/lovable-uploads/a1987850-5d5a-4ab6-9882-89d0e3d69505.png", "/lovable-uploads/9c9ba9b0-4826-4586-b180-ccb32e8f86a9.png", "/lovable-uploads/8b6dc1c0-5afb-4a8b-bcb1-275ed7fcf638.png", "/lovable-uploads/d1006d1c-40fa-403c-895a-2b94fee2e0de.png", "/lovable-uploads/1c09e774-aa00-4096-b31c-dba74a35f642.png", "/lovable-uploads/cc24a0ed-205e-415b-a4f0-161793ad823e.png", "/lovable-uploads/a998fa3a-218d-4192-9517-1844088f2761.png", "/lovable-uploads/80f0776a-0e43-447a-8339-fec0ed0fd068.png"]
+      galleryImages: [triumph1, triumph2, triumph3, triumph4, triumph5, triumph6, triumph7, triumph8, triumph9, triumph10]
     },
     {
       id: 5,
