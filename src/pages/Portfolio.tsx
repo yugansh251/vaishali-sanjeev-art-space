@@ -12,6 +12,16 @@ import honeyTongue7 from '@/assets/honey-tongue-7.jpg';
 import honeyTongue8 from '@/assets/honey-tongue-8.jpg';
 import honeyTongue9 from '@/assets/honey-tongue-9.jpg';
 import honeyTongue10 from '@/assets/honey-tongue-10.jpg';
+import ragmala1 from '@/assets/ragmala-1.jpg';
+import ragmala2 from '@/assets/ragmala-2.jpg';
+import ragmala3 from '@/assets/ragmala-3.jpg';
+import ragmala4 from '@/assets/ragmala-4.jpg';
+import ragmala5 from '@/assets/ragmala-5.jpg';
+import ragmala6 from '@/assets/ragmala-6.jpg';
+import ragmala7 from '@/assets/ragmala-7.jpg';
+import ragmala8 from '@/assets/ragmala-8.jpg';
+import ragmala9 from '@/assets/ragmala-9.jpg';
+import ragmala10 from '@/assets/ragmala-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -71,7 +81,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/6ed4ab63-954b-4aea-87c7-b4e863a4aca7.png",
       description: "\"Ragmala - The Songs Of Anthropocene\" is a series of embroideries that delve into the profound impact of the Anthropocene era. These works explore themes of environmental degradation, free economy, and the changing Earth. They serve as a visual response to the \"new music\" of our planet, born from geological shifts and the alarming loss of species. By connecting with the historical practice of Ragmala paintings, these embroideries decode the hidden messages within Earth's evolving sounds, transforming traditional iconography to reflect our altered world.",
       pdfLink: "/pdfs/ragmala-song-of-anthropocene.pdf",
-      galleryImages: ["/lovable-uploads/487379aa-f2f5-4745-9507-a7d40817f999.png", "/lovable-uploads/38c24930-2f08-497b-b61c-46dd090e9e52.png", "/lovable-uploads/0770ec45-a8fe-4a87-aa0a-4ce2b6347e17.png", "/lovable-uploads/975353f7-0c88-4973-92a5-dcd29cfbb34b.png", "/lovable-uploads/c9a9513b-faac-4212-8d7b-2c90ff47321d.png", "/lovable-uploads/af2ae132-313c-4fb2-9452-4df3e3b84b53.png", "/lovable-uploads/cd046d91-5e26-43d0-84d6-b6f5e5db832f.png", "/lovable-uploads/91dd55a8-08dc-4e0c-8f2e-cb8a5b6907f2.png", "/lovable-uploads/8210ed97-acfb-4988-9cbd-8d76c8b623e2.png", "/lovable-uploads/7f20ed4b-2581-4721-957e-78e40226ce49.png", "/lovable-uploads/db834c45-f4ea-448c-a063-dab8fcafcf1f.png", "/lovable-uploads/9eac1a0e-c569-4205-bd68-831a76f6a1f1.png", "/lovable-uploads/18f31a19-b97d-4fdc-bed1-04b29e8e305c.png", "/lovable-uploads/b6cd1319-2845-4116-b4df-20a2b3686811.png", "/lovable-uploads/5cf01c45-3c40-4035-9744-635f036b9518.png"]
+      galleryImages: [ragmala1, ragmala2, ragmala3, ragmala4, ragmala5, ragmala6, ragmala7, ragmala8, ragmala9, ragmala10]
     },
     {
       id: 4,
