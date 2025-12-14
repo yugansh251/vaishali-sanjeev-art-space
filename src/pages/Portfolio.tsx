@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import notStillLife1 from '@/assets/not-still-life-1.jpg';
+import notStillLife2 from '@/assets/not-still-life-2.jpg';
+import notStillLife3 from '@/assets/not-still-life-3.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -36,7 +39,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/fb1b2917-ec0f-4359-a331-fd91151e5c18.png",
       description: "In this new series, Vaishali Narkar and Sanjeev Khandekar confront ecological collapse through six multimedia works. Blending acrylic, watercolour, oil, and etched glass, the pieces distort and fragment vision‚ mirroring environmental disarray. The artists critique the CapitalOne, revealing how capitalist greed underpins ecological destruction. Glass surfaces blur the line between art and urgency, between beauty and breakdown. A dark pun on the genre, not Still Life resists stasis, insisting life is anything but still. It is a call to see, and to act, before stillness becomes silence.",
       pdfLink: "/pdfs/not-still-life.pdf",
-      galleryImages: ["/lovable-uploads/ad84b9d8-e465-420c-a01f-53b2b7f96f48.png", "/lovable-uploads/f86bf603-4eb8-49c5-96ec-4d7294bcc2f3.png", "/lovable-uploads/589924fb-06ce-4371-9ca2-7c1b8205f1e0.png"]
+      galleryImages: [notStillLife1, notStillLife2, notStillLife3]
     },
     {
       id: 2,
