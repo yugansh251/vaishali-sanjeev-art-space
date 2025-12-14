@@ -8,7 +8,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
 const Portfolio = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('installation');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
@@ -345,9 +345,6 @@ const Portfolio = () => {
           <div className="mb-10">
             <div className="flex justify-between items-center mb-8">
               <div className="inline-flex rounded-md shadow-sm" role="group">
-                <Button variant={selectedCategory === 'all' ? 'default' : 'outline'} onClick={() => setSelectedCategory('all')} className={selectedCategory === 'all' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
-                  All Works
-                </Button>
                 <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
                   Art Works
                 </Button>
