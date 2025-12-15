@@ -42,6 +42,16 @@ import triumph12 from '@/assets/triumph-12.jpg';
 import triumph13 from '@/assets/triumph-13.jpg';
 import triumph14 from '@/assets/triumph-14.jpg';
 import triumph15 from '@/assets/triumph-15.jpg';
+import angry1 from '@/assets/angry-1.jpg';
+import angry2 from '@/assets/angry-2.jpg';
+import angry3 from '@/assets/angry-3.jpg';
+import angry4 from '@/assets/angry-4.jpg';
+import angry5 from '@/assets/angry-5.jpg';
+import angry6 from '@/assets/angry-6.jpg';
+import angry7 from '@/assets/angry-7.jpg';
+import angry8 from '@/assets/angry-8.jpg';
+import angry9 from '@/assets/angry-9.jpg';
+import angry10 from '@/assets/angry-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -123,7 +133,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/d3d6d114-c4d4-49c8-b3af-2ca1b78fc56a.png",
       description: "Set against Chennai‚ Marina Beach, ‚\"I'm So Angry, I Made This Sign\"‚ by Vaishali & Sanjeev transforms a protest phrase into a vast, immersive installation.\nStretching across 1.5 km, the work uses flags, bamboo, terracotta, and glowing ceramics to evoke both rage and reflection.\nBorrowed from a 2011 Occupy Wall Street placard, the phrase becomes a mass chorus of dissent and irony.\nBy repeating this line across thousands of fluttering signs, the artists stage a meditation on protest, emotion, and spectacle.\nThe installation blurs sincerity and satire, inviting public engagement while critiquing the aesthetics of outrage. Its glowing elements at night turn protest into a dreamlike vigil, a field of quiet resistance. Referencing thinkers like Žižek , the work questions whether expressive anger can truly disrupt power.\nMore than a political act, it is a haunting, poetic gesture ‚ fragile, fleeting, yet impossible to ignore.",
       pdfLink: "/pdfs/i-am-so-angry-i-made-this-sign.pdf",
-      galleryImages: ["/lovable-uploads/a61f672b-5f6a-4797-9cce-2b1b550ea8bb.png", "/lovable-uploads/f61bdf02-8796-46c1-89fb-799f781ded7b.png", "/lovable-uploads/1aaa701e-e08a-42cb-a2be-76def0111fd4.png", "/lovable-uploads/e01e7d30-4c4c-423d-bd76-085c215b4174.png", "/lovable-uploads/9fa1a743-2852-4b84-bfed-ca65c42639fb.png", "/lovable-uploads/1fc730d8-5a33-4b1f-a54b-b5ac4db73a31.png", "/lovable-uploads/1a5a7ab0-b4e6-450d-89f3-8322caadede2.png", "/lovable-uploads/36c7e15a-a628-434a-89a8-5145ebec6cab.png", "/lovable-uploads/9012650f-528f-4335-a39b-b21401d97ed6.png", "/lovable-uploads/7e92fa4f-f5b0-4c0a-895d-900479cd9a5c.png"]
+      galleryImages: [angry1, angry2, angry3, angry4, angry5, angry6, angry7, angry8, angry9, angry10]
     },
     {
       id: 6,
