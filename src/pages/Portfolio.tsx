@@ -68,6 +68,16 @@ import imp9 from '@/assets/imp-9.jpg';
 import imp10 from '@/assets/imp-10.jpg';
 import imp11 from '@/assets/imp-11.jpg';
 import imp12 from '@/assets/imp-12.jpg';
+import hitchcock1 from '@/assets/hitchcock-1.jpg';
+import hitchcock2 from '@/assets/hitchcock-2.jpg';
+import hitchcock3 from '@/assets/hitchcock-3.jpg';
+import hitchcock4 from '@/assets/hitchcock-4.jpg';
+import hitchcock5 from '@/assets/hitchcock-5.jpg';
+import hitchcock6 from '@/assets/hitchcock-6.jpg';
+import hitchcock7 from '@/assets/hitchcock-7.jpg';
+import hitchcock8 from '@/assets/hitchcock-8.jpg';
+import hitchcock9 from '@/assets/hitchcock-9.jpg';
+import hitchcock10 from '@/assets/hitchcock-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -182,7 +192,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/6b9b5761-09b1-4db0-a085-aa36efca12ad.png",
       description: "This spectacular show of paintings and a sculpture deftly tackles pressing global issues by weaving together critical crises and widely circulated memes ( common societal narratives, cultural references, and popular understandings ) to construct powerful visual arguments. In his exhibition, \"Everything You Ever Wanted to Know about Bad Breath but were Afraid to Ask Alfred Hitchcock (Part I)\", the elegant white test tube orchid is employed as a central motif. These tissue cultured orchids symbolize the broader challenges of environmental degradation and the complex dilemmas arising from the genetic modification of organisms. Through a fusion of contentious subject matter and noir cinema aesthetics, Khandekar creates a captivating and thought-provoking experience, akin to a perfect double bill for the discerning viewer.",
       pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-i.pdf",
-      galleryImages: ["/lovable-uploads/e76eba54-48ae-4e95-899f-fe998b40ec66.png", "/lovable-uploads/0825279d-9f55-4e9b-b7d8-817bf11c883f.png", "/lovable-uploads/12586681-b881-4bf4-a51d-acfe9edb1972.png", "/lovable-uploads/525afd2a-1299-4fd6-bc33-c1746c17f157.png", "/lovable-uploads/4a37921f-173f-473c-96d6-dc1700e26abd.png", "/lovable-uploads/0866b3f9-6897-441c-a4e6-9a05169acd21.png", "/lovable-uploads/b10cee3c-f3e0-43d4-9bad-802121318a20.png", "/lovable-uploads/5ffc91b4-f2c7-4c48-a8c9-4d6c67e6a615.png", "/lovable-uploads/9536a6b3-23d9-42c4-a3b8-587cf54c833a.png", "/lovable-uploads/a98a9e83-46c8-4d7e-ab95-a708b42ef2ad.png", "/lovable-uploads/1f06a0dc-3a66-4e99-809e-3da2eb7560a5.png", "/lovable-uploads/ead60ce9-a7cf-4ccc-9260-6359d537d53e.png", "/lovable-uploads/597c2d16-fc40-4d24-9312-212691fb7412.png"]
+      galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10]
     },
     {
       id: 9,
