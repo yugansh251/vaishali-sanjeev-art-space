@@ -188,7 +188,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "\"Honey, I shrunk my Tongue\"",
+      title: "\"Honey, I Shrunk My Tongue\"",
       year: "2024",
       category: "installation",
       tab: "honey",
