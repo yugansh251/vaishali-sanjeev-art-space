@@ -60,48 +60,107 @@ const About = () => {
                 />
               </div>
               
+              <div className="mb-6 text-center">
+                <p className="text-base md:text-lg font-medium text-gray-800">Artist, Environmentalist</p>
+                <p className="text-sm md:text-base text-gray-600">Date of Birth: 5 May 1973</p>
+                <p className="text-sm md:text-base text-gray-600">Mumbai, Maharashtra, India</p>
+                <p className="text-sm md:text-base text-gray-600">Email: vaishalli.narkars@gmail.com</p>
+                <p className="text-sm md:text-base text-gray-600">MFA, Sir J. J. School of Art, Mumbai</p>
+              </div>
+              
+              <p className="text-sm md:text-base text-gray-800 mb-8 leading-relaxed">Vaishali Narkar is a Mumbai-based visual artist whose practice engages with environmental and social themes through diverse media — from embroidery and installations to collaborative and participatory projects. Her work often explores gendered experience, ecology, and material transformation.</p>
+              
               <div className="mb-8">
-                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Shows:</h4>
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Exhibition:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2002: '…Towards Window Of freedom. Jahangir Art Gallery, Mumbai.</p>
+                  <p>• 2002 – …Towards Window of Freedom, Jehangir Art Gallery, Mumbai</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Collaborations with Sanjeev Khandekar:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2006: 'Tits, Clits, n Elephant Dick' Jahangir Art Gallery, Mumbai.</p>
-                  <p>2007: A group show 'Post Visual' curated by Gitanjali Dang. Priyashri Art Gallery, Mumbai.</p>
-                  <p>2008: A group show 'Third Life' curated by Gitanjali Dang</p>
-                  <p>2010: A group show 'By George..' curated by Gitanjali Dang Alliance Francaise de Delhi.</p>
-                  <p>2010: 'Bad Breath', Matthieu Foss Gallery, Mumbai.</p>
-                  <p>2010: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Pundole Art Gallery, Mumbai,</p>
-                  <p>2011: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Su-Darshan Art Gallery, Pune.</p>
-                  <p>2012: "I'm so angery….", A public space installation, on Marina beach, Chennai.</p>
-                  <p>2012: "De-Stressed Sale" An installation at UAF, Delhi</p>
-                  <p>2015: Triumph Of Market: Moneyscapes: Installation at Museum Of Goa. Goa.</p>
-                  <p>2018: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, Mumbai.</p>
-                  <p>2018: "Under The Stars" series of paintings, embroidery and sculptures at Slanic Moldova, Romania for 'In Context' residency.</p>
-                  <p>2019: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, at India Art Fair, Delhi.</p>
-                  <p>2020: "Everything You Ever Wanted To Know About Your Bad Breath, But Afraid To Ask Alfred Hitchcock" Part of a large installation was shown by Sakshi Gallery, at India Art Fair, Delhi.</p>
+                  <p>• 2005–07 – Collaborated on All That I Wanna Do; La Peau de Chagrin; What Do I Love When I Love You My God; Kegel Exercises; and Acquire, Merge and Collaborate — documented in exhibition catalogs</p>
+                  <p>• 2006 – Tits, Clits, n Elephant Dick, Jehangir Art Gallery, Mumbai</p>
+                  <p>• 2007 – Post Visual, curated by Gitanjali Dang, Priyasri Art Gallery, Mumbai</p>
+                  <p>• 2008 – Third Life, curated by Gitanjali Dang</p>
+                  <p>• 2010 – By George…, curated by Gitanjali Dang, Alliance Française de Delhi</p>
+                  <p>• 2010 – Bad Breath, Matthieu Foss Gallery, Mumbai</p>
+                  <p>• 2010–11 – Imp in the Garden & Other Fairy Tales, embroidery on silk, Pundole Art Gallery (Mumbai) and Su-Darshan Art Gallery (Pune)</p>
+                  <p>• 2012 – I'm So Angry…, public installation, Marina Beach, Chennai</p>
+                  <p>• 2012 – De-Stressed Sale, installation, United Art Fair, Delhi</p>
+                  <p>• 2015 – Triumph of Market: Moneyscapes, installation, Museum of Goa, Goa</p>
+                  <p>• 2018 – Ragmala: Songs of Anthropocene, Sakshi Gallery, Mumbai</p>
+                  <p>• 2018 – Under the Stars, paintings, embroideries and sculptures, 'In Context' Residency, Slănic Moldova, Romania</p>
+                  <p>• 2019 – Ragmala: Songs of Anthropocene, Sakshi Art Gallery, India Art Fair, Delhi</p>
+                  <p>• 2020 – Everything You Ever Wanted to Know About Your Bad Breath, But Were Afraid to Ask Alfred Hitchcock, Sakshi Gallery, India Art Fair, Delhi</p>
+                  <p>• 2021 – night of broken glass, Srishti Art, Hyderabad *</p>
+                  <p>• 2024 – Embroidery, Apparao Gallery, Chennai *</p>
+                  <p>• 2025 – Entwined, by Apparao Gallery at Bikaner House, Delhi *</p>
+                  <p className="text-xs text-gray-500 mt-2">* denotes group show.</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Projects:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
-                  <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
-                  <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
-                  <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
-                  <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
+                  <p>• 2011 – Moneyscapes, marble inlay and acrylic painting, Mumbai Airport Art Project</p>
+                  <p>• 2014 – Art Enhanced, Workshop Design & Execution, IIT Kanpur</p>
+                  <p>• 2014 – Let's Have a Fair Play, installation and film with Toy Foundation, India</p>
+                  <p>• 2015 – Fifteen installations for Coro India, Mumbai (women, environment, social empowerment)</p>
+                  <p>• 2021–22 – Head of Production Design, Cobalt Blue (Netflix feature film)</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Group Shows:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2024: 'Entwined' At Saran Apparao Gallery, Chennai & Delhi</p>
+                  <p>• 1993–94 – Maharashtra State Art Exhibition; Smt. Ami Saraiya Prize, Bombay Art Society</p>
+                  <p>• 1995 – Crimson Art Gallery, Bangalore</p>
+                  <p>• 1996 – Nehru Centre, Mumbai</p>
+                  <p>• 1997 – Miniature Format, Gallery Sans Tache, Mumbai; Lalit Kala Akademi, New Delhi; Gallery Ganesha, New Delhi; 50 Years of Independence, NGMA, Mumbai; The Black & White, Y.B. Chavan Art Gallery, Mumbai</p>
+                  <p>• 1998 – Miniature Format, The Guild Art Gallery, Mumbai</p>
+                  <p>• 2002 – 50 Years Golden Jubilee Show, Jehangir Art Gallery, Mumbai</p>
+                  <p>• 2007 – Rebel Graffiti, Open Eyed Dreams Gallery; Keep Drawing, curated by Chintan Upadhyaya, Pundole Art Gallery; Miniature Format Show, Sans Tache Gallery, Mumbai</p>
+                  <p>• 2008 – Miniature Format Show, Sans Tache Gallery, Mumbai</p>
+                  <p>• 2010 – Print Making, Priyasri Art Gallery, Jehangir Art Gallery, Mumbai</p>
+                  <p>• 2011 – Annual Show, Birla Institute of Art & Culture, Kolkata</p>
+                  <p>• 2015 – Morphology of Archive: Connected Histories of Goa, curated by Sabitha T.P. & Lina Vincent</p>
+                  <p>• 2018 – Group show, National Museum, Bucharest, Romania</p>
+                  <p>• 2020 – Entwined, Shrishti Art Gallery, Hyderabad</p>
+                  <p>• 2020 – Speaking Gandhiana: Visual Journeys of Gandhi @150 & Beyond, Birla Academy of Art & Culture, Kolkata</p>
+                  <p>• 2023 – Rhizome: Tracing Ecocultural Identities, CSMVS Museum, Mumbai</p>
+                  <p>• 2024 – Entwined, Saran Apparao Gallery, Chennai & Delhi</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Catalogs:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>• Tits, Clits, & Elephant Dick (2006) – ABN Gallery, Mumbai</p>
+                  <p>• Rx (2008) – Sudarshan Art Gallery, Pune</p>
+                  <p>• Bad Breath (2010) – Matthieu Foss Gallery, Mumbai</p>
+                  <p>• Imp in the Garden & Other Fairy Tales (2011) – Pundole Art Gallery, Mumbai</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Awards & Scholarships:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>• 2000–2002 – Fellowship, Government of India</p>
+                  <p>• 1997 – Schesinzer Prize</p>
+                  <p>• 1996 – Bombay Art Society Award</p>
+                  <p>• 1995 – Dr. Babasaheb Deshmukh Art Academy Award, Amravati</p>
+                  <p>• 1994 – S.Z.C.C. Prize, Nagpur; Smt. Ami Saraiya Prize, Bombay Art Society; Lord Harding Prize, J.J. School of Art, Mumbai</p>
+                  <p>• 1993 – Maharashtra State Art Exhibition</p>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Other Professional Contributions:</h4>
+                <div className="text-sm md:text-base text-gray-800 space-y-1">
+                  <p>• Served as Joint Secretary and Secretary, Bombay Art Society (1996–2002)</p>
+                  <p>• Active involvement in curatorial and non-profit art initiatives in Mumbai</p>
                 </div>
               </div>
             </div>
