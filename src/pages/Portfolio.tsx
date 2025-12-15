@@ -84,6 +84,16 @@ import hitchcock13 from '@/assets/hitchcock-13.jpg';
 import hitchcock3_1 from '@/assets/hitchcock3-1.jpg';
 import hitchcock3_2 from '@/assets/hitchcock3-2.jpg';
 import hitchcock3_3 from '@/assets/hitchcock3-3.jpg';
+import whatdoilove1 from '@/assets/whatdoilove-1.jpg';
+import whatdoilove2 from '@/assets/whatdoilove-2.jpg';
+import whatdoilove3 from '@/assets/whatdoilove-3.jpg';
+import whatdoilove4 from '@/assets/whatdoilove-4.jpg';
+import whatdoilove5 from '@/assets/whatdoilove-5.jpg';
+import whatdoilove6 from '@/assets/whatdoilove-6.jpg';
+import whatdoilove7 from '@/assets/whatdoilove-7.jpg';
+import whatdoilove8 from '@/assets/whatdoilove-8.jpg';
+import whatdoilove9 from '@/assets/whatdoilove-9.jpg';
+import whatdoilove10 from '@/assets/whatdoilove-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -231,7 +241,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/d787b554-259f-4672-89f0-9299a2bf17d9.png",
       description: "To christen, What do I love when I love you, my god?\",( 2006)  delves into the unsettling power dynamics of contemporary multinational capitalism. Drawing inspiration from St. Augustine, this exhibition exposes an unsettling truth: in a world driven by a \"shining beast of capitalism,\" little is truly cherished and everything feels encroachable. It critiques how world leaders, through rampant propaganda, co-opt religious faith to serve political and economic agendas, highlighting a pervasive \"androgynous, amorphous and amphibious faith.\" Through a compelling suite of paintings, sculptures, and installations,the exhibition  distinctive use of coagulated, blistering watercolors and meticulously designed cabinets enshrining Hindu deities, challenges viewers to confront the rapid dissipation of values in our modern milieu. This exhibition, with its layered symbolism and enigmatic text, invites a multifaceted engagement, probing the insidious influence of market forces and the blurring lines between spirituality and material desire.                             ( download pdf to read essay by Gitanjali Dang )",
       pdfLink: "/pdfs/what-do-i-love-my-god.pdf",
-      galleryImages: ["/lovable-uploads/70d90f65-aca3-4f2e-8462-deb036cdf30e.png", "/lovable-uploads/ae62bf06-b327-43a6-a9d8-c42007f28d36.png", "/lovable-uploads/63f8b6cf-9112-4dcf-ab8d-6be4207a8b7f.png", "/lovable-uploads/1a7ef6e9-90c4-4497-a28e-6d1b3050f473.png", "/lovable-uploads/ce506b96-838f-4a06-af03-fe7e5dc54656.png", "/lovable-uploads/66814bcf-4af1-4abc-a1cf-2e9557c858f2.png", "/lovable-uploads/74390791-cafd-4875-9f16-f31d40cebba0.png", "/lovable-uploads/1bde07be-f597-42ca-bbdd-adcf495499c5.png", "/lovable-uploads/7a92dc25-7cd5-46df-ac90-ef6558b321cd.png", "/lovable-uploads/42cc2075-d4b1-4e3f-bf4e-6dd1af908272.png", "/lovable-uploads/9ae30672-e3c6-486d-b059-ced7d2ff71cd.png", "/lovable-uploads/b99fbbbd-9574-48b8-a901-59657bd95863.png", "/lovable-uploads/0b97843d-73fe-4dd6-b350-2a3c7746d319.png"]
+      galleryImages: [whatdoilove1, whatdoilove2, whatdoilove3, whatdoilove4, whatdoilove5, whatdoilove6, whatdoilove7, whatdoilove8, whatdoilove9, whatdoilove10]
     },
     {
       id: 12,
