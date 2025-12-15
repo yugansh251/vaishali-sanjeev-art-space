@@ -50,6 +50,7 @@ import angry5 from '@/assets/angry-5.jpg';
 import angry6 from '@/assets/angry-6.jpg';
 import angrySignCover from '@/assets/angry-sign-cover.png';
 import acquireMergeCover from '@/assets/acquire-merge-cover.png';
+import badBreathCover from '@/assets/bad-breath-cover.png';
 import angry7 from '@/assets/angry-7.jpg';
 import angry8 from '@/assets/angry-8.jpg';
 import angry9 from '@/assets/angry-9.jpg';
@@ -257,7 +258,7 @@ const Portfolio = () => {
       year: "2008",
       category: "installation",
       tab: "bad-breath",
-      image: "/lovable-uploads/6b9b5761-09b1-4db0-a085-aa36efca12ad.png",
+      image: badBreathCover,
       description: "This spectacular show of paintings and a sculpture deftly tackles pressing global issues by weaving together critical crises and widely circulated memes ( common societal narratives, cultural references, and popular understandings ) to construct powerful visual arguments. In his exhibition, \"Everything You Ever Wanted to Know about Bad Breath but were Afraid to Ask Alfred Hitchcock (Part I)\", the elegant white test tube orchid is employed as a central motif. These tissue cultured orchids symbolize the broader challenges of environmental degradation and the complex dilemmas arising from the genetic modification of organisms. Through a fusion of contentious subject matter and noir cinema aesthetics, Khandekar creates a captivating and thought-provoking experience, akin to a perfect double bill for the discerning viewer.",
       pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-i.pdf",
       galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10, hitchcock11, hitchcock12, hitchcock13]
