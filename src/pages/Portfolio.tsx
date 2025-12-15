@@ -512,29 +512,26 @@ const Portfolio = () => {
             </div>
 
             {selectedCategory === 'additional-pdfs' ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="border-b border-gray-200 bg-gray-50 px-6 py-3 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+                  <span className="text-sm font-medium text-gray-600 w-8"></span>
+                  <span className="text-sm font-medium text-gray-600">Name</span>
+                  <span className="text-sm font-medium text-gray-600">Download file</span>
+                </div>
                 {additionalPdfs.map(pdf => (
-                  <div key={pdf.id} className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-                    <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center p-4">
-                      <div className="w-full h-full bg-white rounded shadow-inner flex flex-col items-center justify-center p-4 border border-gray-200">
-                        <div className="w-12 h-14 bg-red-500 rounded-sm flex items-center justify-center mb-3">
-                          <span className="text-white text-xs font-bold">PDF</span>
-                        </div>
-                        <p className="text-sm font-medium text-gray-700 text-center line-clamp-2">{pdf.title}</p>
-                      </div>
+                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
+                    <div className="w-8 h-10 bg-red-500 rounded flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-[10px] font-bold">PDF</span>
                     </div>
-                    <div className="p-4 flex flex-col gap-2">
-                      <h3 className="text-sm font-semibold text-gray-800 line-clamp-2">{pdf.title}</h3>
-                      <a 
-                        href={pdf.pdfLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
-                      >
-                        <Download size={14} />
-                        Download PDF
-                      </a>
-                    </div>
+                    <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
+                    <a 
+                      href={pdf.pdfLink} 
+                      download
+                      className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
+                    >
+                      <Download size={14} />
+                      Download
+                    </a>
                   </div>
                 ))}
               </div>
