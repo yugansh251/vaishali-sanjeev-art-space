@@ -66,6 +66,8 @@ import imp7 from '@/assets/imp-7.jpg';
 import imp8 from '@/assets/imp-8.jpg';
 import imp9 from '@/assets/imp-9.jpg';
 import imp10 from '@/assets/imp-10.jpg';
+import imp11 from '@/assets/imp-11.jpg';
+import imp12 from '@/assets/imp-12.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -169,7 +171,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/87ca6839-77e3-463a-a35d-bbb022447dfa.png",
       description: "Histograms of an Anxious Present: 'Imp in the Garden and Other Fairy Tales'\nAll of us inherently seek a sense of everyday normality to navigate life's demands. Yet, perfection, beauty, and even horror represent hazardous departures from this norm, capable of plunging us into fantasia or nightmare. Vaishali & Sanjeev confront these extremes head-on in their mixed-media works, 'Imp in the Garden and Other Fairy Tales', creating captivating entanglements of beauty and mutancy. Through the traditional art of embroidery, they weave intricate narratives that allude to the human costs of ecological catastrophe, genetic manipulation, and biological warfare. Their work serves as a Zen koan, shocking us into a deep awareness of the complexities underlying our current historical moment.",
       pdfLink: "/pdfs/imp-in-the-garden-and-other-fairy-tales.pdf",
-      galleryImages: [imp1, imp2, imp3, imp4, imp5, imp6, imp7, imp8, imp9, imp10]
+      galleryImages: [imp1, imp2, imp3, imp4, imp5, imp6, imp7, imp8, imp9, imp10, imp11, imp12]
     },
     {
       id: 8,
