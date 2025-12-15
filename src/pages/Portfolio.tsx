@@ -56,6 +56,16 @@ import angry11 from '@/assets/angry-11.jpg';
 import george1 from '@/assets/george-1.jpg';
 import george2 from '@/assets/george-2.jpg';
 import george3 from '@/assets/george-3.jpg';
+import imp1 from '@/assets/imp-1.jpg';
+import imp2 from '@/assets/imp-2.jpg';
+import imp3 from '@/assets/imp-3.jpg';
+import imp4 from '@/assets/imp-4.jpg';
+import imp5 from '@/assets/imp-5.jpg';
+import imp6 from '@/assets/imp-6.jpg';
+import imp7 from '@/assets/imp-7.jpg';
+import imp8 from '@/assets/imp-8.jpg';
+import imp9 from '@/assets/imp-9.jpg';
+import imp10 from '@/assets/imp-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -159,7 +169,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/87ca6839-77e3-463a-a35d-bbb022447dfa.png",
       description: "Histograms of an Anxious Present: 'Imp in the Garden and Other Fairy Tales'\nAll of us inherently seek a sense of everyday normality to navigate life's demands. Yet, perfection, beauty, and even horror represent hazardous departures from this norm, capable of plunging us into fantasia or nightmare. Vaishali & Sanjeev confront these extremes head-on in their mixed-media works, 'Imp in the Garden and Other Fairy Tales', creating captivating entanglements of beauty and mutancy. Through the traditional art of embroidery, they weave intricate narratives that allude to the human costs of ecological catastrophe, genetic manipulation, and biological warfare. Their work serves as a Zen koan, shocking us into a deep awareness of the complexities underlying our current historical moment.",
       pdfLink: "/pdfs/imp-in-the-garden-and-other-fairy-tales.pdf",
-      galleryImages: ["/lovable-uploads/a8481db4-b3fd-419b-8c9f-2571621c8fd8.png", "/lovable-uploads/8becb175-9f80-4277-bfc8-7476f8ef862e.png", "/lovable-uploads/05d6b360-2a34-4847-ba30-42975917511a.png", "/lovable-uploads/fac0c969-4060-4866-b5b5-77cb6e653a24.png", "/lovable-uploads/48853142-555c-48d7-8de3-293c35cafc5a.png", "/lovable-uploads/84b645d3-533b-4539-9734-6181e4ec6502.png", "/lovable-uploads/cd762c82-8484-4f74-9e4a-0fe87285c6ee.png", "/lovable-uploads/331d7574-1b73-49ac-970a-a90ceba4b5b6.png", "/lovable-uploads/e313efab-5e2c-4f37-bd66-e89dabfac518.png", "/lovable-uploads/06529053-3205-4119-a866-380b629cf5c7.png", "/lovable-uploads/6656f110-8d44-4dca-8596-31cb68f923f8.png", "/lovable-uploads/cee8a708-ab31-49b5-b5db-97cbab9e94a8.png", "/lovable-uploads/409157c6-20f6-40bd-a38f-cd2d43182df3.png"]
+      galleryImages: [imp1, imp2, imp3, imp4, imp5, imp6, imp7, imp8, imp9, imp10]
     },
     {
       id: 8,
