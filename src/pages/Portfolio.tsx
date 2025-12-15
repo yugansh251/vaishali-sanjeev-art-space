@@ -53,6 +53,9 @@ import angry8 from '@/assets/angry-8.jpg';
 import angry9 from '@/assets/angry-9.jpg';
 import angry10 from '@/assets/angry-10.jpg';
 import angry11 from '@/assets/angry-11.jpg';
+import george1 from '@/assets/george-1.jpg';
+import george2 from '@/assets/george-2.jpg';
+import george3 from '@/assets/george-3.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -145,7 +148,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/4bb13448-46c8-4540-b4a9-6cc301abb3fa.png",
       description: "Curated by Gitanjali Dang and featuring works by Vaishali Narkar & Sanjeev Khandekar, By George explores the creeping omnipresence of surveillance in contemporary life. Drawing from Orwellian allegories and real-world digital paranoia, the show interrogates how the gaze—technological, institutional, and social—shapes our subjectivities. With references ranging from Jeremy Bentham to Mark Zuckerberg, the works deploy mixed media and sandblasted glass to stage questions of privacy, perception, and power. Originally exhibited in 2010, the show remains uncannily prescient. Here, transparency is seductive, and observation is never neutral. We are seen. We see. And nothing remains quite the same.",
       pdfLink: "/pdfs/by-george.pdf",
-      galleryImages: ["/lovable-uploads/63b597b2-ca37-4329-9dca-51f1d4d18c54.png", "/lovable-uploads/c151d70d-e511-4fc4-98e1-685a19692f57.png", "/lovable-uploads/e0fb3a47-8cc4-470c-8174-0b87623c0987.png"]
+      galleryImages: [george1, george2, george3]
     },
     {
       id: 7,
