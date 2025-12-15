@@ -44,7 +44,7 @@ const About = () => {
           </div>
 
           {/* CV Section */}
-          <SectionTitle title="CV" centered className="mb-12" />
+          <SectionTitle title="Bio-Data" centered className="mb-12" />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16">
             {/* Vaishali CV - on left */}
