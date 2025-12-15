@@ -48,6 +48,7 @@ import angry3 from '@/assets/angry-3.jpg';
 import angry4 from '@/assets/angry-4.jpg';
 import angry5 from '@/assets/angry-5.jpg';
 import angry6 from '@/assets/angry-6.jpg';
+import angrySignCover from '@/assets/angry-sign-cover.png';
 import angry7 from '@/assets/angry-7.jpg';
 import angry8 from '@/assets/angry-8.jpg';
 import angry9 from '@/assets/angry-9.jpg';
@@ -222,7 +223,7 @@ const Portfolio = () => {
       year: "2012",
       category: "installation",
       tab: "angry",
-      image: "/lovable-uploads/d3d6d114-c4d4-49c8-b3af-2ca1b78fc56a.png",
+      image: angrySignCover,
       description: "Set against Chennai‚ Marina Beach, ‚\"I'm So Angry, I Made This Sign\"‚ by Vaishali & Sanjeev transforms a protest phrase into a vast, immersive installation.\nStretching across 1.5 km, the work uses flags, bamboo, terracotta, and glowing ceramics to evoke both rage and reflection.\nBorrowed from a 2011 Occupy Wall Street placard, the phrase becomes a mass chorus of dissent and irony.\nBy repeating this line across thousands of fluttering signs, the artists stage a meditation on protest, emotion, and spectacle.\nThe installation blurs sincerity and satire, inviting public engagement while critiquing the aesthetics of outrage. Its glowing elements at night turn protest into a dreamlike vigil, a field of quiet resistance. Referencing thinkers like Žižek , the work questions whether expressive anger can truly disrupt power.\nMore than a political act, it is a haunting, poetic gesture ‚ fragile, fleeting, yet impossible to ignore.",
       pdfLink: "/pdfs/i-am-so-angry-i-made-this-sign.pdf",
       galleryImages: [angry1, angry2, angry3, angry4, angry5, angry6, angry7, angry8, angry9, angry10, angry11]
