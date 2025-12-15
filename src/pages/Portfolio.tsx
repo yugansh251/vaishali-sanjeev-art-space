@@ -348,7 +348,7 @@ const Portfolio = () => {
       year: "2007",
       category: "publication",
       tab: "tits-clits-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/tits-clits-elephant-dick.jpg",
       description: "Catalogue with colour plates of the works and essay by Kumar Ketkar and Gitanjali Dang. Published by Ashish Balram Nagpal Galleries, 2007. Hard Cover. Accompanied by a CD of the two watercolours books exhibited at the show.",
       pdfLink: "/pdfs/tits-clits-publication.pdf"
     },
@@ -358,27 +358,27 @@ const Portfolio = () => {
       year: "2007",
       category: "publication",
       tab: "kegel-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/kegel-exercise.jpg",
       description: "Catalogue with colour plates of the works and essay by Gitanjali Dang. Published by Pundole Art Gallery, 2007.",
       pdfLink: "/pdfs/kegel-publication.pdf"
     },
     {
       id: 103,
-      title: "La Peau De Changrin : Who Is Afraid Of The Shrinking Skin",
+      title: "La Peau De Chagrin: Who Is Afraid Of The Shrinking Skin",
       year: "2005",
       category: "publication",
       tab: "la-peau-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/la-peau-de-chagrin.jpg",
       description: "Catalogue with colour plates of the works and essay by Kumar Ketkar And Abhay Sardesai. Published by Pundole Art Gallery. 2005.",
       pdfLink: "/pdfs/la-peau-publication.pdf"
     },
     {
       id: 104,
-      title: "Everything You Ever Wanted To Know About Bad Breath But Were Afraid To Ask Alfred Hitchcock (part I)",
+      title: "Everything You Ever Wanted To Know About Bad Breath But Were Afraid To Ask Alfred Hitchcock (Part I)",
       year: "2008",
       category: "publication",
       tab: "bad-breath-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/bad-breath-hitchcock.jpg",
       description: "Catalogue with colour plates of the works and essay by Gitanjali Dang. Published by Bombay Art Gallery, 2008.",
       pdfLink: "/pdfs/bad-breath-publication.pdf"
     },
@@ -388,7 +388,7 @@ const Portfolio = () => {
       year: "2010",
       category: "publication",
       tab: "bad-breath-flowers-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/bad-breath-fresh-flowers.jpg",
       description: "Catalogue with colour plates of the works, essay by Gitanjali Dang, Published by Mathew Gallery, 2010.",
       pdfLink: "/pdfs/bad-breath-flowers-publication.pdf"
     },
@@ -398,7 +398,7 @@ const Portfolio = () => {
       year: "2008",
       category: "publication",
       tab: "happy-galaxy-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/one-two-three-happy-galaxy.jpg",
       description: "A limited edition book, with colour plates of original watercolours. Essay by Gitanjali Dang, Published by Ashish Balram Nagpal Galleries, and Poetrywala, 2008.",
       pdfLink: "/pdfs/happy-galaxy-publication.pdf"
     },
@@ -408,7 +408,7 @@ const Portfolio = () => {
       year: "2003",
       category: "publication",
       tab: "rumour-truth-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/rumour-of-truth.jpg",
       description: "Catalogue with colour plates of the works and essay by Arun Sadhu and Ranjit Hoskote, In-house Publication, 2003.",
       pdfLink: "/pdfs/rumour-truth-publication.pdf"
     },
@@ -418,7 +418,7 @@ const Portfolio = () => {
       year: "2005",
       category: "publication",
       tab: "all-wanna-do-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/all-that-i-wanna-do.jpg",
       description: "Catalogue with colour plates of the works and essay by Kumar Ketkar And Abhay Sardesai. Published In-house, 2005.",
       pdfLink: "/pdfs/all-wanna-do-publication.pdf"
     },
@@ -428,7 +428,7 @@ const Portfolio = () => {
       year: "2007",
       category: "publication",
       tab: "acquire-merge-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/acquire-merge-collaborate.jpg",
       description: "Catalogue with colour plates of the works and essay by Dilip Chitre and Gitanjali Dang. Accompanied by a reprint of the article by Robin Blackburn. Published by Ashish Balram Nagpal Galleries, 2007.",
       pdfLink: "/pdfs/acquire-merge-publication.pdf"
     },
@@ -438,7 +438,7 @@ const Portfolio = () => {
       year: "2010",
       category: "publication",
       tab: "imp-garden-publication",
-      image: "/placeholder.svg",
+      image: "/images/publications/imp-in-garden.jpg",
       description: "Catalogue with colour plates of the works and essay by Ranjit Hoskote. Published by Pundole Art Gallery, 2010.",
       pdfLink: "/pdfs/imp-garden-publication.pdf"
     },
