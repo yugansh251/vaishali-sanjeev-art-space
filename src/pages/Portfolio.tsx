@@ -254,7 +254,7 @@ const Portfolio = () => {
     },
     {
       id: 8,
-      title: "Everything You Wanted to Know About Bad Breath but were Afraid to Ask Alfred Hitchcock part I",
+      title: "Everything You Wanted to Know About Bad Breath, But Were Afraid to Ask Alfred Hitchcock part I",
       year: "2008",
       category: "installation",
       tab: "bad-breath",
