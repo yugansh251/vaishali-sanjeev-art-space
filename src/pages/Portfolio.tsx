@@ -81,6 +81,9 @@ import hitchcock10 from '@/assets/hitchcock-10.jpg';
 import hitchcock11 from '@/assets/hitchcock-11.jpg';
 import hitchcock12 from '@/assets/hitchcock-12.jpg';
 import hitchcock13 from '@/assets/hitchcock-13.jpg';
+import hitchcock3_1 from '@/assets/hitchcock3-1.jpg';
+import hitchcock3_2 from '@/assets/hitchcock3-2.jpg';
+import hitchcock3_3 from '@/assets/hitchcock3-3.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -206,7 +209,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/ffa15fc4-84cd-4238-b7a9-ec02a3b8c959.png",
       description: "Everything You Wanted to Know About (Your) Bad Breath, but Were Afraid to Ask Alfred Hitchcock  III\nIn this ongoing series, Vaishali and Sanjeev confront the ecological violence of capitalism.\nA recurring motif—the refrigerator—embodies frozen nature and unchecked consumerist greed.\nTheir sculptural refrigerator doors bear images of drought, mangroves, coral, and protest, tracing systemic ruin.\nThe works reflect a world cooling its interiors while burning its commons.\nThis is the Necrocene: capital as extinction event.",
       pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-iii.pdf",
-      galleryImages: ["/lovable-uploads/e83a0e09-48c6-40b7-ae3d-aba4fe3b21d3.png", "/lovable-uploads/3a831afe-d6be-4735-9583-7b7078bb834d.png", "/lovable-uploads/797a04c1-6150-49cf-ba6a-72f31464f03c.png"]
+      galleryImages: [hitchcock3_1, hitchcock3_2, hitchcock3_3]
     },
     {
       id: 10,
