@@ -94,6 +94,9 @@ import whatdoilove7 from '@/assets/whatdoilove-7.jpg';
 import whatdoilove8 from '@/assets/whatdoilove-8.jpg';
 import whatdoilove9 from '@/assets/whatdoilove-9.jpg';
 import whatdoilove10 from '@/assets/whatdoilove-10.jpg';
+import whatdoilove11 from '@/assets/whatdoilove-11.jpg';
+import whatdoilove12 from '@/assets/whatdoilove-12.jpg';
+import whatdoilove13 from '@/assets/whatdoilove-13.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -241,7 +244,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/d787b554-259f-4672-89f0-9299a2bf17d9.png",
       description: "To christen, What do I love when I love you, my god?\",( 2006)  delves into the unsettling power dynamics of contemporary multinational capitalism. Drawing inspiration from St. Augustine, this exhibition exposes an unsettling truth: in a world driven by a \"shining beast of capitalism,\" little is truly cherished and everything feels encroachable. It critiques how world leaders, through rampant propaganda, co-opt religious faith to serve political and economic agendas, highlighting a pervasive \"androgynous, amorphous and amphibious faith.\" Through a compelling suite of paintings, sculptures, and installations,the exhibition  distinctive use of coagulated, blistering watercolors and meticulously designed cabinets enshrining Hindu deities, challenges viewers to confront the rapid dissipation of values in our modern milieu. This exhibition, with its layered symbolism and enigmatic text, invites a multifaceted engagement, probing the insidious influence of market forces and the blurring lines between spirituality and material desire.                             ( download pdf to read essay by Gitanjali Dang )",
       pdfLink: "/pdfs/what-do-i-love-my-god.pdf",
-      galleryImages: [whatdoilove1, whatdoilove2, whatdoilove3, whatdoilove4, whatdoilove5, whatdoilove6, whatdoilove7, whatdoilove8, whatdoilove9, whatdoilove10]
+      galleryImages: [whatdoilove1, whatdoilove2, whatdoilove3, whatdoilove4, whatdoilove5, whatdoilove6, whatdoilove7, whatdoilove8, whatdoilove9, whatdoilove10, whatdoilove11, whatdoilove12, whatdoilove13]
     },
     {
       id: 12,
