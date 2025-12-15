@@ -250,10 +250,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          {/* Video Interviews Section */}
-          <SectionTitle title="Artist Interviews" subtitle="Insight into process, philosophy and artistic journey" centered className="mb-8" />
-          
           
         </div>
       </section>
