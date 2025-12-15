@@ -243,7 +243,7 @@ const Portfolio = () => {
     },
     {
       id: 7,
-      title: "Imp in the garden and other fairy tales",
+      title: "Imp In The Garden and Other Fairy Tales",
       year: "2010",
       category: "installation",
       tab: "imp-in-the-garden",
