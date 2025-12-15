@@ -131,6 +131,8 @@ import allthatwanna7 from '@/assets/allthatwanna-7.jpg';
 import allthatwanna8 from '@/assets/allthatwanna-8.jpg';
 import allthatwanna9 from '@/assets/allthatwanna-9.jpg';
 import allthatwanna10 from '@/assets/allthatwanna-10.jpg';
+import allthatwanna11 from '@/assets/allthatwanna-11.jpg';
+import allthatwanna12 from '@/assets/allthatwanna-12.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -322,7 +324,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/67df2a58-b3de-4df9-b9aa-c05532478d41.png",
       description: "\"All That I Wanna Do,\" a massive and exceptionally large installation from 2005, featured hundreds of sculptures and large mirrors to craft an infinite horizontal space. This visually striking display offered a kaleidoscopic perspective of objects, creating a mysterious and captivating experience.\nArtists Vaishali and Sanjeev created a poignant portrait of contemporary man alienated from himself, entangled in an unquenchable web of surplus desires. The installation's title, borrowed from a long poem written by Sanjeev in the same year, is considered a milestone in Marathi poetry. A particularly striking element of the installation was its novel use of stock market ticker tape imagery.\n\n( to read essays by Abhay Sardesai and Kumar Ketkar please download the pdf )",
       pdfLink: "/pdfs/all-that-i-wanna.pdf",
-      galleryImages: [allthatwanna1, allthatwanna2, allthatwanna3, allthatwanna4, allthatwanna5, allthatwanna6, allthatwanna7, allthatwanna8, allthatwanna9, allthatwanna10]
+      galleryImages: [allthatwanna1, allthatwanna2, allthatwanna3, allthatwanna4, allthatwanna5, allthatwanna6, allthatwanna7, allthatwanna8, allthatwanna9, allthatwanna10, allthatwanna11, allthatwanna12]
     },
     
     // Publications Category
