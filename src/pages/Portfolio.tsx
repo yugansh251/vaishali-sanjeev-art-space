@@ -199,7 +199,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Ragmala song of Anthropocene",
+      title: "Ragmala The Songs Of Anthropocene",
       year: "2018",
       category: "installation",
       tab: "ragamala",
