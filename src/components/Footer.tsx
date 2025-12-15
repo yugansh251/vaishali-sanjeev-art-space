@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       
       <div className="portfolio-container mt-6 md:mt-8 pt-6 md:pt-8 border-t border-gray-200 text-center text-gray-500">
-        <p className="text-sm md:text-base">© {new Date().getFullYear()} Vaishali Sanjeev. All rights reserved.</p>
+        <p className="text-sm md:text-base">© Vaishali & Sanjeev, all rights reserved</p>
       </div>
     </footer>
   );
