@@ -125,12 +125,6 @@ const Contact = () => {
               <Button type="submit" className="w-full bg-portfolio-blue hover:bg-portfolio-darkBlue text-white" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
-              
-              <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-md">
-                <p className="text-sm text-blue-800">
-                  <strong>Setup Required:</strong> Please replace the EmailJS credentials in the code with your actual Service ID, Template ID, and Public Key from your EmailJS dashboard.
-                </p>
-              </div>
             </form>
           </div>
         </div>
