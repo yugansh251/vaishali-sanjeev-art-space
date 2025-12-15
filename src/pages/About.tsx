@@ -119,125 +119,136 @@ const About = () => {
                 />
               </div>
               
+              <div className="mb-6 text-center">
+                <p className="text-base md:text-lg font-medium text-gray-800">Visual Artist, Poet, Writer</p>
+                <p className="text-sm md:text-base text-gray-600">Date of Birth: 14 February 1958</p>
+                <p className="text-sm md:text-base text-gray-600">Mumbai, Maharashtra, India – 400074</p>
+                <p className="text-sm md:text-base text-gray-600">Email: sanjeev.khandekar@gmail.com</p>
+              </div>
+              
+              <p className="text-sm md:text-base text-gray-800 mb-8 leading-relaxed">Sanjeev Khandekar is a visual artist, poet and writer known for his incisive explorations of environmental, ecological, and socio-political issues within the contexts of markets, globalization, and neoliberal culture. His works often investigate the intersections of consumerism, nature, and the human condition through mixed media, installations, and text.</p>
+              
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Solo Exhibitions:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2013: Triumph Of Market, Selma Feriani Gallery, London.</p>
-                  <p>2008: "Everything You Wanted To Know About Bad Breath, However Afraid To Ask Alfred Hitchcock." Bombay Art Gallery, Mumbai.</p>
-                  <p>2008: 'Rx', Sudarshan Art Gallery, Pune</p>
-                  <p>2007: 'Acquire, Merge or Collaborate', ABN Gallery, Mumbai.</p>
-                  <p>2007: 'Kegel Exercises', Pundole Art Gallery, Mumbai.</p>
-                  <p>2006: 'What do I love when I love you, My God?' Kitab Mahal, Mumbai.</p>
-                  <p>2006: 'What do I love, when I love you my God?' (Forbidden Entices): at Kitab Mahal, Mumbai.</p>
-                  <p>2005: La Peau de Chagrin, Pundole Art Gallery, Mumbai.</p>
-                  <p>2005: 'All That I Wanna Do', Museum Art Gallery, Mumbai.</p>
-                  <p>2003: 'Rumors of the truth', Jahangir Art Gallery, Mumbai.</p>
-                  <p>2003: Apparao Art Gallery, Chennai Triveni, Delhi.</p>
+                  <p>• 2003 – Apparao Art Gallery, Chennai; Triveni Gallery, Delhi</p>
+                  <p>• 2003 – Rumours of the Truth, Jehangir Art Gallery, Mumbai</p>
+                  <p>• 2005 – All That I Wanna Do, Museum Art Gallery, Mumbai</p>
+                  <p>• 2005 – La Peau de Chagrin, Pundole Art Gallery, Mumbai</p>
+                  <p>• 2006 – What Do I Love When I Love You, My God? (Forbidden Entices), Kitab Mahal, Mumbai</p>
+                  <p>• 2007 – Kegel Exercises, Pundole Art Gallery, Mumbai</p>
+                  <p>• 2007 – Acquire, Merge or Collaborate, ABN Gallery, Mumbai</p>
+                  <p>• 2008 – Rx, Sudarshan Art Gallery, Pune</p>
+                  <p>• 2008 – Everything You Wanted to Know About Bad Breath, Bombay Art Gallery, Mumbai</p>
+                  <p>• 2010 – Rx, Birla Academy, Kolkata</p>
+                  <p>• 2013 – Triumph of Market, Selma Feriani Gallery, London</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Collaborations with Vaishali Narkar:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2006: 'Tits, Clits, n Elephant Dick', Jahangir Art Gallery, Mumbai.</p>
-                  <p>2007: A group show 'Post Visual' curated by Gitanjali Dang. Priyashri Art Gallery, Mumbai.</p>
-                  <p>2008: A group show 'Third Life' curated by Gitanjali Dang</p>
-                  <p>2010: A group show 'By George..' curated by Gitanjali Dang Alliance Francaise de Delhi.</p>
-                  <p>2010: 'Bad Breath', Matthieu Foss Gallery, Mumbai.</p>
-                  <p>2010: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Pundole Art Gallery, Mumbai,</p>
-                  <p>2011: 'Imp In The Garden & Other Fairy Tales' embroidery on silk. Su-Darshan Art Gallery, Pune.</p>
-                  <p>2012: "I'm so angery….", A public space installation, on Marina beach, Chennai.</p>
-                  <p>2012: "De-Stressed Sale" An installation at UAF, Delhi</p>
-                  <p>2015: Triumph Of Market: Moneyscapes: Installation at Museum Of Goa. Goa.</p>
-                  <p>2018: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, Mumbai.</p>
-                  <p>2018: "Under The Stars" series of paintings, embroidery and sculptures at Slanic Moldova, Romania for 'In Context' residency.</p>
-                  <p>2019: "Ragmala: Songs Of Anthropocene" embroideries. Sakshi Gallery, at India Art Fair, Delhi.</p>
-                  <p>2020: "Everything You Ever Wanted To Know About Your Bad Breath, But Afraid To Ask Alfred Hitchcock" Part of a large installation was shown by Sakshi Gallery, at India Art Fair, Delhi.</p>
+                  <p>• 2006 – Tits, Clits, n Elephant Dick, Jehangir Art Gallery, Mumbai</p>
+                  <p>• 2007 – Post Visual, Priyadarshani / Priyasri Art Gallery, Mumbai — curated by Gitanjali Dang *</p>
+                  <p>• 2008 – Third Life, Bombay Art Gallery, Mumbai — curated by Gitanjali Dang *</p>
+                  <p>• 2010 – By George…, Alliance Française de Delhi — curated by Gitanjali Dang *</p>
+                  <p>• 2010 – Bad Breath, Matthieu Foss Gallery, Mumbai</p>
+                  <p>• 2010 – Imp in the Garden & Other Fairy Tales, embroidery on silk, Pundole Art Gallery, Mumbai</p>
+                  <p>• 2011 – Imp in the Garden & Other Fairy Tales, embroidery on silk, Su-Darshan Art Gallery, Pune</p>
+                  <p>• 2012 – I'm So Angry…, public installation, Marina Beach, Chennai *</p>
+                  <p>• 2012 – De-Stressed Sale, installation, United Art Fair, Delhi</p>
+                  <p>• 2015 – Triumph of Market: Moneyscapes, installation, Museum of Goa, Goa</p>
+                  <p>• 2018 – Ragmala: Songs of Anthropocene, embroideries, Sakshi Gallery, Mumbai</p>
+                  <p>• 2018 – Under the Stars, paintings, embroideries and sculptures, 'In Context' Residency, Slănic Moldova, Romania *</p>
+                  <p>• 2019 – Ragmala: Songs of Anthropocene, Sakshi Art Gallery, India Art Fair, Delhi *</p>
+                  <p>• 2020 – Everything You Ever Wanted to Know About Your Bad Breath, But Were Afraid to Ask Alfred Hitchcock, Sakshi Gallery, India Art Fair, Delhi *</p>
+                  <p>• 2021 – night of broken glass, Srishti Art, Hyderabad *</p>
+                  <p>• 2024 – Embroidery, Apparao Gallery, Chennai *</p>
+                  <p>• 2025 – Entwined, by Apparao Gallery at Bikaner House, Delhi *</p>
+                  <p className="text-xs text-gray-500 mt-2">* denotes group show.</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Projects:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2021-22 Head, Production Design for feature film 'Cobalt Blue' by Netflix.</p>
-                  <p>2011: Mumbai Air Port Art Project, "Moneyscapes" A Large Marble Inlay Installation with A large Acrylic Painting</p>
-                  <p>2014: At IIT Kanpur, Workshop Design & Execution 'art enhanced'</p>
-                  <p>2014: With Toy Foundation, India, an NGO working for slum children, an installation & a film was made titled "Let's Have A Fair Play"</p>
-                  <p>2015: 15 installations were created for 'Coro India' Mumbai, an NGO working for variety of social upliftment causes including women, downtrodden, & environment.</p>
+                  <p>• 2011 – Moneyscapes, marble inlay and acrylic painting, Mumbai Airport Art Project</p>
+                  <p>• 2012 – I Am So Angry That I Made This Sign, 1.5 km long, 150 ft tall public installation, Art Chennai — curated by Kaumudi Patil</p>
+                  <p>• 2014 – Art Enhanced, Workshop Design & Execution, IIT Kanpur</p>
+                  <p>• 2014 – Let's Have a Fair Play, installation and a short film 'Disquieting Innocence' with Toy Foundation, India</p>
+                  <p>• 2015 – Fifteen public installations for Coro India, Mumbai (women's empowerment, environment, social upliftment)</p>
+                  <p>• 2021–22 – Head of Production Design, feature film Cobalt Blue, Netflix</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Group Shows:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>2024: At Saran Apparao Gallery, Chennai & Delhi</p>
-                  <p>2023: RHIZOME: Tracing Ecocultural Identities, CSMVS Museum, Mumbai.</p>
-                  <p>2020: 'Speaking Gandhiana: visual journeys of Gandhi@150 & beyond' at Birla Academy Of Art & Culture, Kolkata.</p>
-                  <p>2020: A group show titled as 'Entwined' at Shrishti Art Gallery, Hyderabad.</p>
-                  <p>2018: A group art show at National Museum, Bucharest, Romania.</p>
-                  <p>2015: morphology of archive connected histories of goa, curated by Sabitha T P & Lina Vincent.</p>
-                  <p>2011: "caution: children at work", curated by gitanjali dang.</p>
-                  <p>2011: (M)other India, Galerie dujour, Agnex b, Paris, France</p>
-                  <p>2011: Annual Show, Birla Institute of Art & Culture, Kolkata.</p>
-                  <p>2010: Summer Group show, Matthieu Foss Gallery, Mumbai</p>
-                  <p>2010: Print Making, Priyashree art gallery, Jahangir Art Gallery, Mumbai.</p>
-                  <p>2009: 'Spectrum' curated by Saryu Doshi, Abu Dhabi Art Fair, Abu Dhabi, UAE.</p>
-                  <p>2009: 'Tihar Jail Project' curated by Anubhav Nath, New Delhi.</p>
-                  <p>2008: 'Keep Drawing' curated by Chintan Upadhyaya. Gallery Espass, New Delhi.</p>
-                  <p>2008: Miniature Format show, SansTache Gallery, Mumbai</p>
-                  <p>2007: Miniature Format show, SansTache Gallery, Mumbai.</p>
-                  <p>2007: Contemporary Indian Art, Zurab Tsereteli Art Gallery, Moscow</p>
-                  <p>2007: 'Rebel Graffiti', Open Eyed Dreams Gallery, Kochin,</p>
-                  <p>2007: 'Keep Drawing' curated by Chintan Upadhyaya. Pundole Art Gallery, Mumbai.</p>
-                  <p>2007: "Mumbai', Gallery Art & Soul, Mumbai.</p>
-                  <p>2004: 'Flex' the fluid less sex, Apparao Gallery, New Delhi.</p>
+                  <p>• 2004 – Flex: The Fluid Less Sex, Apparao Gallery, New Delhi</p>
+                  <p>• 2007 – Mumbai, Art & Soul Gallery, Mumbai</p>
+                  <p>• 2007 – Keep Drawing, curated by Chintan Upadhyaya, Pundole Art Gallery, Mumbai</p>
+                  <p>• 2007 – Rebel Graffiti, Open Eyed Dreams Gallery, Kochi</p>
+                  <p>• 2007 – Contemporary Indian Art, Zurab Tsereteli Art Gallery, Moscow</p>
+                  <p>• 2007–08 – Miniature Format Show, Sans Tache Gallery, Mumbai</p>
+                  <p>• 2008 – Keep Drawing, Gallery Espass, New Delhi</p>
+                  <p>• 2009 – Tihar Jail Project, curated by Anubhav Nath, New Delhi</p>
+                  <p>• 2009 – Spectrum, curated by Saryu Doshi, Abu Dhabi Art Fair, UAE</p>
+                  <p>• 2010 – Print Making, Priyasri Art Gallery, Jehangir Art Gallery, Mumbai</p>
+                  <p>• 2010 – Summer Group Show, Matthieu Foss Gallery, Mumbai</p>
+                  <p>• 2011 – Annual Show, Birla Institute of Art & Culture, Kolkata</p>
+                  <p>• 2011 – (M)other India, Galerie du Jour, Agnès b., Paris</p>
+                  <p>• 2011 – Caution: Children at Work, curated by Gitanjali Dang</p>
+                  <p>• 2015 – Morphology of Archive: Connected Histories of Goa, curated by Sabitha T.P. & Lina Vincent</p>
+                  <p>• 2018 – Group show, National Museum, Bucharest, Romania</p>
+                  <p>• 2020 – Entwined, Shrishti Art Gallery, Hyderabad</p>
+                  <p>• 2020 – Speaking Gandhiana: Visual Journeys of Gandhi @150 & Beyond, Birla Academy of Art & Culture, Kolkata</p>
+                  <p>• 2023 – Rhizome: Tracing Ecocultural Identities, CSMVS Museum, Mumbai</p>
+                  <p>• 2024 – Saran Apparao Gallery, Chennai & Delhi</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Books:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>1. Sankalp: a history of social movements of change in Maharashtra, 1982. Marathi. Published by Granthali.</p>
-                  <p>2. Ashant Parv: A novel on industrial landscape of Mumbai. 1992, Marathi. Published by Granthali</p>
-                  <p>3. Kavita: A collection of poetry, 1993, Marathi, Published by Granthali.</p>
-                  <p>4. Fucking Mad: 2003, Published by Abhidanantar</p>
-                  <p>5. Search Engine: A collection of poetry, 2004, Marathi, Published by Granthali.</p>
-                  <p>6. Smiles: A collection of poetry, 2007, Marathi, Published by Abhidanantar.</p>
-                  <p>7. Smiles: A collection of poetry, 2007, English, Published by Abhidanantar.</p>
-                  <p>8. Mutatis Mutandis: A collection of poetry, 2007, Marathi, Published by Abhidanantar.</p>
-                  <p>9. Mutatis Mutandis: A collection of poetry, 2007, English, Published by Abhidanantar.</p>
-                  <p>10. '1, 2, 3,...Happy Galaxy': Graphic Book in collaboration with Vaishali Narkar, 2007, English, Limited Edition, Published by Abhidanantar. 2008.</p>
-                  <p>11. Bimb, a poetry collection by paperwall. 2018</p>
-                  <p>12. Smiles: Marathi & English a larger edition of collection of poetry, 2018 by paperwall.</p>
-                  <p>13. Rutusanhar, a collection of essays, by Lokvangmay Griha, 2019.</p>
-                  <p>14. Sanshayaspad Tippane, collection of poetry, 2009, By Granthali.</p>
-                  <p>15. Popatpanchi Chaturki Jaan, Suno Parvati Shiri Bhagwan, poetry, 2025, by Varnmudra</p>
+                  <p>• Sankalp (1982) – History of social movements in Maharashtra, Marathi, Granthali</p>
+                  <p>• Ashant Parv (1992) – Novel on industrial Mumbai, Marathi, Granthali</p>
+                  <p>• Kavita (1993) – Poetry collection, Marathi, Granthali</p>
+                  <p>• Fucking Mad (2003), Abhidanantar</p>
+                  <p>• Search Engine (2004), Marathi, Granthali</p>
+                  <p>• Smiles (2007), Marathi & English, Abhidanantar</p>
+                  <p>• Mutatis Mutandis (2007), Marathi & English, Abhidanantar</p>
+                  <p>• 1, 2, 3,…Happy Galaxy (2008), graphic book with Vaishali Narkar, Abhidanantar</p>
+                  <p>• Sanshayaspad Tippane (2009), Marathi, Granthali</p>
+                  <p>• Bimb (2018), Paperwall</p>
+                  <p>• Smiles (Expanded edition, 2018), Marathi & English, Paperwall</p>
+                  <p>• Rutusanhar (2019), essays, Lokvangmay Griha</p>
+                  <p>• Popatpanchi Chaturki Jaan, Suno Parvati Shiri Bhagwan (2025), Varnamudra</p>
                 </div>
               </div>
 
               <div className="mb-8">
                 <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Catalogs:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>1. Rumour Of The Truth 2003</p>
-                  <p>2. All That I Wanna Do 2005</p>
-                  <p>3. Who is afraid of a shrinking skin 2005, Pundole Art Gallery, Mumbai.</p>
-                  <p>4. Tits, Clits, & Elephant Dick 2006, ABN Gallery, Mumbai.</p>
-                  <p>5. Kegel Exercises: 2007, Pundole Art Gallery, Mumbai.</p>
-                  <p>6. Acquire, Merge, or Collaborate 2007, ABN Gallery, Mumbai.</p>
-                  <p>7. 'Rx', 2008, Sudarshan Art Gallery, Pune.</p>
-                  <p>8. "Everything You Wanted To Know About Bad Breath, However Afraid To Ask Alfred Hitchcock" 2008, Bombay Art Gallery, Mumbai.</p>
-                  <p>9. 'Bad Breath', 2010, Matthieu Foss Gallery, Mumbai.</p>
-                  <p>10. 'Imp In The Garden & Other Fairy Tales' embroidery on silk, 2011, Pundole Art Gallery, Mumbai.</p>
+                  <p>• Rumour of the Truth (2003)</p>
+                  <p>• All That I Wanna Do (2005)</p>
+                  <p>• Who Is Afraid of a Shrinking Skin? (2005) – Pundole Art Gallery</p>
+                  <p>• Tits, Clits, & Elephant Dick (2006) – ABN Gallery, Mumbai</p>
+                  <p>• Kegel Exercises (2007) – Pundole Art Gallery</p>
+                  <p>• Acquire, Merge or Collaborate (2007) – ABN Gallery, Mumbai</p>
+                  <p>• Rx (2008) – Sudarshan Art Gallery, Pune</p>
+                  <p>• Everything You Wanted to Know About Bad Breath, But Were Afraid to Ask Alfred Hitchcock (2008) – Bombay Art Gallery</p>
+                  <p>• Bad Breath (2010) – Matthieu Foss Gallery, Mumbai</p>
+                  <p>• Imp in the Garden & Other Fairy Tales (2011) – Pundole Art Gallery, Mumbai</p>
                 </div>
               </div>
 
               <div className="mb-8">
-                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Columns, Articles:</h4>
+                <h4 className="text-lg md:text-xl font-sans font-semibold mb-4">Columns & Articles:</h4>
                 <div className="text-sm md:text-base text-gray-800 space-y-1">
-                  <p>Sunday Observer & Inside Outside Magazine: Tropical Gardens, Environment, Landscapes.</p>
-                  <p>Economic Times: Art & Politics & Environment</p>
-                  <p>Loksatta Daily: Art & Politics & Environment</p>
-                  <p>Several Marathi journals: Arts & Politics & Environment & poetry.</p>
+                  <p>• Sunday Observer & Inside Outside Magazine: Tropical gardens, environment, and landscape</p>
+                  <p>• The Economic Times: Art, politics, and ecology</p>
+                  <p>• Loksatta Daily: Art, politics, and environmental commentary</p>
+                  <p>• Numerous Marathi journals: Poetry, environmental, and cultural criticism</p>
                 </div>
               </div>
             </div>
