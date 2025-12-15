@@ -171,11 +171,13 @@ const About = () => {
               
               {/* Sanjeev Profile Image */}
               <div className="flex justify-center mb-8">
-                <img 
-                  src="/lovable-uploads/97cfcbc4-e9a8-441c-bade-487681f8066e.png" 
-                  alt="Sanjeev Khandekar" 
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg"
-                />
+                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg bg-gray-200">
+                  <img 
+                    src="/lovable-uploads/97cfcbc4-e9a8-441c-bade-487681f8066e.png" 
+                    alt="Sanjeev Khandekar" 
+                    className="w-full h-full object-cover scale-110"
+                  />
+                </div>
               </div>
               
               <div className="mb-6 text-center">
