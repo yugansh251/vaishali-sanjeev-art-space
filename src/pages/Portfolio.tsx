@@ -538,7 +538,7 @@ const Portfolio = () => {
                   </div>
                 ))}
               </div>
-            ) : viewMode === 'grid' ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            ) : (viewMode === 'grid' && selectedCategory !== 'publication') ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>
