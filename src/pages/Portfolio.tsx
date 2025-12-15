@@ -121,6 +121,16 @@ import kegel3 from '@/assets/kegel-3.jpg';
 import kegel4 from '@/assets/kegel-4.jpg';
 import kegel5 from '@/assets/kegel-5.jpg';
 import kegel6 from '@/assets/kegel-6.jpg';
+import allthatwanna1 from '@/assets/allthatwanna-1.jpg';
+import allthatwanna2 from '@/assets/allthatwanna-2.jpg';
+import allthatwanna3 from '@/assets/allthatwanna-3.jpg';
+import allthatwanna4 from '@/assets/allthatwanna-4.jpg';
+import allthatwanna5 from '@/assets/allthatwanna-5.jpg';
+import allthatwanna6 from '@/assets/allthatwanna-6.jpg';
+import allthatwanna7 from '@/assets/allthatwanna-7.jpg';
+import allthatwanna8 from '@/assets/allthatwanna-8.jpg';
+import allthatwanna9 from '@/assets/allthatwanna-9.jpg';
+import allthatwanna10 from '@/assets/allthatwanna-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -312,7 +322,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/67df2a58-b3de-4df9-b9aa-c05532478d41.png",
       description: "\"All That I Wanna Do,\" a massive and exceptionally large installation from 2005, featured hundreds of sculptures and large mirrors to craft an infinite horizontal space. This visually striking display offered a kaleidoscopic perspective of objects, creating a mysterious and captivating experience.\nArtists Vaishali and Sanjeev created a poignant portrait of contemporary man alienated from himself, entangled in an unquenchable web of surplus desires. The installation's title, borrowed from a long poem written by Sanjeev in the same year, is considered a milestone in Marathi poetry. A particularly striking element of the installation was its novel use of stock market ticker tape imagery.\n\n( to read essays by Abhay Sardesai and Kumar Ketkar please download the pdf )",
       pdfLink: "/pdfs/all-that-i-wanna.pdf",
-      galleryImages: ["/lovable-uploads/9d363ef4-ae7f-409c-bab8-1d15a1b7cc59.png", "/lovable-uploads/179dc95f-93b6-4b03-8e95-6ceb022d900f.png", "/lovable-uploads/c47deaef-15d4-492f-877c-c4e45676d56a.png", "/lovable-uploads/12131ea7-e672-4bed-8725-f4876c205095.png", "/lovable-uploads/db39f60c-0ddf-415a-aacf-4567bd13eff3.png", "/lovable-uploads/8936f780-f10c-4703-8489-f51297b9313e.png", "/lovable-uploads/11d68ef1-ddf7-4c01-8bc5-3418c1857dcc.png", "/lovable-uploads/c7ccfc85-c495-472b-a5bc-b1f67bcfa68c.png", "/lovable-uploads/0128647a-98ba-46ee-b25e-9173742ab626.png", "/lovable-uploads/a651269d-946e-4aea-92dc-c8f01cdf8c07.png", "/lovable-uploads/0e347106-d2bd-41f3-b56f-11cf29261adb.png", "/lovable-uploads/e0757729-0594-445a-be51-7f2224aaf593.png"]
+      galleryImages: [allthatwanna1, allthatwanna2, allthatwanna3, allthatwanna4, allthatwanna5, allthatwanna6, allthatwanna7, allthatwanna8, allthatwanna9, allthatwanna10]
     },
     
     // Publications Category
