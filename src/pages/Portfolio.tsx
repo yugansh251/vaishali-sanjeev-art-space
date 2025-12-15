@@ -78,6 +78,9 @@ import hitchcock7 from '@/assets/hitchcock-7.jpg';
 import hitchcock8 from '@/assets/hitchcock-8.jpg';
 import hitchcock9 from '@/assets/hitchcock-9.jpg';
 import hitchcock10 from '@/assets/hitchcock-10.jpg';
+import hitchcock11 from '@/assets/hitchcock-11.jpg';
+import hitchcock12 from '@/assets/hitchcock-12.jpg';
+import hitchcock13 from '@/assets/hitchcock-13.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -192,7 +195,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/6b9b5761-09b1-4db0-a085-aa36efca12ad.png",
       description: "This spectacular show of paintings and a sculpture deftly tackles pressing global issues by weaving together critical crises and widely circulated memes ( common societal narratives, cultural references, and popular understandings ) to construct powerful visual arguments. In his exhibition, \"Everything You Ever Wanted to Know about Bad Breath but were Afraid to Ask Alfred Hitchcock (Part I)\", the elegant white test tube orchid is employed as a central motif. These tissue cultured orchids symbolize the broader challenges of environmental degradation and the complex dilemmas arising from the genetic modification of organisms. Through a fusion of contentious subject matter and noir cinema aesthetics, Khandekar creates a captivating and thought-provoking experience, akin to a perfect double bill for the discerning viewer.",
       pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-i.pdf",
-      galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10]
+      galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10, hitchcock11, hitchcock12, hitchcock13]
     },
     {
       id: 9,
