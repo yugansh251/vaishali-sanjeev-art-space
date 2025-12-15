@@ -320,7 +320,7 @@ const Portfolio = () => {
     },
     {
       id: 14,
-      title: "Kegel exercise",
+      title: "Kegel Exercise",
       year: "2007",
       category: "installation",
       tab: "kegel-exercise-2007",
