@@ -575,12 +575,14 @@ const Portfolio = () => {
                             </div>
                           </ScrollArea>
                         </div>
-                        <div className="mt-4 flex justify-end flex-shrink-0">
-                          <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
-                            <Download size={14} className="mr-1" />
-                            Download PDF
-                          </a>
-                        </div>
+                        {work.category !== 'publication' && (
+                          <div className="mt-4 flex justify-end flex-shrink-0">
+                            <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
+                              <Download size={14} className="mr-1" />
+                              Download PDF
+                            </a>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </Card>)}
@@ -645,12 +647,14 @@ const Portfolio = () => {
                         </div>
                       </ScrollArea>
                       
-                      <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
-                        <Button variant="outline" size="sm" className="gap-2">
-                          <Download size={16} />
-                          Download PDF
-                        </Button>
-                      </a>
+                      {selectedWork.category !== 'publication' && (
+                        <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
+                          <Button variant="outline" size="sm" className="gap-2">
+                            <Download size={16} />
+                            Download PDF
+                          </Button>
+                        </a>
+                      )}
                     </div>
                   </div>
                   
