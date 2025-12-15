@@ -109,6 +109,12 @@ import titsclits7 from '@/assets/titsclits-7.jpg';
 import titsclits8 from '@/assets/titsclits-8.jpg';
 import titsclits9 from '@/assets/titsclits-9.jpg';
 import titsclits10 from '@/assets/titsclits-10.jpg';
+import titsclits11 from '@/assets/titsclits-11.jpg';
+import titsclits12 from '@/assets/titsclits-12.jpg';
+import titsclits13 from '@/assets/titsclits-13.jpg';
+import titsclits14 from '@/assets/titsclits-14.jpg';
+import titsclits15 from '@/assets/titsclits-15.jpg';
+import titsclits16 from '@/assets/titsclits-16.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -278,7 +284,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/cd623adc-fd53-477c-b5fe-74dac1341434.png",
       description: "Ideology of the Market\nIn today's market-driven world, sex has outpaced traditional ideologies, seeking new meanings amidst gadgets, pleasure, and utility.\nHappiness has become pleasure; relationships reduced to networking.\nThis shift leaves us in a strange existential limbo, where neither science nor art can fully grasp the change.\nVaishali Narkar and Sanjeev Khandekar explore this crisis through daring, thought-provoking installations.\nTheir work challenges us to question, rather than accept.\nIn doing so, they probe a mystery deeper than body—rooted in the mind.",
       pdfLink: "/pdfs/tits-clits-dick.pdf",
-      galleryImages: [titsclits1, titsclits2, titsclits3, titsclits4, titsclits5, titsclits6, titsclits7, titsclits8, titsclits9, titsclits10]
+      galleryImages: [titsclits1, titsclits2, titsclits3, titsclits4, titsclits5, titsclits6, titsclits7, titsclits8, titsclits9, titsclits10, titsclits11, titsclits12, titsclits13, titsclits14, titsclits15, titsclits16]
     },
     {
       id: 14,
