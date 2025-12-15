@@ -141,6 +141,17 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
+// Additional PDFs data
+const additionalPdfs = [
+  { id: 1, title: "Bad Breath", pdfLink: "/pdfs/bad-breath-additional.pdf" },
+  { id: 2, title: "Encore", pdfLink: "/pdfs/encore.pdf" },
+  { id: 3, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf" },
+  { id: 4, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf" },
+  { id: 5, title: "Prayer For Peace", pdfLink: "/pdfs/prayer-for-peace.pdf" },
+  { id: 6, title: "Rx", pdfLink: "/pdfs/rx.pdf" },
+  { id: 7, title: "Third Life", pdfLink: "/pdfs/third-life.pdf" },
+];
+
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('installation');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -485,6 +496,9 @@ const Portfolio = () => {
                 <Button variant={selectedCategory === 'publication' ? 'default' : 'outline'} onClick={() => setSelectedCategory('publication')} className={selectedCategory === 'publication' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
                   Publications
                 </Button>
+                <Button variant={selectedCategory === 'additional-pdfs' ? 'default' : 'outline'} onClick={() => setSelectedCategory('additional-pdfs')} className={selectedCategory === 'additional-pdfs' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+                  Additional PDF
+                </Button>
               </div>
               
               <div className="flex gap-2">
@@ -497,7 +511,34 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {viewMode === 'grid' ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {selectedCategory === 'additional-pdfs' ? (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {additionalPdfs.map(pdf => (
+                  <div key={pdf.id} className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                    <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center p-4">
+                      <div className="w-full h-full bg-white rounded shadow-inner flex flex-col items-center justify-center p-4 border border-gray-200">
+                        <div className="w-12 h-14 bg-red-500 rounded-sm flex items-center justify-center mb-3">
+                          <span className="text-white text-xs font-bold">PDF</span>
+                        </div>
+                        <p className="text-sm font-medium text-gray-700 text-center line-clamp-2">{pdf.title}</p>
+                      </div>
+                    </div>
+                    <div className="p-4 flex flex-col gap-2">
+                      <h3 className="text-sm font-semibold text-gray-800 line-clamp-2">{pdf.title}</h3>
+                      <a 
+                        href={pdf.pdfLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
+                      >
+                        <Download size={14} />
+                        Download PDF
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : viewMode === 'grid' ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>
