@@ -99,6 +99,16 @@ import whatdoilove12 from '@/assets/whatdoilove-12.jpg';
 import whatdoilove13 from '@/assets/whatdoilove-13.jpg';
 import lapeaudechagrin11 from '@/assets/lapeaudechagrin-11.jpg';
 import lapeaudechagrin12 from '@/assets/lapeaudechagrin-12.jpg';
+import titsclits1 from '@/assets/titsclits-1.jpg';
+import titsclits2 from '@/assets/titsclits-2.jpg';
+import titsclits3 from '@/assets/titsclits-3.jpg';
+import titsclits4 from '@/assets/titsclits-4.jpg';
+import titsclits5 from '@/assets/titsclits-5.jpg';
+import titsclits6 from '@/assets/titsclits-6.jpg';
+import titsclits7 from '@/assets/titsclits-7.jpg';
+import titsclits8 from '@/assets/titsclits-8.jpg';
+import titsclits9 from '@/assets/titsclits-9.jpg';
+import titsclits10 from '@/assets/titsclits-10.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -268,7 +278,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/cd623adc-fd53-477c-b5fe-74dac1341434.png",
       description: "Ideology of the Market\nIn today's market-driven world, sex has outpaced traditional ideologies, seeking new meanings amidst gadgets, pleasure, and utility.\nHappiness has become pleasure; relationships reduced to networking.\nThis shift leaves us in a strange existential limbo, where neither science nor art can fully grasp the change.\nVaishali Narkar and Sanjeev Khandekar explore this crisis through daring, thought-provoking installations.\nTheir work challenges us to question, rather than accept.\nIn doing so, they probe a mystery deeper than body—rooted in the mind.",
       pdfLink: "/pdfs/tits-clits-dick.pdf",
-      galleryImages: ["/lovable-uploads/103a15e5-907d-451d-8bb3-292e60874acc.png", "/lovable-uploads/42a70101-86d3-4056-8dc4-a6d4242cf3c8.png", "/lovable-uploads/febe5c60-1901-4071-b1d7-5ddf2fd74113.png", "/lovable-uploads/52e30f1c-726d-4360-a363-8dd8dcab9410.png", "/lovable-uploads/c8ea21cb-7679-4303-8d16-8127fe4c85c0.png", "/lovable-uploads/d6743159-f7da-4cd8-a743-0ef1e7ebec70.png", "/lovable-uploads/3d92acb9-ab8c-4a40-a1f5-b6f24b5cf36b.png", "/lovable-uploads/161d1c3d-1363-4d04-bbd4-59e8b9ceb537.png", "/lovable-uploads/43f2752c-82c9-4385-8f12-ee11dcb8d7ea.png", "/lovable-uploads/65337fcd-9cdf-4eda-acd6-2670bc685715.png", "/lovable-uploads/a5ce2828-9881-42cf-a2f8-9222d5ff061b.png", "/lovable-uploads/36eabf1f-00c8-4eb7-a51c-3da23abf9466.png", "/lovable-uploads/078ec730-fa98-4435-8b79-222f21d78231.png", "/lovable-uploads/09b55fa7-d2c9-42b0-833b-c1383b6c984d.png", "/lovable-uploads/37b34952-0959-49fe-9291-0c588030056e.png", "/lovable-uploads/f9317439-7f4f-4582-b8f3-076af30e33d0.png"]
+      galleryImages: [titsclits1, titsclits2, titsclits3, titsclits4, titsclits5, titsclits6, titsclits7, titsclits8, titsclits9, titsclits10]
     },
     {
       id: 14,
