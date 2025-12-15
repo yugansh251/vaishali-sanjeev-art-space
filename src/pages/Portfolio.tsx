@@ -210,7 +210,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Triumph of market",
+      title: "Triumph Of Market",
       year: "2008",
       category: "installation",
       tab: "triumph",
