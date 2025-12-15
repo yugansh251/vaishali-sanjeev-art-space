@@ -49,6 +49,7 @@ import angry4 from '@/assets/angry-4.jpg';
 import angry5 from '@/assets/angry-5.jpg';
 import angry6 from '@/assets/angry-6.jpg';
 import angrySignCover from '@/assets/angry-sign-cover.png';
+import acquireMergeCover from '@/assets/acquire-merge-cover.png';
 import angry7 from '@/assets/angry-7.jpg';
 import angry8 from '@/assets/angry-8.jpg';
 import angry9 from '@/assets/angry-9.jpg';
@@ -278,7 +279,7 @@ const Portfolio = () => {
       year: "2007",
       category: "installation",
       tab: "acquire-merge",
-      image: "/lovable-uploads/c97400af-b7b0-4338-84ce-d73b829b9ca3.png",
+      image: acquireMergeCover,
       description: "Long before Yale University published its findings on hormonal changes in men and women actively involved in stock market investments, Sanjeev Khandekar was already exploring this intersection through his art. In his poems and watercolours, he had pioneered a unique imagery of financial capital, using it as a motif to depict the evolving landscape of contemporary global societies.\nVaishali & Sanjeev 's  acrylic-on-canvas paintings, including the series \"acquire, merge or collaborate\"(2007)  and subsequent \"triumph of market\" series of works, visually integrate stock market motifs onto further abstracted electronic microscopic images of internal body organs. The exhibition also featured a significant installation titled \"time pass,\" which offered a satirical commentary on how market forces influence various aspects of life, from relationships and spirituality to consumerism.",
       pdfLink: "/pdfs/acquire-merge-or-collaborate.pdf",
       galleryImages: ["/lovable-uploads/c70b5427-f5ee-4faf-8c41-da2f168febe7.png", "/lovable-uploads/47abba0c-d814-4804-9c3f-652549f959f3.png", "/lovable-uploads/a6e6d89a-6b54-4543-b99e-4f6649229bc8.png", "/lovable-uploads/a258eb38-a8f2-43cf-948d-3b8788f253bf.png", "/lovable-uploads/089282ce-c070-48e1-b7a7-b512f10091d8.png", "/lovable-uploads/c1c66bef-688c-4826-a7fb-56c51609aaab.png", "/lovable-uploads/c7438809-5818-4887-99f0-ebc5088d8423.png", "/lovable-uploads/9738f1a0-2cea-4218-8c94-a21779dcb520.png"]
