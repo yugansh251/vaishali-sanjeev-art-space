@@ -146,13 +146,14 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
 // Additional PDFs data
 const additionalPdfs = [
-  { id: 1, title: "Bad Breath", pdfLink: "/pdfs/bad-breath-additional.pdf" },
-  { id: 2, title: "Encore", pdfLink: "/pdfs/encore.pdf" },
-  { id: 3, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf" },
-  { id: 4, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf" },
-  { id: 5, title: "Prayer For Peace", pdfLink: "/pdfs/prayer-for-peace.pdf" },
-  { id: 6, title: "Rx", pdfLink: "/pdfs/rx.pdf" },
-  { id: 7, title: "Third Life", pdfLink: "/pdfs/third-life.pdf" },
+  { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/kristallnacht-night-of-broken-glass.pdf" },
+  { id: 2, title: "Bad Breath", pdfLink: "/pdfs/bad-breath-additional.pdf" },
+  { id: 3, title: "Encore", pdfLink: "/pdfs/encore.pdf" },
+  { id: 4, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf" },
+  { id: 5, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf" },
+  { id: 6, title: "Prayer For Peace", pdfLink: "/pdfs/prayer-for-peace.pdf" },
+  { id: 7, title: "Rx", pdfLink: "/pdfs/rx.pdf" },
+  { id: 8, title: "Third Life", pdfLink: "/pdfs/third-life.pdf" },
 ];
 
 const Portfolio = () => {
