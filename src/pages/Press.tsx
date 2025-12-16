@@ -6,27 +6,27 @@ const pressLinks = [
   {
     title: "Discomfort zones",
     source: "The Economic Times",
-    url: "https://economictimes.indiatimes.com"
+    url: "https://m.economictimes.com/culture-cauldron/discomfort-zones/articleshow/2308944.cms"
   },
   {
     title: "The idea of freshness in today's world",
     source: "The Economic Times",
-    url: "https://economictimes.indiatimes.com"
+    url: "https://share.google/ICbKjnMBvVwENYJZf"
   },
   {
     title: "Songs of Anthropocene: Sanjeev Khandekar and Vaishali Narkar",
     source: "हाकारा | hākārā",
-    url: "https://hakara.in"
+    url: "https://share.google/OFrbx2epvfIZrE4wV"
   },
   {
     title: "A new art show poses questions at genetic engineering",
     source: "The Economic Times",
-    url: "https://economictimes.indiatimes.com"
+    url: "https://share.google/N9nzCn1hs7g7rBf7L"
   },
   {
     title: "Sanjeev Khandekar translated by Abhay Sardesai",
     source: "Portside Review",
-    url: "https://portsidereview.com"
+    url: "https://www.portsidereview.com/0i7z-sanjeev-khandekar"
   }
 ];
 
