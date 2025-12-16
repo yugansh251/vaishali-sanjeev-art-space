@@ -9,7 +9,7 @@ const Biography = () => {
             <SectionTitle title="Vaishali & Sanjeev" className="mb-6" />
             
             <div className="mb-6">
-              <h3 className="text-lg md:text-xl font-sans font-bold mb-4">The Uncommon Alliance</h3>
+              
               <p className="text-gray-700 mb-4 md:text-base leading-relaxed text-sm font-normal">Artistic collaboration, while not novel, rarely sustains itself as a primary mode of practice. For two decades, Vaishali Narkar and Sanjeev Khandekar have defied this norm, forging a dynamic partnership that has yielded a diverse and compelling body of work that dissects the complexities of the 21st century.</p>
             </div>
             
