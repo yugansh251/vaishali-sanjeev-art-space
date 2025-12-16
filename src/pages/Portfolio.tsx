@@ -548,7 +548,7 @@ const Portfolio = () => {
                       </AspectRatio>
                     </div>
                     <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
-                      <h3 className={`text-xl font-serif font-semibold ${work.italicTitle ? 'italic' : ''}`}>{work.title}</h3>
+                      <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
                       <p className="text-sm text-gray-600 mt-1">{work.year}</p>
                     </CardContent>
                     <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
@@ -568,7 +568,7 @@ const Portfolio = () => {
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
                             {work.category === 'installation' ? 'Art Works' : work.category === 'previous' ? 'Previous Art Works' : work.category} • {work.year}
                           </span>
-                          <h3 className={`text-xl font-serif font-semibold mt-2 ${work.italicTitle ? 'italic' : ''}`}>{work.title}</h3>
+                          <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
                         </div>
                         <div className="flex-1 mt-3">
                           <ScrollArea className="h-64 pr-4">
@@ -634,7 +634,7 @@ const Portfolio = () => {
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
-                      <h2 className={`text-2xl font-serif font-bold mt-2 mb-4 ${selectedWork.title === "la peau de chagrin (who is afraid of shrinking skin)" ? "italic" : ""}`}>{selectedWork.title}</h2>
+                      <h2 className={`text-2xl font-serif font-bold mt-2 mb-4 ${selectedWork.italicTitle || selectedWork.title === "la peau de chagrin (who is afraid of shrinking skin)" ? "italic" : ""}`}>{selectedWork.title}</h2>
                       
                       <ScrollArea className="flex-1 pr-4">
                         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
