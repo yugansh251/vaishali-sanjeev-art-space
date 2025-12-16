@@ -172,6 +172,7 @@ const Portfolio = () => {
     pdfLink: string;
     galleryImages?: string[];
     italicTitle?: boolean;
+    subtitle?: string;
   }
 
   const works: Work[] = [
@@ -330,7 +331,8 @@ const Portfolio = () => {
       image: "/lovable-uploads/2e898325-4e7e-4a20-a896-100a15bef676.png",
       description: "The exhibition, \"The Kegel Exercises: Aswani Mudra,\" (2007)  delves into the unsettling realities of late multicultural capitalism, where the idealism gives way to the follies of recklessness and petulance. Through a powerful confluence of art and societal critique, it explores how the relentless pursuit of financialization morphs into a destructive force. The show is an example of the use of the ubiquitous stock market ticker and the unique and intricate medium of marble inlay as potent symbols, demonstrating how the artists harnesse them to expose the interwoven dramas of trading, sexuality, and the unsettling normalization of insatiable  desires in our contemporary world.\n\n( Download pdf to read an essay by Gitanjali Dang)",
       pdfLink: "/pdfs/kegel.pdf",
-      galleryImages: [kegel1, kegel2, kegel3, kegel4, kegel5, kegel6]
+      galleryImages: [kegel1, kegel2, kegel3, kegel4, kegel5, kegel6],
+      subtitle: "Aswani Mudra"
     },
     {
       id: 15,
@@ -636,8 +638,8 @@ const Portfolio = () => {
                       <span className="text-sm text-portfolio-blue font-medium capitalize">
                         {selectedWork.category === 'installation' ? 'Art Works' : selectedWork.category} • {selectedWork.year}
                       </span>
-                      <h2 className={`text-2xl font-serif font-bold mt-2 mb-4 ${selectedWork.italicTitle ? "italic" : ""}`}>{selectedWork.title}</h2>
-                      
+                      <h2 className={`text-2xl font-serif font-bold mt-2 ${selectedWork.subtitle ? 'mb-1' : 'mb-4'} ${selectedWork.italicTitle ? "italic" : ""}`}>{selectedWork.title}</h2>
+                      {selectedWork.subtitle && <p className="text-xl font-serif italic mb-4">{selectedWork.subtitle}</p>}
                       <ScrollArea className="flex-1 pr-4">
                         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
                           {selectedWork.description
