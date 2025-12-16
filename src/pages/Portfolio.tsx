@@ -146,14 +146,14 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
 // Additional PDFs data
 const additionalPdfs = [
-  { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/kristallnacht-night-of-broken-glass.pdf" },
-  { id: 2, title: "Bad Breath", pdfLink: "/pdfs/bad-breath-additional.pdf" },
-  { id: 3, title: "Encore", pdfLink: "/pdfs/encore.pdf" },
-  { id: 4, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf" },
-  { id: 5, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf" },
-  { id: 6, title: "Prayer For Peace", pdfLink: "/pdfs/prayer-for-peace.pdf" },
-  { id: 7, title: "Rx", pdfLink: "/pdfs/rx.pdf" },
-  { id: 8, title: "Third Life", pdfLink: "/pdfs/third-life.pdf" },
+  { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/kristallnacht-night-of-broken-glass.pdf", thumbnail: "/images/thumbnails/kristallnacht.png" },
+  { id: 2, title: "Bad Breath", pdfLink: "/pdfs/bad-breath-additional.pdf", thumbnail: "/images/thumbnails/bad-breath.png" },
+  { id: 3, title: "Encore", pdfLink: "/pdfs/encore.pdf", thumbnail: "/images/thumbnails/encore.png" },
+  { id: 4, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf", thumbnail: "/images/thumbnails/freedom-in-the-cloud.png" },
+  { id: 5, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf", thumbnail: "/images/thumbnails/lets-have-a-fair-game.png" },
+  { id: 6, title: "Prayer For Peace", pdfLink: "/pdfs/prayer-for-peace.pdf", thumbnail: "/images/thumbnails/prayer-for-peace.png" },
+  { id: 7, title: "Rx", pdfLink: "/pdfs/rx.pdf", thumbnail: "/images/thumbnails/rx.png" },
+  { id: 8, title: "Third Life", pdfLink: "/pdfs/third-life.pdf", thumbnail: "/images/thumbnails/third-life.png" },
 ];
 
 const Portfolio = () => {
@@ -530,8 +530,8 @@ const Portfolio = () => {
                 </div>
                 {additionalPdfs.map(pdf => (
                   <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
-                    <div className="w-8 h-10 bg-red-500 rounded flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-[10px] font-bold">PDF</span>
+                    <div className="w-16 h-12 rounded overflow-hidden flex-shrink-0">
+                      <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover" />
                     </div>
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
                     <a 
