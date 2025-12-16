@@ -279,7 +279,7 @@ const Portfolio = () => {
     },
     {
       id: 10,
-      title: "Acquire, Merge or Collaborate...!",
+      title: "Acquire, Merge or Collaborate..!",
       year: "2007",
       category: "installation",
       tab: "acquire-merge",
