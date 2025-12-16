@@ -171,6 +171,7 @@ const Portfolio = () => {
     description: string;
     pdfLink: string;
     galleryImages?: string[];
+    italicTitle?: boolean;
   }
 
   const works: Work[] = [
@@ -261,7 +262,8 @@ const Portfolio = () => {
       image: badBreathCover,
       description: "This spectacular show of paintings and a sculpture deftly tackles pressing global issues by weaving together critical crises and widely circulated memes ( common societal narratives, cultural references, and popular understandings ) to construct powerful visual arguments. In his exhibition, \"Everything You Ever Wanted to Know about Bad Breath but were Afraid to Ask Alfred Hitchcock (Part I)\", the elegant white test tube orchid is employed as a central motif. These tissue cultured orchids symbolize the broader challenges of environmental degradation and the complex dilemmas arising from the genetic modification of organisms. Through a fusion of contentious subject matter and noir cinema aesthetics, Khandekar creates a captivating and thought-provoking experience, akin to a perfect double bill for the discerning viewer.",
       pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-i.pdf",
-      galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10, hitchcock11, hitchcock12, hitchcock13]
+      galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10, hitchcock11, hitchcock12, hitchcock13],
+      italicTitle: true
     },
     {
       id: 9,
@@ -546,7 +548,7 @@ const Portfolio = () => {
                       </AspectRatio>
                     </div>
                     <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
-                      <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
+                      <h3 className={`text-xl font-serif font-semibold ${work.italicTitle ? 'italic' : ''}`}>{work.title}</h3>
                       <p className="text-sm text-gray-600 mt-1">{work.year}</p>
                     </CardContent>
                     <CardFooter className="px-6 py-3 pt-0 border-t border-gray-100 flex justify-end">
@@ -566,7 +568,7 @@ const Portfolio = () => {
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
                             {work.category === 'installation' ? 'Art Works' : work.category === 'previous' ? 'Previous Art Works' : work.category} • {work.year}
                           </span>
-                          <h3 className="text-xl font-serif font-semibold mt-2">{work.title}</h3>
+                          <h3 className={`text-xl font-serif font-semibold mt-2 ${work.italicTitle ? 'italic' : ''}`}>{work.title}</h3>
                         </div>
                         <div className="flex-1 mt-3">
                           <ScrollArea className="h-64 pr-4">
