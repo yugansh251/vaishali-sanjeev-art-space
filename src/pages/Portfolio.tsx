@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import notStillLife1 from '@/assets/not-still-life-1.jpg';
-import notStillLife2 from '@/assets/not-still-life-2.jpg';
-import notStillLife3 from '@/assets/not-still-life-3.jpg';
+import notStillLife2 from '@/assets/not-still-life-2-new.jpg';
+import notStillLife3 from '@/assets/not-still-life-3-new.jpg';
 import honeyTongue1 from '@/assets/honey-tongue-1.jpg';
 import honeyTongue2 from '@/assets/honey-tongue-2.jpg';
 import honeyTongue3 from '@/assets/honey-tongue-3.jpg';
