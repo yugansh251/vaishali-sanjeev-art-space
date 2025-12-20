@@ -100,6 +100,16 @@ import whatdoilove10 from '@/assets/whatdoilove-10.jpg';
 import whatdoilove11 from '@/assets/whatdoilove-11.jpg';
 import whatdoilove12 from '@/assets/whatdoilove-12.jpg';
 import whatdoilove13 from '@/assets/whatdoilove-13.jpg';
+import lapeaudechagrin1 from '@/assets/lapeau-1-new.jpg';
+import lapeaudechagrin2 from '@/assets/lapeau-2-new.jpg';
+import lapeaudechagrin3 from '@/assets/lapeau-3-new.jpg';
+import lapeaudechagrin4 from '@/assets/lapeau-4-new.jpg';
+import lapeaudechagrin5 from '@/assets/lapeau-5-new.jpg';
+import lapeaudechagrin6 from '@/assets/lapeau-6-new.jpg';
+import lapeaudechagrin7 from '@/assets/lapeau-7-new.jpg';
+import lapeaudechagrin8 from '@/assets/lapeau-8-new.jpg';
+import lapeaudechagrin9 from '@/assets/lapeau-9-new.jpg';
+import lapeaudechagrin10 from '@/assets/lapeau-10-new.jpg';
 import lapeaudechagrin11 from '@/assets/lapeaudechagrin-11.jpg';
 import lapeaudechagrin12 from '@/assets/lapeaudechagrin-12.jpg';
 import titsclits1 from '@/assets/tced-1-new.jpg';
@@ -312,7 +322,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/ed416c2b-f69c-4e0f-846a-2e513859a0b5.png",
       description: "\"La Peau de Chagrin\": An Exploration of Reality. ( 2005 ) This installation, \"La Peau de Chagrin\" (Who is afraid of shrinking skin) Is an extraordinary work that challenged notions of virtual reality by employing hundreds of mirrors as a ceiling, creating an infinite vertical space filled with numerous sculptures. The installation served as a portrait of contemporary life, depicting an artist perpetually in motion, driving a \"turbo engine\" to traverse the globe. Its evocative title was drawn from Honoré de Balzac's renowned novel, a work that famously captivated Sigmund Freud in his final months. A striking and unique feature of \"La Peau de Chagrin\" was the presence of approximately 20,000 tiny insect sculptures seemingly crawling across the walls. These walls were intricately designed with hundreds of holes, as if meticulously crafted by the very insects themselves.\n (To read essays by Abhay Sardesai and Kumar Ketkar please download the pdf)",
       pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
-      galleryImages: ["/lovable-uploads/ddc62016-38d5-4f54-949f-2dc259533d14.png", "/lovable-uploads/2cc304c6-a6a1-4508-a0c5-bbce36dd1874.png", "/lovable-uploads/9ff5a54b-3cb1-4b14-aa79-12a1318973af.png", "/lovable-uploads/98183ffb-9f4f-43a0-a8c2-baae24ecd7b1.png", "/lovable-uploads/2805ad2c-9d3c-49ce-9075-56f48403b739.png", "/lovable-uploads/320166df-5619-40f6-9928-3b827175eb99.png", "/lovable-uploads/bdd6d563-409c-406a-88d5-e98f8132348f.png", "/lovable-uploads/bb63d04f-771c-4e01-96b9-35948b646bc6.png", "/lovable-uploads/ef0bfc3e-eb5b-4f11-a8b1-84d3e3875c81.png", "/lovable-uploads/3811d0f1-1a49-4890-8b2d-bbead0970399.png", "/lovable-uploads/8daaf2db-aa70-44bd-95a0-21f7ae8469f2.png", "/lovable-uploads/9a44a966-99d4-454f-9537-60400fc74e0f.png", lapeaudechagrin11, lapeaudechagrin12]
+      galleryImages: [lapeaudechagrin1, lapeaudechagrin2, lapeaudechagrin3, lapeaudechagrin4, lapeaudechagrin5, lapeaudechagrin6, lapeaudechagrin7, lapeaudechagrin8, lapeaudechagrin9, lapeaudechagrin10, "/lovable-uploads/8daaf2db-aa70-44bd-95a0-21f7ae8469f2.png", "/lovable-uploads/9a44a966-99d4-454f-9537-60400fc74e0f.png", lapeaudechagrin11, lapeaudechagrin12]
     },
     {
       id: 13,
