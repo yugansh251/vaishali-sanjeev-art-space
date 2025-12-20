@@ -48,7 +48,7 @@ import angry3 from '@/assets/angry-3-new.jpg';
 import angry4 from '@/assets/angry-4-new.jpg';
 import angry5 from '@/assets/angry-5-new.jpg';
 import angry6 from '@/assets/angry-6-new.jpg';
-import angrySignCover from '@/assets/angry-sign-cover.png';
+import angrySignCover from '@/assets/angry-sign-cover-new.png';
 import acquireMergeCover from '@/assets/acquire-merge-cover.png';
 import badBreathCover from '@/assets/bad-breath-cover.png';
 import angry7 from '@/assets/angry-7-new.jpg';
