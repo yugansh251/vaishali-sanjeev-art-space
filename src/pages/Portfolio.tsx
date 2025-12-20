@@ -110,8 +110,8 @@ import lapeaudechagrin7 from '@/assets/lapeau-7-new.jpg';
 import lapeaudechagrin8 from '@/assets/lapeau-8-new.jpg';
 import lapeaudechagrin9 from '@/assets/lapeau-9-new.jpg';
 import lapeaudechagrin10 from '@/assets/lapeau-10-new.jpg';
-import lapeaudechagrin11 from '@/assets/lapeaudechagrin-11.jpg';
-import lapeaudechagrin12 from '@/assets/lapeaudechagrin-12.jpg';
+import lapeaudechagrin11 from '@/assets/lapeau-11-new.jpg';
+import lapeaudechagrin12 from '@/assets/lapeau-12-new.jpg';
 import titsclits1 from '@/assets/tced-1-new.jpg';
 import titsclits2 from '@/assets/tced-2-new.jpg';
 import titsclits3 from '@/assets/titsclits-3.jpg';
@@ -322,7 +322,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/ed416c2b-f69c-4e0f-846a-2e513859a0b5.png",
       description: "\"La Peau de Chagrin\": An Exploration of Reality. ( 2005 ) This installation, \"La Peau de Chagrin\" (Who is afraid of shrinking skin) Is an extraordinary work that challenged notions of virtual reality by employing hundreds of mirrors as a ceiling, creating an infinite vertical space filled with numerous sculptures. The installation served as a portrait of contemporary life, depicting an artist perpetually in motion, driving a \"turbo engine\" to traverse the globe. Its evocative title was drawn from Honoré de Balzac's renowned novel, a work that famously captivated Sigmund Freud in his final months. A striking and unique feature of \"La Peau de Chagrin\" was the presence of approximately 20,000 tiny insect sculptures seemingly crawling across the walls. These walls were intricately designed with hundreds of holes, as if meticulously crafted by the very insects themselves.\n (To read essays by Abhay Sardesai and Kumar Ketkar please download the pdf)",
       pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
-      galleryImages: [lapeaudechagrin1, lapeaudechagrin2, lapeaudechagrin3, lapeaudechagrin4, lapeaudechagrin5, lapeaudechagrin6, lapeaudechagrin7, lapeaudechagrin8, lapeaudechagrin9, lapeaudechagrin10, "/lovable-uploads/8daaf2db-aa70-44bd-95a0-21f7ae8469f2.png", "/lovable-uploads/9a44a966-99d4-454f-9537-60400fc74e0f.png", lapeaudechagrin11, lapeaudechagrin12]
+      galleryImages: [lapeaudechagrin1, lapeaudechagrin2, lapeaudechagrin3, lapeaudechagrin4, lapeaudechagrin5, lapeaudechagrin6, lapeaudechagrin7, lapeaudechagrin8, lapeaudechagrin9, lapeaudechagrin10, lapeaudechagrin11, lapeaudechagrin12]
     },
     {
       id: 13,
