@@ -55,7 +55,7 @@ import angry7 from '@/assets/angry-7-new.jpg';
 import angry8 from '@/assets/angry-8-new.jpg';
 import angry9 from '@/assets/angry-9-new.jpg';
 import angry10 from '@/assets/angry-10-new.jpg';
-import angry11 from '@/assets/angry-11.jpg';
+import angry11 from '@/assets/angry-11-new.jpg';
 import george1 from '@/assets/george-1.jpg';
 import george2 from '@/assets/george-2.jpg';
 import george3 from '@/assets/george-3.jpg';
