@@ -158,9 +158,8 @@ import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucid
 const additionalPdfs = [
   { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/kristallnacht-night-of-broken-glass.pdf", thumbnail: "/images/thumbnails/kristallnacht.png" },
   { id: 2, title: "Bad Breath", pdfLink: "/pdfs/bad-breath-additional.pdf", thumbnail: "/images/thumbnails/bad-breath.png" },
-  { id: 3, title: "Encore", pdfLink: "/pdfs/encore.pdf", thumbnail: "/images/thumbnails/encore.png" },
-  { id: 4, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf", thumbnail: "/images/thumbnails/freedom-in-the-cloud.png" },
-  { id: 5, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf", thumbnail: "/images/thumbnails/lets-have-a-fair-game.png" },
+  { id: 3, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf", thumbnail: "/images/thumbnails/freedom-in-the-cloud.png" },
+  { id: 4, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf", thumbnail: "/images/thumbnails/lets-have-a-fair-game.png" },
   { id: 6, title: "Prayer For Peace", pdfLink: "/pdfs/prayer-for-peace.pdf", thumbnail: "/images/thumbnails/prayer-for-peace.png" },
   { id: 7, title: "Rx", pdfLink: "/pdfs/rx.pdf", thumbnail: "/images/thumbnails/rx.png" },
   { id: 8, title: "Third Life", pdfLink: "/pdfs/third-life.pdf", thumbnail: "/images/thumbnails/third-life.png" },
