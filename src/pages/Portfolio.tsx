@@ -547,7 +547,8 @@ const Portfolio = () => {
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
                     <a 
                       href={pdf.pdfLink} 
-                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
                     >
                       <Download size={14} />
