@@ -37,6 +37,10 @@ import triumph7 from '@/assets/triumph-new-7.jpg';
 import triumph8 from '@/assets/triumph-new-8.jpg';
 import triumph9 from '@/assets/triumph-new-9.jpg';
 import triumph10 from '@/assets/triumph-new-10.jpg';
+import triumph11 from '@/assets/triumph-new-11.jpg';
+import triumph12 from '@/assets/triumph-new-12.jpg';
+import triumph13 from '@/assets/triumph-new-13.jpg';
+import triumph14 from '@/assets/triumph-new-14.jpg';
 import angry1 from '@/assets/angry-1-new.jpg';
 import angry2 from '@/assets/angry-2-new.jpg';
 import angry3 from '@/assets/angry-3-new.jpg';
@@ -225,7 +229,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/0961b586-5aca-42d8-89eb-63fa92309a7f.png",
       description: "Long before Yale University's research on hormonal fluctuations in men and women engaged in stock market trading, Sanjeev Khandekar was already probing this terrain through his art. In his poetry and water colors, Khandekar pioneered a distinctive visual and conceptual vocabulary ‚using financial capital as both symbol and structure to map the shifting contours of contemporary global society.\nIn their collaborative works, Vaishali and Sanjeev Khandekar extend this exploration further. Their acrylic-on-canvas paintings and intricate marble inlay pieces transform stock market imagery into abstracted 'Moneyscapes'.These works fuse aesthetic innovation with social critique, confronting the ways in which financialization ‚once a tool- has become a dominating, often destructive, force.\nThe artists employ the stock market ticker- ubiquitous, frenetic, and laden with meaning-alongside the traditionally opulent medium of marble inlay, re-contextualizing both to unveil the intimate entanglements of trading, desire, and the normalization of excess in late-capitalist culture.",
       pdfLink: "/pdfs/triumph-of-market.pdf",
-      galleryImages: [triumph1, triumph2, triumph3, triumph4, triumph5, triumph6, triumph7, triumph8, triumph9, triumph10]
+      galleryImages: [triumph1, triumph2, triumph3, triumph4, triumph5, triumph6, triumph7, triumph8, triumph9, triumph10, triumph11, triumph12, triumph13, triumph14]
     },
     {
       id: 5,
