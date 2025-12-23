@@ -519,7 +519,7 @@ const Portfolio = () => {
                   Publications
                 </Button>
                 <Button variant={selectedCategory === 'additional-pdfs' ? 'default' : 'outline'} onClick={() => setSelectedCategory('additional-pdfs')} className={selectedCategory === 'additional-pdfs' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
-                  Additional PDF
+                  Additional PDFs
                 </Button>
               </div>
               
