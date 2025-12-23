@@ -262,7 +262,7 @@ const Portfolio = () => {
       tab: "imp-in-the-garden",
       image: "/lovable-uploads/87ca6839-77e3-463a-a35d-bbb022447dfa.png",
       description: "Histograms of an Anxious Present: 'Imp in the Garden and Other Fairy Tales'\nAll of us inherently seek a sense of everyday normality to navigate life's demands. Yet, perfection, beauty, and even horror represent hazardous departures from this norm, capable of plunging us into fantasia or nightmare. Vaishali & Sanjeev confront these extremes head-on in their mixed-media works, 'Imp in the Garden and Other Fairy Tales', creating captivating entanglements of beauty and mutancy. Through the traditional art of embroidery, they weave intricate narratives that allude to the human costs of ecological catastrophe, genetic manipulation, and biological warfare. Their work serves as a Zen koan, shocking us into a deep awareness of the complexities underlying our current historical moment.",
-      pdfLink: "/pdfs/imp-in-the-garden-and-other-fairy-tales.pdf",
+      pdfLink: "/pdfs/imp-in-the-garden.pdf",
       galleryImages: [imp1, imp2, imp3, imp4, imp5, imp6, imp7, imp8, imp9, imp10, imp11, imp12]
     },
     {
@@ -273,7 +273,7 @@ const Portfolio = () => {
       tab: "bad-breath",
       image: badBreathCover,
       description: "This spectacular show of paintings and a sculpture deftly tackles pressing global issues by weaving together critical crises and widely circulated memes ( common societal narratives, cultural references, and popular understandings ) to construct powerful visual arguments. In his exhibition, \"Everything You Ever Wanted to Know about Bad Breath but were Afraid to Ask Alfred Hitchcock (Part I)\", the elegant white test tube orchid is employed as a central motif. These tissue cultured orchids symbolize the broader challenges of environmental degradation and the complex dilemmas arising from the genetic modification of organisms. Through a fusion of contentious subject matter and noir cinema aesthetics, Khandekar creates a captivating and thought-provoking experience, akin to a perfect double bill for the discerning viewer.",
-      pdfLink: "/pdfs/everything-you-wanted-to-know-about-bad-breath-i.pdf",
+      pdfLink: "/pdfs/bad-breath-hitchcock.pdf",
       galleryImages: [hitchcock1, hitchcock2, hitchcock3, hitchcock4, hitchcock5, hitchcock6, hitchcock7, hitchcock8, hitchcock9, hitchcock10, hitchcock11, hitchcock12, hitchcock13],
       italicTitle: true
     },
@@ -308,7 +308,7 @@ const Portfolio = () => {
       tab: "what-do-i-love",
       image: "/lovable-uploads/d787b554-259f-4672-89f0-9299a2bf17d9.png",
       description: "To christen, What do I love when I love you, my god?\",( 2006)  delves into the unsettling power dynamics of contemporary multinational capitalism. Drawing inspiration from St. Augustine, this exhibition exposes an unsettling truth: in a world driven by a \"shining beast of capitalism,\" little is truly cherished and everything feels encroachable. It critiques how world leaders, through rampant propaganda, co-opt religious faith to serve political and economic agendas, highlighting a pervasive \"androgynous, amorphous and amphibious faith.\" Through a compelling suite of paintings, sculptures, and installations,the exhibition  distinctive use of coagulated, blistering watercolors and meticulously designed cabinets enshrining Hindu deities, challenges viewers to confront the rapid dissipation of values in our modern milieu. This exhibition, with its layered symbolism and enigmatic text, invites a multifaceted engagement, probing the insidious influence of market forces and the blurring lines between spirituality and material desire.                             ( download pdf to read essay by Gitanjali Dang )",
-      pdfLink: "/pdfs/what-do-i-love-my-god.pdf",
+      pdfLink: "/pdfs/what-do-i-love.pdf",
       galleryImages: [whatdoilove1, whatdoilove2, whatdoilove3, whatdoilove4, whatdoilove5, whatdoilove6, whatdoilove7, whatdoilove8, whatdoilove9, whatdoilove10, whatdoilove11, whatdoilove12, whatdoilove13]
     },
     {
@@ -319,7 +319,7 @@ const Portfolio = () => {
       tab: "peau-de-chagrin-2005",
       image: "/lovable-uploads/ed416c2b-f69c-4e0f-846a-2e513859a0b5.png",
       description: "\"La Peau de Chagrin\": An Exploration of Reality. ( 2005 ) This installation, \"La Peau de Chagrin\" (Who is afraid of shrinking skin) Is an extraordinary work that challenged notions of virtual reality by employing hundreds of mirrors as a ceiling, creating an infinite vertical space filled with numerous sculptures. The installation served as a portrait of contemporary life, depicting an artist perpetually in motion, driving a \"turbo engine\" to traverse the globe. Its evocative title was drawn from Honoré de Balzac's renowned novel, a work that famously captivated Sigmund Freud in his final months. A striking and unique feature of \"La Peau de Chagrin\" was the presence of approximately 20,000 tiny insect sculptures seemingly crawling across the walls. These walls were intricately designed with hundreds of holes, as if meticulously crafted by the very insects themselves.\n (To read essays by Abhay Sardesai and Kumar Ketkar please download the pdf)",
-      pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
+      pdfLink: "/pdfs/la-peau-de-chagrin.pdf",
       galleryImages: [lapeaudechagrin1, lapeaudechagrin2, lapeaudechagrin3, lapeaudechagrin4, lapeaudechagrin5, lapeaudechagrin6, lapeaudechagrin7, lapeaudechagrin8, lapeaudechagrin9, lapeaudechagrin10, lapeaudechagrin11, lapeaudechagrin12]
     },
     {
@@ -341,7 +341,7 @@ const Portfolio = () => {
       tab: "kegel-exercise-2007",
       image: "/lovable-uploads/2e898325-4e7e-4a20-a896-100a15bef676.png",
       description: "The exhibition, \"The Kegel Exercises: Aswani Mudra,\" (2007)  delves into the unsettling realities of late multicultural capitalism, where the idealism gives way to the follies of recklessness and petulance. Through a powerful confluence of art and societal critique, it explores how the relentless pursuit of financialization morphs into a destructive force. The show is an example of the use of the ubiquitous stock market ticker and the unique and intricate medium of marble inlay as potent symbols, demonstrating how the artists harnesse them to expose the interwoven dramas of trading, sexuality, and the unsettling normalization of insatiable  desires in our contemporary world.\n\n( Download pdf to read an essay by Gitanjali Dang)",
-      pdfLink: "/pdfs/kegel.pdf",
+      pdfLink: "/pdfs/kegel-exercise.pdf",
       galleryImages: [kegel1, kegel2, kegel3, kegel4, kegel5, kegel6],
       subtitle: "Aswani Mudra"
     },
@@ -353,7 +353,7 @@ const Portfolio = () => {
       tab: "all-that-i-wanna-do-2005",
       image: "/lovable-uploads/67df2a58-b3de-4df9-b9aa-c05532478d41.png",
       description: "\"All That I Wanna Do,\" a massive and exceptionally large installation from 2005, featured hundreds of sculptures and large mirrors to craft an infinite horizontal space. This visually striking display offered a kaleidoscopic perspective of objects, creating a mysterious and captivating experience.\nArtists Vaishali and Sanjeev created a poignant portrait of contemporary man alienated from himself, entangled in an unquenchable web of surplus desires. The installation's title, borrowed from a long poem written by Sanjeev in the same year, is considered a milestone in Marathi poetry. A particularly striking element of the installation was its novel use of stock market ticker tape imagery.\n\n( to read essays by Abhay Sardesai and Kumar Ketkar please download the pdf )",
-      pdfLink: "/pdfs/all-that-i-wanna.pdf",
+      pdfLink: "/pdfs/all-that-i-wanna-do.pdf",
       galleryImages: [allthatwanna1, allthatwanna2, allthatwanna3, allthatwanna4, allthatwanna5, allthatwanna6, allthatwanna7, allthatwanna8, allthatwanna9, allthatwanna10, allthatwanna11, allthatwanna12],
       italicTitle: true
     },
