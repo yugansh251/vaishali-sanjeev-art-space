@@ -111,22 +111,16 @@ import lapeaudechagrin9 from '@/assets/lapeau-9-new.jpg';
 import lapeaudechagrin10 from '@/assets/lapeau-10-new.jpg';
 import lapeaudechagrin11 from '@/assets/lapeau-11-new.jpg';
 import lapeaudechagrin12 from '@/assets/lapeau-12-new.jpg';
-import titsclits1 from '@/assets/tced-1-new.jpg';
-import titsclits2 from '@/assets/tced-2-new.jpg';
-import titsclits3 from '@/assets/titsclits-3.jpg';
-import titsclits4 from '@/assets/titsclits-4.jpg';
-import titsclits5 from '@/assets/titsclits-5.jpg';
-import titsclits6 from '@/assets/titsclits-6.jpg';
-import titsclits7 from '@/assets/titsclits-7.jpg';
-import titsclits8 from '@/assets/titsclits-8.jpg';
-import titsclits9 from '@/assets/titsclits-9.jpg';
-import titsclits10 from '@/assets/titsclits-10.jpg';
-import titsclits11 from '@/assets/titsclits-11.jpg';
-import titsclits12 from '@/assets/titsclits-12.jpg';
-import titsclits13 from '@/assets/tced-13-new.jpg';
-import titsclits14 from '@/assets/titsclits-14.jpg';
-import titsclits15 from '@/assets/titsclits-15.jpg';
-import titsclits16 from '@/assets/titsclits-16.jpg';
+import tcedGallery1 from '@/assets/tced-gallery-1.jpg';
+import tcedGallery2 from '@/assets/tced-gallery-2.jpg';
+import tcedGallery3 from '@/assets/tced-gallery-3.jpg';
+import tcedGallery4 from '@/assets/tced-gallery-4.jpg';
+import tcedGallery5 from '@/assets/tced-gallery-5.jpg';
+import tcedGallery6 from '@/assets/tced-gallery-6.jpg';
+import tcedGallery7 from '@/assets/tced-gallery-7.jpg';
+import tcedGallery8 from '@/assets/tced-gallery-8.jpg';
+import tcedGallery9 from '@/assets/tced-gallery-9.jpg';
+import tcedGallery10 from '@/assets/tced-gallery-10.jpg';
 import kegel1 from '@/assets/kegel-1.jpg';
 import kegel2 from '@/assets/kegel-2.jpg';
 import kegel3 from '@/assets/kegel-3.jpg';
@@ -331,7 +325,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/cd623adc-fd53-477c-b5fe-74dac1341434.png",
       description: "Ideology of the Market\nIn today's market-driven world, sex has outpaced traditional ideologies, seeking new meanings amidst gadgets, pleasure, and utility.\nHappiness has become pleasure; relationships reduced to networking.\nThis shift leaves us in a strange existential limbo, where neither science nor art can fully grasp the change.\nVaishali Narkar and Sanjeev Khandekar explore this crisis through daring, thought-provoking installations.\nTheir work challenges us to question, rather than accept.\nIn doing so, they probe a mystery deeper than body—rooted in the mind.",
       pdfLink: "/pdfs/tits-clits-dick.pdf",
-      galleryImages: [titsclits1, titsclits2, titsclits3, titsclits4, titsclits5, titsclits6, titsclits7, titsclits8, titsclits9, titsclits10, titsclits11, titsclits12, titsclits13, titsclits14, titsclits15, titsclits16]
+      galleryImages: [tcedGallery1, tcedGallery2, tcedGallery3, tcedGallery4, tcedGallery5, tcedGallery6, tcedGallery7, tcedGallery8, tcedGallery9, tcedGallery10]
     },
     {
       id: 14,
