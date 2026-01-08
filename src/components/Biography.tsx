@@ -23,7 +23,7 @@ const Biography = () => {
           </div>
           
           <div className="order-1 lg:order-2">
-            <img src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" alt="Vaishali & Sanjeev in studio" className="rounded-lg shadow-xl w-full h-auto" />
+            <img src="/lovable-uploads/d6a85c10-f953-4e90-97dc-872aab45e9ac.png" alt="Vaishali & Sanjeev in studio" loading="lazy" decoding="async" className="rounded-lg shadow-xl w-full h-auto" />
           </div>
         </div>
       </div>
