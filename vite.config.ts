@@ -16,21 +16,23 @@ export default defineConfig(({ mode }) => ({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp,woff,woff2}'],
+        // Only precache essential files (JS, CSS, HTML) - skip images to avoid size limit errors
+        globPatterns: ['**/*.{js,css,html,ico,woff,woff2}'],
+        // Runtime caching for images - cached on first access
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/.*\.(png|jpg|jpeg|svg|gif|webp)$/i,
+            urlPattern: /\.(png|jpg|jpeg|svg|gif|webp)$/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'images-cache',
               expiration: {
-                maxEntries: 100,
+                maxEntries: 200,
                 maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
               },
             },
           },
           {
-            urlPattern: /^https:\/\/.*\.(woff|woff2|ttf|eot)$/i,
+            urlPattern: /\.(woff|woff2|ttf|eot)$/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'fonts-cache',
@@ -46,7 +48,7 @@ export default defineConfig(({ mode }) => ({
             options: {
               cacheName: 'uploads-cache',
               expiration: {
-                maxEntries: 200,
+                maxEntries: 300,
                 maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
               },
             },
