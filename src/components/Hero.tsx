@@ -2,7 +2,6 @@
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
-import ImageWithSkeleton from '@/components/ui/image-with-skeleton';
 
 const Hero = () => {
   const [api, setApi] = useState<any>(null);
@@ -108,13 +107,12 @@ const Hero = () => {
                   <CardContent className="flex flex-col items-center p-0">
                     <div className="w-full flex justify-center">
                       <div className="max-w-4xl w-full overflow-hidden">
-                        <ImageWithSkeleton 
+                        <img 
                           src={artwork.image} 
                           alt={artwork.title} 
                           loading={artwork.id === 1 ? "eager" : "lazy"}
                           decoding="async"
                           className="w-full h-[50vh] md:h-[70vh] object-contain object-center mx-auto" 
-                          skeletonClassName="w-full h-[50vh] md:h-[70vh]"
                         />
                       </div>
                     </div>
