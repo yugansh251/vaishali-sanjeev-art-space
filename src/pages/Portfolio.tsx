@@ -166,6 +166,12 @@ const additionalPdfs = [
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('installation');
+
+  // Helper function to open PDF in new tab with full URL (fixes mobile 404 issues)
+  const openPdf = (pdfPath: string) => {
+    const fullUrl = `${window.location.origin}${pdfPath}`;
+    window.open(fullUrl, '_blank', 'noopener,noreferrer');
+  };
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
@@ -544,15 +550,13 @@ const Portfolio = () => {
                       <img src={pdf.thumbnail} alt={pdf.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                     </div>
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
-                    <a 
-                      href={pdf.pdfLink} 
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button 
+                      onClick={() => openPdf(pdf.pdfLink)}
                       className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
                     >
                       <Download size={14} />
                       View PDF
-                    </a>
+                    </button>
                   </div>
                 ))}
               </div>
@@ -595,10 +599,10 @@ const Portfolio = () => {
                         </div>
                         {work.category !== 'publication' && (
                           <div className="mt-4 flex justify-end flex-shrink-0">
-                            <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
+                            <button onClick={() => openPdf(work.pdfLink)} className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
                               <Download size={14} className="mr-1" />
                               View PDF
-                            </a>
+                            </button>
                           </div>
                         )}
                       </div>
@@ -663,12 +667,12 @@ const Portfolio = () => {
                       </ScrollArea>
                       
                       {selectedWork.category !== 'publication' && (
-                        <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
+                        <button onClick={() => openPdf(selectedWork.pdfLink)} className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
                           <Button variant="outline" size="sm" className="gap-2">
                             <Download size={16} />
                             View PDF
                           </Button>
-                        </a>
+                        </button>
                       )}
                     </div>
                   </div>
