@@ -154,15 +154,15 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Helper function to open PDF in new tab - creates a temporary anchor to bypass React Router
+// Helper function to open PDF in new tab - uses window.open with full origin URL
 const openPdfInNewTab = (pdfPath: string) => {
-  const link = document.createElement('a');
-  link.href = pdfPath;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  // Force full browser navigation by opening with origin URL
+  const url = new URL(pdfPath, window.location.origin);
+  const newWindow = window.open(url.href, '_blank');
+  if (!newWindow) {
+    // Fallback if popup is blocked
+    window.location.href = url.href;
+  }
 };
 
 // Additional PDFs data
