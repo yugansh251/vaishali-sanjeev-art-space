@@ -153,18 +153,6 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
-
-// Helper function to open PDF in new tab - uses window.open with full origin URL
-const openPdfInNewTab = (pdfPath: string) => {
-  // Force full browser navigation by opening with origin URL
-  const url = new URL(pdfPath, window.location.origin);
-  const newWindow = window.open(url.href, '_blank');
-  if (!newWindow) {
-    // Fallback if popup is blocked
-    window.location.href = url.href;
-  }
-};
-
 // Additional PDFs data
 const additionalPdfs = [
   { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/kristallnacht-night-of-broken-glass.pdf", thumbnail: "/images/thumbnails/kristallnacht.png" },
@@ -556,13 +544,15 @@ const Portfolio = () => {
                       <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover" />
                     </div>
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
-                      <button
-                        onClick={() => openPdfInNewTab(pdf.pdfLink)}
-                        className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
-                      >
-                        <Download size={14} />
-                        View PDF
-                      </button>
+                    <a 
+                      href={pdf.pdfLink} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
+                    >
+                      <Download size={14} />
+                      Download
+                    </a>
                   </div>
                 ))}
               </div>
@@ -605,10 +595,10 @@ const Portfolio = () => {
                         </div>
                         {work.category !== 'publication' && (
                           <div className="mt-4 flex justify-end flex-shrink-0">
-                            <button onClick={() => openPdfInNewTab(work.pdfLink)} className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
+                            <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
                               <Download size={14} className="mr-1" />
-                              View PDF
-                            </button>
+                              Download PDF
+                            </a>
                           </div>
                         )}
                       </div>
@@ -673,12 +663,12 @@ const Portfolio = () => {
                       </ScrollArea>
                       
                       {selectedWork.category !== 'publication' && (
-                        <button onClick={() => openPdfInNewTab(selectedWork.pdfLink)} className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
+                        <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
                           <Button variant="outline" size="sm" className="gap-2">
                             <Download size={16} />
-                            View PDF
+                            Download PDF
                           </Button>
-                        </button>
+                        </a>
                       )}
                     </div>
                   </div>
