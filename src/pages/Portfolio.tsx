@@ -319,7 +319,7 @@ const Portfolio = () => {
       tab: "peau-de-chagrin-2005",
       image: "/lovable-uploads/ed416c2b-f69c-4e0f-846a-2e513859a0b5.png",
       description: "\"La Peau de Chagrin\": An Exploration of Reality. ( 2005 ) This installation, \"La Peau de Chagrin\" (Who is afraid of shrinking skin) Is an extraordinary work that challenged notions of virtual reality by employing hundreds of mirrors as a ceiling, creating an infinite vertical space filled with numerous sculptures. The installation served as a portrait of contemporary life, depicting an artist perpetually in motion, driving a \"turbo engine\" to traverse the globe. Its evocative title was drawn from Honoré de Balzac's renowned novel, a work that famously captivated Sigmund Freud in his final months. A striking and unique feature of \"La Peau de Chagrin\" was the presence of approximately 20,000 tiny insect sculptures seemingly crawling across the walls. These walls were intricately designed with hundreds of holes, as if meticulously crafted by the very insects themselves.\n (To read essays by Abhay Sardesai and Kumar Ketkar please download the pdf)",
-      pdfLink: "/pdfs/la-peau-de-chagrin.pdf",
+      pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
       galleryImages: [lapeaudechagrin1, lapeaudechagrin2, lapeaudechagrin3, lapeaudechagrin4, lapeaudechagrin5, lapeaudechagrin6, lapeaudechagrin7, lapeaudechagrin8, lapeaudechagrin9, lapeaudechagrin10, lapeaudechagrin11, lapeaudechagrin12]
     },
     {
@@ -353,7 +353,7 @@ const Portfolio = () => {
       tab: "all-that-i-wanna-do-2005",
       image: "/lovable-uploads/67df2a58-b3de-4df9-b9aa-c05532478d41.png",
       description: "\"All That I Wanna Do,\" a massive and exceptionally large installation from 2005, featured hundreds of sculptures and large mirrors to craft an infinite horizontal space. This visually striking display offered a kaleidoscopic perspective of objects, creating a mysterious and captivating experience.\nArtists Vaishali and Sanjeev created a poignant portrait of contemporary man alienated from himself, entangled in an unquenchable web of surplus desires. The installation's title, borrowed from a long poem written by Sanjeev in the same year, is considered a milestone in Marathi poetry. A particularly striking element of the installation was its novel use of stock market ticker tape imagery.\n\n( to read essays by Abhay Sardesai and Kumar Ketkar please download the pdf )",
-      pdfLink: "/pdfs/all-that-i-wanna-do.pdf",
+      pdfLink: "/pdfs/all-that-i-wanna.pdf",
       galleryImages: [allthatwanna1, allthatwanna2, allthatwanna3, allthatwanna4, allthatwanna5, allthatwanna6, allthatwanna7, allthatwanna8, allthatwanna9, allthatwanna10, allthatwanna11, allthatwanna12],
       italicTitle: true
     },
