@@ -155,7 +155,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { LayoutGrid, Image, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
 // Additional PDFs data
 const additionalPdfs = [
-  { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/kristallnacht-night-of-broken-glass.pdf", thumbnail: "/images/thumbnails/kristallnacht.png" },
+  { id: 1, title: "'Kristallnacht' – night of a broken glass", pdfLink: "/pdfs/Kristallnacht-2.pdf", thumbnail: "/images/thumbnails/kristallnacht.png" },
   { id: 2, title: "Bad Breath", pdfLink: "/pdfs/bad-breath.pdf", thumbnail: "/images/thumbnails/bad-breath.png" },
   { id: 3, title: "Freedom in the Cloud", pdfLink: "/pdfs/freedom-in-the-cloud.pdf", thumbnail: "/images/thumbnails/freedom-in-the-cloud.png" },
   { id: 4, title: "Let's Have a Fair Game", pdfLink: "/pdfs/lets-have-a-fair-game.pdf", thumbnail: "/images/thumbnails/lets-have-a-fair-game.png" },
