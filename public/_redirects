@@ -1,0 +1,6 @@
+# Serve static files from public folder directly
+/pdfs/*  /pdfs/:splat  200
+/images/*  /images/:splat  200
+
+# SPA fallback - must be last
+/*  /index.html  200
