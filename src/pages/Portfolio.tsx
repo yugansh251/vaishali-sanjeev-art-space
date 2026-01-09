@@ -546,11 +546,12 @@ const Portfolio = () => {
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
                     <a 
                       href={pdf.pdfLink} 
-                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 text-sm text-white bg-portfolio-blue hover:bg-portfolio-darkBlue py-2 px-4 rounded transition-colors"
                     >
                       <Download size={14} />
-                      Download
+                      View PDF
                     </a>
                   </div>
                 ))}
@@ -594,9 +595,9 @@ const Portfolio = () => {
                         </div>
                         {work.category !== 'publication' && (
                           <div className="mt-4 flex justify-end flex-shrink-0">
-                            <a href={work.pdfLink} download className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
+                            <a href={work.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-portfolio-blue hover:text-portfolio-darkBlue">
                               <Download size={14} className="mr-1" />
-                              Download PDF
+                              View PDF
                             </a>
                           </div>
                         )}
@@ -662,10 +663,10 @@ const Portfolio = () => {
                       </ScrollArea>
                       
                       {selectedWork.category !== 'publication' && (
-                        <a href={selectedWork.pdfLink} download className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
+                        <a href={selectedWork.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-portfolio-blue hover:text-portfolio-darkBlue mt-6">
                           <Button variant="outline" size="sm" className="gap-2">
                             <Download size={16} />
-                            Download PDF
+                            View PDF
                           </Button>
                         </a>
                       )}
