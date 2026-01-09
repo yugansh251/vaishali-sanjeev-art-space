@@ -541,7 +541,7 @@ const Portfolio = () => {
                 {additionalPdfs.map(pdf => (
                   <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
                     <div className="w-16 h-12 rounded overflow-hidden flex-shrink-0">
-                      <img src={pdf.thumbnail} alt={pdf.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                      <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover" />
                     </div>
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
                     <a 
@@ -560,7 +560,7 @@ const Portfolio = () => {
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>
-                        <img src={work.image} alt={work.title} loading="lazy" decoding="async" className="w-full h-full object-contain image-hover" />
+                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
                       </AspectRatio>
                     </div>
                     <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
@@ -576,7 +576,7 @@ const Portfolio = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="md:col-span-1 h-full cursor-pointer" onClick={() => setSelectedWork(work)}>
                         <AspectRatio ratio={1 / 1} className="h-full">
-                          <img src={work.image} alt={work.title} loading="lazy" decoding="async" className="w-full h-full object-contain image-hover" />
+                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
                         </AspectRatio>
                       </div>
                       <div className="md:col-span-2 p-6 flex flex-col">
@@ -678,7 +678,7 @@ const Portfolio = () => {
                       <h4 className="text-lg font-semibold mb-4">Gallery</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => openGalleryImage(image, selectedWork.galleryImages!)}>
-                            <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} loading="lazy" decoding="async" className="w-full h-full object-contain" />
+                            <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-contain" />
                           </div>)}
                       </div>
                     </div>}
