@@ -228,7 +228,7 @@ const Portfolio = () => {
       tab: "triumph",
       image: "/lovable-uploads/0961b586-5aca-42d8-89eb-63fa92309a7f.png",
       description: "Long before Yale University's research on hormonal fluctuations in men and women engaged in stock market trading, Sanjeev Khandekar was already probing this terrain through his art. In his poetry and water colors, Khandekar pioneered a distinctive visual and conceptual vocabulary ‚using financial capital as both symbol and structure to map the shifting contours of contemporary global society.\nIn their collaborative works, Vaishali and Sanjeev Khandekar extend this exploration further. Their acrylic-on-canvas paintings and intricate marble inlay pieces transform stock market imagery into abstracted 'Moneyscapes'.These works fuse aesthetic innovation with social critique, confronting the ways in which financialization ‚once a tool- has become a dominating, often destructive, force.\nThe artists employ the stock market ticker- ubiquitous, frenetic, and laden with meaning-alongside the traditionally opulent medium of marble inlay, re-contextualizing both to unveil the intimate entanglements of trading, desire, and the normalization of excess in late-capitalist culture.",
-      pdfLink: "/pdfs/triumph-of-market.pdf",
+      pdfLink: "/pdfs/Triumph-of-market.pdf",
       galleryImages: [triumph1, triumph2, triumph3, triumph4, triumph5, triumph6, triumph7, triumph8, triumph9, triumph10, triumph11, triumph12, triumph13, triumph14]
     },
     {
@@ -319,7 +319,7 @@ const Portfolio = () => {
       tab: "peau-de-chagrin-2005",
       image: "/lovable-uploads/ed416c2b-f69c-4e0f-846a-2e513859a0b5.png",
       description: "\"La Peau de Chagrin\": An Exploration of Reality. ( 2005 ) This installation, \"La Peau de Chagrin\" (Who is afraid of shrinking skin) Is an extraordinary work that challenged notions of virtual reality by employing hundreds of mirrors as a ceiling, creating an infinite vertical space filled with numerous sculptures. The installation served as a portrait of contemporary life, depicting an artist perpetually in motion, driving a \"turbo engine\" to traverse the globe. Its evocative title was drawn from Honoré de Balzac's renowned novel, a work that famously captivated Sigmund Freud in his final months. A striking and unique feature of \"La Peau de Chagrin\" was the presence of approximately 20,000 tiny insect sculptures seemingly crawling across the walls. These walls were intricately designed with hundreds of holes, as if meticulously crafted by the very insects themselves.\n (To read essays by Abhay Sardesai and Kumar Ketkar please download the pdf)",
-      pdfLink: "/pdfs/la-peau-de-chagrin.pdf",
+      pdfLink: "/pdfs/La-peu-de-chagrin.pdf",
       galleryImages: [lapeaudechagrin1, lapeaudechagrin2, lapeaudechagrin3, lapeaudechagrin4, lapeaudechagrin5, lapeaudechagrin6, lapeaudechagrin7, lapeaudechagrin8, lapeaudechagrin9, lapeaudechagrin10, lapeaudechagrin11, lapeaudechagrin12]
     },
     {
