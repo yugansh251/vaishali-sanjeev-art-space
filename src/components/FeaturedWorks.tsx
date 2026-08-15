@@ -68,6 +68,8 @@ const FeaturedWorks = () => {
                   <img 
                     src={work.image} 
                     alt={`${work.title} – ${work.medium} – ${work.year}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>

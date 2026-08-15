@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 import notStillLife1 from '@/assets/not-still-life-1.jpg';
 import notStillLife2 from '@/assets/not-still-life-2-new.jpg';
 import notStillLife3 from '@/assets/not-still-life-3-new.jpg';
@@ -170,6 +171,7 @@ const Portfolio = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const isMobile = useIsMobile();
   interface Work {
     id: number;
     title: string;
@@ -503,29 +505,29 @@ const Portfolio = () => {
     setSelectedGalleryImage(galleryImages[newIndex]);
   };
   return <Layout>
-      <section className="pt-32 pb-16 px-6">
+      <section className="pt-32 pb-16 px-4 sm:px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
           <SectionTitle title="Portfolio" centered />
 
           <div className="mb-10">
-            <div className="flex justify-between items-center mb-8">
-              <div className="inline-flex rounded-md shadow-sm" role="group">
-                <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-8">
+              <div className="flex overflow-x-auto no-scrollbar rounded-md shadow-sm w-full sm:w-auto sm:inline-flex" role="group">
+                <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={`min-h-[44px] whitespace-nowrap shrink-0 ${selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}`}>
                   Art Works
                 </Button>
-                <Button variant={selectedCategory === 'publication' ? 'default' : 'outline'} onClick={() => setSelectedCategory('publication')} className={selectedCategory === 'publication' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+                <Button variant={selectedCategory === 'publication' ? 'default' : 'outline'} onClick={() => setSelectedCategory('publication')} className={`min-h-[44px] whitespace-nowrap shrink-0 ${selectedCategory === 'publication' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}`}>
                   Publications
                 </Button>
-                <Button variant={selectedCategory === 'additional-pdfs' ? 'default' : 'outline'} onClick={() => setSelectedCategory('additional-pdfs')} className={selectedCategory === 'additional-pdfs' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+                <Button variant={selectedCategory === 'additional-pdfs' ? 'default' : 'outline'} onClick={() => setSelectedCategory('additional-pdfs')} className={`min-h-[44px] whitespace-nowrap shrink-0 ${selectedCategory === 'additional-pdfs' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}`}>
                   Additional PDFs
                 </Button>
               </div>
               
-              <div className="flex gap-2">
-                <Button variant={viewMode === 'grid' ? 'default' : 'outline'} size="icon" onClick={() => setViewMode('grid')} className={viewMode === 'grid' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+              <div className="hidden md:flex gap-2 shrink-0">
+                <Button aria-label="Grid view" variant={viewMode === 'grid' ? 'default' : 'outline'} size="icon" onClick={() => setViewMode('grid')} className={`h-11 w-11 ${viewMode === 'grid' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}`}>
                   <LayoutGrid size={18} />
                 </Button>
-                <Button variant={viewMode === 'list' ? 'default' : 'outline'} size="icon" onClick={() => setViewMode('list')} className={viewMode === 'list' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}>
+                <Button aria-label="List view" variant={viewMode === 'list' ? 'default' : 'outline'} size="icon" onClick={() => setViewMode('list')} className={`h-11 w-11 ${viewMode === 'list' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}`}>
                   <Image size={18} />
                 </Button>
               </div>
@@ -533,15 +535,15 @@ const Portfolio = () => {
 
             {selectedCategory === 'additional-pdfs' ? (
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="border-b border-gray-200 bg-gray-50 px-6 py-3 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+                <div className="border-b border-gray-200 bg-gray-50 px-4 sm:px-6 py-3 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
                   <span className="text-sm font-medium text-gray-600 w-8"></span>
                   <span className="text-sm font-medium text-gray-600">Name</span>
                   <span className="text-sm font-medium text-gray-600">Download file</span>
                 </div>
                 {additionalPdfs.map(pdf => (
-                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
+                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-4 sm:px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
                     <div className="w-16 h-12 rounded overflow-hidden flex-shrink-0">
-                      <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover" />
+                      <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                     </div>
                     <span className="text-sm text-gray-700 truncate">{pdf.title}</span>
                     <a 
@@ -556,11 +558,11 @@ const Portfolio = () => {
                   </div>
                 ))}
               </div>
-            ) : (viewMode === 'grid' && selectedCategory !== 'publication') ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>
-                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
+                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
                       </AspectRatio>
                     </div>
                     <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
@@ -576,7 +578,7 @@ const Portfolio = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="md:col-span-1 h-full cursor-pointer" onClick={() => setSelectedWork(work)}>
                         <AspectRatio ratio={1 / 1} className="h-full">
-                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover" />
+                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
                         </AspectRatio>
                       </div>
                       <div className="md:col-span-2 p-6 flex flex-col">
@@ -633,7 +635,7 @@ const Portfolio = () => {
                 maxHeight: 'calc(100vh - 2rem)',
                 width: 'auto',
                 height: 'auto'
-              }} />
+              }}  loading="lazy" decoding="async" />
                 </div>}
             </DialogContent>
           </Dialog>
@@ -644,7 +646,7 @@ const Portfolio = () => {
               {selectedWork && <div className="max-h-[90vh] overflow-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
                     <div className="h-full min-h-[400px] md:min-h-[500px]">
-                      <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain" />
+                      <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
                     </div>
                     <div className="p-6 md:p-8 h-full min-h-[400px] md:min-h-[500px] flex flex-col">
                       <h2 className={`text-2xl font-serif font-bold ${selectedWork.subtitle ? 'mb-1' : 'mb-4'} ${selectedWork.italicTitle ? "italic" : ""}`}>{selectedWork.title}</h2>
@@ -678,7 +680,7 @@ const Portfolio = () => {
                       <h4 className="text-lg font-semibold mb-4">Gallery</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => openGalleryImage(image, selectedWork.galleryImages!)}>
-                            <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-contain" />
+                            <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
                           </div>)}
                       </div>
                     </div>}
