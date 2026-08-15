@@ -110,6 +110,10 @@ const Hero = () => {
                         <img 
                           src={artwork.image} 
                           alt={artwork.title} 
+                          loading={artwork.id === 1 ? "eager" : "lazy"}
+                          decoding="async"
+                          fetchPriority={artwork.id === 1 ? "high" : "auto"}
+                          
                           className="w-full h-[50vh] md:h-[70vh] object-contain object-center mx-auto" 
                         />
                       </div>

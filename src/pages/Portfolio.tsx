@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 import notStillLife1 from '@/assets/not-still-life-1.jpg';
 import notStillLife2 from '@/assets/not-still-life-2-new.jpg';
 import notStillLife3 from '@/assets/not-still-life-3-new.jpg';
@@ -170,6 +171,7 @@ const Portfolio = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const isMobile = useIsMobile();
   interface Work {
     id: number;
     title: string;
@@ -556,7 +558,7 @@ const Portfolio = () => {
                   </div>
                 ))}
               </div>
-            ) : (viewMode === 'grid' && selectedCategory !== 'publication') ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>

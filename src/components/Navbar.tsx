@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden">
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+          <Button variant="ghost" size="icon" className="h-11 w-11" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </Button>
         </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-4 animate-fade-in">
           <div className="flex flex-col space-y-3">
             {links.map(link => (
-              <Link key={link.name} to={link.href} className="text-gray-800 hover:text-portfolio-blue transition-colors text-base font-medium py-2" onClick={() => setIsOpen(false)}>
+              <Link key={link.name} to={link.href} className="text-gray-800 hover:text-portfolio-blue transition-colors text-base font-medium py-3 min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>
                 {link.name}
               </Link>
             ))}
