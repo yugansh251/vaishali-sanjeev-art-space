@@ -494,6 +494,30 @@ const Portfolio = () => {
 
   // Filter works based on selected category
   const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
+  const visibleWorks = filteredWorks.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredWorks.length;
+
+  // Reset the batch when the category changes
+  useEffect(() => {
+    setVisibleCount(BATCH_SIZE);
+  }, [selectedCategory]);
+
+  // Infinite scroll: reveal the next batch when the sentinel enters the viewport
+  useEffect(() => {
+    const node = sentinelRef.current;
+    if (!node || !hasMore) return;
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount(c => c + BATCH_SIZE);
+        }
+      },
+      { rootMargin: '400px 0px' }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [hasMore, selectedCategory]);
+
 
   // Functions to handle gallery navigation
   const openGalleryImage = (imageUrl: string, galleryImages: string[]) => {
