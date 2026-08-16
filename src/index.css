@@ -91,7 +91,19 @@
   
   .portfolio-container {
     @apply max-w-7xl mx-auto;
+    width: 100%;
+    min-width: 0;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
+
+  /* iOS WebKit can collapse grid/flex children; keep declared widths */
+  .portfolio-container [class*="grid-cols-"] > *,
+  .portfolio-container .flex > img,
+  .portfolio-container [class*="grid-cols-"] {
+    min-width: 0;
+  }
+
   
   .image-hover {
     @apply transition-all duration-300 hover:opacity-90;
