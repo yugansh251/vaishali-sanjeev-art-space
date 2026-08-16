@@ -52,7 +52,7 @@ const SmartImage = ({
           sizes={sizes}
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
-          fetchPriority={priority ? 'high' : 'auto'}
+          {...(priority ? { fetchpriority: 'high' } : {})}
           onLoad={() => setLoaded(true)}
           onError={() => setLoaded(true)}
           className={`absolute inset-0 h-full w-full transition-opacity duration-300 ${
