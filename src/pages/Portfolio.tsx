@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import SmartImage from '@/components/SmartImage';
 import { useIsMobile } from '@/hooks/use-mobile';
+
 import notStillLife1 from '@/assets/not-still-life-1.jpg';
 import notStillLife2 from '@/assets/not-still-life-2-new.jpg';
 import notStillLife3 from '@/assets/not-still-life-3-new.jpg';
