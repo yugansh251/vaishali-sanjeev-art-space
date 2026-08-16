@@ -64,6 +64,7 @@
   #root {
     overflow-x: clip;
     max-width: 100%;
+    width: 100%;
   }
 
   .no-scrollbar {
@@ -78,6 +79,20 @@
   .no-scrollbar > * {
     flex-shrink: 0;
     min-width: 0;
+  }
+
+  /* Explicit WebKit width guards for portfolio controls and artwork cards */
+  .ios-stable-tabs,
+  .ios-stable-tabs > *,
+  .ios-stable-grid,
+  .ios-stable-grid > * {
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  .ios-stable-tabs > *,
+  .ios-stable-grid > * {
+    flex-shrink: 0;
   }
 
   

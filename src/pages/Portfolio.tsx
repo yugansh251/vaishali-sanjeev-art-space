@@ -511,7 +511,7 @@ const Portfolio = () => {
 
           <div className="mb-10">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-8">
-              <div className="flex overflow-x-auto no-scrollbar rounded-md shadow-sm w-full sm:w-auto sm:inline-flex" role="group">
+              <div className="ios-stable-tabs flex overflow-x-auto no-scrollbar rounded-md shadow-sm w-full sm:w-auto sm:inline-flex" role="group">
                 <Button variant={selectedCategory === 'installation' ? 'default' : 'outline'} onClick={() => setSelectedCategory('installation')} className={`min-h-[44px] whitespace-nowrap shrink-0 ${selectedCategory === 'installation' ? 'bg-portfolio-blue hover:bg-portfolio-darkBlue' : ''}`}>
                   Art Works
                 </Button>
@@ -558,7 +558,7 @@ const Portfolio = () => {
                   </div>
                 ))}
               </div>
-            ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="ios-stable-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
                       <AspectRatio ratio={16 / 9}>
