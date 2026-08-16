@@ -167,13 +167,18 @@ const additionalPdfs = [
   { id: 8, title: "Third Life", pdfLink: "/pdfs/third-life.pdf", thumbnail: "/images/thumbnails/third-life.png" },
 ];
 
+const BATCH_SIZE = 12;
+
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('installation');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+  const sentinelRef = useRef<HTMLDivElement | null>(null);
   const isMobile = useIsMobile();
+
   interface Work {
     id: number;
     title: string;
