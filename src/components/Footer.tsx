@@ -3,7 +3,7 @@ import { Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-8 md:py-12 px-4 md:px-6">
+    <footer className="bg-white border-t border-gray-200 py-8 md:py-12 px-4 md:px-6 safe-area-bottom safe-area-x">
       <div className="portfolio-container grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div className="flex flex-col items-center md:items-start">
           <img 

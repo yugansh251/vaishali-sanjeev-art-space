@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-3 md:py-4 px-4 md:px-6`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-3 md:py-4 px-4 md:px-6 safe-area-top safe-area-x`}>
       <div className="portfolio-container flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img alt="Vaishali & Sanjeev" className="h-10 md:h-12 lg:h-14" src="/lovable-uploads/4b3c8fa8-c761-4828-85fc-07591ac1b0f8.jpg" />
