@@ -592,11 +592,15 @@ const Portfolio = () => {
                 ))}
               </div>
             ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="ios-stable-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
-                      <AspectRatio ratio={16 / 9}>
-                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
-                      </AspectRatio>
+                {visibleWorks.map((work, i) => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div className="overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
+                      <SmartImage
+                        src={work.image}
+                        alt={work.title}
+                        ratio={16 / 9}
+                        priority={i === 0}
+                        imgClassName="object-contain image-hover"
+                      />
                     </div>
                     <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
                       <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
@@ -607,13 +611,18 @@ const Portfolio = () => {
                     </CardFooter>
                   </Card>)}
               </div> : <div className="flex flex-col space-y-6">
-                {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
+                {visibleWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="md:col-span-1 h-full cursor-pointer" onClick={() => setSelectedWork(work)}>
-                        <AspectRatio ratio={1 / 1} className="h-full">
-                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
-                        </AspectRatio>
+                        <SmartImage
+                          src={work.image}
+                          alt={work.title}
+                          ratio={1}
+                          imgClassName="object-contain image-hover"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
                       </div>
+
                       <div className="md:col-span-2 p-6 flex flex-col">
                         <div className="cursor-pointer flex-shrink-0" onClick={() => setSelectedWork(work)}>
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
