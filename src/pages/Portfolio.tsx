@@ -649,7 +649,12 @@ const Portfolio = () => {
                     </div>
                   </Card>)}
               </div>}
+
+            {selectedCategory !== 'additional-pdfs' && hasMore && (
+              <div ref={sentinelRef} className="h-16 w-full" aria-hidden="true" />
+            )}
           </div>
+
 
           {/* Full-screen image lightbox */}
           {selectedGalleryImage && selectedWork?.galleryImages && (
