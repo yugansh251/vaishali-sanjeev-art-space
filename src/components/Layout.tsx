@@ -43,7 +43,7 @@ const Layout = ({ children }: LayoutProps) => {
   useOverflowDebugger();
 
   return (
-    <div className="flex min-h-screen flex-col bg-white w-full max-w-full overflow-x-clip">
+    <div className="flex full-height flex-col bg-white w-full max-w-full overflow-x-clip">
       <Navbar />
       <main className="flex-grow pt-20 md:pt-24 w-full max-w-full min-w-0">{children}</main>
       <Footer />

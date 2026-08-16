@@ -643,7 +643,7 @@ const Portfolio = () => {
           {/* Work Details Dialog */}
           <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
-              {selectedWork && <div className="max-h-[90vh] overflow-auto">
+              {selectedWork && <div className="max-h-[90dvh] overflow-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
                     <div className="h-full min-h-[400px] md:min-h-[500px]">
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
