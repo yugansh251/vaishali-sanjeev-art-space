@@ -148,6 +148,8 @@ import allthatwanna11 from '@/assets/allthatwanna-11.jpg';
 import allthatwanna12 from '@/assets/allthatwanna-12.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
+import Lightbox from '@/components/Lightbox';
+
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
