@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import SmartImage from '@/components/SmartImage';
 import { useIsMobile } from '@/hooks/use-mobile';
+
 import notStillLife1 from '@/assets/not-still-life-1.jpg';
 import notStillLife2 from '@/assets/not-still-life-2-new.jpg';
 import notStillLife3 from '@/assets/not-still-life-3-new.jpg';
@@ -167,13 +169,18 @@ const additionalPdfs = [
   { id: 8, title: "Third Life", pdfLink: "/pdfs/third-life.pdf", thumbnail: "/images/thumbnails/third-life.png" },
 ];
 
+const BATCH_SIZE = 12;
+
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('installation');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+  const sentinelRef = useRef<HTMLDivElement | null>(null);
   const isMobile = useIsMobile();
+
   interface Work {
     id: number;
     title: string;
@@ -487,6 +494,30 @@ const Portfolio = () => {
 
   // Filter works based on selected category
   const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
+  const visibleWorks = filteredWorks.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredWorks.length;
+
+  // Reset the batch when the category changes
+  useEffect(() => {
+    setVisibleCount(BATCH_SIZE);
+  }, [selectedCategory]);
+
+  // Infinite scroll: reveal the next batch when the sentinel enters the viewport
+  useEffect(() => {
+    const node = sentinelRef.current;
+    if (!node || !hasMore) return;
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount(c => c + BATCH_SIZE);
+        }
+      },
+      { rootMargin: '400px 0px' }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [hasMore, selectedCategory]);
+
 
   // Functions to handle gallery navigation
   const openGalleryImage = (imageUrl: string, galleryImages: string[]) => {
@@ -561,11 +592,15 @@ const Portfolio = () => {
                 ))}
               </div>
             ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="ios-stable-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
-                      <AspectRatio ratio={16 / 9}>
-                        <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
-                      </AspectRatio>
+                {visibleWorks.map((work, i) => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div className="overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
+                      <SmartImage
+                        src={work.image}
+                        alt={work.title}
+                        ratio={16 / 9}
+                        priority={i === 0}
+                        imgClassName="object-contain image-hover"
+                      />
                     </div>
                     <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
                       <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
@@ -576,13 +611,18 @@ const Portfolio = () => {
                     </CardFooter>
                   </Card>)}
               </div> : <div className="flex flex-col space-y-6">
-                {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
+                {visibleWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="md:col-span-1 h-full cursor-pointer" onClick={() => setSelectedWork(work)}>
-                        <AspectRatio ratio={1 / 1} className="h-full">
-                          <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
-                        </AspectRatio>
+                        <SmartImage
+                          src={work.image}
+                          alt={work.title}
+                          ratio={1}
+                          imgClassName="object-contain image-hover"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
                       </div>
+
                       <div className="md:col-span-2 p-6 flex flex-col">
                         <div className="cursor-pointer flex-shrink-0" onClick={() => setSelectedWork(work)}>
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
@@ -609,7 +649,12 @@ const Portfolio = () => {
                     </div>
                   </Card>)}
               </div>}
+
+            {selectedCategory !== 'additional-pdfs' && hasMore && (
+              <div ref={sentinelRef} className="h-16 w-full" aria-hidden="true" />
+            )}
           </div>
+
 
           {/* Full-screen image lightbox */}
           {selectedGalleryImage && selectedWork?.galleryImages && (
