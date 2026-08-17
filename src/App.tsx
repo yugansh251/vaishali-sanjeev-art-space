@@ -4,24 +4,17 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { Suspense, lazy } from "react";
+import React from "react"; // Add explicit React import
 import Index from "./pages/Index";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Shop from "./pages/Shop";
+import Contact from "./pages/Contact";
+import Press from "./pages/Press";
+import NotFound from "./pages/NotFound";
 
-// Route-level code splitting: the homepage no longer ships the other pages' code.
-const About = lazy(() => import("./pages/About"));
-const Portfolio = lazy(() => import("./pages/Portfolio"));
-const Shop = lazy(() => import("./pages/Shop"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Press = lazy(() => import("./pages/Press"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-
+// Create a client outside of the component
 const queryClient = new QueryClient();
-
-const RouteFallback = () => (
-  <div className="flex min-h-[60vh] w-full items-center justify-center">
-    <div className="h-8 w-8 animate-spin rounded-full border-2 border-muted border-t-primary" />
-  </div>
-);
 
 const App = () => (
   <React.StrictMode>
@@ -30,18 +23,16 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Suspense fallback={<RouteFallback />}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/shop" element={<Shop />} />
-              <Route path="/press" element={<Press />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/press" element={<Press />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
