@@ -148,8 +148,6 @@ import allthatwanna11 from '@/assets/allthatwanna-11.jpg';
 import allthatwanna12 from '@/assets/allthatwanna-12.jpg';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
-import Lightbox from '@/components/Lightbox';
-
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -611,20 +609,36 @@ const Portfolio = () => {
               </div>}
           </div>
 
-          {/* Full-screen image lightbox */}
-          {selectedGalleryImage && selectedWork?.galleryImages && (
-            <Lightbox
-              images={selectedWork.galleryImages}
-              index={currentGalleryIndex}
-              caption={selectedWork.title}
-              onIndexChange={(i) => {
-                setCurrentGalleryIndex(i);
-                setSelectedGalleryImage(selectedWork.galleryImages![i]);
-              }}
-              onClose={() => setSelectedGalleryImage(null)}
-            />
-          )}
+          {/* Gallery Image Dialog with Navigation */}
+          <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
+            <DialogContent className="max-w-full w-full h-[100dvh] max-h-none p-0 border-0 bg-white shadow-none">
+              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
+                <X className="h-4 w-4 sm:h-6 sm:w-6" />
+                <span className="sr-only">Close</span>
+              </button>
+              
+              {/* Navigation Arrows */}
+              {selectedWork?.galleryImages && selectedWork.galleryImages.length > 1 && <>
+                  <button onClick={() => navigateGallery('prev')} className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
+                    <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
+                    <span className="sr-only">Previous image</span>
+                  </button>
+                  <button onClick={() => navigateGallery('next')} className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
+                    <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6" />
+                    <span className="sr-only">Next image</span>
+                  </button>
+                </>}
 
+              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4 sm:p-8">
+                  <img src={selectedGalleryImage} alt="Gallery artwork" className="object-contain" style={{
+                maxWidth: 'calc(100% - 2rem)',
+                maxHeight: 'calc(100dvh - 2rem)',
+                width: 'auto',
+                height: 'auto'
+              }}  loading="lazy" decoding="async" />
+                </div>}
+            </DialogContent>
+          </Dialog>
 
           {/* Work Details Dialog */}
           <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
