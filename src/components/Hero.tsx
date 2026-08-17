@@ -89,7 +89,7 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section className="full-height flex flex-col items-center justify-start pt-16 md:pt-20 relative overflow-hidden bg-white py-4 md:py-6 px-4 md:px-16">
+    <section className="min-h-screen flex flex-col items-center justify-start pt-16 md:pt-20 relative overflow-hidden bg-white py-4 md:py-6 px-4 md:px-16">
       {/* Carousel */}
       <div className="w-full max-w-7xl mx-auto">
         <Carousel 
