@@ -487,23 +487,33 @@ const Portfolio = () => {
   const filteredWorks = works.filter(work => selectedCategory === 'all' || work.category === selectedCategory);
 
   // Functions to handle gallery navigation
-  const openGalleryImage = (imageUrl: string, galleryImages: string[]) => {
-    const index = galleryImages.indexOf(imageUrl);
+  const openWork = (work: Work) => {
+    setCurrentGalleryIndex(null);
+    setSelectedWork(work);
+  };
+  const closeWork = () => {
+    setCurrentGalleryIndex(null);
+    setSelectedWork(null);
+  };
+  const closeGalleryImage = () => setCurrentGalleryIndex(null);
+  const openGalleryImage = (index: number) => {
     setCurrentGalleryIndex(index);
-    setSelectedGalleryImage(imageUrl);
   };
+  const galleryLength = selectedWork?.galleryImages?.length ?? 0;
+  const currentGalleryImage =
+    currentGalleryIndex !== null && selectedWork?.galleryImages
+      ? selectedWork.galleryImages[currentGalleryIndex]
+      : null;
   const navigateGallery = (direction: 'prev' | 'next') => {
-    if (!selectedWork?.galleryImages) return;
-    const galleryImages = selectedWork.galleryImages;
-    let newIndex;
-    if (direction === 'prev') {
-      newIndex = currentGalleryIndex > 0 ? currentGalleryIndex - 1 : galleryImages.length - 1;
-    } else {
-      newIndex = currentGalleryIndex < galleryImages.length - 1 ? currentGalleryIndex + 1 : 0;
-    }
-    setCurrentGalleryIndex(newIndex);
-    setSelectedGalleryImage(galleryImages[newIndex]);
+    if (galleryLength < 2) return;
+    setCurrentGalleryIndex(prev => {
+      if (prev === null) return prev;
+      return direction === 'prev'
+        ? (prev - 1 + galleryLength) % galleryLength
+        : (prev + 1) % galleryLength;
+    });
   };
+
   return <Layout>
       <section className="pt-32 pb-16 px-4 sm:px-6">
         <div className="portfolio-container max-w-7xl mx-auto">
