@@ -544,13 +544,13 @@ const Portfolio = () => {
 
             {selectedCategory === 'additional-pdfs' ? (
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="border-b border-gray-200 bg-gray-50 px-4 sm:px-6 py-3 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+                <div className="border-b border-gray-200 bg-gray-50 px-4 sm:px-6 py-3 grid grid-cols-[auto_minmax(0,1fr)_auto] gap-4 items-center">
                   <span className="text-sm font-medium text-gray-600 w-8"></span>
                   <span className="text-sm font-medium text-gray-600">Name</span>
                   <span className="text-sm font-medium text-gray-600">Download file</span>
                 </div>
                 {additionalPdfs.map(pdf => (
-                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-4 sm:px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
+                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-4 sm:px-6 py-4 grid grid-cols-[auto_minmax(0,1fr)_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
                     <div className="w-16 h-12 rounded overflow-hidden flex-shrink-0">
                       <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                     </div>
@@ -620,7 +620,7 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog with Navigation */}
           <Dialog open={currentGalleryIndex !== null} onOpenChange={open => { if (!open) closeGalleryImage(); }}>
-            <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-white shadow-none">
+            <DialogContent className="fixed inset-0 z-50 flex items-center justify-center p-4 translate-x-0 translate-y-0 max-w-none max-h-none w-auto h-auto border-0 bg-white shadow-none rounded-none">
               <button onClick={closeGalleryImage} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                 <X className="h-4 w-4 sm:h-6 sm:w-6" />
                 <span className="sr-only">Close</span>
@@ -638,26 +638,23 @@ const Portfolio = () => {
                   </button>
                 </>}
 
-              {currentGalleryImage && <div className="w-full h-full flex items-center justify-center p-4 sm:p-8">
-                  <img src={currentGalleryImage} alt="Gallery artwork" className="object-contain" style={{
-                maxWidth: 'calc(100vw - 2rem)',
-                maxHeight: 'calc(100vh - 2rem)',
-                width: 'auto',
-                height: 'auto'
-              }}  loading="lazy" decoding="async" />
+              {currentGalleryImage && <div className="w-full max-w-4xl max-h-full min-w-0 overflow-y-auto flex items-center justify-center">
+                  <img src={currentGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full w-auto h-auto object-contain" loading="lazy" decoding="async" />
                 </div>}
+
             </DialogContent>
           </Dialog>
 
           {/* Work Details Dialog */}
           <Dialog open={!!selectedWork} onOpenChange={open => { if (!open) closeWork(); }}>
-            <DialogContent className="max-w-6xl p-0 overflow-hidden">
-              {selectedWork && <div className="max-h-[90vh] overflow-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
-                    <div className="h-full min-h-[400px] md:min-h-[500px]">
+            <DialogContent className="fixed inset-0 z-50 flex items-center justify-center p-4 translate-x-0 translate-y-0 max-w-none max-h-none w-auto h-auto overflow-hidden bg-transparent border-0 shadow-none">
+              {selectedWork && <div className="w-full max-w-6xl max-h-full min-w-0 overflow-y-auto bg-background rounded-lg shadow-lg">
+                  <div className="grid grid-cols-1 md:grid-cols-2 h-auto [grid-template-columns:minmax(0,1fr)] md:[grid-template-columns:minmax(0,1fr)_minmax(0,1fr)]">
+                    <div className="h-full min-w-0 min-h-[400px] md:min-h-[500px]">
+
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
                     </div>
-                    <div className="p-6 md:p-8 h-full min-h-[400px] md:min-h-[500px] flex flex-col">
+                    <div className="p-6 md:p-8 h-full min-w-0 min-h-[400px] md:min-h-[500px] flex flex-col">
                       <h2 className={`text-2xl font-serif font-bold ${selectedWork.subtitle ? 'mb-1' : 'mb-4'} ${selectedWork.italicTitle ? "italic" : ""}`}>{selectedWork.title}</h2>
                       {selectedWork.subtitle && <p className="text-xl font-serif italic mb-4">{selectedWork.subtitle}</p>}
                       <ScrollArea className="flex-1 pr-4">

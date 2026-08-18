@@ -54,18 +54,23 @@
 
   html, body {
     @apply bg-background text-foreground font-sans;
-    /* iOS/WebKit ignores overflow-x: hidden on body; clip is respected */
-    overflow-x: clip;
+    overflow-x: hidden;
     max-width: 100%;
     width: 100%;
     -webkit-text-size-adjust: 100%;
   }
 
+  img, video, svg, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
   #root {
-    overflow-x: clip;
+    overflow-x: hidden;
     max-width: 100%;
     width: 100%;
   }
+
 
   .no-scrollbar {
     scrollbar-width: none;
