@@ -647,10 +647,11 @@ const Portfolio = () => {
 
           {/* Work Details Dialog */}
           <Dialog open={!!selectedWork} onOpenChange={open => { if (!open) closeWork(); }}>
-            <DialogContent className="max-w-6xl p-0 overflow-hidden">
-              {selectedWork && <div className="max-h-[90vh] overflow-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
-                    <div className="h-full min-h-[400px] md:min-h-[500px]">
+            <DialogContent className="fixed inset-0 z-50 flex items-center justify-center p-4 translate-x-0 translate-y-0 max-w-none max-h-none w-auto h-auto overflow-hidden bg-transparent border-0 shadow-none">
+              {selectedWork && <div className="w-full max-w-6xl max-h-full min-w-0 overflow-y-auto bg-background rounded-lg shadow-lg">
+                  <div className="grid grid-cols-1 md:grid-cols-2 h-auto [grid-template-columns:minmax(0,1fr)] md:[grid-template-columns:minmax(0,1fr)_minmax(0,1fr)]">
+                    <div className="h-full min-w-0 min-h-[400px] md:min-h-[500px]">
+
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
                     </div>
                     <div className="p-6 md:p-8 h-full min-h-[400px] md:min-h-[500px] flex flex-col">
