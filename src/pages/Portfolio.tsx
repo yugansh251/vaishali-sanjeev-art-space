@@ -638,14 +638,10 @@ const Portfolio = () => {
                   </button>
                 </>}
 
-              {currentGalleryImage && <div className="w-full h-full flex items-center justify-center p-4 sm:p-8">
-                  <img src={currentGalleryImage} alt="Gallery artwork" className="object-contain" style={{
-                maxWidth: 'calc(100vw - 2rem)',
-                maxHeight: 'calc(100vh - 2rem)',
-                width: 'auto',
-                height: 'auto'
-              }}  loading="lazy" decoding="async" />
+              {currentGalleryImage && <div className="w-full max-w-4xl max-h-full min-w-0 overflow-y-auto flex items-center justify-center">
+                  <img src={currentGalleryImage} alt="Gallery artwork" className="max-w-full max-h-full w-auto h-auto object-contain" loading="lazy" decoding="async" />
                 </div>}
+
             </DialogContent>
           </Dialog>
 
