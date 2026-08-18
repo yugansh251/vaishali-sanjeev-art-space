@@ -168,8 +168,7 @@ const additionalPdfs = [
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('installation');
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
-  const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
-  const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number>(0);
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState<number | null>(null);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const isMobile = useIsMobile();
   interface Work {
@@ -570,12 +569,12 @@ const Portfolio = () => {
               </div>
             ) : ((viewMode === 'grid' || isMobile) && selectedCategory !== 'publication') ? <div className="ios-stable-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedWork(work)}>
+                    <div className="h-64 overflow-hidden cursor-pointer" onClick={() => openWork(work)}>
                       <AspectRatio ratio={16 / 9}>
                         <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
                       </AspectRatio>
                     </div>
-                    <CardContent className="p-6" onClick={() => setSelectedWork(work)}>
+                    <CardContent className="p-6" onClick={() => openWork(work)}>
                       <h3 className="text-xl font-serif font-semibold">{work.title}</h3>
                       <p className="text-sm text-gray-600 mt-1">{work.year}</p>
                     </CardContent>
@@ -586,13 +585,13 @@ const Portfolio = () => {
               </div> : <div className="flex flex-col space-y-6">
                 {filteredWorks.map(work => <Card key={work.id} className="gallery-item overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className="md:col-span-1 h-full cursor-pointer" onClick={() => setSelectedWork(work)}>
+                      <div className="md:col-span-1 h-full cursor-pointer" onClick={() => openWork(work)}>
                         <AspectRatio ratio={1 / 1} className="h-full">
                           <img src={work.image} alt={work.title} className="w-full h-full object-contain image-hover"  loading="lazy" decoding="async" />
                         </AspectRatio>
                       </div>
                       <div className="md:col-span-2 p-6 flex flex-col">
-                        <div className="cursor-pointer flex-shrink-0" onClick={() => setSelectedWork(work)}>
+                        <div className="cursor-pointer flex-shrink-0" onClick={() => openWork(work)}>
                           <span className="text-sm text-portfolio-blue font-medium capitalize">
                             {work.category === 'installation' ? 'Art Works' : work.category === 'previous' ? 'Previous Art Works' : work.category} • {work.year}
                           </span>
@@ -600,7 +599,7 @@ const Portfolio = () => {
                         </div>
                         <div className="flex-1 mt-3">
                           <ScrollArea className="h-64 pr-4">
-                            <div className="cursor-pointer" onClick={() => setSelectedWork(work)}>
+                            <div className="cursor-pointer" onClick={() => openWork(work)}>
                               <p className="text-gray-600 whitespace-pre-line">{work.description}</p>
                             </div>
                           </ScrollArea>
@@ -620,15 +619,15 @@ const Portfolio = () => {
           </div>
 
           {/* Gallery Image Dialog with Navigation */}
-          <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
+          <Dialog open={currentGalleryIndex !== null} onOpenChange={open => { if (!open) closeGalleryImage(); }}>
             <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-white shadow-none">
-              <button onClick={() => setSelectedGalleryImage(null)} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
+              <button onClick={closeGalleryImage} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                 <X className="h-4 w-4 sm:h-6 sm:w-6" />
                 <span className="sr-only">Close</span>
               </button>
               
               {/* Navigation Arrows */}
-              {selectedWork?.galleryImages && selectedWork.galleryImages.length > 1 && <>
+              {galleryLength > 1 && <>
                   <button onClick={() => navigateGallery('prev')} className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                     <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6" />
                     <span className="sr-only">Previous image</span>
@@ -639,8 +638,8 @@ const Portfolio = () => {
                   </button>
                 </>}
 
-              {selectedGalleryImage && <div className="w-full h-full flex items-center justify-center p-4 sm:p-8">
-                  <img src={selectedGalleryImage} alt="Gallery artwork" className="object-contain" style={{
+              {currentGalleryImage && <div className="w-full h-full flex items-center justify-center p-4 sm:p-8">
+                  <img src={currentGalleryImage} alt="Gallery artwork" className="object-contain" style={{
                 maxWidth: 'calc(100vw - 2rem)',
                 maxHeight: 'calc(100vh - 2rem)',
                 width: 'auto',
@@ -651,7 +650,7 @@ const Portfolio = () => {
           </Dialog>
 
           {/* Work Details Dialog */}
-          <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
+          <Dialog open={!!selectedWork} onOpenChange={open => { if (!open) closeWork(); }}>
             <DialogContent className="max-w-6xl p-0 overflow-hidden">
               {selectedWork && <div className="max-h-[90vh] overflow-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
@@ -689,7 +688,7 @@ const Portfolio = () => {
                   {selectedWork.galleryImages && selectedWork.galleryImages.length > 0 && <div className="border-t border-gray-200 p-6">
                       <h4 className="text-lg font-semibold mb-4">Gallery</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => openGalleryImage(image, selectedWork.galleryImages!)}>
+                        {selectedWork.galleryImages.map((image, index) => <div key={index} className="aspect-square cursor-pointer rounded-lg overflow-hidden hover:opacity-80 transition-opacity" onClick={() => openGalleryImage(index)}>
                             <img src={image} alt={`${selectedWork.title} gallery ${index + 1}`} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
                           </div>)}
                       </div>
