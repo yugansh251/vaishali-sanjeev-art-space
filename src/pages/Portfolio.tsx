@@ -654,7 +654,7 @@ const Portfolio = () => {
 
                       <img src={selectedWork.image} alt={selectedWork.title} className="w-full h-full object-contain"  loading="lazy" decoding="async" />
                     </div>
-                    <div className="p-6 md:p-8 h-full min-h-[400px] md:min-h-[500px] flex flex-col">
+                    <div className="p-6 md:p-8 h-full min-w-0 min-h-[400px] md:min-h-[500px] flex flex-col">
                       <h2 className={`text-2xl font-serif font-bold ${selectedWork.subtitle ? 'mb-1' : 'mb-4'} ${selectedWork.italicTitle ? "italic" : ""}`}>{selectedWork.title}</h2>
                       {selectedWork.subtitle && <p className="text-xl font-serif italic mb-4">{selectedWork.subtitle}</p>}
                       <ScrollArea className="flex-1 pr-4">
