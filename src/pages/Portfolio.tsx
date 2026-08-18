@@ -544,13 +544,13 @@ const Portfolio = () => {
 
             {selectedCategory === 'additional-pdfs' ? (
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="border-b border-gray-200 bg-gray-50 px-4 sm:px-6 py-3 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+                <div className="border-b border-gray-200 bg-gray-50 px-4 sm:px-6 py-3 grid grid-cols-[auto_minmax(0,1fr)_auto] gap-4 items-center">
                   <span className="text-sm font-medium text-gray-600 w-8"></span>
                   <span className="text-sm font-medium text-gray-600">Name</span>
                   <span className="text-sm font-medium text-gray-600">Download file</span>
                 </div>
                 {additionalPdfs.map(pdf => (
-                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-4 sm:px-6 py-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
+                  <div key={pdf.id} className="border-b border-gray-100 last:border-b-0 px-4 sm:px-6 py-4 grid grid-cols-[auto_minmax(0,1fr)_auto] gap-4 items-center hover:bg-gray-50 transition-colors">
                     <div className="w-16 h-12 rounded overflow-hidden flex-shrink-0">
                       <img src={pdf.thumbnail} alt={pdf.title} className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                     </div>
