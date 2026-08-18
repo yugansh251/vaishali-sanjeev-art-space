@@ -620,7 +620,7 @@ const Portfolio = () => {
 
           {/* Gallery Image Dialog with Navigation */}
           <Dialog open={currentGalleryIndex !== null} onOpenChange={open => { if (!open) closeGalleryImage(); }}>
-            <DialogContent className="max-w-none max-h-none w-screen h-screen p-0 border-0 bg-white shadow-none">
+            <DialogContent className="fixed inset-0 z-50 flex items-center justify-center p-4 translate-x-0 translate-y-0 max-w-none max-h-none w-auto h-auto p-0 border-0 bg-white shadow-none rounded-none">
               <button onClick={closeGalleryImage} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 rounded-full bg-gray-800/70 p-2 sm:p-3 text-white hover:bg-gray-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400/50">
                 <X className="h-4 w-4 sm:h-6 sm:w-6" />
                 <span className="sr-only">Close</span>
